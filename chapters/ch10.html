@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="chapter-num" content="10">
+<title>Chapter 10: Practical Geometry - CBSE Class 7 Maths</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <span class="logo">Class 7 Maths</span>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../progress.html">My Progress</a>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="chapter-header">
+    <div class="ch-label" style="color:var(--geo)">Chapter 10 &middot; Geometry</div>
+    <h1>Practical Geometry</h1>
+  </div>
+
+  <div class="section">
+    <h2>Summary</h2>
+    <ul class="summary-list">
+      <li>We can construct a unique triangle when given enough information about its sides and angles.</li>
+      <li><strong>SSS construction:</strong> Given all 3 side lengths — draw one side, then use a compass to draw arcs from each end.</li>
+      <li><strong>SAS construction:</strong> Given 2 sides and the angle between them — draw one side, make the angle with a protractor, mark the other side.</li>
+      <li><strong>ASA construction:</strong> Given 2 angles and the side between them — draw the side, make angles at each end, lines meet at the third vertex.</li>
+      <li><strong>RHS construction:</strong> Given right angle, hypotenuse, and one side — draw the side, make 90&deg;, draw arc of hypotenuse length.</li>
+      <li>Tools needed: ruler, compass, protractor.</li>
+      <li>Always check the triangle inequality (sum of any two sides &gt; third side) before starting a construction.</li>
+      <li>If you know two angles of a triangle, you can find the third (since they add up to 180&deg;).</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Key Formulas</h2>
+    <div class="formula-box">
+      <code>Triangle inequality: a + b &gt; c (check for all three pairs before constructing)</code>
+    </div>
+    <div class="formula-box">
+      <code>If two angles are known: third angle = 180&deg; &minus; (angle 1 + angle 2)</code>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Worked Examples</h2>
+
+    <div class="example">
+      <h3>Example 1: SSS Construction (sides 4, 5, 6 cm)</h3>
+      <div class="step"><strong>Step 1:</strong> Draw a line segment BC = 6 cm (the longest side as base).</div>
+      <div class="step"><strong>Step 2:</strong> With B as centre and radius 4 cm, draw an arc above BC.</div>
+      <div class="step"><strong>Step 3:</strong> With C as centre and radius 5 cm, draw another arc cutting the first arc. Call the intersection A.</div>
+      <div class="step"><strong>Step 4:</strong> Join A to B and A to C. &triangle;ABC is ready!</div>
+    </div>
+
+    <div class="example">
+      <h3>Example 2: SAS Construction (sides 5 cm, 4 cm, included angle 60&deg;)</h3>
+      <div class="step"><strong>Step 1:</strong> Draw AB = 5 cm.</div>
+      <div class="step"><strong>Step 2:</strong> At A, use a protractor to draw a ray making 60&deg; with AB.</div>
+      <div class="step"><strong>Step 3:</strong> On this ray, mark point C such that AC = 4 cm.</div>
+      <div class="step"><strong>Step 4:</strong> Join B to C. &triangle;ABC is complete!</div>
+    </div>
+
+    <div class="example">
+      <h3>Example 3: RHS Construction (hypotenuse 5 cm, one side 3 cm)</h3>
+      <div class="step"><strong>Step 1:</strong> Draw BC = 3 cm.</div>
+      <div class="step"><strong>Step 2:</strong> At B, construct a 90&deg; angle using a protractor.</div>
+      <div class="step"><strong>Step 3:</strong> With C as centre and radius 5 cm (hypotenuse), draw an arc cutting the perpendicular. Call this point A.</div>
+      <div class="step"><strong>Step 4:</strong> Join A to C. &triangle;ABC is a right triangle!</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Practice Problems</h2>
+
+    <div class="problem">
+      <span class="difficulty easy">Easy</span>
+      <p>Construct a triangle with sides 3 cm, 4 cm, and 5 cm. Which construction type is this?</p>
+      <details><summary>Show Answer</summary>
+        <div class="answer"><strong>SSS construction.</strong> Draw 5 cm base, arc of 3 cm from one end, arc of 4 cm from the other. The intersection is the third vertex.</div>
+      </details>
+    </div>
+
+    <div class="problem">
+      <span class="difficulty easy">Easy</span>
+      <p>Can you construct a triangle with sides 2 cm, 3 cm, and 6 cm? Why or why not?</p>
+      <details><summary>Show Answer</summary>
+        <div class="answer"><strong>No.</strong> 2 + 3 = 5, which is NOT greater than 6. Triangle inequality fails.</div>
+      </details>
+    </div>
+
+    <div class="problem">
+      <span class="difficulty medium">Medium</span>
+      <p>Construct &triangle;PQR with PQ = 6 cm, &ang;P = 50&deg;, and PR = 5 cm. Which construction type?</p>
+      <details><summary>Show Answer</summary>
+        <div class="answer"><strong>SAS construction.</strong> Two sides (PQ=6, PR=5) and the included angle (&ang;P=50&deg;) are given.</div>
+      </details>
+    </div>
+
+    <div class="problem">
+      <span class="difficulty medium">Medium</span>
+      <p>Construct &triangle;ABC with &ang;A = 45&deg;, AB = 7 cm, and &ang;B = 75&deg;. What is &ang;C?</p>
+      <details><summary>Show Answer</summary>
+        <div class="answer"><strong>ASA construction.</strong> &ang;C = 180&deg; &minus; 45&deg; &minus; 75&deg; = <strong>60&deg;</strong></div>
+      </details>
+    </div>
+
+    <div class="problem">
+      <span class="difficulty hard">Hard</span>
+      <p>Construct a right triangle with hypotenuse 10 cm and one leg 6 cm. Find the other leg before constructing.</p>
+      <details><summary>Show Answer</summary>
+        <div class="answer">By Pythagoras: other leg = &radic;(10&sup2; &minus; 6&sup2;) = &radic;(100 &minus; 36) = &radic;64 = <strong>8 cm</strong>. Then use RHS construction.</div>
+      </details>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Common Mistakes</h2>
+    <ul class="mistakes-list">
+      <li>Not checking the triangle inequality before starting the construction — the arcs won't meet if it fails!</li>
+      <li>For SAS, using the wrong angle (not the one between the two given sides).</li>
+      <li>Inaccurate compass or protractor measurements — even 1&deg; or 1 mm off can change the result.</li>
+      <li>Forgetting to label all vertices and sides clearly.</li>
+    </ul>
+  </div>
+
+  <button id="mark-read-btn" class="btn" style="margin-top:1rem;padding:.5rem 1.25rem;background:var(--primary);color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer" onclick="markChapterRead(10)">Mark as Complete</button>
+
+  <div class="chapter-nav">
+    <a href="ch9.html">&larr; Ch 9: Rational Numbers</a>
+    <a href="ch11.html">Ch 11: Perimeter and Area &rarr;</a>
+  </div>
+</div>
+
+<footer class="footer">CBSE Class 7 Maths &mdash; Based on NCERT Syllabus</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

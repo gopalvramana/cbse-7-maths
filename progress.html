@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My Progress - CBSE Class 7 Maths</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <span class="logo">Class 7 Maths</span>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="progress.html" class="active">My Progress</a>
+  </nav>
+</header>
+
+<div class="container">
+  <div class="hero">
+    <h1>My Progress</h1>
+    <p>Track which chapters you've completed. Your progress is saved in your browser.</p>
+  </div>
+
+  <div class="progress-stats">
+    <div class="big-num" id="progress-count">0 / 13</div>
+    <p id="progress-pct">0% complete</p>
+    <button class="reset-btn" onclick="resetProgress()">Reset Progress</button>
+  </div>
+
+  <div class="progress-grid">
+    <div class="progress-card" data-ch="1">
+      <div class="info">
+        <h3><a href="chapters/ch1.html">1. Integers</a></h3>
+        <div class="bar-bg"><div class="bar-fill" style="background:var(--num)"></div></div>
+      </div>
+      <label><input type="checkbox"> Done</label>
+    </div>
+    <div class="progress-card" data-ch="2">
+      <div class="info">
+        <h3><a href="chapters/ch2.html">2. Fractions and Decimals</a></h3>
+        <div class="bar-bg"><div class="bar-fill" style="background:var(--num)"></div></div>
+      </div>
+      <label><input type="checkbox"> Done</label>
+    </div>
+    <div class="progress-card" data-ch="3">
+      <div class="info">
+        <h3><a href="chapters/ch3.html">3. Data Handling</a></h3>
+        <div class="bar-bg"><div class="bar-fill" style="background:var(--data)"></div></div>
+      </div>
+      <label><input type="checkbox"> Done</label>
+    </div>
+    <div class="progress-card" data-ch="4">
+      <div class="info">
+        <h3><a href="chapters/ch4.html">4. Simple Equations</a></h3>
+        <div class="bar-bg"><div class="bar-fill" style="background:var(--alg)"></div></div>
+      </div>
+      <label><input type="checkbox"> Done</label>
+    </div>
+    <div class="progress-card" data-ch="5">
+      <div class="info">
+        <h3><a href="chapters/ch5.html">5. Lines and Angles</a></h3>
+        <div class="bar-bg"><div class="bar-fill" style="background:var(--geo)"></div></div>
+      </div>
+      <label><input type="checkbox"> Done</label>
+    </div>
+    <div class="progress-card" data-ch="6">
+      <div class="info">
+        <h3><a href="chapters/ch6.html">6. The Triangle and Its Properties</a></h3>
+        <div class="bar-bg"><div class="bar-fill" style="background:var(--geo)"></div></div>
+      </div>
+      <label><input type="checkbox"> Done</label>
+    </div>
+    <div class="progress-card" data-ch="7">
+      <div class="info">
+        <h3><a href="chapters/ch7.html">7. Congruence of Triangles</a></h3>
+        <div class="bar-bg"><div class="bar-fill" style="background:var(--geo)"></div></div>
+      </div>
+      <label><input type="checkbox"> Done</label>
+    </div>
+    <div class="progress-card" data-ch="8">
+      <div class="info">
+        <h3><a href="chapters/ch8.html">8. Comparing Quantities</a></h3>
+        <div class="bar-bg"><div class="bar-fill" style="background:var(--meas)"></div></div>
+      </div>
+      <label><input type="checkbox"> Done</label>
+    </div>
+    <div class="progress-card" data-ch="9">
+      <div class="info">
+        <h3><a href="chapters/ch9.html">9. Rational Numbers</a></h3>
+        <div class="bar-bg"><div class="bar-fill" style="background:var(--num)"></div></div>
+      </div>
+      <label><input type="checkbox"> Done</label>
+    </div>
+    <div class="progress-card" data-ch="10">
+      <div class="info">
+        <h3><a href="chapters/ch10.html">10. Practical Geometry</a></h3>
+        <div class="bar-bg"><div class="bar-fill" style="background:var(--geo)"></div></div>
+      </div>
+      <label><input type="checkbox"> Done</label>
+    </div>
+    <div class="progress-card" data-ch="11">
+      <div class="info">
+        <h3><a href="chapters/ch11.html">11. Perimeter and Area</a></h3>
+        <div class="bar-bg"><div class="bar-fill" style="background:var(--meas)"></div></div>
+      </div>
+      <label><input type="checkbox"> Done</label>
+    </div>
+    <div class="progress-card" data-ch="12">
+      <div class="info">
+        <h3><a href="chapters/ch12.html">12. Algebraic Expressions</a></h3>
+        <div class="bar-bg"><div class="bar-fill" style="background:var(--alg)"></div></div>
+      </div>
+      <label><input type="checkbox"> Done</label>
+    </div>
+    <div class="progress-card" data-ch="13">
+      <div class="info">
+        <h3><a href="chapters/ch13.html">13. Exponents and Powers</a></h3>
+        <div class="bar-bg"><div class="bar-fill" style="background:var(--alg)"></div></div>
+      </div>
+      <label><input type="checkbox"> Done</label>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">CBSE Class 7 Maths &mdash; Based on NCERT Syllabus</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
