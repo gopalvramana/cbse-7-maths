@@ -29,93 +29,85 @@
     <span><i class="dot" style="background:var(--meas)"></i> Measurement &amp; Comparison</span>
   </div>
 
-  <div class="chapter-grid">
-    <!-- Number Systems -->
-    <div class="card num">
-      <span class="ch-num">Chapter 1</span>
+  <div class="drag-hint">Drag and drop chapters to reorder them. Your layout is saved automatically. <button class="reset-order-btn" onclick="resetCardOrder()">Reset order</button></div>
+  <div class="chapter-grid" id="chapter-grid">
+    <div class="card num" data-id="ch1" draggable="true">
+      <span class="ch-num">Chapter 1 &middot; Number Systems</span>
       <h3>Integers</h3>
       <p>Addition, subtraction, multiplication &amp; division of integers, number line, properties.</p>
       <a href="chapters/ch1.html" class="btn">Start Learning &rarr;</a>
     </div>
-    <div class="card num">
-      <span class="ch-num">Chapter 2</span>
+    <div class="card num" data-id="ch2" draggable="true">
+      <span class="ch-num">Chapter 2 &middot; Number Systems</span>
       <h3>Fractions and Decimals</h3>
       <p>Operations on fractions &amp; decimals, converting between them.</p>
       <a href="chapters/ch2.html" class="btn">Start Learning &rarr;</a>
     </div>
-    <div class="card num">
-      <span class="ch-num">Chapter 9</span>
-      <h3>Rational Numbers</h3>
-      <p>What are rational numbers, operations, number line representation.</p>
-      <a href="chapters/ch9.html" class="btn">Start Learning &rarr;</a>
-    </div>
-
-    <!-- Data -->
-    <div class="card data">
-      <span class="ch-num">Chapter 3</span>
+    <div class="card data" data-id="ch3" draggable="true">
+      <span class="ch-num">Chapter 3 &middot; Data Handling</span>
       <h3>Data Handling</h3>
       <p>Collecting data, mean, median, mode, bar graphs, probability basics.</p>
       <a href="chapters/ch3.html" class="btn">Start Learning &rarr;</a>
     </div>
-
-    <!-- Algebra -->
-    <div class="card alg">
-      <span class="ch-num">Chapter 4</span>
+    <div class="card alg" data-id="ch4" draggable="true">
+      <span class="ch-num">Chapter 4 &middot; Algebra</span>
       <h3>Simple Equations</h3>
       <p>Setting up and solving simple equations, transposing terms.</p>
       <a href="chapters/ch4.html" class="btn">Start Learning &rarr;</a>
     </div>
-    <div class="card alg">
-      <span class="ch-num">Chapter 12</span>
-      <h3>Algebraic Expressions</h3>
-      <p>Terms, coefficients, like terms, adding &amp; subtracting expressions.</p>
-      <a href="chapters/ch12.html" class="btn">Start Learning &rarr;</a>
-    </div>
-    <div class="card alg">
-      <span class="ch-num">Chapter 13</span>
-      <h3>Exponents and Powers</h3>
-      <p>Laws of exponents, expressing large numbers in standard form.</p>
-      <a href="chapters/ch13.html" class="btn">Start Learning &rarr;</a>
-    </div>
-
-    <!-- Geometry -->
-    <div class="card geo">
-      <span class="ch-num">Chapter 5</span>
+    <div class="card geo" data-id="ch5" draggable="true">
+      <span class="ch-num">Chapter 5 &middot; Geometry</span>
       <h3>Lines and Angles</h3>
       <p>Types of angles, pairs of angles, parallel lines &amp; transversals.</p>
       <a href="chapters/ch5.html" class="btn">Start Learning &rarr;</a>
     </div>
-    <div class="card geo">
-      <span class="ch-num">Chapter 6</span>
+    <div class="card geo" data-id="ch6" draggable="true">
+      <span class="ch-num">Chapter 6 &middot; Geometry</span>
       <h3>The Triangle and Its Properties</h3>
       <p>Types of triangles, angle-sum property, Pythagoras theorem intro.</p>
       <a href="chapters/ch6.html" class="btn">Start Learning &rarr;</a>
     </div>
-    <div class="card geo">
-      <span class="ch-num">Chapter 7</span>
+    <div class="card geo" data-id="ch7" draggable="true">
+      <span class="ch-num">Chapter 7 &middot; Geometry</span>
       <h3>Congruence of Triangles</h3>
       <p>Congruence criteria: SSS, SAS, ASA, RHS.</p>
       <a href="chapters/ch7.html" class="btn">Start Learning &rarr;</a>
     </div>
-    <div class="card geo">
-      <span class="ch-num">Chapter 10</span>
-      <h3>Practical Geometry</h3>
-      <p>Constructing triangles with ruler &amp; compass.</p>
-      <a href="chapters/ch10.html" class="btn">Start Learning &rarr;</a>
-    </div>
-
-    <!-- Measurement -->
-    <div class="card meas">
-      <span class="ch-num">Chapter 8</span>
+    <div class="card meas" data-id="ch8" draggable="true">
+      <span class="ch-num">Chapter 8 &middot; Measurement</span>
       <h3>Comparing Quantities</h3>
       <p>Ratios, percentages, profit &amp; loss, simple interest.</p>
       <a href="chapters/ch8.html" class="btn">Start Learning &rarr;</a>
     </div>
-    <div class="card meas">
-      <span class="ch-num">Chapter 11</span>
+    <div class="card num" data-id="ch9" draggable="true">
+      <span class="ch-num">Chapter 9 &middot; Number Systems</span>
+      <h3>Rational Numbers</h3>
+      <p>What are rational numbers, operations, number line representation.</p>
+      <a href="chapters/ch9.html" class="btn">Start Learning &rarr;</a>
+    </div>
+    <div class="card geo" data-id="ch10" draggable="true">
+      <span class="ch-num">Chapter 10 &middot; Geometry</span>
+      <h3>Practical Geometry</h3>
+      <p>Constructing triangles with ruler &amp; compass.</p>
+      <a href="chapters/ch10.html" class="btn">Start Learning &rarr;</a>
+    </div>
+    <div class="card meas" data-id="ch11" draggable="true">
+      <span class="ch-num">Chapter 11 &middot; Measurement</span>
       <h3>Perimeter and Area</h3>
       <p>Area of parallelograms, triangles, circles; circumference.</p>
       <a href="chapters/ch11.html" class="btn">Start Learning &rarr;</a>
+    </div>
+    <div class="card alg" data-id="ch12" draggable="true">
+      <span class="ch-num">Chapter 12 &middot; Algebra</span>
+      <h3>Algebraic Expressions</h3>
+      <p>Terms, coefficients, like terms, adding &amp; subtracting expressions.</p>
+      <a href="chapters/ch12.html" class="btn">Start Learning &rarr;</a>
+    </div>
+    <div class="card alg" data-id="ch13" draggable="true">
+      <span class="ch-num">Chapter 13 &middot; Algebra</span>
+      <h3>Exponents and Powers</h3>
+      <p>Laws of exponents, expressing large numbers in standard form.</p>
+      <a href="chapters/ch13.html" class="btn">Start Learning &rarr;</a>
     </div>
   </div>
 </div>

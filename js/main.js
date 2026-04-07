@@ -73,6 +73,141 @@ function resetProgress() {
   }
 }
 
+/* ===== Drag & Drop Reorder ===== */
+const ORDER_KEY = 'cbse7maths_card_order';
+
+function initDragAndDrop() {
+  const grid = document.getElementById('chapter-grid');
+  if (!grid) return;
+
+  /* Restore saved order */
+  const saved = getSavedOrder();
+  if (saved && saved.length) {
+    const cards = {};
+    grid.querySelectorAll('.card[data-id]').forEach(c => { cards[c.dataset.id] = c; });
+    saved.forEach(id => { if (cards[id]) grid.appendChild(cards[id]); });
+  }
+
+  let draggedEl = null;
+
+  grid.addEventListener('dragstart', e => {
+    const card = e.target.closest('.card[data-id]');
+    if (!card) return;
+    draggedEl = card;
+    card.classList.add('dragging');
+    e.dataTransfer.effectAllowed = 'move';
+    e.dataTransfer.setData('text/plain', card.dataset.id);
+  });
+
+  grid.addEventListener('dragend', e => {
+    const card = e.target.closest('.card[data-id]');
+    if (card) card.classList.remove('dragging');
+    grid.querySelectorAll('.card').forEach(c => c.classList.remove('drag-over'));
+    draggedEl = null;
+  });
+
+  grid.addEventListener('dragover', e => {
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+    const target = e.target.closest('.card[data-id]');
+    if (!target || target === draggedEl) return;
+    grid.querySelectorAll('.card').forEach(c => c.classList.remove('drag-over'));
+    target.classList.add('drag-over');
+  });
+
+  grid.addEventListener('dragleave', e => {
+    const target = e.target.closest('.card[data-id]');
+    if (target) target.classList.remove('drag-over');
+  });
+
+  grid.addEventListener('drop', e => {
+    e.preventDefault();
+    const target = e.target.closest('.card[data-id]');
+    if (!target || !draggedEl || target === draggedEl) return;
+    target.classList.remove('drag-over');
+
+    const cards = [...grid.querySelectorAll('.card[data-id]')];
+    const dragIdx = cards.indexOf(draggedEl);
+    const dropIdx = cards.indexOf(target);
+
+    if (dragIdx < dropIdx) {
+      target.insertAdjacentElement('afterend', draggedEl);
+    } else {
+      target.insertAdjacentElement('beforebegin', draggedEl);
+    }
+
+    saveCardOrder();
+  });
+
+  /* Touch support for mobile */
+  let touchCard = null, touchClone = null, lastTouchTarget = null;
+
+  grid.addEventListener('touchstart', e => {
+    const card = e.target.closest('.card[data-id]');
+    if (!card || e.target.closest('a')) return;
+    touchCard = card;
+    const touch = e.touches[0];
+    const rect = card.getBoundingClientRect();
+
+    touchClone = card.cloneNode(true);
+    touchClone.style.cssText = 'position:fixed;z-index:1000;pointer-events:none;opacity:0.85;width:' + rect.width + 'px;transform:rotate(2deg);';
+    touchClone.style.left = (touch.clientX - rect.width / 2) + 'px';
+    touchClone.style.top = (touch.clientY - 30) + 'px';
+    document.body.appendChild(touchClone);
+    card.classList.add('dragging');
+  }, { passive: true });
+
+  grid.addEventListener('touchmove', e => {
+    if (!touchCard || !touchClone) return;
+    e.preventDefault();
+    const touch = e.touches[0];
+    touchClone.style.left = (touch.clientX - touchClone.offsetWidth / 2) + 'px';
+    touchClone.style.top = (touch.clientY - 30) + 'px';
+
+    const el = document.elementFromPoint(touch.clientX, touch.clientY);
+    const target = el ? el.closest('.card[data-id]') : null;
+    grid.querySelectorAll('.card').forEach(c => c.classList.remove('drag-over'));
+    if (target && target !== touchCard) {
+      target.classList.add('drag-over');
+      lastTouchTarget = target;
+    }
+  }, { passive: false });
+
+  grid.addEventListener('touchend', () => {
+    if (touchCard && lastTouchTarget && lastTouchTarget !== touchCard) {
+      const cards = [...grid.querySelectorAll('.card[data-id]')];
+      const dragIdx = cards.indexOf(touchCard);
+      const dropIdx = cards.indexOf(lastTouchTarget);
+      if (dragIdx < dropIdx) {
+        lastTouchTarget.insertAdjacentElement('afterend', touchCard);
+      } else {
+        lastTouchTarget.insertAdjacentElement('beforebegin', touchCard);
+      }
+      saveCardOrder();
+    }
+    if (touchCard) touchCard.classList.remove('dragging');
+    if (touchClone) touchClone.remove();
+    grid.querySelectorAll('.card').forEach(c => c.classList.remove('drag-over'));
+    touchCard = null; touchClone = null; lastTouchTarget = null;
+  }, { passive: true });
+}
+
+function getSavedOrder() {
+  try { return JSON.parse(localStorage.getItem(ORDER_KEY)); } catch { return null; }
+}
+
+function saveCardOrder() {
+  const grid = document.getElementById('chapter-grid');
+  if (!grid) return;
+  const order = [...grid.querySelectorAll('.card[data-id]')].map(c => c.dataset.id);
+  localStorage.setItem(ORDER_KEY, JSON.stringify(order));
+}
+
+function resetCardOrder() {
+  localStorage.removeItem(ORDER_KEY);
+  location.reload();
+}
+
 /* ===== Init on load ===== */
 document.addEventListener('DOMContentLoaded', () => {
   if (document.getElementById('progress-count')) {
@@ -82,4 +217,5 @@ document.addEventListener('DOMContentLoaded', () => {
   if (chMeta) {
     updateReadBtnState(chMeta.content);
   }
+  initDragAndDrop();
 });
