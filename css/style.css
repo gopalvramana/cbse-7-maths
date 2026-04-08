@@ -67,8 +67,10 @@ img{max-width:100%}
 
 /* Summary list */
 .summary-list{list-style:none;padding:0}
-.summary-list li{padding:.5rem 0 .5rem 1.5rem;position:relative;font-size:.95rem}
-.summary-list li::before{content:"\2713";position:absolute;left:0;color:var(--primary);font-weight:700}
+.summary-list li{padding:.5rem 0 .5rem 1.5rem;position:relative;font-size:.95rem;overflow:visible}
+.summary-list li::before{content:"\2713";position:absolute;left:0;top:.5rem;color:var(--primary);font-weight:700}
+.summary-list li .diagram{display:block;margin-left:-1.5rem;width:calc(100% + 1.5rem)}
+.summary-list li figure{margin:0}
 
 /* Formula box */
 .formula-box{background:linear-gradient(135deg,var(--primary-light),#f0f4ff);border:1px solid #c7d2fe;border-radius:var(--radius);padding:1.25rem 1.5rem;margin-bottom:1rem;font-size:1rem}
