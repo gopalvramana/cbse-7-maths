@@ -63,30 +63,18 @@
                   <figure class="diagram">
                     <svg viewBox="0 0 600 150" width="600" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated number line comparing -5 and -2">
                       <style>
-                        @keyframes bounce5{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-                        @keyframes bounce2{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-                        @keyframes slideLeft{0%{opacity:0;transform:translateX(40px)}30%,100%{opacity:1;transform:translateX(0)}}
-                        @keyframes slideRight{0%{opacity:0;transform:translateX(-40px)}30%,100%{opacity:1;transform:translateX(0)}}
-                        @keyframes fadeIn{0%,40%{opacity:0}60%,100%{opacity:1}}
                         @keyframes pulseRed{0%,100%{r:7}50%{r:10}}
                         @keyframes pulseBlue{0%,100%{r:7}50%{r:10}}
-                        @keyframes drawLine{0%{stroke-dashoffset:200}100%{stroke-dashoffset:0}}
-                        @keyframes arrowSlide{0%{opacity:0;transform:translateX(-30px)}50%,100%{opacity:1;transform:translateX(0)}}
                         .dot5{animation:pulseRed 1.5s ease-in-out infinite}
                         .dot2{animation:pulseBlue 1.5s ease-in-out 0.5s infinite}
-                        .label5{animation:slideLeft 2s ease-out both}
-                        .label2{animation:slideRight 2s ease-out 0.3s both}
-                        .compare-text{animation:fadeIn 3s ease-out both}
-                        .arrow-line{stroke-dasharray:200;animation:drawLine 2s ease-out 1.5s both}
-                        .arrow-label{animation:arrowSlide 1.5s ease-out 2s both}
                       </style>
                       <!-- main line -->
                       <line x1="30" y1="70" x2="570" y2="70" stroke="#334155" stroke-width="2"/>
                       <polygon points="25,70 35,65 35,75" fill="#334155"/>
                       <polygon points="575,70 565,65 565,75" fill="#334155"/>
                       <!-- direction labels -->
-                      <text x="45" y="55" font-size="11" fill="#dc2626" font-weight="600" class="arrow-label">&larr; Smaller</text>
-                      <text x="505" y="55" font-size="11" fill="#16a34a" font-weight="600" class="arrow-label">Bigger &rarr;</text>
+                      <text x="45" y="55" font-size="11" fill="#dc2626" font-weight="600">&larr; Smaller</text>
+                      <text x="505" y="55" font-size="11" fill="#16a34a" font-weight="600">Bigger &rarr;</text>
                       <!-- ticks: -7 to 3 -->
                       <line x1="70" y1="62" x2="70" y2="78" stroke="#94a3b8" stroke-width="1"/><text x="70" y="92" text-anchor="middle" font-size="11" fill="#94a3b8">&minus;7</text>
                       <line x1="115" y1="62" x2="115" y2="78" stroke="#94a3b8" stroke-width="1"/><text x="115" y="92" text-anchor="middle" font-size="11" fill="#94a3b8">&minus;6</text>
@@ -101,24 +89,24 @@
                       <line x1="520" y1="62" x2="520" y2="78" stroke="#94a3b8" stroke-width="1"/><text x="520" y="92" text-anchor="middle" font-size="11" fill="#94a3b8">3</text>
                       <!-- Animated dot at -5 -->
                       <circle cx="160" cy="70" class="dot5" r="7" fill="#dc2626"/>
-                      <g class="label5">
+                      <g>
                         <rect x="125" y="30" width="70" height="24" rx="6" fill="#dc2626"/>
                         <text x="160" y="47" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">&minus;5</text>
                         <polygon points="155,54 165,54 160,60" fill="#dc2626"/>
                       </g>
                       <!-- Animated dot at -2 -->
                       <circle cx="295" cy="70" class="dot2" r="7" fill="#4f46e5"/>
-                      <g class="label2">
+                      <g>
                         <rect x="260" y="30" width="70" height="24" rx="6" fill="#4f46e5"/>
                         <text x="295" y="47" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">&minus;2</text>
                         <polygon points="290,54 300,54 295,60" fill="#4f46e5"/>
                       </g>
                       <!-- Animated arrow showing -5 is LEFT of -2 -->
-                      <line x1="170" y1="110" x2="285" y2="110" stroke="#f59e0b" stroke-width="2.5" class="arrow-line"/>
-                      <polygon points="173,106 163,110 173,114" fill="#f59e0b" class="arrow-label"/>
-                      <text x="228" y="128" text-anchor="middle" font-size="11" fill="#f59e0b" font-weight="700" class="arrow-label">&minus;5 is to the LEFT of &minus;2</text>
+                      <line x1="170" y1="110" x2="285" y2="110" stroke="#f59e0b" stroke-width="2.5"/>
+                      <polygon points="173,106 163,110 173,114" fill="#f59e0b"/>
+                      <text x="228" y="128" text-anchor="middle" font-size="11" fill="#f59e0b" font-weight="700">&minus;5 is to the LEFT of &minus;2</text>
                       <!-- Conclusion -->
-                      <text x="300" y="148" text-anchor="middle" font-size="14" fill="#334155" font-weight="700" class="compare-text">So &minus;5 &lt; &minus;2 (minus 5 is LESS than minus 2)</text>
+                      <text x="300" y="148" text-anchor="middle" font-size="14" fill="#334155" font-weight="700">So &minus;5 &lt; &minus;2 (minus 5 is LESS than minus 2)</text>
                     </svg>
                     <figcaption>Numbers further left on the number line are always smaller &mdash; even with negatives!</figcaption>
                   </figure>
