@@ -1,443 +1,573 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="chapter-num" content="1">
-    <title>Chapter 1: Integers | Class 7 Maths</title>
-    <link rel="stylesheet" href="../css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="chapter-num" content="1">
+<title>Chapter 1: Integers - CBSE Class 7 Maths</title>
+<link rel="stylesheet" href="../css/style.css">
+<style>.pattern-table{width:100%;max-width:500px;margin:1rem auto;border-collapse:collapse}.pattern-table th,.pattern-table td{border:1px solid #e2e8f0;padding:.5rem .75rem;text-align:center;font-size:.95rem}.pattern-table th{background:var(--primary-light);color:var(--primary);font-weight:700}.pattern-table .highlight{background:#fef3c7;font-weight:700}.pattern-table .result-pos{color:#16a34a;font-weight:700}.pattern-table .result-neg{color:#dc2626;font-weight:700}.pattern-arrow{color:var(--primary);font-weight:700;font-size:.9rem}.real-world{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0;font-size:.95rem}.real-world strong{color:#16a34a}.why-box{background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0;font-size:.95rem}.why-box strong{color:#3b82f6}.wrong-right{display:flex;gap:1rem;flex-wrap:wrap;margin:.5rem 0}.wrong-right .wrong,.wrong-right .right{flex:1;min-width:200px;padding:.75rem;border-radius:8px;font-size:.9rem}.wrong-right .wrong{background:#fee2e2;border:1px solid #fca5a5}.wrong-right .right{background:#d1fae5;border:1px solid #6ee7b7}</style>
 </head>
 <body>
+<header class="navbar">
+  <span class="logo">Class 7 Maths</span>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../progress.html">My Progress</a>
+  </nav>
+</header>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">Class 7 Maths</div>
-        <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../progress.html">My Progress</a></li>
-        </ul>
-    </nav>
+<div class="container">
+  <div class="chapter-header">
+    <div class="ch-label" style="color:var(--num)">Chapter 1 &middot; Number Systems</div>
+    <h1>Integers</h1>
+  </div>
 
-    <!-- Chapter Content -->
-    <div class="container">
+  <!-- ===== SECTION 1: What are Integers? ===== -->
+  <div class="section">
+    <h2>What are Integers?</h2>
+    <div class="real-world">
+      <strong>Real-world connection:</strong> Have you ever seen a weather report showing &minus;5&deg;C? Or pressed &ldquo;B1&rdquo; in a lift to go to the basement? Or heard someone say &ldquo;I owe Rs 200&rdquo;? All of these use <strong>negative numbers</strong> &mdash; and that&rsquo;s exactly what integers are about!
+    </div>
+    <ul class="summary-list">
+      <li>You already know <strong>Natural Numbers</strong>: 1, 2, 3, 4, &hellip; (the counting numbers).</li>
+      <li>Add zero and you get <strong>Whole Numbers</strong>: 0, 1, 2, 3, 4, &hellip;</li>
+      <li>Now extend in the other direction and you get <strong>Integers</strong>: &hellip; &minus;3, &minus;2, &minus;1, 0, 1, 2, 3, &hellip;</li>
+      <li>Integers include all <strong>positive numbers</strong>, <strong>zero</strong>, and <strong>negative numbers</strong>. They go on forever in both directions!</li>
+      <li><strong>Zero</strong> is special &mdash; it is neither positive nor negative. It sits right in the middle.</li>
+    </ul>
+    <figure class="diagram">
+      <svg viewBox="0 0 600 80" width="600" height="80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Integer number line from -5 to 5">
+        <line x1="30" y1="35" x2="570" y2="35" stroke="#334155" stroke-width="2"/>
+        <polygon points="25,35 35,30 35,40" fill="#334155"/>
+        <polygon points="575,35 565,30 565,40" fill="#334155"/>
+        <line x1="80" y1="25" x2="80" y2="45" stroke="#334155" stroke-width="1.5"/><text x="80" y="62" text-anchor="middle" font-size="13" fill="#dc2626" font-weight="600">&minus;5</text>
+        <line x1="130" y1="25" x2="130" y2="45" stroke="#334155" stroke-width="1.5"/><text x="130" y="62" text-anchor="middle" font-size="13" fill="#dc2626" font-weight="600">&minus;4</text>
+        <line x1="180" y1="25" x2="180" y2="45" stroke="#334155" stroke-width="1.5"/><text x="180" y="62" text-anchor="middle" font-size="13" fill="#dc2626" font-weight="600">&minus;3</text>
+        <line x1="230" y1="25" x2="230" y2="45" stroke="#334155" stroke-width="1.5"/><text x="230" y="62" text-anchor="middle" font-size="13" fill="#dc2626" font-weight="600">&minus;2</text>
+        <line x1="280" y1="25" x2="280" y2="45" stroke="#334155" stroke-width="1.5"/><text x="280" y="62" text-anchor="middle" font-size="13" fill="#dc2626" font-weight="600">&minus;1</text>
+        <line x1="330" y1="20" x2="330" y2="50" stroke="#334155" stroke-width="2.5"/><text x="330" y="66" text-anchor="middle" font-size="14" fill="#4f46e5" font-weight="800">0</text>
+        <line x1="380" y1="25" x2="380" y2="45" stroke="#334155" stroke-width="1.5"/><text x="380" y="62" text-anchor="middle" font-size="13" fill="#16a34a" font-weight="600">1</text>
+        <line x1="430" y1="25" x2="430" y2="45" stroke="#334155" stroke-width="1.5"/><text x="430" y="62" text-anchor="middle" font-size="13" fill="#16a34a" font-weight="600">2</text>
+        <line x1="480" y1="25" x2="480" y2="45" stroke="#334155" stroke-width="1.5"/><text x="480" y="62" text-anchor="middle" font-size="13" fill="#16a34a" font-weight="600">3</text>
+        <line x1="530" y1="25" x2="530" y2="45" stroke="#334155" stroke-width="1.5"/><text x="530" y="62" text-anchor="middle" font-size="13" fill="#16a34a" font-weight="600">4</text>
+        <text x="55" y="16" font-size="11" fill="#64748b">Smaller</text>
+        <text x="505" y="16" font-size="11" fill="#64748b">Bigger</text>
+        <rect x="80" y="30" width="200" height="10" rx="3" fill="#fee2e2" opacity="0.5"/>
+        <rect x="380" y="30" width="150" height="10" rx="3" fill="#d1fae5" opacity="0.5"/>
+      </svg>
+      <figcaption>The integer number line: negative numbers (red) to the left of 0, positive numbers (green) to the right</figcaption>
+    </figure>
+    <div class="real-world">
+      <strong>Where do we see negative numbers in real life?</strong><br>
+      &bull; <strong>Temperature:</strong> &minus;10&deg;C means 10 degrees below zero (very cold!)<br>
+      &bull; <strong>Buildings:</strong> Floor B2 (basement 2) is 2 floors below ground level = &minus;2<br>
+      &bull; <strong>Money:</strong> If you owe Rs 500, your balance is &minus;500<br>
+      &bull; <strong>Sea level:</strong> The Dead Sea is 430 m below sea level = &minus;430 m<br>
+      &bull; <strong>Timeline:</strong> 200 BC means 200 years before year 0
+    </div>
+  </div>
 
-        <div class="chapter-header">
-            <span class="ch-label" style="color:var(--num)">Number Systems</span>
-            <h1>Chapter 1: Integers</h1>
-        </div>
+  <!-- ===== SECTION 2: Comparing Integers ===== -->
+  <div class="section">
+    <h2>Comparing Integers</h2>
+    <ul class="summary-list">
+      <li>On a number line, the number further to the <strong>right</strong> is always <strong>bigger</strong>.</li>
+      <li>Every positive number is greater than zero, and every negative number is less than zero.</li>
+      <li>Every positive number is greater than every negative number (e.g., 1 &gt; &minus;1000).</li>
+    </ul>
+    <div class="why-box">
+      <strong>Tricky part &mdash; comparing two negative numbers:</strong><br>
+      Many students think &minus;8 is bigger than &minus;3 because 8 &gt; 3. But that&rsquo;s wrong! Think of temperature: &minus;8&deg;C is <em>colder</em> than &minus;3&deg;C. Colder means <em>smaller</em>. On the number line, &minus;8 is further LEFT than &minus;3, so <strong>&minus;8 &lt; &minus;3</strong>.<br><br>
+      <strong>Rule:</strong> For negative numbers, the one with the bigger digit is actually smaller! &minus;100 &lt; &minus;1.
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 600 150" width="600" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Comparing -5 and -2">
+        <style>
+          @keyframes pulseRed{0%,100%{r:7}50%{r:10}}
+          @keyframes pulseBlue{0%,100%{r:7}50%{r:10}}
+          .dot5{animation:pulseRed 1.5s ease-in-out infinite}
+          .dot2{animation:pulseBlue 1.5s ease-in-out 0.5s infinite}
+        </style>
+        <line x1="30" y1="70" x2="570" y2="70" stroke="#334155" stroke-width="2"/>
+        <polygon points="25,70 35,65 35,75" fill="#334155"/>
+        <polygon points="575,70 565,65 565,75" fill="#334155"/>
+        <text x="45" y="55" font-size="11" fill="#dc2626" font-weight="600">&larr; Smaller</text>
+        <text x="505" y="55" font-size="11" fill="#16a34a" font-weight="600">Bigger &rarr;</text>
+        <line x1="70" y1="62" x2="70" y2="78" stroke="#94a3b8" stroke-width="1"/><text x="70" y="92" text-anchor="middle" font-size="11" fill="#94a3b8">&minus;7</text>
+        <line x1="115" y1="62" x2="115" y2="78" stroke="#94a3b8" stroke-width="1"/><text x="115" y="92" text-anchor="middle" font-size="11" fill="#94a3b8">&minus;6</text>
+        <line x1="160" y1="62" x2="160" y2="78" stroke="#334155" stroke-width="2"/><text x="160" y="92" text-anchor="middle" font-size="13" fill="#dc2626" font-weight="700">&minus;5</text>
+        <line x1="205" y1="62" x2="205" y2="78" stroke="#94a3b8" stroke-width="1"/><text x="205" y="92" text-anchor="middle" font-size="11" fill="#94a3b8">&minus;4</text>
+        <line x1="250" y1="62" x2="250" y2="78" stroke="#94a3b8" stroke-width="1"/><text x="250" y="92" text-anchor="middle" font-size="11" fill="#94a3b8">&minus;3</text>
+        <line x1="295" y1="62" x2="295" y2="78" stroke="#334155" stroke-width="2"/><text x="295" y="92" text-anchor="middle" font-size="13" fill="#4f46e5" font-weight="700">&minus;2</text>
+        <line x1="340" y1="62" x2="340" y2="78" stroke="#94a3b8" stroke-width="1"/><text x="340" y="92" text-anchor="middle" font-size="11" fill="#94a3b8">&minus;1</text>
+        <line x1="385" y1="58" x2="385" y2="82" stroke="#334155" stroke-width="2.5"/><text x="385" y="96" text-anchor="middle" font-size="13" fill="#334155" font-weight="800">0</text>
+        <line x1="430" y1="62" x2="430" y2="78" stroke="#94a3b8" stroke-width="1"/><text x="430" y="92" text-anchor="middle" font-size="11" fill="#94a3b8">1</text>
+        <line x1="475" y1="62" x2="475" y2="78" stroke="#94a3b8" stroke-width="1"/><text x="475" y="92" text-anchor="middle" font-size="11" fill="#94a3b8">2</text>
+        <line x1="520" y1="62" x2="520" y2="78" stroke="#94a3b8" stroke-width="1"/><text x="520" y="92" text-anchor="middle" font-size="11" fill="#94a3b8">3</text>
+        <circle cx="160" cy="70" class="dot5" r="7" fill="#dc2626"/>
+        <g><rect x="125" y="30" width="70" height="24" rx="6" fill="#dc2626"/><text x="160" y="47" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">&minus;5</text><polygon points="155,54 165,54 160,60" fill="#dc2626"/></g>
+        <circle cx="295" cy="70" class="dot2" r="7" fill="#4f46e5"/>
+        <g><rect x="260" y="30" width="70" height="24" rx="6" fill="#4f46e5"/><text x="295" y="47" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">&minus;2</text><polygon points="290,54 300,54 295,60" fill="#4f46e5"/></g>
+        <line x1="170" y1="110" x2="285" y2="110" stroke="#f59e0b" stroke-width="2.5"/>
+        <polygon points="173,106 163,110 173,114" fill="#f59e0b"/>
+        <text x="228" y="128" text-anchor="middle" font-size="11" fill="#f59e0b" font-weight="700">&minus;5 is to the LEFT of &minus;2</text>
+        <text x="300" y="148" text-anchor="middle" font-size="14" fill="#334155" font-weight="700">So &minus;5 &lt; &minus;2 (minus 5 is LESS than minus 2)</text>
+      </svg>
+      <figcaption>Numbers further left on the number line are always smaller &mdash; even with negatives!</figcaption>
+    </figure>
+    <figure class="diagram">
+      <table class="sign-table">
+        <tr><th>Comparison</th><th>Who&rsquo;s bigger?</th><th>Think of it as&hellip;</th></tr>
+        <tr><td>&minus;5 vs &minus;2</td><td><strong>&minus;2</strong> is bigger</td><td>&minus;2&deg;C is warmer than &minus;5&deg;C</td></tr>
+        <tr><td>&minus;10 vs 3</td><td><strong>3</strong> is bigger</td><td>Any positive &gt; any negative</td></tr>
+        <tr><td>0 vs &minus;7</td><td><strong>0</strong> is bigger</td><td>Zero &gt; every negative number</td></tr>
+        <tr><td>&minus;100 vs &minus;1</td><td><strong>&minus;1</strong> is bigger</td><td>&minus;1&deg;C is much warmer than &minus;100&deg;C</td></tr>
+      </table>
+    </figure>
+  </div>
 
-        <!-- Summary -->
-        <section class="summary">
-            <h2>Summary</h2>
-            <ul class="summary-list">
-                <li>Integers include all <strong>positive numbers</strong>, <strong>zero</strong>, and <strong>negative numbers</strong>: &hellip; &minus;3, &minus;2, &minus;1, 0, 1, 2, 3, &hellip;
-                  <figure class="diagram">
-                    <svg viewBox="0 0 600 80" width="600" height="80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Integer number line from -5 to 5">
-                      <!-- main line -->
-                      <line x1="30" y1="35" x2="570" y2="35" stroke="#334155" stroke-width="2"/>
-                      <!-- arrowheads -->
-                      <polygon points="25,35 35,30 35,40" fill="#334155"/>
-                      <polygon points="575,35 565,30 565,40" fill="#334155"/>
-                      <!-- ticks and labels -->
-                      <line x1="80" y1="25" x2="80" y2="45" stroke="#334155" stroke-width="1.5"/><text x="80" y="62" text-anchor="middle" font-size="13" fill="#dc2626" font-weight="600">&minus;5</text>
-                      <line x1="130" y1="25" x2="130" y2="45" stroke="#334155" stroke-width="1.5"/><text x="130" y="62" text-anchor="middle" font-size="13" fill="#dc2626" font-weight="600">&minus;4</text>
-                      <line x1="180" y1="25" x2="180" y2="45" stroke="#334155" stroke-width="1.5"/><text x="180" y="62" text-anchor="middle" font-size="13" fill="#dc2626" font-weight="600">&minus;3</text>
-                      <line x1="230" y1="25" x2="230" y2="45" stroke="#334155" stroke-width="1.5"/><text x="230" y="62" text-anchor="middle" font-size="13" fill="#dc2626" font-weight="600">&minus;2</text>
-                      <line x1="280" y1="25" x2="280" y2="45" stroke="#334155" stroke-width="1.5"/><text x="280" y="62" text-anchor="middle" font-size="13" fill="#dc2626" font-weight="600">&minus;1</text>
-                      <line x1="330" y1="20" x2="330" y2="50" stroke="#334155" stroke-width="2.5"/><text x="330" y="66" text-anchor="middle" font-size="14" fill="#4f46e5" font-weight="800">0</text>
-                      <line x1="380" y1="25" x2="380" y2="45" stroke="#334155" stroke-width="1.5"/><text x="380" y="62" text-anchor="middle" font-size="13" fill="#16a34a" font-weight="600">1</text>
-                      <line x1="430" y1="25" x2="430" y2="45" stroke="#334155" stroke-width="1.5"/><text x="430" y="62" text-anchor="middle" font-size="13" fill="#16a34a" font-weight="600">2</text>
-                      <line x1="480" y1="25" x2="480" y2="45" stroke="#334155" stroke-width="1.5"/><text x="480" y="62" text-anchor="middle" font-size="13" fill="#16a34a" font-weight="600">3</text>
-                      <line x1="530" y1="25" x2="530" y2="45" stroke="#334155" stroke-width="1.5"/><text x="530" y="62" text-anchor="middle" font-size="13" fill="#16a34a" font-weight="600">4</text>
-                      <!-- labels -->
-                      <text x="55" y="16" font-size="11" fill="#64748b">Smaller</text>
-                      <text x="505" y="16" font-size="11" fill="#64748b">Bigger</text>
-                      <!-- colour zones -->
-                      <rect x="80" y="30" width="200" height="10" rx="3" fill="#fee2e2" opacity="0.5"/>
-                      <rect x="380" y="30" width="150" height="10" rx="3" fill="#d1fae5" opacity="0.5"/>
-                    </svg>
-                    <figcaption>The integer number line: negative numbers (red) are to the left of 0, positive numbers (green) to the right</figcaption>
-                  </figure>
-                </li>
-                <li>On a number line, numbers get <strong>smaller</strong> as you move left and <strong>bigger</strong> as you move right (e.g., &minus;5 is to the left of &minus;2, so &minus;5 &lt; &minus;2).
-                  <figure class="diagram">
-                    <svg viewBox="0 0 600 150" width="600" height="150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated number line comparing -5 and -2">
-                      <style>
-                        @keyframes pulseRed{0%,100%{r:7}50%{r:10}}
-                        @keyframes pulseBlue{0%,100%{r:7}50%{r:10}}
-                        .dot5{animation:pulseRed 1.5s ease-in-out infinite}
-                        .dot2{animation:pulseBlue 1.5s ease-in-out 0.5s infinite}
-                      </style>
-                      <!-- main line -->
-                      <line x1="30" y1="70" x2="570" y2="70" stroke="#334155" stroke-width="2"/>
-                      <polygon points="25,70 35,65 35,75" fill="#334155"/>
-                      <polygon points="575,70 565,65 565,75" fill="#334155"/>
-                      <!-- direction labels -->
-                      <text x="45" y="55" font-size="11" fill="#dc2626" font-weight="600">&larr; Smaller</text>
-                      <text x="505" y="55" font-size="11" fill="#16a34a" font-weight="600">Bigger &rarr;</text>
-                      <!-- ticks: -7 to 3 -->
-                      <line x1="70" y1="62" x2="70" y2="78" stroke="#94a3b8" stroke-width="1"/><text x="70" y="92" text-anchor="middle" font-size="11" fill="#94a3b8">&minus;7</text>
-                      <line x1="115" y1="62" x2="115" y2="78" stroke="#94a3b8" stroke-width="1"/><text x="115" y="92" text-anchor="middle" font-size="11" fill="#94a3b8">&minus;6</text>
-                      <line x1="160" y1="62" x2="160" y2="78" stroke="#334155" stroke-width="2"/><text x="160" y="92" text-anchor="middle" font-size="13" fill="#dc2626" font-weight="700">&minus;5</text>
-                      <line x1="205" y1="62" x2="205" y2="78" stroke="#94a3b8" stroke-width="1"/><text x="205" y="92" text-anchor="middle" font-size="11" fill="#94a3b8">&minus;4</text>
-                      <line x1="250" y1="62" x2="250" y2="78" stroke="#94a3b8" stroke-width="1"/><text x="250" y="92" text-anchor="middle" font-size="11" fill="#94a3b8">&minus;3</text>
-                      <line x1="295" y1="62" x2="295" y2="78" stroke="#334155" stroke-width="2"/><text x="295" y="92" text-anchor="middle" font-size="13" fill="#4f46e5" font-weight="700">&minus;2</text>
-                      <line x1="340" y1="62" x2="340" y2="78" stroke="#94a3b8" stroke-width="1"/><text x="340" y="92" text-anchor="middle" font-size="11" fill="#94a3b8">&minus;1</text>
-                      <line x1="385" y1="58" x2="385" y2="82" stroke="#334155" stroke-width="2.5"/><text x="385" y="96" text-anchor="middle" font-size="13" fill="#334155" font-weight="800">0</text>
-                      <line x1="430" y1="62" x2="430" y2="78" stroke="#94a3b8" stroke-width="1"/><text x="430" y="92" text-anchor="middle" font-size="11" fill="#94a3b8">1</text>
-                      <line x1="475" y1="62" x2="475" y2="78" stroke="#94a3b8" stroke-width="1"/><text x="475" y="92" text-anchor="middle" font-size="11" fill="#94a3b8">2</text>
-                      <line x1="520" y1="62" x2="520" y2="78" stroke="#94a3b8" stroke-width="1"/><text x="520" y="92" text-anchor="middle" font-size="11" fill="#94a3b8">3</text>
-                      <!-- Animated dot at -5 -->
-                      <circle cx="160" cy="70" class="dot5" r="7" fill="#dc2626"/>
-                      <g>
-                        <rect x="125" y="30" width="70" height="24" rx="6" fill="#dc2626"/>
-                        <text x="160" y="47" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">&minus;5</text>
-                        <polygon points="155,54 165,54 160,60" fill="#dc2626"/>
-                      </g>
-                      <!-- Animated dot at -2 -->
-                      <circle cx="295" cy="70" class="dot2" r="7" fill="#4f46e5"/>
-                      <g>
-                        <rect x="260" y="30" width="70" height="24" rx="6" fill="#4f46e5"/>
-                        <text x="295" y="47" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">&minus;2</text>
-                        <polygon points="290,54 300,54 295,60" fill="#4f46e5"/>
-                      </g>
-                      <!-- Animated arrow showing -5 is LEFT of -2 -->
-                      <line x1="170" y1="110" x2="285" y2="110" stroke="#f59e0b" stroke-width="2.5"/>
-                      <polygon points="173,106 163,110 173,114" fill="#f59e0b"/>
-                      <text x="228" y="128" text-anchor="middle" font-size="11" fill="#f59e0b" font-weight="700">&minus;5 is to the LEFT of &minus;2</text>
-                      <!-- Conclusion -->
-                      <text x="300" y="148" text-anchor="middle" font-size="14" fill="#334155" font-weight="700">So &minus;5 &lt; &minus;2 (minus 5 is LESS than minus 2)</text>
-                    </svg>
-                    <figcaption>Numbers further left on the number line are always smaller &mdash; even with negatives!</figcaption>
-                  </figure>
-                </li>
-                <li>Adding two positive numbers gives a <strong>positive</strong> result. Adding two negative numbers gives a <strong>negative</strong> result (e.g., (&minus;3) + (&minus;4) = &minus;7).
-                  <figure class="diagram">
-                    <svg viewBox="0 0 600 110" width="600" height="110" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Number line showing (-3) + (-4) = -7">
-                      <!-- main line -->
-                      <line x1="20" y1="70" x2="580" y2="70" stroke="#334155" stroke-width="2"/>
-                      <polygon points="15,70 25,65 25,75" fill="#334155"/>
-                      <polygon points="585,70 575,65 575,75" fill="#334155"/>
-                      <!-- ticks: -8 to 1 -->
-                      <line x1="60" y1="62" x2="60" y2="78" stroke="#334155" stroke-width="1.5"/><text x="60" y="94" text-anchor="middle" font-size="12" fill="#334155">&minus;8</text>
-                      <line x1="120" y1="62" x2="120" y2="78" stroke="#334155" stroke-width="1.5"/><text x="120" y="94" text-anchor="middle" font-size="12" fill="#334155">&minus;7</text>
-                      <line x1="180" y1="62" x2="180" y2="78" stroke="#334155" stroke-width="1.5"/><text x="180" y="94" text-anchor="middle" font-size="12" fill="#334155">&minus;6</text>
-                      <line x1="240" y1="62" x2="240" y2="78" stroke="#334155" stroke-width="1.5"/><text x="240" y="94" text-anchor="middle" font-size="12" fill="#334155">&minus;5</text>
-                      <line x1="300" y1="62" x2="300" y2="78" stroke="#334155" stroke-width="1.5"/><text x="300" y="94" text-anchor="middle" font-size="12" fill="#334155">&minus;4</text>
-                      <line x1="360" y1="62" x2="360" y2="78" stroke="#334155" stroke-width="1.5"/><text x="360" y="94" text-anchor="middle" font-size="12" fill="#dc2626" font-weight="700">&minus;3</text>
-                      <line x1="420" y1="62" x2="420" y2="78" stroke="#334155" stroke-width="1.5"/><text x="420" y="94" text-anchor="middle" font-size="12" fill="#334155">&minus;2</text>
-                      <line x1="480" y1="62" x2="480" y2="78" stroke="#334155" stroke-width="1.5"/><text x="480" y="94" text-anchor="middle" font-size="12" fill="#334155">&minus;1</text>
-                      <line x1="540" y1="62" x2="540" y2="78" stroke="#334155" stroke-width="2"/><text x="540" y="94" text-anchor="middle" font-size="12" fill="#4f46e5" font-weight="700">0</text>
-                      <!-- Start dot at -3 -->
-                      <circle cx="360" cy="70" r="5" fill="#dc2626"/>
-                      <text x="360" y="50" text-anchor="middle" font-size="11" fill="#dc2626" font-weight="600">Start at &minus;3</text>
-                      <!-- Arrow: move 4 steps left to -7 -->
-                      <path d="M 355,56 C 300,20 180,20 125,56" fill="none" stroke="#4f46e5" stroke-width="2" stroke-dasharray="6,3"/>
-                      <polygon points="122,53 128,60 118,59" fill="#4f46e5"/>
-                      <text x="240" y="22" text-anchor="middle" font-size="11" fill="#4f46e5" font-weight="600">Move 4 steps left (&minus;4)</text>
-                      <!-- End dot at -7 -->
-                      <circle cx="120" cy="70" r="5" fill="#16a34a"/>
-                      <text x="120" y="50" text-anchor="middle" font-size="11" fill="#16a34a" font-weight="600">Land at &minus;7</text>
-                    </svg>
-                    <figcaption>Adding (&minus;3) + (&minus;4): Start at &minus;3, move 4 steps left &rarr; land at &minus;7</figcaption>
-                  </figure>
-                </li>
-                <li>Subtracting an integer is the same as <strong>adding its opposite</strong> (e.g., 5 &minus; (&minus;3) = 5 + 3 = 8).
-                  <figure class="diagram">
-                    <svg viewBox="0 0 600 110" width="600" height="110" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Number line showing 5 - (-3) = 5 + 3 = 8">
-                      <!-- main line -->
-                      <line x1="20" y1="70" x2="580" y2="70" stroke="#334155" stroke-width="2"/>
-                      <polygon points="15,70 25,65 25,75" fill="#334155"/>
-                      <polygon points="585,70 575,65 575,75" fill="#334155"/>
-                      <!-- ticks: 0 to 9 -->
-                      <line x1="60" y1="62" x2="60" y2="78" stroke="#334155" stroke-width="2"/><text x="60" y="94" text-anchor="middle" font-size="12" fill="#4f46e5" font-weight="700">0</text>
-                      <line x1="117" y1="62" x2="117" y2="78" stroke="#334155" stroke-width="1.5"/><text x="117" y="94" text-anchor="middle" font-size="12" fill="#334155">1</text>
-                      <line x1="174" y1="62" x2="174" y2="78" stroke="#334155" stroke-width="1.5"/><text x="174" y="94" text-anchor="middle" font-size="12" fill="#334155">2</text>
-                      <line x1="231" y1="62" x2="231" y2="78" stroke="#334155" stroke-width="1.5"/><text x="231" y="94" text-anchor="middle" font-size="12" fill="#334155">3</text>
-                      <line x1="288" y1="62" x2="288" y2="78" stroke="#334155" stroke-width="1.5"/><text x="288" y="94" text-anchor="middle" font-size="12" fill="#334155">4</text>
-                      <line x1="345" y1="62" x2="345" y2="78" stroke="#334155" stroke-width="1.5"/><text x="345" y="94" text-anchor="middle" font-size="12" fill="#dc2626" font-weight="700">5</text>
-                      <line x1="402" y1="62" x2="402" y2="78" stroke="#334155" stroke-width="1.5"/><text x="402" y="94" text-anchor="middle" font-size="12" fill="#334155">6</text>
-                      <line x1="459" y1="62" x2="459" y2="78" stroke="#334155" stroke-width="1.5"/><text x="459" y="94" text-anchor="middle" font-size="12" fill="#334155">7</text>
-                      <line x1="516" y1="62" x2="516" y2="78" stroke="#334155" stroke-width="1.5"/><text x="516" y="94" text-anchor="middle" font-size="12" fill="#16a34a" font-weight="700">8</text>
-                      <!-- Start dot at 5 -->
-                      <circle cx="345" cy="70" r="5" fill="#dc2626"/>
-                      <text x="345" y="50" text-anchor="middle" font-size="11" fill="#dc2626" font-weight="600">Start at 5</text>
-                      <!-- Arrow: move 3 steps RIGHT (subtracting -3 = adding 3) -->
-                      <path d="M 350,56 C 390,20 470,20 512,56" fill="none" stroke="#16a34a" stroke-width="2" stroke-dasharray="6,3"/>
-                      <polygon points="515,53 512,62 505,55" fill="#16a34a"/>
-                      <text x="430" y="22" text-anchor="middle" font-size="11" fill="#16a34a" font-weight="600">Move 3 steps RIGHT (+3)</text>
-                      <!-- End dot at 8 -->
-                      <circle cx="516" cy="70" r="5" fill="#16a34a"/>
-                      <text x="516" y="50" text-anchor="middle" font-size="11" fill="#16a34a" font-weight="600">Land at 8</text>
-                      <!-- Explanation -->
-                      <text x="300" y="10" text-anchor="middle" font-size="11" fill="#64748b">5 &minus; (&minus;3) = 5 + 3 = 8 (flip the direction!)</text>
-                    </svg>
-                    <figcaption>Subtracting (&minus;3) is the same as adding (+3) &mdash; you move RIGHT instead of left</figcaption>
-                  </figure>
-                </li>
-                <li>Multiplying or dividing two numbers with the <strong>same sign</strong> gives a <strong>positive</strong> answer. Two numbers with <strong>different signs</strong> give a <strong>negative</strong> answer.
-                  <figure class="diagram">
-                    <table class="sign-table">
-                      <tr><th>Operation</th><th>Signs</th><th>Result</th><th>Example</th></tr>
-                      <tr><td>&times; or &divide;</td><td><span class="pos">+</span> and <span class="pos">+</span></td><td class="pos">+ (positive)</td><td>4 &times; 5 = +20</td></tr>
-                      <tr><td>&times; or &divide;</td><td><span class="neg">&minus;</span> and <span class="neg">&minus;</span></td><td class="pos">+ (positive)</td><td>(&minus;4) &times; (&minus;5) = +20</td></tr>
-                      <tr><td>&times; or &divide;</td><td><span class="pos">+</span> and <span class="neg">&minus;</span></td><td class="neg">&minus; (negative)</td><td>4 &times; (&minus;5) = &minus;20</td></tr>
-                      <tr><td>&times; or &divide;</td><td><span class="neg">&minus;</span> and <span class="pos">+</span></td><td class="neg">&minus; (negative)</td><td>(&minus;4) &times; 5 = &minus;20</td></tr>
-                    </table>
-                    <figcaption>Sign rules: same signs &rarr; positive, different signs &rarr; negative</figcaption>
-                  </figure>
-                </li>
-                <li><strong>Commutative property:</strong> a + b = b + a and a &times; b = b &times; a (e.g., 3 + (&minus;5) = (&minus;5) + 3 = &minus;2).</li>
-                <li><strong>Associative property:</strong> (a + b) + c = a + (b + c) (e.g., (2 + 3) + 4 = 2 + (3 + 4) = 9).</li>
-                <li><strong>Distributive property:</strong> a &times; (b + c) = a &times; b + a &times; c (e.g., 2 &times; (3 + 4) = 2 &times; 3 + 2 &times; 4 = 14).
-                  <figure class="diagram">
-                    <svg viewBox="0 0 500 120" width="500" height="120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Distributive property diagram">
-                      <!-- Top: 2 × (3 + 4) -->
-                      <rect x="120" y="10" width="260" height="35" rx="8" fill="#e0e7ff" stroke="#4f46e5" stroke-width="1.5"/>
-                      <text x="250" y="33" text-anchor="middle" font-size="15" fill="#4f46e5" font-weight="700">2 &times; (3 + 4) = 2 &times; 7 = 14</text>
-                      <!-- Arrow down -->
-                      <line x1="250" y1="48" x2="250" y2="62" stroke="#64748b" stroke-width="1.5"/>
-                      <polygon points="250,66 245,58 255,58" fill="#64748b"/>
-                      <text x="290" y="60" font-size="11" fill="#64748b">same as</text>
-                      <!-- Bottom: split -->
-                      <rect x="30" y="72" width="190" height="35" rx="8" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
-                      <text x="125" y="95" text-anchor="middle" font-size="14" fill="#16a34a" font-weight="700">2 &times; 3 = 6</text>
-                      <text x="250" y="95" text-anchor="middle" font-size="18" fill="#334155" font-weight="700">+</text>
-                      <rect x="280" y="72" width="190" height="35" rx="8" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
-                      <text x="375" y="95" text-anchor="middle" font-size="14" fill="#16a34a" font-weight="700">2 &times; 4 = 8</text>
-                      <!-- Result -->
-                      <text x="250" y="118" text-anchor="middle" font-size="12" fill="#64748b">6 + 8 = 14 &#10003;</text>
-                    </svg>
-                    <figcaption>Distributive property: multiply each part inside the bracket separately, then add</figcaption>
-                  </figure>
-                </li>
-                <li><strong>Identity elements:</strong> 0 is the identity for addition (a + 0 = a) and 1 is the identity for multiplication (a &times; 1 = a) (e.g., &minus;7 + 0 = &minus;7 and &minus;7 &times; 1 = &minus;7).</li>
-            </ul>
-        </section>
+  <!-- ===== SECTION 3: Addition of Integers ===== -->
+  <div class="section">
+    <h2>Addition of Integers</h2>
+    <p>There are two cases when adding integers:</p>
 
-        <!-- Key Formulas -->
-        <section class="formulas">
-            <h2>Key Formulas</h2>
-            <div class="formula-box">
-                <p><strong>a - (-b) = a + b</strong> &mdash; Subtracting a negative is the same as adding.</p>
-                <p><strong>(-a) &times; (-b) = ab</strong> &mdash; Negative times negative equals positive.</p>
-                <p><strong>(-a) &times; b = -(ab)</strong> &mdash; Negative times positive equals negative.</p>
-                <p><strong>a &divide; (-b) = -(a &divide; b)</strong> &mdash; Dividing by a negative gives a negative result.</p>
-            </div>
-        </section>
-
-        <!-- Worked Examples -->
-        <section class="examples">
-            <h2>Worked Examples</h2>
-
-            <div class="example">
-                <h3>Example 1: Find (-3) &times; (-5) &times; 2</h3>
-                <div class="step">
-                    <strong>Step 1:</strong> Multiply the first two numbers: (-3) &times; (-5) = 15 (negative times negative = positive).
-                </div>
-                <div class="step">
-                    <strong>Step 2:</strong> Multiply the result by 2: 15 &times; 2 = <strong>30</strong>.
-                </div>
-            </div>
-
-            <div class="example">
-                <h3>Example 2: Simplify (-36) &divide; (-4)</h3>
-                <div class="step">
-                    <strong>Step 1:</strong> Both numbers are negative, so the answer will be positive.
-                </div>
-                <div class="step">
-                    <strong>Step 2:</strong> 36 &divide; 4 = <strong>9</strong>.
-                </div>
-            </div>
-
-            <div class="example">
-                <h3>Example 3: Evaluate (-8) + (-3) - (-5)</h3>
-                <div class="step">
-                    <strong>Step 1:</strong> Rewrite subtraction as addition of opposite: (-8) + (-3) + 5.
-                </div>
-                <div class="step">
-                    <strong>Step 2:</strong> Add the negatives: (-8) + (-3) = -11.
-                </div>
-                <div class="step">
-                    <strong>Step 3:</strong> Add the result to 5: -11 + 5 = <strong>-6</strong>.
-                </div>
-                <figure class="diagram">
-                  <svg viewBox="0 0 600 130" width="600" height="130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Number line showing (-8)+(-3)-(-5)=-6">
-                    <!-- main line -->
-                    <line x1="20" y1="85" x2="580" y2="85" stroke="#334155" stroke-width="2"/>
-                    <polygon points="15,85 25,80 25,90" fill="#334155"/>
-                    <polygon points="585,85 575,80 575,90" fill="#334155"/>
-                    <!-- ticks: -12 to 0 -->
-                    <line x1="60" y1="77" x2="60" y2="93" stroke="#334155" stroke-width="1.5"/><text x="60" y="108" text-anchor="middle" font-size="11" fill="#334155">&minus;12</text>
-                    <line x1="100" y1="77" x2="100" y2="93" stroke="#334155" stroke-width="1.5"/><text x="100" y="108" text-anchor="middle" font-size="11" fill="#334155">&minus;11</text>
-                    <line x1="140" y1="77" x2="140" y2="93" stroke="#334155" stroke-width="1.5"/><text x="140" y="108" text-anchor="middle" font-size="11" fill="#334155">&minus;10</text>
-                    <line x1="180" y1="77" x2="180" y2="93" stroke="#334155" stroke-width="1.5"/><text x="180" y="108" text-anchor="middle" font-size="11" fill="#334155">&minus;9</text>
-                    <line x1="220" y1="77" x2="220" y2="93" stroke="#334155" stroke-width="1.5"/><text x="220" y="108" text-anchor="middle" font-size="11" fill="#dc2626" font-weight="700">&minus;8</text>
-                    <line x1="260" y1="77" x2="260" y2="93" stroke="#334155" stroke-width="1.5"/><text x="260" y="108" text-anchor="middle" font-size="11" fill="#334155">&minus;7</text>
-                    <line x1="300" y1="77" x2="300" y2="93" stroke="#334155" stroke-width="1.5"/><text x="300" y="108" text-anchor="middle" font-size="11" fill="#16a34a" font-weight="700">&minus;6</text>
-                    <line x1="340" y1="77" x2="340" y2="93" stroke="#334155" stroke-width="1.5"/><text x="340" y="108" text-anchor="middle" font-size="11" fill="#334155">&minus;5</text>
-                    <line x1="380" y1="77" x2="380" y2="93" stroke="#334155" stroke-width="1.5"/><text x="380" y="108" text-anchor="middle" font-size="11" fill="#334155">&minus;4</text>
-                    <line x1="420" y1="77" x2="420" y2="93" stroke="#334155" stroke-width="1.5"/><text x="420" y="108" text-anchor="middle" font-size="11" fill="#334155">&minus;3</text>
-                    <line x1="460" y1="77" x2="460" y2="93" stroke="#334155" stroke-width="1.5"/><text x="460" y="108" text-anchor="middle" font-size="11" fill="#334155">&minus;2</text>
-                    <line x1="500" y1="77" x2="500" y2="93" stroke="#334155" stroke-width="1.5"/><text x="500" y="108" text-anchor="middle" font-size="11" fill="#334155">&minus;1</text>
-                    <line x1="540" y1="77" x2="540" y2="93" stroke="#334155" stroke-width="2"/><text x="540" y="108" text-anchor="middle" font-size="11" fill="#4f46e5" font-weight="700">0</text>
-                    <!-- Step 1: Start at -8, dot -->
-                    <circle cx="220" cy="85" r="5" fill="#dc2626"/>
-                    <!-- Step 2: Arrow left 3 to -11 -->
-                    <path d="M 215,72 C 170,40 120,40 105,72" fill="none" stroke="#dc2626" stroke-width="2"/>
-                    <polygon points="102,69 108,77 99,75" fill="#dc2626"/>
-                    <text x="160" y="38" text-anchor="middle" font-size="10" fill="#dc2626" font-weight="600">&minus;3 (left)</text>
-                    <!-- Step 3: Arrow right 5 to -6 -->
-                    <path d="M 105,72 C 140,25 260,25 296,72" fill="none" stroke="#16a34a" stroke-width="2"/>
-                    <polygon points="299,69 293,77 300,75" fill="#16a34a"/>
-                    <text x="200" y="18" text-anchor="middle" font-size="10" fill="#16a34a" font-weight="600">+5 (right, because &minus;(&minus;5) = +5)</text>
-                    <!-- End dot at -6 -->
-                    <circle cx="300" cy="85" r="5" fill="#16a34a"/>
-                  </svg>
-                  <figcaption>Start at &minus;8, move 3 left (&minus;3), then 5 right (+5) &rarr; land at &minus;6</figcaption>
-                </figure>
-            </div>
-        </section>
-
-        <!-- Practice Problems -->
-        <section class="practice">
-            <h2>Practice Problems</h2>
-
-            <div class="problem" data-difficulty="easy">
-                <span class="difficulty easy">Easy</span>
-                <p>1. Find the value of (-7) + 3.</p>
-                <details>
-                    <summary>Show Answer</summary>
-                    <p>(-7) + 3 = <strong>-4</strong>. We move 3 steps to the right from -7 on the number line.</p>
-                </details>
-            </div>
-
-            <div class="problem" data-difficulty="easy">
-                <span class="difficulty easy">Easy</span>
-                <p>2. Find the value of (-4) &times; 5.</p>
-                <details>
-                    <summary>Show Answer</summary>
-                    <p>(-4) &times; 5 = <strong>-20</strong>. A negative times a positive gives a negative result.</p>
-                </details>
-            </div>
-
-            <div class="problem" data-difficulty="medium">
-                <span class="difficulty medium">Medium</span>
-                <p>3. Find the value of (-15) &divide; 3 + (-2) &times; 4.</p>
-                <details>
-                    <summary>Show Answer</summary>
-                    <p>First, (-15) &divide; 3 = -5. Then, (-2) &times; 4 = -8. Finally, -5 + (-8) = <strong>-13</strong>.</p>
-                </details>
-            </div>
-
-            <div class="problem" data-difficulty="medium">
-                <span class="difficulty medium">Medium</span>
-                <p>4. Arrange the following integers in ascending order: -3, 5, -8, 2.</p>
-                <details>
-                    <summary>Show Answer</summary>
-                    <p>From smallest to largest: <strong>-8, -3, 2, 5</strong>.</p>
-                </details>
-            </div>
-
-            <div class="problem" data-difficulty="hard">
-                <span class="difficulty hard">Hard</span>
-                <p>5. Find the value of (-2) &times; (-3) &times; (-4) &times; (-1).</p>
-                <details>
-                    <summary>Show Answer</summary>
-                    <p>(-2) &times; (-3) = 6. Then 6 &times; (-4) = -24. Then (-24) &times; (-1) = <strong>24</strong>. With an even number of negative signs, the result is positive.</p>
-                </details>
-            </div>
-
-            <div class="problem" data-difficulty="hard">
-                <span class="difficulty hard">Hard</span>
-                <p>6. The temperature in a city was -8&deg;C in the morning. It rose by 15&deg;C during the day and then dropped by 6&deg;C at night. What was the final temperature?</p>
-                <details>
-                    <summary>Show Answer</summary>
-                    <p>Start: -8&deg;C. After rising 15&deg;C: -8 + 15 = 7&deg;C. After dropping 6&deg;C: 7 - 6 = <strong>1&deg;C</strong>.</p>
-                </details>
-            </div>
-
-            <div class="problem" data-difficulty="easy">
-                <span class="difficulty easy">Easy</span>
-                <p>7. Find (-9) + 4.</p>
-                <details>
-                    <summary>Show Answer</summary>
-                    <p>(-9) + 4 = <strong>-5</strong>. We move 4 steps to the right from -9 on the number line.</p>
-                </details>
-            </div>
-
-            <div class="problem" data-difficulty="easy">
-                <span class="difficulty easy">Easy</span>
-                <p>8. What is (-6) &times; 1?</p>
-                <details>
-                    <summary>Show Answer</summary>
-                    <p>(-6) &times; 1 = <strong>-6</strong>. Multiplying any number by 1 gives the number itself (identity property).</p>
-                </details>
-            </div>
-
-            <div class="problem" data-difficulty="medium">
-                <span class="difficulty medium">Medium</span>
-                <p>9. Simplify: (-12) &divide; 4 + (-3) &times; 2.</p>
-                <details>
-                    <summary>Show Answer</summary>
-                    <p>First, (-12) &divide; 4 = -3. Then, (-3) &times; 2 = -6. Finally, -3 + (-6) = <strong>-9</strong>.</p>
-                </details>
-            </div>
-
-            <div class="problem" data-difficulty="medium">
-                <span class="difficulty medium">Medium</span>
-                <p>10. Find the product: (-5) &times; 3 &times; (-2).</p>
-                <details>
-                    <summary>Show Answer</summary>
-                    <p>(-5) &times; 3 = -15. Then (-15) &times; (-2) = <strong>30</strong>. Two negative signs give a positive result.</p>
-                </details>
-            </div>
-
-            <div class="problem" data-difficulty="hard">
-                <span class="difficulty hard">Hard</span>
-                <p>11. The temperature at midnight was -5&deg;C. By noon it rose by 12&deg;C, then dropped 8&deg;C by evening. What was the evening temperature?</p>
-                <details>
-                    <summary>Show Answer</summary>
-                    <p>Start: -5&deg;C. After rising 12&deg;C: -5 + 12 = 7&deg;C. After dropping 8&deg;C: 7 - 8 = <strong>-1&deg;C</strong>.</p>
-                </details>
-            </div>
-
-            <div class="problem" data-difficulty="hard">
-                <span class="difficulty hard">Hard</span>
-                <p>12. Evaluate: [(-36) &divide; 6] &times; [(-8) + 3].</p>
-                <details>
-                    <summary>Show Answer</summary>
-                    <p>First bracket: (-36) &divide; 6 = -6. Second bracket: (-8) + 3 = -5. Now multiply: (-6) &times; (-5) = <strong>30</strong>. Negative times negative equals positive.</p>
-                </details>
-            </div>
-        </section>
-
-        <!-- Common Mistakes -->
-        <section class="common-mistakes">
-            <h2>Common Mistakes</h2>
-            <ul class="mistakes-list">
-                <li><strong>Forgetting that negative &times; negative = positive.</strong> Many students write (-3) &times; (-5) = -15 instead of +15. Remember: same signs give a positive answer!</li>
-                <li><strong>Confusing subtraction with adding the opposite.</strong> Always rewrite a - (-b) as a + b before solving. It makes things much easier.</li>
-                <li><strong>Getting the wrong sign when dividing negatives.</strong> Check the signs first! Same signs = positive result, different signs = negative result.</li>
-            </ul>
-        </section>
-
-        <!-- Mark as Complete -->
-        <button id="mark-read-btn" class="btn" style="margin:2rem auto;display:block;padding:0.75rem 2rem;font-size:1.1rem;cursor:pointer" onclick="markChapterRead(1)">Mark as Complete</button>
-
-        <!-- Chapter Navigation -->
-        <div class="chapter-nav">
-            <span></span>
-            <a href="ch2.html">Next: Fractions and Decimals &rarr;</a>
-        </div>
-
+    <h3 style="color:var(--primary);margin:1rem 0 .5rem">Case 1: Same signs &mdash; Add and keep the sign</h3>
+    <ul class="summary-list">
+      <li><strong>Positive + Positive:</strong> (+5) + (+3) = +8. This is just normal addition.</li>
+      <li><strong>Negative + Negative:</strong> (&minus;5) + (&minus;3) = &minus;8. You&rsquo;re going further into the negatives.</li>
+    </ul>
+    <div class="real-world">
+      <strong>Money analogy:</strong> You owe Rs 5 (that&rsquo;s &minus;5). Then you borrow Rs 3 more (that&rsquo;s &minus;3). Now you owe Rs 8 total (&minus;8). Debts add up!
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Class 7 Maths &mdash; CBSE Study Guide</p>
-    </footer>
+    <h3 style="color:var(--primary);margin:1rem 0 .5rem">Case 2: Different signs &mdash; Subtract and take the sign of the bigger number</h3>
+    <ul class="summary-list">
+      <li>(&minus;7) + (+4): Subtract 7 &minus; 4 = 3. Since 7 &gt; 4 and 7 is negative, the answer is <strong>&minus;3</strong>.</li>
+      <li>(+9) + (&minus;4): Subtract 9 &minus; 4 = 5. Since 9 &gt; 4 and 9 is positive, the answer is <strong>+5</strong>.</li>
+    </ul>
+    <div class="real-world">
+      <strong>Money analogy:</strong> You owe Rs 7 (&minus;7). You earn Rs 4 (+4). You pay off part of the debt, but you still owe Rs 3 (&minus;3). The debt was bigger, so the result stays negative.
+    </div>
 
-    <script src="../js/main.js"></script>
+    <figure class="diagram">
+      <svg viewBox="0 0 600 110" width="600" height="110" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Number line showing (-3) + (-4) = -7">
+        <line x1="20" y1="70" x2="580" y2="70" stroke="#334155" stroke-width="2"/>
+        <polygon points="15,70 25,65 25,75" fill="#334155"/>
+        <polygon points="585,70 575,65 575,75" fill="#334155"/>
+        <line x1="60" y1="62" x2="60" y2="78" stroke="#334155" stroke-width="1.5"/><text x="60" y="94" text-anchor="middle" font-size="12" fill="#334155">&minus;8</text>
+        <line x1="120" y1="62" x2="120" y2="78" stroke="#334155" stroke-width="1.5"/><text x="120" y="94" text-anchor="middle" font-size="12" fill="#334155">&minus;7</text>
+        <line x1="180" y1="62" x2="180" y2="78" stroke="#334155" stroke-width="1.5"/><text x="180" y="94" text-anchor="middle" font-size="12" fill="#334155">&minus;6</text>
+        <line x1="240" y1="62" x2="240" y2="78" stroke="#334155" stroke-width="1.5"/><text x="240" y="94" text-anchor="middle" font-size="12" fill="#334155">&minus;5</text>
+        <line x1="300" y1="62" x2="300" y2="78" stroke="#334155" stroke-width="1.5"/><text x="300" y="94" text-anchor="middle" font-size="12" fill="#334155">&minus;4</text>
+        <line x1="360" y1="62" x2="360" y2="78" stroke="#334155" stroke-width="1.5"/><text x="360" y="94" text-anchor="middle" font-size="12" fill="#dc2626" font-weight="700">&minus;3</text>
+        <line x1="420" y1="62" x2="420" y2="78" stroke="#334155" stroke-width="1.5"/><text x="420" y="94" text-anchor="middle" font-size="12" fill="#334155">&minus;2</text>
+        <line x1="480" y1="62" x2="480" y2="78" stroke="#334155" stroke-width="1.5"/><text x="480" y="94" text-anchor="middle" font-size="12" fill="#334155">&minus;1</text>
+        <line x1="540" y1="62" x2="540" y2="78" stroke="#334155" stroke-width="2"/><text x="540" y="94" text-anchor="middle" font-size="12" fill="#4f46e5" font-weight="700">0</text>
+        <circle cx="360" cy="70" r="5" fill="#dc2626"/>
+        <text x="360" y="50" text-anchor="middle" font-size="11" fill="#dc2626" font-weight="600">Start at &minus;3</text>
+        <path d="M 355,56 C 300,20 180,20 125,56" fill="none" stroke="#4f46e5" stroke-width="2" stroke-dasharray="6,3"/>
+        <polygon points="122,53 128,60 118,59" fill="#4f46e5"/>
+        <text x="240" y="22" text-anchor="middle" font-size="11" fill="#4f46e5" font-weight="600">Move 4 steps left (&minus;4)</text>
+        <circle cx="120" cy="70" r="5" fill="#16a34a"/>
+        <text x="120" y="50" text-anchor="middle" font-size="11" fill="#16a34a" font-weight="600">Land at &minus;7</text>
+      </svg>
+      <figcaption>(&minus;3) + (&minus;4): Start at &minus;3, move 4 steps left (adding a negative = move left) &rarr; land at &minus;7</figcaption>
+    </figure>
+    <div class="why-box">
+      <strong>Number line rule:</strong> Adding a <em>positive</em> number = move <em>right</em>. Adding a <em>negative</em> number = move <em>left</em>. The sign tells you the direction!
+    </div>
+  </div>
+
+  <!-- ===== SECTION 4: Subtraction of Integers ===== -->
+  <div class="section">
+    <h2>Subtraction of Integers</h2>
+    <ul class="summary-list">
+      <li>The most important rule: <strong>Subtracting a number = Adding its opposite</strong>.</li>
+      <li>In math language: a &minus; b = a + (&minus;b). And a &minus; (&minus;b) = a + b.</li>
+    </ul>
+    <div class="why-box">
+      <strong>But WHY does subtracting a negative = adding?</strong><br><br>
+      Think of it this way: A &ldquo;negative&rdquo; is like a debt. If someone <em>removes</em> (subtracts) your <em>debt</em> (negative), that&rsquo;s the same as <em>giving</em> you money (positive)!<br><br>
+      &bull; You owe Rs 300 to a friend (&minus;300).<br>
+      &bull; Your friend says &ldquo;forget it, I&rsquo;m removing that debt&rdquo;. That&rsquo;s <em>subtracting a negative</em>.<br>
+      &bull; Result: you gained Rs 300! Subtracting (&minus;300) = Adding (+300).
+    </div>
+
+    <figure class="diagram">
+      <svg viewBox="0 0 600 110" width="600" height="110" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="5 - (-3) = 5 + 3 = 8">
+        <line x1="20" y1="70" x2="580" y2="70" stroke="#334155" stroke-width="2"/>
+        <polygon points="15,70 25,65 25,75" fill="#334155"/>
+        <polygon points="585,70 575,65 575,75" fill="#334155"/>
+        <line x1="60" y1="62" x2="60" y2="78" stroke="#334155" stroke-width="2"/><text x="60" y="94" text-anchor="middle" font-size="12" fill="#4f46e5" font-weight="700">0</text>
+        <line x1="117" y1="62" x2="117" y2="78" stroke="#334155" stroke-width="1.5"/><text x="117" y="94" text-anchor="middle" font-size="12" fill="#334155">1</text>
+        <line x1="174" y1="62" x2="174" y2="78" stroke="#334155" stroke-width="1.5"/><text x="174" y="94" text-anchor="middle" font-size="12" fill="#334155">2</text>
+        <line x1="231" y1="62" x2="231" y2="78" stroke="#334155" stroke-width="1.5"/><text x="231" y="94" text-anchor="middle" font-size="12" fill="#334155">3</text>
+        <line x1="288" y1="62" x2="288" y2="78" stroke="#334155" stroke-width="1.5"/><text x="288" y="94" text-anchor="middle" font-size="12" fill="#334155">4</text>
+        <line x1="345" y1="62" x2="345" y2="78" stroke="#334155" stroke-width="1.5"/><text x="345" y="94" text-anchor="middle" font-size="12" fill="#dc2626" font-weight="700">5</text>
+        <line x1="402" y1="62" x2="402" y2="78" stroke="#334155" stroke-width="1.5"/><text x="402" y="94" text-anchor="middle" font-size="12" fill="#334155">6</text>
+        <line x1="459" y1="62" x2="459" y2="78" stroke="#334155" stroke-width="1.5"/><text x="459" y="94" text-anchor="middle" font-size="12" fill="#334155">7</text>
+        <line x1="516" y1="62" x2="516" y2="78" stroke="#334155" stroke-width="1.5"/><text x="516" y="94" text-anchor="middle" font-size="12" fill="#16a34a" font-weight="700">8</text>
+        <circle cx="345" cy="70" r="5" fill="#dc2626"/>
+        <text x="345" y="50" text-anchor="middle" font-size="11" fill="#dc2626" font-weight="600">Start at 5</text>
+        <path d="M 350,56 C 390,20 470,20 512,56" fill="none" stroke="#16a34a" stroke-width="2" stroke-dasharray="6,3"/>
+        <polygon points="515,53 512,62 505,55" fill="#16a34a"/>
+        <text x="430" y="22" text-anchor="middle" font-size="11" fill="#16a34a" font-weight="600">Move 3 steps RIGHT (+3)</text>
+        <circle cx="516" cy="70" r="5" fill="#16a34a"/>
+        <text x="516" y="50" text-anchor="middle" font-size="11" fill="#16a34a" font-weight="600">Land at 8</text>
+        <text x="300" y="10" text-anchor="middle" font-size="11" fill="#64748b">5 &minus; (&minus;3) = 5 + 3 = 8 (flip the direction!)</text>
+      </svg>
+      <figcaption>Subtracting (&minus;3) is the same as adding (+3) &mdash; you move RIGHT instead of left</figcaption>
+    </figure>
+
+    <h3 style="color:var(--primary);margin:1rem 0 .5rem">More examples to make it click:</h3>
+    <ul class="summary-list">
+      <li>(&minus;12) &minus; (&minus;5) = (&minus;12) + 5 = <strong>&minus;7</strong> (you owed 12, someone forgave 5, you still owe 7)</li>
+      <li>(&minus;4) &minus; 7 = (&minus;4) + (&minus;7) = <strong>&minus;11</strong> (you owed 4, then borrowed 7 more)</li>
+      <li>0 &minus; (&minus;6) = 0 + 6 = <strong>6</strong> (removing a debt from zero = a gain)</li>
+    </ul>
+  </div>
+
+  <!-- ===== SECTION 5: Multiplication of Integers ===== -->
+  <div class="section">
+    <h2>Multiplication of Integers</h2>
+    <p>This is where most students get confused. Let&rsquo;s build the rules step by step using <strong>patterns</strong> &mdash; not just memorization!</p>
+
+    <h3 style="color:var(--primary);margin:1rem 0 .5rem">Why does Positive &times; Negative = Negative?</h3>
+    <p>Look at this pattern carefully. Each time we decrease the second number by 1, the answer decreases by 3:</p>
+    <figure class="diagram">
+      <table class="pattern-table">
+        <tr><th>Multiplication</th><th>Result</th><th>Pattern</th></tr>
+        <tr><td>3 &times; 3</td><td>9</td><td rowspan="7" style="vertical-align:middle;font-size:1.5rem;color:var(--primary)">&darr; decreasing by 3 each time</td></tr>
+        <tr><td>3 &times; 2</td><td>6</td></tr>
+        <tr><td>3 &times; 1</td><td>3</td></tr>
+        <tr><td>3 &times; 0</td><td>0</td></tr>
+        <tr class="highlight"><td>3 &times; (&minus;1)</td><td class="result-neg">&minus;3</td></tr>
+        <tr class="highlight"><td>3 &times; (&minus;2)</td><td class="result-neg">&minus;6</td></tr>
+        <tr class="highlight"><td>3 &times; (&minus;3)</td><td class="result-neg">&minus;9</td></tr>
+      </table>
+      <figcaption>The pattern forces us to conclude: positive &times; negative = negative</figcaption>
+    </figure>
+
+    <h3 style="color:var(--primary);margin:1rem 0 .5rem">Why does Negative &times; Negative = Positive?</h3>
+    <p>Now watch what happens when the FIRST number is negative. Each time we decrease the second number by 1, the answer <em>increases</em> by 3:</p>
+    <figure class="diagram">
+      <table class="pattern-table">
+        <tr><th>Multiplication</th><th>Result</th><th>Pattern</th></tr>
+        <tr><td>(&minus;3) &times; 3</td><td class="result-neg">&minus;9</td><td rowspan="7" style="vertical-align:middle;font-size:1.5rem;color:#16a34a">&uarr; increasing by 3 each time</td></tr>
+        <tr><td>(&minus;3) &times; 2</td><td class="result-neg">&minus;6</td></tr>
+        <tr><td>(&minus;3) &times; 1</td><td class="result-neg">&minus;3</td></tr>
+        <tr><td>(&minus;3) &times; 0</td><td>0</td></tr>
+        <tr class="highlight"><td>(&minus;3) &times; (&minus;1)</td><td class="result-pos">+3</td></tr>
+        <tr class="highlight"><td>(&minus;3) &times; (&minus;2)</td><td class="result-pos">+6</td></tr>
+        <tr class="highlight"><td>(&minus;3) &times; (&minus;3)</td><td class="result-pos">+9</td></tr>
+      </table>
+      <figcaption>The pattern forces us to conclude: negative &times; negative = positive!</figcaption>
+    </figure>
+
+    <div class="real-world">
+      <strong>Video analogy:</strong> Imagine a video of someone walking forward.<br>
+      &bull; Play <strong>forward</strong> (+) at <strong>normal</strong> (+) = person walks forward (+) &mdash; normal!<br>
+      &bull; Play <strong>backward</strong> (&minus;) at <strong>normal</strong> (+) = person walks backward (&minus;) &mdash; reversed!<br>
+      &bull; Play <strong>backward</strong> (&minus;) a <strong>reversed</strong> video (&minus;) = person walks forward again (+)!<br>
+      That&rsquo;s why <strong>negative &times; negative = positive</strong>. Two reversals cancel out!
+    </div>
+
+    <h3 style="color:var(--primary);margin:1rem 0 .5rem">The Sign Rules Summary</h3>
+    <figure class="diagram">
+      <table class="sign-table">
+        <tr><th>Operation</th><th>Signs</th><th>Result</th><th>Example</th></tr>
+        <tr><td>&times; or &divide;</td><td><span class="pos">+</span> and <span class="pos">+</span></td><td class="pos">+ (positive)</td><td>4 &times; 5 = +20</td></tr>
+        <tr><td>&times; or &divide;</td><td><span class="neg">&minus;</span> and <span class="neg">&minus;</span></td><td class="pos">+ (positive)</td><td>(&minus;4) &times; (&minus;5) = +20</td></tr>
+        <tr><td>&times; or &divide;</td><td><span class="pos">+</span> and <span class="neg">&minus;</span></td><td class="neg">&minus; (negative)</td><td>4 &times; (&minus;5) = &minus;20</td></tr>
+        <tr><td>&times; or &divide;</td><td><span class="neg">&minus;</span> and <span class="pos">+</span></td><td class="neg">&minus; (negative)</td><td>(&minus;4) &times; 5 = &minus;20</td></tr>
+      </table>
+      <figcaption>Easy memory trick: Same signs &rarr; positive result. Different signs &rarr; negative result.</figcaption>
+    </figure>
+
+    <div class="why-box">
+      <strong>What about multiple negatives?</strong><br>
+      Count the number of negative signs:<br>
+      &bull; <strong>Even</strong> number of negatives = <strong>positive</strong> result (they cancel in pairs)<br>
+      &bull; <strong>Odd</strong> number of negatives = <strong>negative</strong> result<br>
+      Example: (&minus;2) &times; (&minus;3) &times; (&minus;4) = three negatives (odd) = <strong>&minus;24</strong>
+    </div>
+  </div>
+
+  <!-- ===== SECTION 6: Division of Integers ===== -->
+  <div class="section">
+    <h2>Division of Integers</h2>
+    <ul class="summary-list">
+      <li>Division follows the <strong>exact same sign rules</strong> as multiplication.</li>
+      <li>Same signs &rarr; positive: (&minus;12) &divide; (&minus;4) = <strong>+3</strong></li>
+      <li>Different signs &rarr; negative: (&minus;15) &divide; 3 = <strong>&minus;5</strong></li>
+      <li>Division is the <strong>reverse of multiplication</strong>. If (&minus;3) &times; 4 = &minus;12, then (&minus;12) &divide; 4 = &minus;3.</li>
+    </ul>
+    <div class="why-box">
+      <strong>Important!</strong> You can NEVER divide by zero. (&minus;7) &divide; 0 is <strong>undefined</strong> (not zero, not any number &mdash; it simply doesn&rsquo;t exist). Think about it: there&rsquo;s no number you can multiply by 0 to get &minus;7.
+    </div>
+  </div>
+
+  <!-- ===== SECTION 7: Properties of Integers ===== -->
+  <div class="section">
+    <h2>Properties of Integers</h2>
+
+    <h3 style="color:var(--primary);margin:1rem 0 .5rem">1. Closure Property</h3>
+    <ul class="summary-list">
+      <li>Integers are <strong>closed</strong> under addition, subtraction, and multiplication. This means: integer + integer = always an integer.</li>
+      <li>Example: (&minus;3) + 5 = 2 (integer). (&minus;4) &times; 3 = &minus;12 (integer).</li>
+      <li>But <strong>NOT closed under division</strong>: (&minus;7) &divide; 2 = &minus;3.5 (not an integer!).</li>
+    </ul>
+
+    <h3 style="color:var(--primary);margin:1rem 0 .5rem">2. Commutative Property</h3>
+    <ul class="summary-list">
+      <li><strong>Addition:</strong> a + b = b + a. Example: 3 + (&minus;5) = (&minus;5) + 3 = &minus;2</li>
+      <li><strong>Multiplication:</strong> a &times; b = b &times; a. Example: (&minus;4) &times; 7 = 7 &times; (&minus;4) = &minus;28</li>
+      <li><strong>NOT for subtraction:</strong> 5 &minus; 3 = 2, but 3 &minus; 5 = &minus;2. They&rsquo;re different!</li>
+    </ul>
+
+    <h3 style="color:var(--primary);margin:1rem 0 .5rem">3. Associative Property</h3>
+    <ul class="summary-list">
+      <li><strong>Addition:</strong> (a + b) + c = a + (b + c). Example: (2 + 3) + 4 = 2 + (3 + 4) = 9.</li>
+      <li><strong>Multiplication:</strong> (a &times; b) &times; c = a &times; (b &times; c).</li>
+      <li><strong>NOT for subtraction:</strong> (10 &minus; 5) &minus; 2 = 3, but 10 &minus; (5 &minus; 2) = 7. Different!</li>
+    </ul>
+
+    <h3 style="color:var(--primary);margin:1rem 0 .5rem">4. Distributive Property</h3>
+    <p>a &times; (b + c) = a &times; b + a &times; c &mdash; you can &ldquo;distribute&rdquo; the multiplication over addition.</p>
+    <figure class="diagram">
+      <svg viewBox="0 0 500 120" width="500" height="120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Distributive property diagram">
+        <rect x="120" y="10" width="260" height="35" rx="8" fill="#e0e7ff" stroke="#4f46e5" stroke-width="1.5"/>
+        <text x="250" y="33" text-anchor="middle" font-size="15" fill="#4f46e5" font-weight="700">2 &times; (3 + 4) = 2 &times; 7 = 14</text>
+        <line x1="250" y1="48" x2="250" y2="62" stroke="#64748b" stroke-width="1.5"/>
+        <polygon points="250,66 245,58 255,58" fill="#64748b"/>
+        <text x="290" y="60" font-size="11" fill="#64748b">same as</text>
+        <rect x="30" y="72" width="190" height="35" rx="8" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+        <text x="125" y="95" text-anchor="middle" font-size="14" fill="#16a34a" font-weight="700">2 &times; 3 = 6</text>
+        <text x="250" y="95" text-anchor="middle" font-size="18" fill="#334155" font-weight="700">+</text>
+        <rect x="280" y="72" width="190" height="35" rx="8" fill="#d1fae5" stroke="#16a34a" stroke-width="1.5"/>
+        <text x="375" y="95" text-anchor="middle" font-size="14" fill="#16a34a" font-weight="700">2 &times; 4 = 8</text>
+        <text x="250" y="118" text-anchor="middle" font-size="12" fill="#64748b">6 + 8 = 14 &#10003;</text>
+      </svg>
+      <figcaption>Distributive property: multiply each part inside the bracket separately, then add</figcaption>
+    </figure>
+
+    <h3 style="color:var(--primary);margin:1rem 0 .5rem">5. Identity Elements</h3>
+    <ul class="summary-list">
+      <li><strong>Additive identity (0):</strong> a + 0 = a. Adding zero changes nothing. Example: &minus;7 + 0 = &minus;7.</li>
+      <li><strong>Multiplicative identity (1):</strong> a &times; 1 = a. Multiplying by 1 changes nothing. Example: &minus;7 &times; 1 = &minus;7.</li>
+    </ul>
+
+    <h3 style="color:var(--primary);margin:1rem 0 .5rem">6. Additive Inverse</h3>
+    <ul class="summary-list">
+      <li>Every integer has an <strong>opposite</strong> that adds up to zero: a + (&minus;a) = 0.</li>
+      <li>The opposite of 5 is &minus;5 (because 5 + (&minus;5) = 0). The opposite of &minus;3 is 3.</li>
+    </ul>
+  </div>
+
+  <!-- ===== SECTION 8: Key Formulas ===== -->
+  <div class="section">
+    <h2>Key Formulas</h2>
+    <div class="formula-box">
+      <code>a &minus; (&minus;b) = a + b</code> &mdash; Subtracting a negative = adding.
+    </div>
+    <div class="formula-box">
+      <code>(&minus;a) &times; (&minus;b) = ab</code> &mdash; Negative &times; negative = positive.
+    </div>
+    <div class="formula-box">
+      <code>(&minus;a) &times; b = &minus;(ab)</code> &mdash; Negative &times; positive = negative.
+    </div>
+    <div class="formula-box">
+      <code>a &divide; (&minus;b) = &minus;(a &divide; b)</code> &mdash; Dividing by a negative gives a negative.
+    </div>
+    <div class="formula-box">
+      <code>a + (&minus;a) = 0</code> &mdash; Every integer plus its opposite equals zero.
+    </div>
+  </div>
+
+  <!-- ===== SECTION 9: Worked Examples ===== -->
+  <div class="section">
+    <h2>Worked Examples</h2>
+
+    <div class="example">
+      <h3>Example 1: Find (&minus;3) &times; (&minus;5) &times; 2</h3>
+      <div class="step"><strong>Step 1:</strong> (&minus;3) &times; (&minus;5) = +15 (negative &times; negative = positive, using the pattern rule we learned).</div>
+      <div class="step"><strong>Step 2:</strong> 15 &times; 2 = <strong>30</strong> (positive &times; positive = positive).</div>
+      <div class="step"><strong>Check:</strong> We had 2 negative signs (even count), so the final answer must be positive. 30 is positive. &#10003;</div>
+    </div>
+
+    <div class="example">
+      <h3>Example 2: Simplify (&minus;36) &divide; (&minus;4)</h3>
+      <div class="step"><strong>Step 1:</strong> Both numbers are negative &rarr; same signs &rarr; result is positive.</div>
+      <div class="step"><strong>Step 2:</strong> 36 &divide; 4 = 9. So the answer is <strong>+9</strong>.</div>
+      <div class="step"><strong>Verify:</strong> (&minus;4) &times; 9 = &minus;36 &#10003; (division is the reverse of multiplication).</div>
+    </div>
+
+    <div class="example">
+      <h3>Example 3: Evaluate (&minus;8) + (&minus;3) &minus; (&minus;5)</h3>
+      <div class="step"><strong>Step 1:</strong> Convert subtraction to addition: (&minus;8) + (&minus;3) + 5.</div>
+      <div class="step"><strong>Step 2:</strong> Add the negatives first: (&minus;8) + (&minus;3) = &minus;11 (same signs, add and keep the sign).</div>
+      <div class="step"><strong>Step 3:</strong> &minus;11 + 5 = &minus;6 (different signs, subtract: 11 &minus; 5 = 6, bigger number is negative, so answer is <strong>&minus;6</strong>).</div>
+      <figure class="diagram">
+        <svg viewBox="0 0 600 130" width="600" height="130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Number line for example 3">
+          <line x1="20" y1="85" x2="580" y2="85" stroke="#334155" stroke-width="2"/>
+          <polygon points="15,85 25,80 25,90" fill="#334155"/>
+          <polygon points="585,85 575,80 575,90" fill="#334155"/>
+          <line x1="60" y1="77" x2="60" y2="93" stroke="#334155" stroke-width="1.5"/><text x="60" y="108" text-anchor="middle" font-size="11" fill="#334155">&minus;12</text>
+          <line x1="100" y1="77" x2="100" y2="93" stroke="#334155" stroke-width="1.5"/><text x="100" y="108" text-anchor="middle" font-size="11" fill="#334155">&minus;11</text>
+          <line x1="140" y1="77" x2="140" y2="93" stroke="#334155" stroke-width="1.5"/><text x="140" y="108" text-anchor="middle" font-size="11" fill="#334155">&minus;10</text>
+          <line x1="180" y1="77" x2="180" y2="93" stroke="#334155" stroke-width="1.5"/><text x="180" y="108" text-anchor="middle" font-size="11" fill="#334155">&minus;9</text>
+          <line x1="220" y1="77" x2="220" y2="93" stroke="#334155" stroke-width="1.5"/><text x="220" y="108" text-anchor="middle" font-size="11" fill="#dc2626" font-weight="700">&minus;8</text>
+          <line x1="260" y1="77" x2="260" y2="93" stroke="#334155" stroke-width="1.5"/><text x="260" y="108" text-anchor="middle" font-size="11" fill="#334155">&minus;7</text>
+          <line x1="300" y1="77" x2="300" y2="93" stroke="#334155" stroke-width="1.5"/><text x="300" y="108" text-anchor="middle" font-size="11" fill="#16a34a" font-weight="700">&minus;6</text>
+          <line x1="340" y1="77" x2="340" y2="93" stroke="#334155" stroke-width="1.5"/><text x="340" y="108" text-anchor="middle" font-size="11" fill="#334155">&minus;5</text>
+          <line x1="380" y1="77" x2="380" y2="93" stroke="#334155" stroke-width="1.5"/><text x="380" y="108" text-anchor="middle" font-size="11" fill="#334155">&minus;4</text>
+          <line x1="420" y1="77" x2="420" y2="93" stroke="#334155" stroke-width="1.5"/><text x="420" y="108" text-anchor="middle" font-size="11" fill="#334155">&minus;3</text>
+          <line x1="460" y1="77" x2="460" y2="93" stroke="#334155" stroke-width="1.5"/><text x="460" y="108" text-anchor="middle" font-size="11" fill="#334155">&minus;2</text>
+          <line x1="500" y1="77" x2="500" y2="93" stroke="#334155" stroke-width="1.5"/><text x="500" y="108" text-anchor="middle" font-size="11" fill="#334155">&minus;1</text>
+          <line x1="540" y1="77" x2="540" y2="93" stroke="#334155" stroke-width="2"/><text x="540" y="108" text-anchor="middle" font-size="11" fill="#4f46e5" font-weight="700">0</text>
+          <circle cx="220" cy="85" r="5" fill="#dc2626"/>
+          <path d="M 215,72 C 170,40 120,40 105,72" fill="none" stroke="#dc2626" stroke-width="2"/>
+          <polygon points="102,69 108,77 99,75" fill="#dc2626"/>
+          <text x="160" y="38" text-anchor="middle" font-size="10" fill="#dc2626" font-weight="600">&minus;3 (left)</text>
+          <path d="M 105,72 C 140,25 260,25 296,72" fill="none" stroke="#16a34a" stroke-width="2"/>
+          <polygon points="299,69 293,77 300,75" fill="#16a34a"/>
+          <text x="200" y="18" text-anchor="middle" font-size="10" fill="#16a34a" font-weight="600">+5 (right, because &minus;(&minus;5) = +5)</text>
+          <circle cx="300" cy="85" r="5" fill="#16a34a"/>
+        </svg>
+        <figcaption>Start at &minus;8, move 3 left, then 5 right &rarr; land at &minus;6</figcaption>
+      </figure>
+    </div>
+
+    <div class="example">
+      <h3>Example 4: Submarine Problem</h3>
+      <p>A submarine is at a depth of &minus;150 m (150 m below sea level). It rises 80 m, then dives 45 m. What is its final depth?</p>
+      <div class="step"><strong>Step 1:</strong> Start at &minus;150 m.</div>
+      <div class="step"><strong>Step 2:</strong> Rises 80 m = adding +80: &minus;150 + 80 = &minus;70 m.</div>
+      <div class="step"><strong>Step 3:</strong> Dives 45 m = adding &minus;45: &minus;70 + (&minus;45) = <strong>&minus;115 m</strong>.</div>
+      <div class="step"><strong>Answer:</strong> The submarine is at <strong>115 m below sea level</strong>.</div>
+    </div>
+
+    <div class="example">
+      <h3>Example 5: Verify the Distributive Property with Negatives</h3>
+      <p>Show that (&minus;2) &times; (5 + (&minus;3)) = (&minus;2) &times; 5 + (&minus;2) &times; (&minus;3)</p>
+      <div class="step"><strong>LHS:</strong> (&minus;2) &times; (5 + (&minus;3)) = (&minus;2) &times; 2 = &minus;4</div>
+      <div class="step"><strong>RHS:</strong> (&minus;2) &times; 5 + (&minus;2) &times; (&minus;3) = &minus;10 + 6 = &minus;4</div>
+      <div class="step"><strong>LHS = RHS = &minus;4</strong> &#10003; The distributive property works even with negatives!</div>
+    </div>
+  </div>
+
+  <!-- ===== SECTION 10: Practice Problems ===== -->
+  <div class="section">
+    <h2>Practice Problems</h2>
+
+    <div class="problem"><span class="difficulty easy">Easy</span>
+      <p>1. Find the value of (&minus;7) + 3.</p>
+      <details><summary>Show Answer</summary><div class="answer">(&minus;7) + 3 = <strong>&minus;4</strong>. Different signs: 7 &minus; 3 = 4, and 7 is bigger and negative, so result is &minus;4.</div></details>
+    </div>
+
+    <div class="problem"><span class="difficulty easy">Easy</span>
+      <p>2. Find the value of (&minus;4) &times; 5.</p>
+      <details><summary>Show Answer</summary><div class="answer">(&minus;4) &times; 5 = <strong>&minus;20</strong>. Different signs (negative &times; positive) = negative.</div></details>
+    </div>
+
+    <div class="problem"><span class="difficulty medium">Medium</span>
+      <p>3. Find the value of (&minus;15) &divide; 3 + (&minus;2) &times; 4.</p>
+      <details><summary>Show Answer</summary><div class="answer">First: (&minus;15) &divide; 3 = &minus;5. Then: (&minus;2) &times; 4 = &minus;8. Finally: &minus;5 + (&minus;8) = <strong>&minus;13</strong>.</div></details>
+    </div>
+
+    <div class="problem"><span class="difficulty medium">Medium</span>
+      <p>4. Arrange in ascending order: &minus;3, 5, &minus;8, 2.</p>
+      <details><summary>Show Answer</summary><div class="answer">From smallest to largest: <strong>&minus;8, &minus;3, 2, 5</strong>. (Think of temperature: &minus;8&deg;C is coldest.)</div></details>
+    </div>
+
+    <div class="problem"><span class="difficulty hard">Hard</span>
+      <p>5. Find: (&minus;2) &times; (&minus;3) &times; (&minus;4) &times; (&minus;1).</p>
+      <details><summary>Show Answer</summary><div class="answer">4 negative signs (even count) &rarr; positive result. 2 &times; 3 &times; 4 &times; 1 = 24. Answer: <strong>+24</strong>.</div></details>
+    </div>
+
+    <div class="problem"><span class="difficulty hard">Hard</span>
+      <p>6. The temperature was &minus;8&deg;C in the morning. It rose 15&deg;C during the day, then dropped 6&deg;C at night. What was the final temperature?</p>
+      <details><summary>Show Answer</summary><div class="answer">&minus;8 + 15 = 7&deg;C. Then 7 &minus; 6 = <strong>1&deg;C</strong>.</div></details>
+    </div>
+
+    <div class="problem"><span class="difficulty easy">Easy</span>
+      <p>7. Find (&minus;9) + 4.</p>
+      <details><summary>Show Answer</summary><div class="answer">Different signs: 9 &minus; 4 = 5, bigger number (9) is negative, so answer is <strong>&minus;5</strong>.</div></details>
+    </div>
+
+    <div class="problem"><span class="difficulty easy">Easy</span>
+      <p>8. What is (&minus;6) &times; 1?</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>&minus;6</strong>. Multiplying by 1 (the multiplicative identity) gives the same number.</div></details>
+    </div>
+
+    <div class="problem"><span class="difficulty medium">Medium</span>
+      <p>9. Simplify: (&minus;12) &divide; 4 + (&minus;3) &times; 2.</p>
+      <details><summary>Show Answer</summary><div class="answer">(&minus;12) &divide; 4 = &minus;3. (&minus;3) &times; 2 = &minus;6. &minus;3 + (&minus;6) = <strong>&minus;9</strong>.</div></details>
+    </div>
+
+    <div class="problem"><span class="difficulty medium">Medium</span>
+      <p>10. Find: (&minus;5) &times; 3 &times; (&minus;2).</p>
+      <details><summary>Show Answer</summary><div class="answer">(&minus;5) &times; 3 = &minus;15. Then (&minus;15) &times; (&minus;2) = +30. Answer: <strong>30</strong>. (2 negatives = positive.)</div></details>
+    </div>
+
+    <div class="problem"><span class="difficulty hard">Hard</span>
+      <p>11. The temperature at midnight was &minus;5&deg;C. By noon it rose 12&deg;C, then dropped 8&deg;C by evening. What was the evening temperature?</p>
+      <details><summary>Show Answer</summary><div class="answer">&minus;5 + 12 = 7&deg;C. Then 7 &minus; 8 = <strong>&minus;1&deg;C</strong>.</div></details>
+    </div>
+
+    <div class="problem"><span class="difficulty hard">Hard</span>
+      <p>12. Evaluate: [(&minus;36) &divide; 6] &times; [(&minus;8) + 3].</p>
+      <details><summary>Show Answer</summary><div class="answer">First bracket: (&minus;36) &divide; 6 = &minus;6. Second bracket: (&minus;8) + 3 = &minus;5. Multiply: (&minus;6) &times; (&minus;5) = <strong>30</strong>. Same signs = positive.</div></details>
+    </div>
+  </div>
+
+  <!-- ===== SECTION 11: Common Mistakes ===== -->
+  <div class="section">
+    <h2>Common Mistakes</h2>
+    <ul class="mistakes-list">
+      <li><strong>Thinking negative &times; negative = negative.</strong>
+        <div class="wrong-right">
+          <div class="wrong">(&minus;3) &times; (&minus;5) = &minus;15</div>
+          <div class="right">(&minus;3) &times; (&minus;5) = <strong>+15</strong> (same signs = positive!)</div>
+        </div>
+      </li>
+      <li><strong>Forgetting to flip when subtracting a negative.</strong>
+        <div class="wrong-right">
+          <div class="wrong">5 &minus; (&minus;3) = 2</div>
+          <div class="right">5 &minus; (&minus;3) = 5 + 3 = <strong>8</strong></div>
+        </div>
+      </li>
+      <li><strong>Thinking &minus;8 is bigger than &minus;3.</strong>
+        <div class="wrong-right">
+          <div class="wrong">&minus;8 &gt; &minus;3</div>
+          <div class="right">&minus;8 &lt; &minus;3 (further left on number line = smaller)</div>
+        </div>
+      </li>
+      <li><strong>Dividing by zero.</strong>
+        <div class="wrong-right">
+          <div class="wrong">(&minus;12) &divide; 0 = 0</div>
+          <div class="right">(&minus;12) &divide; 0 is <strong>undefined</strong> (impossible!)</div>
+        </div>
+      </li>
+      <li><strong>Thinking subtraction is commutative.</strong>
+        <div class="wrong-right">
+          <div class="wrong">5 &minus; 3 = 3 &minus; 5</div>
+          <div class="right">5 &minus; 3 = 2, but 3 &minus; 5 = &minus;2 (they&rsquo;re different!)</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <button id="mark-read-btn" class="btn" style="margin-top:1rem;padding:.5rem 1.25rem;background:var(--primary);color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer" onclick="markChapterRead(1)">Mark as Complete</button>
+
+  <div class="chapter-nav">
+    <span></span>
+    <a href="ch2.html">Ch 2: Fractions and Decimals &rarr;</a>
+  </div>
+</div>
+
+<footer class="footer">CBSE Class 7 Maths &mdash; Based on NCERT Syllabus</footer>
+<script src="../js/main.js"></script>
 </body>
 </html>
