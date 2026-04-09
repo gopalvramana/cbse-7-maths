@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="chapter-num" content="5">
 <title>NCERT Solutions Class 7 Maths Chapter 5 Lines and Angles</title>
-<meta name="description" content="NCERT Solutions for Class 7 Maths Chapter 5 Lines and Angles. Complementary, supplementary, vertically opposite, parallel lines — all exercises solved step-by-step with diagrams.">
+<meta name="description" content="NCERT Solutions for Class 7 Maths Chapter 5 Lines and Angles. All exercises solved step-by-step with SVG diagrams, real-world examples, HOTS questions and exam tips.">
 <link rel="stylesheet" href="../css/style.css">
 <style>
 .real-world{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0;font-size:.95rem}
@@ -23,7 +23,7 @@
 .revision-card .formula-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.75rem}
 .revision-card .f-item{background:rgba(255,255,255,.15);border-radius:8px;padding:.6rem .8rem;font-size:.9rem;backdrop-filter:blur(4px)}
 .revision-card .f-item code{color:#fde68a;font-weight:700}
-.exercise-header{background:var(--geo-light);border:2px solid var(--geo);border-radius:12px;padding:1rem 1.25rem;margin:1.5rem 0 1rem;font-size:1.1rem;font-weight:700;color:#065f46}
+.exercise-header{background:var(--geo-light);border:2px solid var(--geo);border-radius:12px;padding:1rem 1.25rem;margin:1.5rem 0 1rem;font-size:1.1rem;font-weight:700;color:var(--geo)}
 .step-reveal summary{cursor:pointer;color:var(--primary);font-weight:600;font-size:.9rem}
 .step-reveal .steps-content{padding:.75rem;margin-top:.5rem;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0}
 .hots-tag{display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;padding:2px 6px;border-radius:4px;background:#fdf4ff;color:#9333ea;border:1px solid #e9d5ff;margin-left:.5rem}
@@ -44,387 +44,691 @@
     <h1>Lines and Angles &mdash; Complete NCERT Solutions</h1>
   </div>
 
+  <!-- ===== TOPIC NAV ===== -->
   <nav class="topic-nav">
     <a href="#revision">Revision Card</a>
     <a href="#types-of-angles">Types of Angles</a>
     <a href="#pairs-of-angles">Pairs of Angles</a>
-    <a href="#intersecting-lines">Intersecting Lines</a>
-    <a href="#parallel-lines">Parallel Lines</a>
+    <a href="#linear-pair">Linear Pair &amp; Vertically Opposite</a>
+    <a href="#parallel-lines">Parallel Lines &amp; Transversal</a>
     <a href="#ncert-solutions" class="nav-exercise">NCERT Solutions</a>
     <a href="#extra-practice" class="nav-exercise">Extra Practice</a>
     <a href="#hots" class="nav-exercise">HOTS</a>
     <a href="#mistakes">Common Mistakes</a>
   </nav>
 
-  <!-- Revision Card -->
+  <!-- ===== QUICK REVISION CARD ===== -->
   <div class="revision-card" id="revision">
     <h2>Quick Revision Card</h2>
     <div class="formula-grid">
-      <div class="f-item"><code>Complementary = 90&deg;</code><br>Two angles adding to 90&deg;</div>
-      <div class="f-item"><code>Supplementary = 180&deg;</code><br>Two angles adding to 180&deg;</div>
-      <div class="f-item"><code>Linear pair = 180&deg;</code><br>Adjacent angles on a straight line</div>
-      <div class="f-item"><code>Vertically opposite = Equal</code><br>Opposite angles when lines cross</div>
-      <div class="f-item"><code>Corresponding angles = Equal</code><br>Same position at parallel line crossings</div>
-      <div class="f-item"><code>Alternate interior = Equal</code><br>Opposite sides between parallel lines (Z-shape)</div>
-      <div class="f-item"><code>Co-interior = 180&deg;</code><br>Same side between parallel lines (U-shape)</div>
+      <div class="f-item"><code>a + b = 90&deg;</code><br>Complementary angles add to 90&deg;</div>
+      <div class="f-item"><code>a + b = 180&deg;</code><br>Supplementary angles add to 180&deg;</div>
+      <div class="f-item"><code>a = c, b = d</code><br>Vertically opposite angles are equal</div>
+      <div class="f-item"><code>a + b = 180&deg;</code><br>Linear pair angles sum to 180&deg;</div>
+      <div class="f-item"><code>&ang;1 = &ang;5</code><br>Corresponding angles equal (parallel lines)</div>
+      <div class="f-item"><code>&ang;3 = &ang;6</code><br>Alternate interior angles equal</div>
+      <div class="f-item"><code>&ang;3 + &ang;5 = 180&deg;</code><br>Co-interior angles sum to 180&deg;</div>
     </div>
   </div>
 
-  <!-- Types of Angles -->
+  <!-- ===== SECTION 1: Types of Angles ===== -->
   <div class="section">
     <h2 id="types-of-angles">Types of Angles</h2>
     <div class="real-world">
-      <strong>Real-world connection:</strong> Open a book slightly &mdash; that&rsquo;s an acute angle. Open it to an L-shape &mdash; that&rsquo;s a right angle. Open it wide &mdash; obtuse angle. Lay it flat &mdash; straight angle!
+      <strong>Real-world connection:</strong> Look around you &mdash; angles are everywhere! The corner of your textbook is a right angle (90&deg;). When you open a book slightly, the pages make an acute angle. When you open a door wide, the hinge makes an obtuse angle. Even clock hands form different angles every minute!
     </div>
+    <ul class="summary-list">
+      <li><strong>Acute angle:</strong> Less than 90&deg; (e.g., 30&deg;, 45&deg;, 60&deg;) &mdash; a sharp, small angle.</li>
+      <li><strong>Right angle:</strong> Exactly 90&deg; &mdash; the corner of a square or rectangle.</li>
+      <li><strong>Obtuse angle:</strong> Greater than 90&deg; but less than 180&deg; (e.g., 120&deg;, 150&deg;) &mdash; a wide angle.</li>
+      <li><strong>Straight angle:</strong> Exactly 180&deg; &mdash; a straight line.</li>
+      <li><strong>Reflex angle:</strong> Greater than 180&deg; but less than 360&deg; (e.g., 210&deg;, 300&deg;) &mdash; more than a half-turn.</li>
+    </ul>
+
+    <!-- SVG: Types of Angles diagram -->
     <figure class="diagram">
-      <svg viewBox="0 0 560 150" width="560" height="150" xmlns="http://www.w3.org/2000/svg">
-        <!-- Acute 45°: vertex at (40,105), horizontal ray right, other ray at 45° up-right -->
-        <line x1="40" y1="105" x2="100" y2="105" stroke="#334155" stroke-width="2.5"/>
-        <line x1="40" y1="105" x2="82" y2="63" stroke="#334155" stroke-width="2.5"/>
-        <!-- Arc from horizontal ray to 45° ray (sweep counterclockwise, small arc) -->
-        <path d="M 62,105 A 22,22 0 0,0 55.6,89.4" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
-        <text x="68" y="93" font-size="10" fill="#3b82f6" font-weight="700">45&deg;</text>
-        <text x="65" y="135" text-anchor="middle" font-size="12" fill="#3b82f6" font-weight="700">Acute</text>
-        <text x="65" y="147" text-anchor="middle" font-size="9" fill="#64748b">&lt; 90&deg;</text>
+      <svg viewBox="0 0 620 160" width="620" height="160" xmlns="http://www.w3.org/2000/svg">
+        <!-- Acute angle -->
+        <line x1="20" y1="130" x2="90" y2="130" stroke="#10b981" stroke-width="2.5"/>
+        <line x1="20" y1="130" x2="65" y2="75" stroke="#10b981" stroke-width="2.5"/>
+        <path d="M 40,130 A 20,20 0 0,1 38,115" fill="none" stroke="#10b981" stroke-width="1.5"/>
+        <text x="55" y="148" text-anchor="middle" font-size="11" fill="#10b981" font-weight="700">Acute</text>
+        <text x="55" y="65" text-anchor="middle" font-size="10" fill="#64748b">&lt;90&deg;</text>
 
-        <!-- Right 90°: vertex at (165,105), horizontal ray right, vertical ray up -->
-        <line x1="165" y1="105" x2="230" y2="105" stroke="#334155" stroke-width="2.5"/>
-        <line x1="165" y1="105" x2="165" y2="40" stroke="#334155" stroke-width="2.5"/>
-        <!-- Small square for right angle -->
-        <polyline points="165,89 181,89 181,105" fill="none" stroke="#16a34a" stroke-width="2"/>
-        <text x="195" y="135" text-anchor="middle" font-size="12" fill="#16a34a" font-weight="700">Right</text>
-        <text x="195" y="147" text-anchor="middle" font-size="9" fill="#64748b">= 90&deg;</text>
+        <!-- Right angle -->
+        <line x1="140" y1="130" x2="210" y2="130" stroke="#3b82f6" stroke-width="2.5"/>
+        <line x1="140" y1="130" x2="140" y2="65" stroke="#3b82f6" stroke-width="2.5"/>
+        <rect x="140" y="115" width="15" height="15" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+        <text x="175" y="148" text-anchor="middle" font-size="11" fill="#3b82f6" font-weight="700">Right</text>
+        <text x="170" y="60" text-anchor="middle" font-size="10" fill="#64748b">=90&deg;</text>
 
-        <!-- Obtuse 120°: vertex at (310,105), horizontal ray right, other ray 120° from horizontal -->
-        <line x1="310" y1="105" x2="380" y2="105" stroke="#334155" stroke-width="2.5"/>
-        <line x1="310" y1="105" x2="275" y2="44" stroke="#334155" stroke-width="2.5"/>
-        <!-- Arc: start on horizontal ray (25px from vertex), end on upper ray (25px from vertex) -->
-        <!-- Upper ray direction: dx=-35, dy=-61, normalized *25: dx=-12.5, dy=-21.7 → end ~(297.5, 83.3) -->
-        <!-- Use large-arc=0, sweep=0 to go counterclockwise through the obtuse interior -->
-        <path d="M 335,105 A 25,25 0 0,0 297.6,83.3" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
-        <text x="320" y="82" font-size="10" fill="#f59e0b" font-weight="700">120&deg;</text>
-        <text x="330" y="135" text-anchor="middle" font-size="12" fill="#f59e0b" font-weight="700">Obtuse</text>
-        <text x="330" y="147" text-anchor="middle" font-size="9" fill="#64748b">90&deg;&ndash;180&deg;</text>
+        <!-- Obtuse angle -->
+        <line x1="260" y1="130" x2="340" y2="130" stroke="#f59e0b" stroke-width="2.5"/>
+        <line x1="260" y1="130" x2="230" y2="70" stroke="#f59e0b" stroke-width="2.5"/>
+        <path d="M 280,130 A 20,20 0 0,1 264,112" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+        <text x="290" y="148" text-anchor="middle" font-size="11" fill="#f59e0b" font-weight="700">Obtuse</text>
+        <text x="260" y="60" text-anchor="middle" font-size="10" fill="#64748b">&gt;90&deg;</text>
 
-        <!-- Straight 180°: horizontal line with vertex dot in middle -->
-        <line x1="420" y1="85" x2="550" y2="85" stroke="#334155" stroke-width="2.5"/>
-        <circle cx="485" cy="85" r="4" fill="#dc2626"/>
-        <!-- Semicircle arc above -->
-        <path d="M 510,85 A 25,25 0 0,0 460,85" fill="none" stroke="#dc2626" stroke-width="2.5"/>
-        <text x="485" y="135" text-anchor="middle" font-size="12" fill="#dc2626" font-weight="700">Straight</text>
-        <text x="485" y="147" text-anchor="middle" font-size="9" fill="#64748b">= 180&deg;</text>
+        <!-- Straight angle -->
+        <line x1="370" y1="110" x2="490" y2="110" stroke="#dc2626" stroke-width="2.5"/>
+        <circle cx="430" cy="110" r="3" fill="#dc2626"/>
+        <path d="M 450,110 A 20,20 0 0,1 410,110" fill="none" stroke="#dc2626" stroke-width="1.5"/>
+        <text x="430" y="148" text-anchor="middle" font-size="11" fill="#dc2626" font-weight="700">Straight</text>
+        <text x="430" y="98" text-anchor="middle" font-size="10" fill="#64748b">=180&deg;</text>
+
+        <!-- Reflex angle -->
+        <line x1="530" y1="110" x2="600" y2="110" stroke="#9333ea" stroke-width="2.5"/>
+        <line x1="530" y1="110" x2="570" y2="60" stroke="#9333ea" stroke-width="2.5"/>
+        <path d="M 548,110 A 18,18 0 1,0 544,92" fill="none" stroke="#9333ea" stroke-width="1.5" stroke-dasharray="3,2"/>
+        <text x="560" y="148" text-anchor="middle" font-size="11" fill="#9333ea" font-weight="700">Reflex</text>
+        <text x="595" y="75" text-anchor="middle" font-size="10" fill="#64748b">&gt;180&deg;</text>
       </svg>
-      <figcaption>Acute &lt; 90&deg; &lt; Right = 90&deg; &lt; Obtuse &lt; 180&deg; = Straight</figcaption>
-    </figure>
-  </div>
-
-  <!-- Pairs of Angles -->
-  <div class="section">
-    <h2 id="pairs-of-angles">Pairs of Angles</h2>
-
-    <h3 style="color:var(--primary);margin:1rem 0 .5rem">Complementary Angles (add to 90&deg;)</h3>
-    <ul class="summary-list">
-      <li>Two angles are <strong>complementary</strong> if their sum = 90&deg;.</li>
-      <li>Example: 30&deg; and 60&deg; are complementary (30 + 60 = 90).</li>
-      <li>To find the complement: <strong>90&deg; &minus; given angle</strong>.</li>
-    </ul>
-    <div class="why-box">
-      <strong>Memory trick:</strong> <strong>C</strong>omplementary = <strong>C</strong>orner (a corner/right angle is 90&deg;). <strong>S</strong>upplementary = <strong>S</strong>traight (a straight line is 180&deg;).
-    </div>
-
-    <h3 style="color:var(--primary);margin:1rem 0 .5rem">Supplementary Angles (add to 180&deg;)</h3>
-    <ul class="summary-list">
-      <li>Two angles are <strong>supplementary</strong> if their sum = 180&deg;.</li>
-      <li>Example: 110&deg; and 70&deg; are supplementary (110 + 70 = 180).</li>
-      <li>To find the supplement: <strong>180&deg; &minus; given angle</strong>.</li>
-    </ul>
-
-    <div class="real-world">
-      <strong>Real-world:</strong> When you open a door partway, the angle between the door and the wall, plus the angle between the door and the doorframe, is always 180&deg; &mdash; they&rsquo;re supplementary!
-    </div>
-  </div>
-
-  <!-- Intersecting Lines -->
-  <div class="section">
-    <h2 id="intersecting-lines">Intersecting Lines</h2>
-
-    <h3 style="color:var(--primary);margin:1rem 0 .5rem">Linear Pair</h3>
-    <ul class="summary-list">
-      <li>When two adjacent angles sit on a straight line, they form a <strong>linear pair</strong>.</li>
-      <li>A linear pair always adds to <strong>180&deg;</strong>.</li>
-    </ul>
-
-    <h3 style="color:var(--primary);margin:1rem 0 .5rem">Vertically Opposite Angles</h3>
-    <ul class="summary-list">
-      <li>When two lines cross, they form 4 angles.</li>
-      <li>The angles opposite each other are called <strong>vertically opposite</strong> and are always <strong>equal</strong>.</li>
-    </ul>
-
-    <figure class="diagram">
-      <svg viewBox="0 0 340 230" width="340" height="230" xmlns="http://www.w3.org/2000/svg">
-        <!-- Two intersecting lines -->
-        <line x1="30" y1="190" x2="310" y2="30" stroke="#334155" stroke-width="2.5"/>
-        <line x1="30" y1="30" x2="310" y2="190" stroke="#334155" stroke-width="2.5"/>
-        <circle cx="170" cy="110" r="4" fill="#334155"/>
-        <!-- Colored arcs -->
-        <path d="M 190,95 A 25,25 0 0,1 185,130" fill="none" stroke="#3b82f6" stroke-width="3"/>
-        <path d="M 155,130 A 25,25 0 0,1 150,95" fill="none" stroke="#3b82f6" stroke-width="3"/>
-        <path d="M 185,130 A 25,25 0 0,1 155,130" fill="none" stroke="#dc2626" stroke-width="3"/>
-        <path d="M 150,95 A 25,25 0 0,1 190,95" fill="none" stroke="#dc2626" stroke-width="3"/>
-        <!-- Labels -->
-        <text x="200" y="108" font-size="16" fill="#3b82f6" font-weight="800">a</text>
-        <text x="170" y="145" font-size="16" fill="#dc2626" font-weight="800">b</text>
-        <text x="140" y="108" font-size="16" fill="#3b82f6" font-weight="800">a</text>
-        <text x="170" y="82" font-size="16" fill="#dc2626" font-weight="800">b</text>
-        <!-- Annotations -->
-        <rect x="30" y="200" width="280" height="25" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
-        <text x="170" y="217" text-anchor="middle" font-size="11" fill="#334155"><tspan fill="#3b82f6" font-weight="700">a = a</tspan> (vertically opposite) &ensp; <tspan fill="#dc2626" font-weight="700">a + b = 180&deg;</tspan> (linear pair)</text>
-      </svg>
-      <figcaption>Two intersecting lines form 2 pairs of equal vertically opposite angles. Adjacent angles are linear pairs (180&deg;).</figcaption>
+      <figcaption>The five types of angles: acute (&lt;90&deg;), right (=90&deg;), obtuse (&gt;90&deg;), straight (=180&deg;), reflex (&gt;180&deg;)</figcaption>
     </figure>
 
     <div class="exam-tip">
-      <strong>Quick trick:</strong> When two lines cross, you only need to find <strong>ONE angle</strong>. The other three are automatically determined: opposite = same, adjacent = 180&deg; minus.
+      <strong>Exam tip:</strong> When asked to classify an angle, always check: Is it less than 90&deg;? Equal to 90&deg;? Between 90&deg; and 180&deg;? Exactly 180&deg;? Or greater than 180&deg;? This five-step check will never fail you!
     </div>
   </div>
 
-  <!-- Parallel Lines -->
+  <!-- ===== SECTION 2: Pairs of Angles ===== -->
   <div class="section">
-    <h2 id="parallel-lines">Parallel Lines and Transversal</h2>
+    <h2 id="pairs-of-angles">Pairs of Angles &mdash; Complementary &amp; Supplementary</h2>
+
+    <h3 style="color:var(--geo);margin:1rem 0 .5rem">Complementary Angles (sum = 90&deg;)</h3>
     <ul class="summary-list">
-      <li>A <strong>transversal</strong> is a line that cuts two or more lines.</li>
-      <li>When a transversal cuts two <strong>parallel</strong> lines, special angle relationships form.</li>
+      <li>Two angles are <strong>complementary</strong> if they add up to <strong>90&deg;</strong>.</li>
+      <li>Example: 30&deg; and 60&deg; are complementary because 30 + 60 = 90.</li>
+      <li>The complement of an angle x = <strong>90&deg; &minus; x</strong>.</li>
+      <li>Each angle is called the <strong>complement</strong> of the other.</li>
     </ul>
 
+    <h3 style="color:var(--geo);margin:1rem 0 .5rem">Supplementary Angles (sum = 180&deg;)</h3>
+    <ul class="summary-list">
+      <li>Two angles are <strong>supplementary</strong> if they add up to <strong>180&deg;</strong>.</li>
+      <li>Example: 110&deg; and 70&deg; are supplementary because 110 + 70 = 180.</li>
+      <li>The supplement of an angle x = <strong>180&deg; &minus; x</strong>.</li>
+      <li>Each angle is called the <strong>supplement</strong> of the other.</li>
+    </ul>
+
+    <div class="why-box">
+      <strong>Why 90&deg; and 180&deg;?</strong><br>
+      &bull; <strong>90&deg;</strong> is a right angle &mdash; the corner of a page. Two angles that together make a right angle are complementary.<br>
+      &bull; <strong>180&deg;</strong> is a straight line. Two angles that together form a straight line are supplementary.<br><br>
+      <strong>Memory trick:</strong> <em>C</em>omplementary = <em>C</em>orner (90&deg;). <em>S</em>upplementary = <em>S</em>traight line (180&deg;).
+    </div>
+
+    <div class="real-world">
+      <strong>Real-world examples:</strong><br>
+      &bull; <strong>Clock hands at 3 o&rsquo;clock:</strong> The minute and hour hand make a 90&deg; angle. The two parts of the full turn around the clock are 90&deg; and 270&deg; (supplementary? No &mdash; but 90&deg; can be split into complementary pairs like 30&deg; + 60&deg;).<br>
+      &bull; <strong>Opening a door:</strong> If you open a door 60&deg;, the remaining angle to fully open (90&deg;) is 30&deg;. These are complementary!<br>
+      &bull; <strong>Folding paper:</strong> Fold a straight edge &mdash; the two angles formed at the fold are supplementary (they add to 180&deg;).
+    </div>
+
+    <div class="exam-tip">
+      <strong>Exam tip:</strong> An angle greater than 90&deg; cannot have a complement (since the complement would be negative). But every angle has a supplement &mdash; even 0&deg; (its supplement is 180&deg;)!
+    </div>
+  </div>
+
+  <!-- ===== SECTION 3: Linear Pair & Vertically Opposite ===== -->
+  <div class="section">
+    <h2 id="linear-pair">Linear Pair &amp; Vertically Opposite Angles</h2>
+
+    <h3 style="color:var(--geo);margin:1rem 0 .5rem">Linear Pair</h3>
+    <ul class="summary-list">
+      <li>When two angles are formed on a straight line, they always add up to <strong>180&deg;</strong>. This is called a <strong>linear pair</strong>.</li>
+      <li>If one angle is x, the other is <strong>180&deg; &minus; x</strong>.</li>
+    </ul>
+
+    <h3 style="color:var(--geo);margin:1rem 0 .5rem">Vertically Opposite Angles</h3>
+    <ul class="summary-list">
+      <li>When two straight lines intersect (cross), they form <strong>4 angles</strong>.</li>
+      <li>The angles that are <strong>across from each other</strong> (opposite) are always <strong>equal</strong>.</li>
+      <li>Adjacent angles (next to each other) form a linear pair and add to 180&deg;.</li>
+    </ul>
+
+    <!-- SVG: Two intersecting lines showing vertically opposite angles -->
     <figure class="diagram">
-      <svg viewBox="0 0 440 280" width="440" height="280" xmlns="http://www.w3.org/2000/svg">
-        <!-- Parallel lines -->
-        <line x1="40" y1="80" x2="380" y2="80" stroke="#334155" stroke-width="2.5"/>
-        <line x1="40" y1="200" x2="380" y2="200" stroke="#334155" stroke-width="2.5"/>
-        <!-- Arrows for parallel -->
-        <polygon points="200,76 206,80 200,84" fill="#334155"/><polygon points="210,76 216,80 210,84" fill="#334155"/>
-        <polygon points="200,196 206,200 200,204" fill="#334155"/><polygon points="210,196 216,200 210,204" fill="#334155"/>
-        <text x="390" y="84" font-size="12" fill="#64748b" font-weight="600">l</text>
-        <text x="390" y="204" font-size="12" fill="#64748b" font-weight="600">m</text>
-        <!-- Transversal -->
-        <line x1="130" y1="30" x2="300" y2="250" stroke="#8b5cf6" stroke-width="2.5"/>
-        <text x="305" y="260" font-size="11" fill="#8b5cf6" font-weight="700">t (transversal)</text>
-        <!-- Angles at top intersection -->
-        <text x="195" y="68" font-size="14" fill="#16a34a" font-weight="700">1</text>
-        <text x="170" y="68" font-size="14" fill="#dc2626" font-weight="700">2</text>
-        <text x="167" y="98" font-size="14" fill="#3b82f6" font-weight="700">3</text>
-        <text x="195" y="98" font-size="14" fill="#f59e0b" font-weight="700">4</text>
-        <!-- Angles at bottom intersection -->
-        <text x="248" y="188" font-size="14" fill="#16a34a" font-weight="700">5</text>
-        <text x="222" y="188" font-size="14" fill="#dc2626" font-weight="700">6</text>
-        <text x="220" y="218" font-size="14" fill="#3b82f6" font-weight="700">7</text>
-        <text x="248" y="218" font-size="14" fill="#f59e0b" font-weight="700">8</text>
-        <!-- Legend boxes -->
-        <rect x="20" y="240" width="400" height="35" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
-        <text x="220" y="254" text-anchor="middle" font-size="10" fill="#334155"><tspan font-weight="700" fill="#16a34a">Corresponding:</tspan> 1=5, 2=6, 3=7, 4=8</text>
-        <text x="220" y="268" text-anchor="middle" font-size="10" fill="#334155"><tspan font-weight="700" fill="#3b82f6">Alternate interior:</tspan> 3=5, 4=6 &ensp; <tspan font-weight="700" fill="#f59e0b">Co-interior:</tspan> 4+5=180&deg;, 3+6=180&deg;</text>
+      <svg viewBox="0 0 400 260" width="400" height="260" xmlns="http://www.w3.org/2000/svg">
+        <!-- Two intersecting lines -->
+        <line x1="50" y1="210" x2="350" y2="50" stroke="#334155" stroke-width="2.5"/>
+        <line x1="50" y1="50" x2="350" y2="210" stroke="#334155" stroke-width="2.5"/>
+        <!-- Centre point -->
+        <circle cx="200" cy="130" r="4" fill="#334155"/>
+        <!-- Angle arcs and labels -->
+        <!-- Angle a (top) -->
+        <path d="M 185,112 A 25,25 0 0,1 215,112" fill="none" stroke="#10b981" stroke-width="2.5"/>
+        <text x="200" y="95" text-anchor="middle" font-size="16" fill="#10b981" font-weight="700">a</text>
+        <!-- Angle b (right) -->
+        <path d="M 218,115 A 25,25 0 0,1 218,145" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+        <text x="238" y="134" text-anchor="middle" font-size="16" fill="#3b82f6" font-weight="700">b</text>
+        <!-- Angle c (bottom) -->
+        <path d="M 215,148 A 25,25 0 0,1 185,148" fill="none" stroke="#10b981" stroke-width="2.5"/>
+        <text x="200" y="172" text-anchor="middle" font-size="16" fill="#10b981" font-weight="700">c</text>
+        <!-- Angle d (left) -->
+        <path d="M 182,145 A 25,25 0 0,1 182,115" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+        <text x="162" y="134" text-anchor="middle" font-size="16" fill="#3b82f6" font-weight="700">d</text>
+        <!-- Labels -->
+        <rect x="80" y="225" width="240" height="30" rx="6" fill="#f0fdf4" stroke="#10b981" stroke-width="1"/>
+        <text x="200" y="245" text-anchor="middle" font-size="13" fill="#334155" font-weight="600">a = c (vertically opposite) &ensp; b = d (vertically opposite)</text>
+        <text x="200" y="30" text-anchor="middle" font-size="12" fill="#64748b">a + b = 180&deg; (linear pair) &ensp; a + d = 180&deg; (linear pair)</text>
       </svg>
-      <figcaption>When parallel lines l and m are cut by transversal t: 8 angles formed but only TWO distinct values!</figcaption>
+      <figcaption>Two intersecting lines: vertically opposite angles are equal (a = c, b = d), adjacent angles form linear pairs</figcaption>
     </figure>
 
     <div class="why-box">
-      <strong>How to remember which is which:</strong><br>
-      &bull; <strong>Corresponding</strong> = same position (both top-left, or both bottom-right)<br>
-      &bull; <strong>Alternate interior</strong> = between the lines, opposite sides (makes a <strong>Z-shape</strong>)<br>
-      &bull; <strong>Co-interior</strong> = between the lines, same side (makes a <strong>U-shape</strong>)
+      <strong>WHY are vertically opposite angles equal?</strong><br>
+      Look at angles a and b: they form a linear pair, so a + b = 180&deg;.<br>
+      Look at angles b and c: they also form a linear pair, so b + c = 180&deg;.<br>
+      Since a + b = b + c = 180&deg;, we can subtract b from both: <strong>a = c</strong>.<br>
+      The same logic proves <strong>b = d</strong>. Beautiful!
     </div>
 
-    <div class="why-box">
-      <strong>The big shortcut:</strong> When a transversal cuts parallel lines, ALL 8 angles are just <strong>two values</strong>: x&deg; and (180&minus;x)&deg;. Find one angle and you know them all!
+    <div class="example">
+      <h3>Example: Two lines intersect. One angle is 65&deg;. Find all four angles.</h3>
+      <div class="step"><strong>Step 1:</strong> Let angle a = 65&deg;.</div>
+      <div class="step"><strong>Step 2:</strong> Vertically opposite: angle c = a = <strong>65&deg;</strong>.</div>
+      <div class="step"><strong>Step 3:</strong> Linear pair: angle b = 180&deg; &minus; 65&deg; = <strong>115&deg;</strong>.</div>
+      <div class="step"><strong>Step 4:</strong> Vertically opposite: angle d = b = <strong>115&deg;</strong>.</div>
+      <div class="step"><strong>Check:</strong> 65 + 115 + 65 + 115 = 360&deg; &#10003; (All angles around a point sum to 360&deg;)</div>
     </div>
   </div>
 
-  <!-- NCERT Solutions -->
+  <!-- ===== SECTION 4: Parallel Lines & Transversal ===== -->
+  <div class="section">
+    <h2 id="parallel-lines">Parallel Lines Cut by a Transversal</h2>
+    <div class="real-world">
+      <strong>Real-world connection:</strong> Railway tracks are parallel lines. When a road crosses the tracks, it acts as a transversal. The angles formed at each crossing point follow special rules &mdash; and engineers use these rules every day!
+    </div>
+
+    <ul class="summary-list">
+      <li>A <strong>transversal</strong> is a line that intersects two or more lines at different points.</li>
+      <li>When a transversal cuts two <strong>parallel</strong> lines, it creates <strong>8 angles</strong> (4 at each intersection).</li>
+      <li>These 8 angles have three special relationships:</li>
+    </ul>
+
+    <h3 style="color:var(--geo);margin:1rem 0 .5rem">1. Corresponding Angles (equal)</h3>
+    <p>Angles in the same position at each intersection. They form an <strong>F-shape</strong> (or reversed F).</p>
+
+    <h3 style="color:var(--geo);margin:1rem 0 .5rem">2. Alternate Interior Angles (equal)</h3>
+    <p>Angles on opposite sides of the transversal, between the parallel lines. They form a <strong>Z-shape</strong> (or reversed Z).</p>
+
+    <h3 style="color:var(--geo);margin:1rem 0 .5rem">3. Co-interior Angles (sum = 180&deg;)</h3>
+    <p>Angles on the same side of the transversal, between the parallel lines. They form a <strong>U-shape</strong> (or C-shape).</p>
+
+    <!-- SVG: Parallel lines with transversal showing all 8 angles -->
+    <figure class="diagram">
+      <svg viewBox="0 0 500 320" width="500" height="320" xmlns="http://www.w3.org/2000/svg">
+        <!-- Parallel lines -->
+        <line x1="60" y1="100" x2="440" y2="100" stroke="#334155" stroke-width="2.5"/>
+        <line x1="60" y1="220" x2="440" y2="220" stroke="#334155" stroke-width="2.5"/>
+        <!-- Parallel arrows -->
+        <text x="450" y="104" font-size="12" fill="#64748b">l</text>
+        <text x="450" y="224" font-size="12" fill="#64748b">m</text>
+        <polygon points="50,95 50,105 40,100" fill="#64748b"/>
+        <polygon points="50,215 50,225 40,220" fill="#64748b"/>
+        <!-- Transversal -->
+        <line x1="150" y1="30" x2="330" y2="290" stroke="#dc2626" stroke-width="2"/>
+        <text x="335" y="298" font-size="12" fill="#dc2626" font-weight="600">t (transversal)</text>
+        <!-- Angles at first intersection (approx x=200, y=100) -->
+        <text x="218" y="90" font-size="14" fill="#10b981" font-weight="700">&ang;1</text>
+        <text x="186" y="90" font-size="14" fill="#f59e0b" font-weight="700">&ang;2</text>
+        <text x="186" y="120" font-size="14" fill="#3b82f6" font-weight="700">&ang;3</text>
+        <text x="218" y="120" font-size="14" fill="#9333ea" font-weight="700">&ang;4</text>
+        <!-- Angles at second intersection (approx x=270, y=220) -->
+        <text x="288" y="210" font-size="14" fill="#9333ea" font-weight="700">&ang;5</text>
+        <text x="255" y="210" font-size="14" fill="#3b82f6" font-weight="700">&ang;6</text>
+        <text x="255" y="240" font-size="14" fill="#f59e0b" font-weight="700">&ang;7</text>
+        <text x="288" y="240" font-size="14" fill="#10b981" font-weight="700">&ang;8</text>
+        <!-- Key below -->
+        <rect x="60" y="270" width="380" height="45" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="250" y="286" text-anchor="middle" font-size="11" fill="#10b981" font-weight="600">Corresponding: &ang;1=&ang;5, &ang;2=&ang;6, &ang;3=&ang;7, &ang;4=&ang;8</text>
+        <text x="250" y="300" text-anchor="middle" font-size="11" fill="#3b82f6" font-weight="600">Alternate interior: &ang;3=&ang;6, &ang;4=&ang;5 &ensp;|&ensp; Co-interior: &ang;3+&ang;5=180&deg;, &ang;4+&ang;6=180&deg;</text>
+      </svg>
+      <figcaption>Parallel lines l and m cut by transversal t &mdash; all 8 angles and their relationships</figcaption>
+    </figure>
+
+    <div class="exam-tip">
+      <strong>Exam tip &mdash; spotting the patterns:</strong><br>
+      &bull; <strong>F-shape</strong> (corresponding): look for angles in matching positions &rarr; they are <strong>equal</strong>.<br>
+      &bull; <strong>Z-shape</strong> (alternate interior): look for angles on opposite sides between the lines &rarr; they are <strong>equal</strong>.<br>
+      &bull; <strong>C/U-shape</strong> (co-interior): look for angles on the same side between the lines &rarr; they add to <strong>180&deg;</strong>.
+    </div>
+
+    <div class="example">
+      <h3>Example: A transversal cuts two parallel lines. &ang;1 = 70&deg;. Find all 8 angles.</h3>
+      <div class="step"><strong>Step 1:</strong> &ang;1 = 70&deg; (given).</div>
+      <div class="step"><strong>Step 2:</strong> &ang;2 = 180&deg; &minus; 70&deg; = 110&deg; (linear pair with &ang;1).</div>
+      <div class="step"><strong>Step 3:</strong> &ang;3 = 110&deg; (vertically opposite to &ang;2); &ang;4 = 70&deg; (vertically opposite to &ang;1).</div>
+      <div class="step"><strong>Step 4:</strong> &ang;5 = &ang;1 = 70&deg; (corresponding). &ang;6 = &ang;2 = 110&deg; (corresponding).</div>
+      <div class="step"><strong>Step 5:</strong> &ang;7 = &ang;3 = 110&deg; (corresponding). &ang;8 = &ang;4 = 70&deg; (corresponding).</div>
+      <div class="step"><strong>All 8 angles: 70&deg;, 110&deg;, 110&deg;, 70&deg;, 70&deg;, 110&deg;, 110&deg;, 70&deg;</strong></div>
+      <div class="step"><strong>Check:</strong> &ang;3 + &ang;5 = 110 + 70 = 180&deg; (co-interior) &#10003; &ensp; &ang;3 = &ang;6 = 110&deg; (alternate interior) &#10003;</div>
+    </div>
+  </div>
+
+  <!-- ===== NCERT SOLUTIONS ===== -->
   <div class="section">
     <h2 id="ncert-solutions">NCERT Exercise Solutions &mdash; All Questions Solved</h2>
 
-    <div class="exercise-header">Exercise 5.1 &mdash; Pairs of Angles (10 Questions)</div>
+    <div class="exercise-header">Exercise 5.1 &mdash; Complementary, Supplementary, Linear Pair &amp; Vertically Opposite (10 Questions)</div>
 
-    <div class="example"><h3>Q1. Find the complement of: (a) 45&deg; (b) 65&deg; (c) 28&deg; (d) 0&deg;</h3>
+    <div class="example">
+      <h3>Q1. Find the complement of each angle: (i) 20&deg; (ii) 35&deg; (iii) 90&deg; (iv) 77&deg; (v) 30&deg;</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Rule:</strong> Complement = 90&deg; &minus; angle.</div>
-        <div class="step"><strong>(a)</strong> 90 &minus; 45 = <strong>45&deg;</strong> &ensp; <strong>(b)</strong> 90 &minus; 65 = <strong>25&deg;</strong></div>
-        <div class="step"><strong>(c)</strong> 90 &minus; 28 = <strong>62&deg;</strong> &ensp; <strong>(d)</strong> 90 &minus; 0 = <strong>90&deg;</strong></div>
-      </div></details></div>
+        <div class="step"><strong>Rule:</strong> Complement of an angle x = 90&deg; &minus; x</div>
+        <div class="step"><strong>(i)</strong> Complement of 20&deg; = 90&deg; &minus; 20&deg; = <strong>70&deg;</strong></div>
+        <div class="step"><strong>(ii)</strong> Complement of 35&deg; = 90&deg; &minus; 35&deg; = <strong>55&deg;</strong></div>
+        <div class="step"><strong>(iii)</strong> Complement of 90&deg; = 90&deg; &minus; 90&deg; = <strong>0&deg;</strong></div>
+        <div class="step"><strong>(iv)</strong> Complement of 77&deg; = 90&deg; &minus; 77&deg; = <strong>13&deg;</strong></div>
+        <div class="step"><strong>(v)</strong> Complement of 30&deg; = 90&deg; &minus; 30&deg; = <strong>60&deg;</strong></div>
+        <div class="step"><strong>Check:</strong> In each case, angle + complement = 90&deg; &#10003;</div>
+      </div></details>
+    </div>
 
-    <div class="example"><h3>Q2. Find the supplement of: (a) 105&deg; (b) 70&deg; (c) 90&deg;</h3>
+    <div class="example">
+      <h3>Q2. Find the supplement of each angle: (i) 105&deg; (ii) 87&deg; (iii) 154&deg;</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Rule:</strong> Supplement = 180&deg; &minus; angle.</div>
-        <div class="step"><strong>(a)</strong> 180 &minus; 105 = <strong>75&deg;</strong> &ensp; <strong>(b)</strong> 180 &minus; 70 = <strong>110&deg;</strong></div>
-        <div class="step"><strong>(c)</strong> 180 &minus; 90 = <strong>90&deg;</strong> (a right angle is its own supplement!)</div>
-      </div></details></div>
+        <div class="step"><strong>Rule:</strong> Supplement of an angle x = 180&deg; &minus; x</div>
+        <div class="step"><strong>(i)</strong> Supplement of 105&deg; = 180&deg; &minus; 105&deg; = <strong>75&deg;</strong></div>
+        <div class="step"><strong>(ii)</strong> Supplement of 87&deg; = 180&deg; &minus; 87&deg; = <strong>93&deg;</strong></div>
+        <div class="step"><strong>(iii)</strong> Supplement of 154&deg; = 180&deg; &minus; 154&deg; = <strong>26&deg;</strong></div>
+        <div class="step"><strong>Check:</strong> 105+75=180 &#10003;, 87+93=180 &#10003;, 154+26=180 &#10003;</div>
+      </div></details>
+    </div>
 
-    <div class="example"><h3>Q3. Two supplementary angles are in ratio 2:3. Find them.</h3>
+    <div class="example">
+      <h3>Q3. Identify which of the following pairs are complementary and which are supplementary: (i) 65&deg;, 115&deg; (ii) 63&deg;, 27&deg; (iii) 112&deg;, 68&deg; (iv) 130&deg;, 50&deg; (v) 45&deg;, 45&deg; (vi) 80&deg;, 10&deg;</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Let angles = 2x and 3x</div>
-        <div class="step"><strong>Step 2:</strong> Supplementary: 2x + 3x = 180 &rarr; 5x = 180</div>
-        <div class="step"><strong>Step 3:</strong> x = 36</div>
-        <div class="step"><strong>Step 4:</strong> Angles: 2(36) = <strong>72&deg;</strong> and 3(36) = <strong>108&deg;</strong></div>
-        <div class="step"><strong>Check:</strong> 72 + 108 = 180 &#10003;</div>
-      </div></details></div>
+        <div class="step"><strong>Step 1:</strong> Add each pair and check: sum = 90&deg; (complementary) or 180&deg; (supplementary).</div>
+        <div class="step"><strong>(i)</strong> 65 + 115 = 180 &rarr; <strong>Supplementary</strong></div>
+        <div class="step"><strong>(ii)</strong> 63 + 27 = 90 &rarr; <strong>Complementary</strong></div>
+        <div class="step"><strong>(iii)</strong> 112 + 68 = 180 &rarr; <strong>Supplementary</strong></div>
+        <div class="step"><strong>(iv)</strong> 130 + 50 = 180 &rarr; <strong>Supplementary</strong></div>
+        <div class="step"><strong>(v)</strong> 45 + 45 = 90 &rarr; <strong>Complementary</strong></div>
+        <div class="step"><strong>(vi)</strong> 80 + 10 = 90 &rarr; <strong>Complementary</strong></div>
+      </div></details>
+    </div>
 
-    <div class="example"><h3>Q4. Two complementary angles are in ratio 1:4. Find them.</h3>
+    <div class="example">
+      <h3>Q4. Find the angle which is equal to its complement.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Let angles = x and 4x</div>
-        <div class="step"><strong>Step 2:</strong> x + 4x = 90 &rarr; 5x = 90 &rarr; x = 18</div>
-        <div class="step"><strong>Step 3:</strong> Angles: <strong>18&deg;</strong> and <strong>72&deg;</strong></div>
-        <div class="step"><strong>Check:</strong> 18 + 72 = 90 &#10003;</div>
-      </div></details></div>
+        <div class="step"><strong>Step 1:</strong> Let the angle be x. Its complement is also x (since they are equal).</div>
+        <div class="step"><strong>Step 2:</strong> Complementary angles add to 90&deg;: x + x = 90&deg;</div>
+        <div class="step"><strong>Step 3:</strong> Simplify: 2x = 90&deg;</div>
+        <div class="step"><strong>Step 4:</strong> Divide by 2: x = 90 &divide; 2 = <strong>45&deg;</strong></div>
+        <div class="step"><strong>Check:</strong> 45&deg; + 45&deg; = 90&deg; &#10003; Both angles are 45&deg; and they are complementary.</div>
+      </div></details>
+    </div>
 
-    <div class="example"><h3>Q5. Two lines intersect. One angle is 65&deg;. Find the other three.</h3>
+    <div class="example">
+      <h3>Q5. Find the angle which is equal to its supplement.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Vertically opposite to 65&deg; = <strong>65&deg;</strong></div>
-        <div class="step"><strong>Step 2:</strong> Linear pair: 180 &minus; 65 = <strong>115&deg;</strong></div>
-        <div class="step"><strong>Step 3:</strong> Vertically opposite to 115&deg; = <strong>115&deg;</strong></div>
-        <div class="step"><strong>All four: 65&deg;, 115&deg;, 65&deg;, 115&deg;</strong></div>
-      </div></details></div>
+        <div class="step"><strong>Step 1:</strong> Let the angle be x. Its supplement is also x.</div>
+        <div class="step"><strong>Step 2:</strong> Supplementary angles add to 180&deg;: x + x = 180&deg;</div>
+        <div class="step"><strong>Step 3:</strong> Simplify: 2x = 180&deg;</div>
+        <div class="step"><strong>Step 4:</strong> Divide by 2: x = 180 &divide; 2 = <strong>90&deg;</strong></div>
+        <div class="step"><strong>Check:</strong> 90&deg; + 90&deg; = 180&deg; &#10003; A right angle is its own supplement.</div>
+      </div></details>
+    </div>
 
-    <div class="example"><h3>Q6. Linear pair angles are (3x+10)&deg; and (2x+20)&deg;. Find x and both angles.</h3>
+    <div class="example">
+      <h3>Q6. In the given figure, &ang;1 and &ang;2 are supplementary. If &ang;1 = 125&deg;, find &ang;2.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Linear pair = 180&deg;: (3x+10) + (2x+20) = 180</div>
-        <div class="step"><strong>Step 2:</strong> 5x + 30 = 180 &rarr; 5x = 150 &rarr; x = 30</div>
-        <div class="step"><strong>Step 3:</strong> Angles: 3(30)+10 = <strong>100&deg;</strong> and 2(30)+20 = <strong>80&deg;</strong></div>
-        <div class="step"><strong>Check:</strong> 100 + 80 = 180 &#10003;</div>
-      </div></details></div>
+        <div class="step"><strong>Step 1:</strong> Supplementary angles add to 180&deg;.</div>
+        <div class="step"><strong>Step 2:</strong> &ang;1 + &ang;2 = 180&deg;</div>
+        <div class="step"><strong>Step 3:</strong> 125&deg; + &ang;2 = 180&deg;</div>
+        <div class="step"><strong>Step 4:</strong> &ang;2 = 180&deg; &minus; 125&deg; = <strong>55&deg;</strong></div>
+        <div class="step"><strong>Check:</strong> 125 + 55 = 180 &#10003;</div>
+      </div></details>
+    </div>
 
-    <div class="example"><h3>Q7. Can two supplementary angles both be: (a) acute? (b) obtuse? (c) right?</h3>
+    <div class="example">
+      <h3>Q7. Two supplementary angles are in the ratio 4:5. Find the angles.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>(a) Both acute?</strong> Max sum: 89+89 = 178 &lt; 180. <strong>No!</strong></div>
-        <div class="step"><strong>(b) Both obtuse?</strong> Min sum: 91+91 = 182 &gt; 180. <strong>No!</strong></div>
-        <div class="step"><strong>(c) Both right?</strong> 90+90 = 180. <strong>Yes!</strong></div>
-      </div></details></div>
+        <div class="step"><strong>Step 1:</strong> Let the angles be 4x and 5x.</div>
+        <div class="step"><strong>Step 2:</strong> Since they are supplementary: 4x + 5x = 180&deg;</div>
+        <div class="step"><strong>Step 3:</strong> Simplify: 9x = 180&deg;</div>
+        <div class="step"><strong>Step 4:</strong> Divide by 9: x = 20&deg;</div>
+        <div class="step"><strong>Step 5:</strong> First angle = 4 &times; 20 = <strong>80&deg;</strong>. Second angle = 5 &times; 20 = <strong>100&deg;</strong>.</div>
+        <div class="step"><strong>Check:</strong> 80 + 100 = 180 &#10003; and ratio 80:100 = 4:5 &#10003;</div>
+      </div></details>
+    </div>
 
-    <div class="example"><h3>Q8. An angle is 30&deg; more than its complement. Find it.</h3>
+    <div class="example">
+      <h3>Q8. Two lines intersect and one of the angles formed is 75&deg;. Find the other three angles.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Let angle = x. Complement = 90 &minus; x.</div>
-        <div class="step"><strong>Step 2:</strong> x = (90 &minus; x) + 30</div>
-        <div class="step"><strong>Step 3:</strong> x = 120 &minus; x &rarr; 2x = 120 &rarr; x = <strong>60&deg;</strong></div>
-        <div class="step"><strong>Check:</strong> Complement = 30&deg;. Is 60 = 30 + 30? Yes &#10003;</div>
-      </div></details></div>
+        <div class="step"><strong>Step 1:</strong> Let &ang;a = 75&deg; (given).</div>
+        <div class="step"><strong>Step 2:</strong> Vertically opposite angle: &ang;c = &ang;a = <strong>75&deg;</strong>.</div>
+        <div class="step"><strong>Step 3:</strong> Linear pair with &ang;a: &ang;b = 180&deg; &minus; 75&deg; = <strong>105&deg;</strong>.</div>
+        <div class="step"><strong>Step 4:</strong> Vertically opposite to &ang;b: &ang;d = &ang;b = <strong>105&deg;</strong>.</div>
+        <div class="step"><strong>Check:</strong> 75 + 105 + 75 + 105 = 360&deg; &#10003;</div>
+      </div></details>
+    </div>
 
-    <div class="example"><h3>Q9. An angle is 4 times its supplement. Find both.</h3>
+    <div class="example">
+      <h3>Q9. In the figure, &ang;1 = 3x and &ang;2 = (2x + 10)&deg; are a linear pair. Find x and both angles.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Let supplement = x. Angle = 4x.</div>
-        <div class="step"><strong>Step 2:</strong> x + 4x = 180 &rarr; 5x = 180 &rarr; x = 36</div>
-        <div class="step"><strong>Step 3:</strong> Supplement = <strong>36&deg;</strong>, Angle = <strong>144&deg;</strong></div>
-      </div></details></div>
+        <div class="step"><strong>Step 1:</strong> Linear pair means &ang;1 + &ang;2 = 180&deg;.</div>
+        <div class="step"><strong>Step 2:</strong> Substitute: 3x + (2x + 10) = 180</div>
+        <div class="step"><strong>Step 3:</strong> Simplify: 5x + 10 = 180</div>
+        <div class="step"><strong>Step 4:</strong> Transpose: 5x = 180 &minus; 10 = 170</div>
+        <div class="step"><strong>Step 5:</strong> Divide: x = 170 &divide; 5 = <strong>34</strong></div>
+        <div class="step"><strong>Step 6:</strong> &ang;1 = 3(34) = <strong>102&deg;</strong>. &ang;2 = 2(34) + 10 = <strong>78&deg;</strong>.</div>
+        <div class="step"><strong>Check:</strong> 102 + 78 = 180 &#10003;</div>
+      </div></details>
+    </div>
 
-    <div class="example"><h3>Q10. Vertically opposite angles are (3x+5)&deg; and (5x&minus;25)&deg;. Find them.</h3>
+    <div class="example">
+      <h3>Q10. Two lines intersect. The angles formed are (2y + 10)&deg; and (3y &minus; 20)&deg; which are vertically opposite. Find y and the angles.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Vertically opposite = equal: 3x + 5 = 5x &minus; 25</div>
-        <div class="step"><strong>Step 2:</strong> 30 = 2x &rarr; x = 15</div>
-        <div class="step"><strong>Step 3:</strong> Angle = 3(15)+5 = <strong>50&deg;</strong></div>
-        <div class="step"><strong>Check:</strong> 5(15)&minus;25 = 50 &#10003;</div>
-      </div></details></div>
+        <div class="step"><strong>Step 1:</strong> Vertically opposite angles are equal.</div>
+        <div class="step"><strong>Step 2:</strong> Set them equal: 2y + 10 = 3y &minus; 20</div>
+        <div class="step"><strong>Step 3:</strong> Transpose 2y to RHS and &minus;20 to LHS: 10 + 20 = 3y &minus; 2y</div>
+        <div class="step"><strong>Step 4:</strong> Simplify: 30 = y, so <strong>y = 30</strong></div>
+        <div class="step"><strong>Step 5:</strong> First angle = 2(30) + 10 = <strong>70&deg;</strong>. Second angle = 3(30) &minus; 20 = <strong>70&deg;</strong>. (Equal &#10003;)</div>
+        <div class="step"><strong>Step 6:</strong> Other two angles = 180 &minus; 70 = <strong>110&deg;</strong> each (linear pair).</div>
+        <div class="step"><strong>Check:</strong> 70 + 110 + 70 + 110 = 360&deg; &#10003;</div>
+      </div></details>
+    </div>
 
-    <div class="exercise-header">Exercise 5.2 &mdash; Parallel Lines &amp; Transversal (8 Questions)</div>
+    <div class="exercise-header">Exercise 5.2 &mdash; Parallel Lines and Transversal (8 Questions)</div>
 
-    <div class="example"><h3>Q1. Transversal cuts parallel lines. One angle is 70&deg;. Find all 8 angles.</h3>
+    <div class="example">
+      <h3>Q1. State the property used: If a || b and a transversal cuts them, &ang;1 = &ang;5.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> At first intersection: 70&deg;, 110&deg;, 70&deg;, 110&deg; (linear pairs + vert. opp.)</div>
-        <div class="step"><strong>Step 2:</strong> Corresponding angles are equal, so second intersection: same.</div>
-        <div class="step"><strong>All 8: 70&deg;, 110&deg;, 70&deg;, 110&deg;, 70&deg;, 110&deg;, 70&deg;, 110&deg;</strong></div>
-      </div></details></div>
+        <div class="step"><strong>Step 1:</strong> Identify the positions of &ang;1 and &ang;5 &mdash; they are on the same side of the transversal, in matching positions at each intersection.</div>
+        <div class="step"><strong>Step 2:</strong> Angles in matching positions are called corresponding angles.</div>
+        <div class="step"><strong>Step 3:</strong> When lines are parallel, corresponding angles are equal.</div>
+        <div class="step"><strong>Answer:</strong> The property used is <strong>corresponding angles</strong> (when parallel lines are cut by a transversal, corresponding angles are equal).</div>
+      </div></details>
+    </div>
 
-    <div class="example"><h3>Q2. Transversal makes 55&deg; with a parallel line. Find the co-interior angle.</h3>
+    <div class="example">
+      <h3>Q2. State the property used: If a || b and a transversal cuts them, &ang;4 = &ang;6.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Co-interior angles add to 180&deg;</div>
-        <div class="step"><strong>Step 2:</strong> 180 &minus; 55 = <strong>125&deg;</strong></div>
-      </div></details></div>
+        <div class="step"><strong>Step 1:</strong> &ang;4 and &ang;6 are on opposite sides of the transversal.</div>
+        <div class="step"><strong>Step 2:</strong> They are between the parallel lines (in the interior region).</div>
+        <div class="step"><strong>Step 3:</strong> Angles on opposite sides of the transversal, in the interior, are alternate interior angles.</div>
+        <div class="step"><strong>Answer:</strong> The property used is <strong>alternate interior angles</strong> (when parallel lines are cut by a transversal, alternate interior angles are equal).</div>
+      </div></details>
+    </div>
 
-    <div class="example"><h3>Q3. Alternate interior angles are (2x+15)&deg; and (3x&minus;20)&deg;. Find x.</h3>
+    <div class="example">
+      <h3>Q3. In the figure, l || m, transversal t cuts them. If &ang;3 = 110&deg;, find all other angles.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Alternate interior angles are equal: 2x+15 = 3x&minus;20</div>
-        <div class="step"><strong>Step 2:</strong> 15+20 = 3x&minus;2x &rarr; x = <strong>35</strong></div>
-        <div class="step"><strong>Step 3:</strong> Angles: 2(35)+15 = <strong>85&deg;</strong></div>
-        <div class="step"><strong>Check:</strong> 3(35)&minus;20 = 85 &#10003;</div>
-      </div></details></div>
+        <div class="step"><strong>Step 1:</strong> &ang;3 = 110&deg; (given).</div>
+        <div class="step"><strong>Step 2:</strong> &ang;1 = 180&deg; &minus; 110&deg; = 70&deg; (linear pair with &ang;3 on line l).</div>
+        <div class="step"><strong>Step 3:</strong> &ang;2 = 180&deg; &minus; 110&deg; = 70&deg; (linear pair with &ang;3). &ang;4 = 110&deg; (vertically opposite to &ang;3).</div>
+        <div class="step"><strong>Step 4:</strong> Using corresponding angles (l || m): &ang;7 = &ang;3 = 110&deg;, &ang;5 = &ang;1 = 70&deg;, &ang;6 = &ang;2 = 70&deg;, &ang;8 = &ang;4 = 110&deg;.</div>
+        <div class="step"><strong>All angles:</strong> &ang;1=70&deg;, &ang;2=70&deg;, &ang;3=110&deg;, &ang;4=110&deg;, &ang;5=70&deg;, &ang;6=70&deg;, &ang;7=110&deg;, &ang;8=110&deg;</div>
+        <div class="step"><strong>Check:</strong> Alternate interior: &ang;3 = &ang;6? 110 &ne; 70 &mdash; wait, let us recheck. &ang;3 and &ang;6 are alternate interior so &ang;6 = &ang;3 = 110&deg;. Correcting: &ang;6 = 110&deg;, &ang;5 = 70&deg; (linear pair with &ang;6). So: &ang;5=70&deg;, &ang;6=110&deg;, &ang;7=70&deg; (vert. opp. to &ang;6?). Let me label carefully.</div>
+        <div class="step"><strong>Careful labelling:</strong> At first intersection: &ang;1(top-right)=70&deg;, &ang;2(top-left)=110&deg;... The answer depends on exact positions. Using standard labelling: &ang;3=110&deg; &rarr; &ang;1=70&deg;, &ang;2=110&deg;, &ang;4=70&deg; at first point. At second point: &ang;5=110&deg;, &ang;6=70&deg;, &ang;7=110&deg;, &ang;8=70&deg; (corresponding to &ang;1,&ang;2,&ang;3,&ang;4).</div>
+        <div class="step"><strong>Final answer:</strong> &ang;1=70&deg;, &ang;2=110&deg;, &ang;3=110&deg;, &ang;4=70&deg;, &ang;5=110&deg;, &ang;6=70&deg;, &ang;7=110&deg;, &ang;8=70&deg; &#10003;</div>
+      </div></details>
+    </div>
 
-    <div class="example"><h3>Q4. Co-interior angles are (4x)&deg; and (x+40)&deg;. Find x.</h3>
+    <div class="example">
+      <h3>Q4. If l || m, find the value of x when a transversal makes angles (2x + 20)&deg; and (3x &minus; 10)&deg; as corresponding angles.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Co-interior = 180&deg;: 4x + (x+40) = 180</div>
-        <div class="step"><strong>Step 2:</strong> 5x + 40 = 180 &rarr; 5x = 140 &rarr; x = <strong>28</strong></div>
-        <div class="step"><strong>Step 3:</strong> Angles: 4(28)=112&deg; and 28+40=68&deg;</div>
-        <div class="step"><strong>Check:</strong> 112+68 = 180 &#10003;</div>
-      </div></details></div>
+        <div class="step"><strong>Step 1:</strong> Corresponding angles are equal when lines are parallel.</div>
+        <div class="step"><strong>Step 2:</strong> Set them equal: 2x + 20 = 3x &minus; 10</div>
+        <div class="step"><strong>Step 3:</strong> Transpose: 20 + 10 = 3x &minus; 2x</div>
+        <div class="step"><strong>Step 4:</strong> Simplify: <strong>x = 30</strong></div>
+        <div class="step"><strong>Step 5:</strong> Angles = 2(30)+20 = 80&deg; and 3(30)&minus;10 = 80&deg;. Equal &#10003;</div>
+      </div></details>
+    </div>
 
-    <div class="example"><h3>Q5. Corresponding angles are (7x&minus;10)&deg; and (5x+14)&deg;. Find x.</h3>
+    <div class="example">
+      <h3>Q5. If l || m, find x when co-interior angles are (2x)&deg; and (3x + 30)&deg;.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Corresponding = equal: 7x&minus;10 = 5x+14</div>
-        <div class="step"><strong>Step 2:</strong> 2x = 24 &rarr; x = <strong>12</strong></div>
-        <div class="step"><strong>Step 3:</strong> Angle = 7(12)&minus;10 = <strong>74&deg;</strong></div>
-      </div></details></div>
+        <div class="step"><strong>Step 1:</strong> Co-interior angles add up to 180&deg; (when lines are parallel).</div>
+        <div class="step"><strong>Step 2:</strong> 2x + (3x + 30) = 180</div>
+        <div class="step"><strong>Step 3:</strong> Simplify: 5x + 30 = 180</div>
+        <div class="step"><strong>Step 4:</strong> Transpose: 5x = 180 &minus; 30 = 150</div>
+        <div class="step"><strong>Step 5:</strong> Divide: x = 150 &divide; 5 = <strong>30</strong></div>
+        <div class="step"><strong>Step 6:</strong> Angles = 2(30) = 60&deg; and 3(30)+30 = 120&deg;.</div>
+        <div class="step"><strong>Check:</strong> 60 + 120 = 180 &#10003;</div>
+      </div></details>
+    </div>
 
-    <div class="example"><h3>Q6. Are lines parallel if alternate interior angles are 48&deg; and 48&deg;?</h3>
+    <div class="example">
+      <h3>Q6. In the figure l || m. The transversal makes &ang;1 = 55&deg;. Find &ang;2 (alternate interior to &ang;1) and &ang;3 (co-interior with &ang;1).</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Alternate interior angles are equal (48=48).</div>
-        <div class="step"><strong>Step 2:</strong> <strong>Yes, lines are parallel.</strong></div>
-      </div></details></div>
+        <div class="step"><strong>Step 1:</strong> &ang;1 = 55&deg; (given), l || m.</div>
+        <div class="step"><strong>Step 2:</strong> &ang;2 is alternate interior to &ang;1. Alternate interior angles are equal.</div>
+        <div class="step"><strong>Step 3:</strong> &ang;2 = &ang;1 = <strong>55&deg;</strong></div>
+        <div class="step"><strong>Step 4:</strong> &ang;3 is co-interior with &ang;1. Co-interior angles add to 180&deg;.</div>
+        <div class="step"><strong>Step 5:</strong> &ang;3 = 180&deg; &minus; 55&deg; = <strong>125&deg;</strong></div>
+        <div class="step"><strong>Check:</strong> &ang;1 + &ang;3 = 55 + 125 = 180 &#10003;</div>
+      </div></details>
+    </div>
 
-    <div class="example"><h3>Q7. Are lines parallel if co-interior angles are 120&deg; and 50&deg;?</h3>
+    <div class="example">
+      <h3>Q7. AB || CD. A transversal EF intersects AB at G and CD at H. If &ang;AGE = 130&deg;, find &ang;GHD.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Co-interior must add to 180&deg;: 120+50 = 170 &ne; 180</div>
-        <div class="step"><strong>No, lines are NOT parallel.</strong></div>
-      </div></details></div>
+        <div class="step"><strong>Step 1:</strong> Draw the situation: AB and CD are parallel. EF crosses them at G and H.</div>
+        <div class="step"><strong>Step 2:</strong> &ang;AGE = 130&deg; is above line AB, on the left of the transversal.</div>
+        <div class="step"><strong>Step 3:</strong> &ang;GHD is below line CD, on the right of the transversal.</div>
+        <div class="step"><strong>Step 4:</strong> &ang;AGE and &ang;GHD are alternate interior angles (on opposite sides of the transversal, between the parallel lines).</div>
+        <div class="step"><strong>Step 5:</strong> Alternate interior angles are equal: &ang;GHD = &ang;AGE = <strong>130&deg;</strong></div>
+        <div class="step"><strong>Check:</strong> Both angles are between the parallel lines and on alternate sides &#10003;</div>
+      </div></details>
+    </div>
 
-    <div class="example"><h3>Q8. AB &parallel; CD. Transversal makes 62&deg; at AB. Find all angles at CD.</h3>
+    <div class="example">
+      <h3>Q8. l || m. A transversal cuts them making angles (5x &minus; 20)&deg; and (3x + 40)&deg; as alternate interior angles. Find x and both angles.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Corresponding angle at CD = 62&deg;</div>
-        <div class="step"><strong>Step 2:</strong> Linear pair: 180&minus;62 = 118&deg;</div>
-        <div class="step"><strong>Step 3:</strong> Vertically opposite: 62&deg; and 118&deg;</div>
-        <div class="step"><strong>Angles at CD: 62&deg;, 118&deg;, 62&deg;, 118&deg;</strong></div>
-      </div></details></div>
+        <div class="step"><strong>Step 1:</strong> Alternate interior angles are equal (since l || m).</div>
+        <div class="step"><strong>Step 2:</strong> Set equal: 5x &minus; 20 = 3x + 40</div>
+        <div class="step"><strong>Step 3:</strong> Transpose: 5x &minus; 3x = 40 + 20</div>
+        <div class="step"><strong>Step 4:</strong> Simplify: 2x = 60 &rarr; <strong>x = 30</strong></div>
+        <div class="step"><strong>Step 5:</strong> First angle = 5(30) &minus; 20 = 150 &minus; 20 = <strong>130&deg;</strong></div>
+        <div class="step"><strong>Step 6:</strong> Second angle = 3(30) + 40 = 90 + 40 = <strong>130&deg;</strong></div>
+        <div class="step"><strong>Check:</strong> Both angles = 130&deg;. Equal &#10003; (alternate interior angles verified)</div>
+      </div></details>
+    </div>
   </div>
 
-  <!-- Extra Practice -->
+  <!-- ===== EXTRA PRACTICE ===== -->
   <div class="section">
-    <h2 id="extra-practice">Extra Practice</h2>
-    <div class="problem"><span class="difficulty easy">Easy</span><p>1. Find the complement of 28&deg;.</p><details><summary>Show Answer</summary><div class="answer">90 &minus; 28 = <strong>62&deg;</strong></div></details></div>
-    <div class="problem"><span class="difficulty easy">Easy</span><p>2. Are 70&deg; and 110&deg; supplementary?</p><details><summary>Show Answer</summary><div class="answer">70+110 = 180. <strong>Yes!</strong></div></details></div>
-    <div class="problem"><span class="difficulty medium">Medium</span><p>3. Supplementary angles in ratio 2:3. Find them.</p><details><summary>Show Answer</summary><div class="answer">2x+3x=180 &rarr; x=36. Angles: <strong>72&deg; and 108&deg;</strong></div></details></div>
-    <div class="problem"><span class="difficulty medium">Medium</span><p>4. Two intersecting lines make 65&deg;. Find all four.</p><details><summary>Show Answer</summary><div class="answer"><strong>65&deg;, 115&deg;, 65&deg;, 115&deg;</strong></div></details></div>
-    <div class="problem"><span class="difficulty hard">Hard</span><p>5. Co-interior angle is 72&deg;. Find all 8 angles at parallel lines.</p><details><summary>Show Answer</summary><div class="answer">Other co-interior = 108&deg;. All 8: 72, 108, 72, 108, 108, 72, 108, 72</div></details></div>
-    <div class="problem"><span class="difficulty hard">Hard</span><p>6. Linear pair: (3x+10)&deg; and (2x+20)&deg;. Find x.</p><details><summary>Show Answer</summary><div class="answer">5x+30=180 &rarr; x=30. Angles: <strong>100&deg; and 80&deg;</strong></div></details></div>
+    <h2 id="extra-practice">Extra Practice (Beyond NCERT)</h2>
+
+    <div class="problem"><span class="difficulty easy">Easy</span>
+      <p>1. Find the complement of 54&deg;.</p>
+      <details><summary>Show Answer</summary><div class="answer">
+        <strong>Step 1:</strong> Complement = 90&deg; &minus; angle.<br>
+        <strong>Step 2:</strong> 90&deg; &minus; 54&deg; = <strong>36&deg;</strong><br>
+        <strong>Check:</strong> 54 + 36 = 90 &#10003;
+      </div></details>
+    </div>
+
+    <div class="problem"><span class="difficulty easy">Easy</span>
+      <p>2. Find the supplement of 47&deg;.</p>
+      <details><summary>Show Answer</summary><div class="answer">
+        <strong>Step 1:</strong> Supplement = 180&deg; &minus; angle.<br>
+        <strong>Step 2:</strong> 180&deg; &minus; 47&deg; = <strong>133&deg;</strong><br>
+        <strong>Check:</strong> 47 + 133 = 180 &#10003;
+      </div></details>
+    </div>
+
+    <div class="problem"><span class="difficulty easy">Easy</span>
+      <p>3. Can two obtuse angles be supplementary? Explain.</p>
+      <details><summary>Show Answer</summary><div class="answer">
+        <strong>Step 1:</strong> Obtuse angles are greater than 90&deg;.<br>
+        <strong>Step 2:</strong> The smallest obtuse angle is just above 90&deg;.<br>
+        <strong>Step 3:</strong> Sum of two obtuse angles &gt; 90 + 90 = 180&deg;.<br>
+        <strong>Answer: No.</strong> Two obtuse angles always add to more than 180&deg;, so they cannot be supplementary.
+      </div></details>
+    </div>
+
+    <div class="problem"><span class="difficulty medium">Medium</span>
+      <p>4. Two complementary angles are in the ratio 1:4. Find both angles.</p>
+      <details><summary>Show Answer</summary><div class="answer">
+        <strong>Step 1:</strong> Let angles be x and 4x.<br>
+        <strong>Step 2:</strong> x + 4x = 90&deg; &rarr; 5x = 90&deg;<br>
+        <strong>Step 3:</strong> x = 18&deg;<br>
+        <strong>Step 4:</strong> Angles = <strong>18&deg; and 72&deg;</strong><br>
+        <strong>Check:</strong> 18 + 72 = 90 &#10003;, ratio = 18:72 = 1:4 &#10003;
+      </div></details>
+    </div>
+
+    <div class="problem"><span class="difficulty medium">Medium</span>
+      <p>5. Two lines intersect. One angle is (4x + 5)&deg; and the vertically opposite angle is (6x &minus; 25)&deg;. Find x and all four angles.</p>
+      <details><summary>Show Answer</summary><div class="answer">
+        <strong>Step 1:</strong> Vertically opposite angles are equal: 4x + 5 = 6x &minus; 25.<br>
+        <strong>Step 2:</strong> Transpose: 5 + 25 = 6x &minus; 4x &rarr; 30 = 2x.<br>
+        <strong>Step 3:</strong> x = 15.<br>
+        <strong>Step 4:</strong> Angles = 4(15)+5 = <strong>65&deg;</strong>. Vertically opposite = <strong>65&deg;</strong>.<br>
+        <strong>Step 5:</strong> Other pair = 180 &minus; 65 = <strong>115&deg;</strong> each.<br>
+        <strong>Check:</strong> 65+115+65+115 = 360 &#10003;
+      </div></details>
+    </div>
+
+    <div class="problem"><span class="difficulty medium">Medium</span>
+      <p>6. l || m. A transversal makes one angle of 72&deg; at line l. Find all 8 angles.</p>
+      <details><summary>Show Answer</summary><div class="answer">
+        <strong>Step 1:</strong> At line l: 72&deg; and its linear pair 180&minus;72 = 108&deg;. Vertically opposite gives: 72&deg;, 108&deg;, 72&deg;, 108&deg;.<br>
+        <strong>Step 2:</strong> At line m (corresponding angles equal): 72&deg;, 108&deg;, 72&deg;, 108&deg;.<br>
+        <strong>All 8 angles: 72&deg;, 108&deg;, 72&deg;, 108&deg;, 72&deg;, 108&deg;, 72&deg;, 108&deg;</strong><br>
+        <strong>Check:</strong> Co-interior: 72+108=180 &#10003;
+      </div></details>
+    </div>
+
+    <div class="problem"><span class="difficulty medium">Medium</span>
+      <p>7. An angle is 20&deg; more than its complement. Find both angles.</p>
+      <details><summary>Show Answer</summary><div class="answer">
+        <strong>Step 1:</strong> Let the complement = x. Then the angle = x + 20.<br>
+        <strong>Step 2:</strong> x + (x + 20) = 90 &rarr; 2x + 20 = 90.<br>
+        <strong>Step 3:</strong> 2x = 70 &rarr; x = 35.<br>
+        <strong>Step 4:</strong> Angles = <strong>35&deg; and 55&deg;</strong><br>
+        <strong>Check:</strong> 35 + 55 = 90 &#10003;, 55 &minus; 35 = 20 &#10003;
+      </div></details>
+    </div>
+
+    <div class="problem"><span class="difficulty hard">Hard</span>
+      <p>8. l || m. A transversal makes co-interior angles (3x + 15)&deg; and (2x + 25)&deg;. Find x and both angles.</p>
+      <details><summary>Show Answer</summary><div class="answer">
+        <strong>Step 1:</strong> Co-interior angles sum to 180&deg;: (3x+15) + (2x+25) = 180.<br>
+        <strong>Step 2:</strong> 5x + 40 = 180.<br>
+        <strong>Step 3:</strong> 5x = 140 &rarr; x = 28.<br>
+        <strong>Step 4:</strong> Angles = 3(28)+15 = <strong>99&deg;</strong> and 2(28)+25 = <strong>81&deg;</strong>.<br>
+        <strong>Check:</strong> 99 + 81 = 180 &#10003;
+      </div></details>
+    </div>
+
+    <div class="problem"><span class="difficulty hard">Hard</span>
+      <p>9. The supplement of an angle is four times its complement. Find the angle.</p>
+      <details><summary>Show Answer</summary><div class="answer">
+        <strong>Step 1:</strong> Let the angle = x.<br>
+        <strong>Step 2:</strong> Supplement = 180 &minus; x. Complement = 90 &minus; x.<br>
+        <strong>Step 3:</strong> Given: 180 &minus; x = 4(90 &minus; x).<br>
+        <strong>Step 4:</strong> Expand: 180 &minus; x = 360 &minus; 4x.<br>
+        <strong>Step 5:</strong> Transpose: 4x &minus; x = 360 &minus; 180 &rarr; 3x = 180 &rarr; x = <strong>60&deg;</strong><br>
+        <strong>Check:</strong> Supplement = 120, Complement = 30. Is 120 = 4 &times; 30? Yes &#10003;
+      </div></details>
+    </div>
+
+    <div class="problem"><span class="difficulty hard">Hard</span>
+      <p>10. AB || CD. A transversal PQ crosses AB at E and CD at F. &ang;AEP = 110&deg;. Find &ang;EFD and &ang;EFC.</p>
+      <details><summary>Show Answer</summary><div class="answer">
+        <strong>Step 1:</strong> &ang;AEP = 110&deg; (given). AB || CD.<br>
+        <strong>Step 2:</strong> &ang;AEP and &ang;EFD are alternate interior angles (on opposite sides, between the parallel lines).<br>
+        <strong>Step 3:</strong> &ang;EFD = &ang;AEP = <strong>110&deg;</strong> (alternate interior angles, AB || CD).<br>
+        <strong>Step 4:</strong> &ang;EFC + &ang;EFD = 180&deg; (linear pair on line CD).<br>
+        <strong>Step 5:</strong> &ang;EFC = 180 &minus; 110 = <strong>70&deg;</strong><br>
+        <strong>Check:</strong> 110 + 70 = 180 &#10003;
+      </div></details>
+    </div>
   </div>
 
-  <!-- HOTS -->
+  <!-- ===== HOTS ===== -->
   <div class="section">
-    <h2 id="hots">HOTS <span class="hots-tag">Advanced</span></h2>
-    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span><p>1. Can two supplementary angles both be acute? Both obtuse?</p><details><summary>Show Answer</summary><div class="answer"><strong>Both acute:</strong> Max 89+89=178 &lt; 180. No!<br><strong>Both obtuse:</strong> Min 91+91=182 &gt; 180. No!</div></details></div>
-    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span><p>2. If one angle at parallel lines is x&deg;, express all 8 in terms of x.</p><details><summary>Show Answer</summary><div class="answer">Only two values: <strong>x&deg;</strong> and <strong>(180&minus;x)&deg;</strong>, each appearing 4 times.</div></details></div>
-    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span><p>3. Three lines meet at a point. One angle is 40&deg;, another 90&deg;. Find all 6.</p><details><summary>Show Answer</summary><div class="answer">Vert opp: 40&deg;, 40&deg;, 90&deg;, 90&deg;. Remaining: 360&minus;260=100, split into 50&deg;, 50&deg;.<br><strong>All 6: 40&deg;, 90&deg;, 50&deg;, 40&deg;, 90&deg;, 50&deg;</strong></div></details></div>
+    <h2 id="hots">HOTS &mdash; Higher Order Thinking <span class="hots-tag">Advanced</span></h2>
+
+    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span>
+      <p>1. Two parallel lines are cut by a transversal. One of the angles is (7x &minus; 15)&deg; and its co-interior angle is (5x + 3)&deg;. Find x, both angles, and all remaining 6 angles.</p>
+      <details><summary>Show Answer</summary><div class="answer">
+        <strong>Step 1:</strong> Co-interior angles sum to 180&deg;: (7x &minus; 15) + (5x + 3) = 180.<br>
+        <strong>Step 2:</strong> 12x &minus; 12 = 180 &rarr; 12x = 192 &rarr; x = 16.<br>
+        <strong>Step 3:</strong> First angle = 7(16)&minus;15 = 112&minus;15 = <strong>97&deg;</strong>.<br>
+        <strong>Step 4:</strong> Second angle = 5(16)+3 = 80+3 = <strong>83&deg;</strong>.<br>
+        <strong>Step 5:</strong> At first intersection: 97&deg;, 83&deg;, 97&deg;, 83&deg; (linear pairs + vertically opposite).<br>
+        <strong>Step 6:</strong> At second intersection: 83&deg;, 97&deg;, 83&deg;, 97&deg; (corresponding angles).<br>
+        <strong>Check:</strong> 97 + 83 = 180 &#10003;
+      </div></details>
+    </div>
+
+    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span>
+      <p>2. An angle is twice its supplement. Find the angle.</p>
+      <details><summary>Show Answer</summary><div class="answer">
+        <strong>Step 1:</strong> Let the angle = x. Its supplement = 180 &minus; x.<br>
+        <strong>Step 2:</strong> Given: x = 2(180 &minus; x).<br>
+        <strong>Step 3:</strong> Expand: x = 360 &minus; 2x.<br>
+        <strong>Step 4:</strong> Transpose: x + 2x = 360 &rarr; 3x = 360.<br>
+        <strong>Step 5:</strong> x = 360 &divide; 3 = <strong>120&deg;</strong><br>
+        <strong>Check:</strong> Supplement = 180 &minus; 120 = 60&deg;. Is 120 = 2 &times; 60? Yes &#10003;
+      </div></details>
+    </div>
+
+    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span>
+      <p>3. Three lines meet at a point. The six angles formed are in the ratio 1:2:3:1:2:3. Find all six angles.</p>
+      <details><summary>Show Answer</summary><div class="answer">
+        <strong>Step 1:</strong> Angles around a point sum to 360&deg;.<br>
+        <strong>Step 2:</strong> Let angles be x, 2x, 3x, x, 2x, 3x.<br>
+        <strong>Step 3:</strong> x + 2x + 3x + x + 2x + 3x = 360 &rarr; 12x = 360.<br>
+        <strong>Step 4:</strong> x = 30&deg;.<br>
+        <strong>Step 5:</strong> The six angles are <strong>30&deg;, 60&deg;, 90&deg;, 30&deg;, 60&deg;, 90&deg;</strong>.<br>
+        <strong>Check:</strong> 30+60+90+30+60+90 = 360 &#10003;. Vertically opposite pairs: 30=30, 60=60, 90=90 &#10003;
+      </div></details>
+    </div>
   </div>
 
-  <!-- Common Mistakes -->
+  <!-- ===== COMMON MISTAKES ===== -->
   <div class="section">
-    <h2 id="mistakes">Common Mistakes</h2>
+    <h2 id="mistakes">Common Mistakes &amp; How to Avoid Them</h2>
     <ul class="mistakes-list">
-      <li><strong>Mixing up complementary and supplementary</strong>
-        <div class="wrong-right"><div class="wrong">Complementary = 180&deg;</div><div class="right"><strong>C</strong>omplementary = <strong>C</strong>orner (90&deg;). <strong>S</strong>upplementary = <strong>S</strong>traight (180&deg;).</div></div>
+      <li><strong>1. Mixing up complementary and supplementary</strong>
+        <div class="wrong-right">
+          <div class="wrong"><strong>Wrong:</strong> "Supplementary angles add to 90&deg;"</div>
+          <div class="right"><strong>Right:</strong> <em>C</em>omplementary = <em>C</em>orner = <strong>90&deg;</strong>. <em>S</em>upplementary = <em>S</em>traight = <strong>180&deg;</strong>.</div>
+        </div>
       </li>
-      <li><strong>Forgetting vertically opposite angles are equal</strong>
-        <div class="wrong-right"><div class="wrong">All 4 angles at intersection are different</div><div class="right">Only 2 distinct values. Opposite angles are ALWAYS equal!</div></div>
+      <li><strong>2. Thinking adjacent angles are vertically opposite</strong>
+        <div class="wrong-right">
+          <div class="wrong"><strong>Wrong:</strong> Angles next to each other at an intersection are equal.</div>
+          <div class="right"><strong>Right:</strong> Adjacent angles form a <strong>linear pair</strong> (sum = 180&deg;). Only <strong>opposite</strong> angles are equal.</div>
+        </div>
       </li>
-      <li><strong>Using parallel line rules when lines aren&rsquo;t parallel</strong>
-        <div class="wrong-right"><div class="wrong">Alternate angles are always equal</div><div class="right">Only when lines are <strong>parallel</strong>!</div></div>
+      <li><strong>3. Using parallel-line rules when lines are NOT parallel</strong>
+        <div class="wrong-right">
+          <div class="wrong"><strong>Wrong:</strong> Any two lines cut by a transversal have equal corresponding angles.</div>
+          <div class="right"><strong>Right:</strong> Corresponding angles are equal <strong>only if the lines are parallel</strong>. Always check for the parallel condition first!</div>
+        </div>
       </li>
-      <li><strong>Confusing corresponding and alternate angles</strong>
-        <div class="wrong-right"><div class="wrong">Can&rsquo;t tell which is which</div><div class="right">Corresponding = same position. Alternate = Z-shape. Co-interior = U-shape.</div></div>
+      <li><strong>4. Confusing alternate interior with co-interior angles</strong>
+        <div class="wrong-right">
+          <div class="wrong"><strong>Wrong:</strong> "Co-interior angles are equal."</div>
+          <div class="right"><strong>Right:</strong> Alternate interior angles are <strong>equal</strong>. Co-interior (same-side interior) angles are <strong>supplementary</strong> (add to 180&deg;). Use the Z-shape vs C-shape test!</div>
+        </div>
+      </li>
+      <li><strong>5. Forgetting to verify your answer</strong>
+        <div class="wrong-right">
+          <div class="wrong"><strong>Wrong:</strong> Writing the answer without any check.</div>
+          <div class="right"><strong>Right:</strong> Always substitute back. Check: do linear pairs add to 180&deg;? Do vertically opposite angles match? Do all angles at a point sum to 360&deg;?</div>
+        </div>
       </li>
     </ul>
   </div>
 
   <button id="mark-read-btn" class="btn" style="margin-top:1rem;padding:.5rem 1.25rem;background:var(--primary);color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer" onclick="markChapterRead(5)">Mark as Complete</button>
+
   <div class="chapter-nav">
     <a href="ch4.html">&larr; Ch 4: Simple Equations</a>
-    <a href="ch6.html">Ch 6: Triangle Properties &rarr;</a>
+    <a href="ch6.html">Ch 6: The Triangle and Its Properties &rarr;</a>
   </div>
 </div>
+
 <footer class="footer">CBSE Class 7 Maths &mdash; Based on NCERT Syllabus</footer>
 <script src="../js/main.js"></script>
 </body>
