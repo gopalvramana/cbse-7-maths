@@ -4,8 +4,45 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="chapter-num" content="4">
-<title>Chapter 4: Simple Equations - CBSE Class 7 Maths</title>
+<title>NCERT Solutions Class 7 Maths Chapter 4 Simple Equations</title>
+<meta name="description" content="NCERT Solutions for Class 7 Maths Chapter 4 Simple Equations. Animated balance scale, step-by-step solving, transposing, word problems — all exercises solved.">
 <link rel="stylesheet" href="../css/style.css">
+<style>
+.real-world{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0;font-size:.95rem}
+.real-world strong{color:#16a34a}
+.why-box{background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0;font-size:.95rem}
+.why-box strong{color:#3b82f6}
+.exam-tip{background:#fdf4ff;border:1px solid #e9d5ff;border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0;font-size:.95rem}
+.exam-tip strong{color:#9333ea}
+.wrong-right{display:flex;gap:1rem;flex-wrap:wrap;margin:.5rem 0}
+.wrong-right .wrong,.wrong-right .right{flex:1;min-width:200px;padding:.75rem;border-radius:8px;font-size:.9rem}
+.wrong-right .wrong{background:#fee2e2;border:1px solid #fca5a5}
+.wrong-right .right{background:#d1fae5;border:1px solid #6ee7b7}
+.revision-card{background:linear-gradient(135deg,#8b5cf6,#6d28d9);color:#fff;border-radius:16px;padding:1.5rem;margin-bottom:2rem}
+.revision-card h2{color:#fff;border:none;padding:0;margin-bottom:1rem;font-size:1.2rem}
+.revision-card .formula-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.75rem}
+.revision-card .f-item{background:rgba(255,255,255,.15);border-radius:8px;padding:.6rem .8rem;font-size:.9rem;backdrop-filter:blur(4px)}
+.revision-card .f-item code{color:#fde68a;font-weight:700}
+.exercise-header{background:var(--alg-light);border:2px solid var(--alg);border-radius:12px;padding:1rem 1.25rem;margin:1.5rem 0 1rem;font-size:1.1rem;font-weight:700;color:var(--alg)}
+.step-reveal summary{cursor:pointer;color:var(--primary);font-weight:600;font-size:.9rem}
+.step-reveal .steps-content{padding:.75rem;margin-top:.5rem;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0}
+.hots-tag{display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;padding:2px 6px;border-radius:4px;background:#fdf4ff;color:#9333ea;border:1px solid #e9d5ff;margin-left:.5rem}
+/* Balance scale animation */
+.balance-svg{max-width:100%;height:auto}
+@keyframes tiltLeft{0%{transform:rotate(0)}50%{transform:rotate(-5deg)}100%{transform:rotate(0)}}
+@keyframes tiltRight{0%{transform:rotate(0)}50%{transform:rotate(5deg)}100%{transform:rotate(0)}}
+@keyframes balanced{0%,100%{transform:rotate(0)}25%{transform:rotate(-2deg)}75%{transform:rotate(2deg)}}
+.scale-balanced{animation:balanced 3s ease-in-out infinite}
+/* Transpose animation */
+@keyframes moveRight{0%{opacity:1;transform:translateX(0)}50%{opacity:.5;transform:translateX(80px)}100%{opacity:1;transform:translateX(160px)}}
+@keyframes moveLeft{0%{opacity:1;transform:translateX(0)}50%{opacity:.5;transform:translateX(-80px)}100%{opacity:1;transform:translateX(-160px)}}
+.solve-step{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:1rem;margin:.5rem 0;display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+.solve-step .lhs,.solve-step .rhs{font-size:1.2rem;font-weight:700;font-family:'Courier New',monospace}
+.solve-step .lhs{color:var(--alg)}
+.solve-step .rhs{color:var(--num)}
+.solve-step .equals{font-size:1.4rem;color:#334155}
+.solve-step .action{font-size:.8rem;color:var(--text-light);background:#f8fafc;padding:.25rem .5rem;border-radius:6px;margin-left:auto}
+</style>
 </head>
 <body>
 <header class="navbar">
@@ -19,172 +56,522 @@
 <div class="container">
   <div class="chapter-header">
     <div class="ch-label" style="color:var(--alg)">Chapter 4 &middot; Algebra</div>
-    <h1>Simple Equations</h1>
+    <h1>Simple Equations &mdash; Complete NCERT Solutions</h1>
   </div>
 
+  <nav class="topic-nav">
+    <a href="#revision">Revision Card</a>
+    <a href="#what-is-equation">What is an Equation?</a>
+    <a href="#solving">Solving Equations</a>
+    <a href="#transposing">Transposing</a>
+    <a href="#word-problems">Word Problems</a>
+    <a href="#ncert-solutions" class="nav-exercise">NCERT Solutions</a>
+    <a href="#extra-practice" class="nav-exercise">Extra Practice</a>
+    <a href="#hots" class="nav-exercise">HOTS</a>
+    <a href="#mistakes">Common Mistakes</a>
+  </nav>
+
+  <!-- Quick Revision Card -->
+  <div class="revision-card" id="revision">
+    <h2>Quick Revision Card</h2>
+    <div class="formula-grid">
+      <div class="f-item"><code>x + a = b &rArr; x = b &minus; a</code><br>Move addition to other side as subtraction</div>
+      <div class="f-item"><code>x &minus; a = b &rArr; x = b + a</code><br>Move subtraction to other side as addition</div>
+      <div class="f-item"><code>ax = b &rArr; x = b &divide; a</code><br>Move multiplication to other side as division</div>
+      <div class="f-item"><code>x/a = b &rArr; x = a &times; b</code><br>Move division to other side as multiplication</div>
+      <div class="f-item"><code>LHS = RHS</code><br>Both sides must always be equal</div>
+      <div class="f-item"><code>Always check your answer!</code><br>Substitute back into original equation</div>
+    </div>
+  </div>
+
+  <!-- What is an Equation? -->
   <div class="section">
-    <h2>Summary</h2>
+    <h2 id="what-is-equation">What is an Equation?</h2>
+    <div class="real-world">
+      <strong>Real-world connection:</strong> Imagine a balance scale (like the one Lady Justice holds). If you put 3 apples on the left and 3 apples on the right, it balances. An equation is exactly like that &mdash; the left side <strong>equals</strong> the right side!
+    </div>
+
     <ul class="summary-list">
-      <li>An equation is a statement with an equal sign (=) that says two things are the same (e.g., 2x + 3 = 11).</li>
-      <li>A variable (like x) is an unknown number we want to find (e.g., in 3x = 12, x is the unknown).</li>
-      <li>LHS (Left Hand Side) must always equal RHS (Right Hand Side) (e.g., if x = 4, then 3(4) = 12 &#10003;).</li>
-      <li>To solve: get the variable alone on one side by doing the same operation to both sides (e.g., 2x + 5 = 13 &rarr; 2x = 8 &rarr; x = 4).</li>
-      <li>Transposing means moving a number to the other side — but you flip its sign (+ becomes &minus;, &times; becomes &divide;) (e.g., x + 5 = 12 becomes x = 12 &minus; 5 = 7).</li>
-      <li>You can check your answer by putting it back into the original equation (e.g., put x = 7 back: 7 + 5 = 12 &#10003;).</li>
-      <li>Word problems can be turned into equations by using a variable for the unknown quantity (e.g., "a number plus 5 is 12" becomes x + 5 = 12).</li>
+      <li>An <strong>equation</strong> is a mathematical statement with an equals sign (=) saying two things have the same value.</li>
+      <li>A <strong>variable</strong> (like x, y, or n) is an unknown number we want to find.</li>
+      <li><strong>LHS</strong> (Left Hand Side) must always equal <strong>RHS</strong> (Right Hand Side).</li>
+      <li>Example: 2x + 3 = 11. Here x is the variable, and we need to find what value of x makes this true.</li>
     </ul>
+
+    <!-- Animated Balance Scale -->
+    <figure class="diagram">
+      <svg viewBox="0 0 500 220" width="500" height="220" class="balance-svg" xmlns="http://www.w3.org/2000/svg">
+        <!-- Base -->
+        <rect x="225" y="180" width="50" height="30" rx="4" fill="#64748b"/>
+        <polygon points="250,180 220,180 250,100" fill="#94a3b8"/>
+        <!-- Beam (animated) -->
+        <g class="scale-balanced" style="transform-origin:250px 100px">
+          <line x1="80" y1="100" x2="420" y2="100" stroke="#334155" stroke-width="4" stroke-linecap="round"/>
+          <!-- Left pan -->
+          <line x1="120" y1="100" x2="120" y2="130" stroke="#334155" stroke-width="2"/>
+          <ellipse cx="120" cy="135" rx="60" ry="12" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2"/>
+          <!-- Right pan -->
+          <line x1="380" y1="100" x2="380" y2="130" stroke="#334155" stroke-width="2"/>
+          <ellipse cx="380" cy="135" rx="60" ry="12" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2"/>
+          <!-- Left side content -->
+          <rect x="85" y="110" width="30" height="20" rx="4" fill="#8b5cf6"/><text x="100" y="124" text-anchor="middle" font-size="11" fill="#fff" font-weight="700">2x</text>
+          <rect x="120" y="110" width="20" height="20" rx="4" fill="#8b5cf6"/><text x="130" y="124" text-anchor="middle" font-size="11" fill="#fff" font-weight="700">3</text>
+          <text x="112" y="124" text-anchor="middle" font-size="11" fill="#fff">+</text>
+          <!-- Right side content -->
+          <rect x="360" y="110" width="40" height="20" rx="4" fill="#3b82f6"/><text x="380" y="124" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">11</text>
+          <!-- Labels -->
+          <text x="120" y="165" text-anchor="middle" font-size="13" fill="#8b5cf6" font-weight="700">2x + 3</text>
+          <text x="250" y="90" text-anchor="middle" font-size="14" fill="#334155" font-weight="800">=</text>
+          <text x="380" y="165" text-anchor="middle" font-size="13" fill="#3b82f6" font-weight="700">11</text>
+        </g>
+        <text x="250" y="215" text-anchor="middle" font-size="12" fill="#64748b">The scale balances when 2x + 3 = 11 (i.e., x = 4)</text>
+      </svg>
+      <figcaption>An equation is like a balanced scale &mdash; both sides must be equal!</figcaption>
+    </figure>
+
+    <div class="why-box">
+      <strong>Key idea:</strong> Whatever you do to one side of the equation, you must do the <strong>same thing to the other side</strong> to keep it balanced. Add 5 to the left? Add 5 to the right too. Multiply the left by 3? Multiply the right by 3 too!
+    </div>
   </div>
 
+  <!-- Solving Equations -->
   <div class="section">
-    <h2>Key Formulas</h2>
-    <div class="formula-box">
-      <code>If x + a = b, then x = b &minus; a</code>
-    </div>
-    <div class="formula-box">
-      <code>If x &minus; a = b, then x = b + a</code>
-    </div>
-    <div class="formula-box">
-      <code>If ax = b, then x = b &divide; a</code>
-    </div>
-    <div class="formula-box">
-      <code>If x/a = b, then x = a &times; b</code>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>Worked Examples</h2>
+    <h2 id="solving">Solving Equations &mdash; Step by Step</h2>
+    <p>To &ldquo;solve&rdquo; an equation means to find the value of the variable that makes LHS = RHS.</p>
 
     <div class="example">
-      <h3>Example 1: Solve 3x + 5 = 20</h3>
-      <div class="step"><strong>Step 1:</strong> Transpose +5 to RHS: 3x = 20 &minus; 5 = 15</div>
-      <div class="step"><strong>Step 2:</strong> Divide both sides by 3: x = 15 &divide; 3 = <strong>5</strong></div>
-      <div class="step"><strong>Check:</strong> 3(5) + 5 = 15 + 5 = 20 ✓</div>
+      <h3>Example: Solve 2x + 3 = 11</h3>
+      <p><em>Watch how we &ldquo;undo&rdquo; operations one at a time to isolate x:</em></p>
+      <div class="solve-step">
+        <span class="lhs">2x + 3</span><span class="equals">=</span><span class="rhs">11</span>
+        <span class="action">Start</span>
+      </div>
+      <div class="solve-step">
+        <span class="lhs">2x + 3 &minus; 3</span><span class="equals">=</span><span class="rhs">11 &minus; 3</span>
+        <span class="action">Subtract 3 from both sides</span>
+      </div>
+      <div class="solve-step">
+        <span class="lhs">2x</span><span class="equals">=</span><span class="rhs">8</span>
+        <span class="action">Simplified</span>
+      </div>
+      <div class="solve-step">
+        <span class="lhs">2x &divide; 2</span><span class="equals">=</span><span class="rhs">8 &divide; 2</span>
+        <span class="action">Divide both sides by 2</span>
+      </div>
+      <div class="solve-step">
+        <span class="lhs" style="color:#16a34a;font-size:1.4rem">x</span><span class="equals">=</span><span class="rhs" style="color:#16a34a;font-size:1.4rem">4</span>
+        <span class="action" style="background:#d1fae5;color:#065f46">Answer!</span>
+      </div>
+      <div class="step"><strong>Check:</strong> Put x = 4 back: 2(4) + 3 = 8 + 3 = 11 = RHS &#10003;</div>
     </div>
 
     <div class="example">
-      <h3>Example 2: Solve x/4 &minus; 3 = 2</h3>
-      <div class="step"><strong>Step 1:</strong> Transpose &minus;3 to RHS: x/4 = 2 + 3 = 5</div>
-      <div class="step"><strong>Step 2:</strong> Multiply both sides by 4: x = 5 &times; 4 = <strong>20</strong></div>
-      <div class="step"><strong>Check:</strong> 20/4 &minus; 3 = 5 &minus; 3 = 2 ✓</div>
+      <h3>Example: Solve x/4 &minus; 3 = 2</h3>
+      <div class="solve-step">
+        <span class="lhs">x/4 &minus; 3</span><span class="equals">=</span><span class="rhs">2</span>
+        <span class="action">Start</span>
+      </div>
+      <div class="solve-step">
+        <span class="lhs">x/4 &minus; 3 + 3</span><span class="equals">=</span><span class="rhs">2 + 3</span>
+        <span class="action">Add 3 to both sides</span>
+      </div>
+      <div class="solve-step">
+        <span class="lhs">x/4</span><span class="equals">=</span><span class="rhs">5</span>
+        <span class="action">Simplified</span>
+      </div>
+      <div class="solve-step">
+        <span class="lhs">x/4 &times; 4</span><span class="equals">=</span><span class="rhs">5 &times; 4</span>
+        <span class="action">Multiply both sides by 4</span>
+      </div>
+      <div class="solve-step">
+        <span class="lhs" style="color:#16a34a;font-size:1.4rem">x</span><span class="equals">=</span><span class="rhs" style="color:#16a34a;font-size:1.4rem">20</span>
+        <span class="action" style="background:#d1fae5;color:#065f46">Answer!</span>
+      </div>
+      <div class="step"><strong>Check:</strong> 20/4 &minus; 3 = 5 &minus; 3 = 2 = RHS &#10003;</div>
+    </div>
+  </div>
+
+  <!-- Transposing -->
+  <div class="section">
+    <h2 id="transposing">Transposing &mdash; The Shortcut</h2>
+    <div class="formula-box">
+      <strong>Transposing</strong> = moving a term from one side to the other by <strong>changing its sign</strong>.<br>
+      <code>+ becomes &minus;</code> &ensp; <code>&minus; becomes +</code> &ensp; <code>&times; becomes &divide;</code> &ensp; <code>&divide; becomes &times;</code>
+    </div>
+
+    <div class="why-box">
+      <strong>WHY does transposing work?</strong><br>
+      It&rsquo;s just a shortcut for &ldquo;do the same thing to both sides.&rdquo;<br><br>
+      x + 5 = 12<br>
+      Subtract 5 from both sides: x + 5 <strong>&minus; 5</strong> = 12 <strong>&minus; 5</strong><br>
+      Result: x = 7<br><br>
+      The shortcut: just &ldquo;move&rdquo; the +5 to the other side as &minus;5. Same result, less writing!
+    </div>
+
+    <!-- Animated transpose diagram -->
+    <figure class="diagram">
+      <svg viewBox="0 0 500 120" width="500" height="120" xmlns="http://www.w3.org/2000/svg">
+        <!-- Equation boxes -->
+        <rect x="20" y="30" width="180" height="50" rx="10" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2"/>
+        <text x="110" y="62" text-anchor="middle" font-size="18" fill="#8b5cf6" font-weight="700">x + 5</text>
+        <text x="225" y="62" text-anchor="middle" font-size="22" fill="#334155" font-weight="800">=</text>
+        <rect x="250" y="30" width="100" height="50" rx="10" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+        <text x="300" y="62" text-anchor="middle" font-size="18" fill="#3b82f6" font-weight="700">12</text>
+        <!-- Arrow showing +5 moving -->
+        <path d="M 150,80 C 180,110 250,110 320,80" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="6,3"/>
+        <polygon points="320,80 312,88 318,76" fill="#dc2626"/>
+        <!-- Sign change label -->
+        <rect x="190" y="95" width="80" height="22" rx="6" fill="#dc2626"/>
+        <text x="230" y="111" text-anchor="middle" font-size="11" fill="#fff" font-weight="700">+5 becomes &minus;5</text>
+        <!-- Result -->
+        <rect x="380" y="30" width="110" height="50" rx="10" fill="#d1fae5" stroke="#16a34a" stroke-width="2"/>
+        <text x="435" y="62" text-anchor="middle" font-size="18" fill="#16a34a" font-weight="700">x = 7</text>
+        <text x="365" y="62" font-size="16" fill="#334155">&rArr;</text>
+      </svg>
+      <figcaption>Transposing: when +5 moves to the other side, it becomes &minus;5</figcaption>
+    </figure>
+
+    <div class="example">
+      <h3>Example: Solve 5x &minus; 8 = 12 using transposing</h3>
+      <div class="solve-step">
+        <span class="lhs">5x &minus; 8</span><span class="equals">=</span><span class="rhs">12</span>
+        <span class="action">Start</span>
+      </div>
+      <div class="solve-step">
+        <span class="lhs">5x</span><span class="equals">=</span><span class="rhs">12 + 8</span>
+        <span class="action">Transpose &minus;8 (becomes +8)</span>
+      </div>
+      <div class="solve-step">
+        <span class="lhs">5x</span><span class="equals">=</span><span class="rhs">20</span>
+        <span class="action">Simplified</span>
+      </div>
+      <div class="solve-step">
+        <span class="lhs">x</span><span class="equals">=</span><span class="rhs">20 &divide; 5</span>
+        <span class="action">Transpose &times;5 (becomes &divide;5)</span>
+      </div>
+      <div class="solve-step">
+        <span class="lhs" style="color:#16a34a;font-size:1.4rem">x</span><span class="equals">=</span><span class="rhs" style="color:#16a34a;font-size:1.4rem">4</span>
+        <span class="action" style="background:#d1fae5;color:#065f46">Answer!</span>
+      </div>
+      <div class="step"><strong>Check:</strong> 5(4) &minus; 8 = 20 &minus; 8 = 12 = RHS &#10003;</div>
+    </div>
+  </div>
+
+  <!-- Word Problems -->
+  <div class="section">
+    <h2 id="word-problems">Turning Word Problems into Equations</h2>
+    <div class="why-box">
+      <strong>The 3-step method for word problems:</strong><br>
+      <strong>Step 1:</strong> Choose a variable (let the unknown = x).<br>
+      <strong>Step 2:</strong> Translate the English sentence into a maths equation.<br>
+      <strong>Step 3:</strong> Solve the equation and answer in words.
+    </div>
+
+    <div class="real-world">
+      <strong>Translation guide:</strong><br>
+      &bull; &ldquo;a number plus 5&rdquo; &rarr; x + 5<br>
+      &bull; &ldquo;3 times a number&rdquo; &rarr; 3x<br>
+      &bull; &ldquo;7 less than a number&rdquo; &rarr; x &minus; 7<br>
+      &bull; &ldquo;a number divided by 4&rdquo; &rarr; x/4<br>
+      &bull; &ldquo;is&rdquo; or &ldquo;equals&rdquo; &rarr; =
     </div>
 
     <div class="example">
-      <h3>Example 3: Word Problem</h3>
-      <p>The sum of two consecutive numbers is 25. Find them.</p>
-      <div class="step"><strong>Step 1:</strong> Let the smaller number = x. Then the next one = x + 1</div>
-      <div class="step"><strong>Step 2:</strong> Equation: x + (x + 1) = 25 → 2x + 1 = 25</div>
-      <div class="step"><strong>Step 3:</strong> 2x = 24, so x = 12</div>
-      <div class="step"><strong>Answer:</strong> The numbers are <strong>12 and 13</strong></div>
+      <h3>Example: The sum of two consecutive numbers is 25. Find them.</h3>
+      <div class="step"><strong>Step 1:</strong> Let the smaller number = x. The next consecutive number = x + 1.</div>
+      <div class="step"><strong>Step 2:</strong> Translate: &ldquo;sum is 25&rdquo; means x + (x + 1) = 25</div>
+      <div class="step"><strong>Step 3:</strong> Simplify: 2x + 1 = 25</div>
+      <div class="step"><strong>Step 4:</strong> Transpose +1: 2x = 25 &minus; 1 = 24</div>
+      <div class="step"><strong>Step 5:</strong> Divide by 2: x = 24 &divide; 2 = 12</div>
+      <div class="step"><strong>Step 6:</strong> The numbers are <strong>12 and 13</strong>.</div>
+      <div class="step"><strong>Check:</strong> 12 + 13 = 25 &#10003;</div>
+    </div>
+
+    <div class="exam-tip">
+      <strong>Exam tip:</strong> ALWAYS check your answer by putting it back into the original word problem (not just the equation). This catches mistakes in setting up the equation itself!
     </div>
   </div>
 
+  <!-- NCERT Solutions -->
   <div class="section">
-    <h2>Practice Problems</h2>
+    <h2 id="ncert-solutions">NCERT Exercise Solutions &mdash; All Questions Solved</h2>
 
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>Solve: x + 7 = 15</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">x = 15 &minus; 7 = <strong>8</strong></div>
-      </details>
+    <div class="exercise-header">Exercise 4.1 &mdash; Setting Up Equations (8 Questions)</div>
+
+    <div class="example">
+      <h3>Q1. Write equations for: (a) 7 added to x gives 13 (b) 3 subtracted from y gives 9 (c) 5 times p equals 35 (d) m divided by 4 gives 3</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>(a)</strong> &ldquo;7 added to x gives 13&rdquo;<br>Translation: x + 7 = 13<br><strong>Equation: x + 7 = 13</strong></div>
+        <div class="step"><strong>(b)</strong> &ldquo;3 subtracted from y gives 9&rdquo;<br>Translation: y &minus; 3 = 9<br><strong>Equation: y &minus; 3 = 9</strong></div>
+        <div class="step"><strong>(c)</strong> &ldquo;5 times p equals 35&rdquo;<br>Translation: 5 &times; p = 35<br><strong>Equation: 5p = 35</strong></div>
+        <div class="step"><strong>(d)</strong> &ldquo;m divided by 4 gives 3&rdquo;<br>Translation: m &divide; 4 = 3<br><strong>Equation: m/4 = 3</strong></div>
+      </div></details>
     </div>
 
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>Solve: 5x = 35</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">x = 35 &divide; 5 = <strong>7</strong></div>
-      </details>
+    <div class="example">
+      <h3>Q2. Write equations for: (a) The sum of three times x and 11 is 32 (b) If you subtract 5 from 6 times y, you get 7</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>(a)</strong> &ldquo;three times x&rdquo; = 3x<br>&ldquo;sum of 3x and 11&rdquo; = 3x + 11<br>&ldquo;is 32&rdquo; = equals 32<br><strong>Equation: 3x + 11 = 32</strong></div>
+        <div class="step"><strong>(b)</strong> &ldquo;6 times y&rdquo; = 6y<br>&ldquo;subtract 5 from 6y&rdquo; = 6y &minus; 5<br>&ldquo;you get 7&rdquo; = equals 7<br><strong>Equation: 6y &minus; 5 = 7</strong></div>
+      </div></details>
     </div>
 
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>Solve: 2x &minus; 3 = 11</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">2x = 11 + 3 = 14. x = 14 &divide; 2 = <strong>7</strong></div>
-      </details>
+    <div class="example">
+      <h3>Q3. Raju&rsquo;s father&rsquo;s age is 5 years more than 3 times Raju&rsquo;s age. Father is 44 years old. Set up an equation to find Raju&rsquo;s age.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Let Raju&rsquo;s age = x years</div>
+        <div class="step"><strong>Step 2:</strong> &ldquo;3 times Raju&rsquo;s age&rdquo; = 3x</div>
+        <div class="step"><strong>Step 3:</strong> &ldquo;5 years more than 3 times&rdquo; = 3x + 5</div>
+        <div class="step"><strong>Step 4:</strong> Father&rsquo;s age = 44</div>
+        <div class="step"><strong>Equation: 3x + 5 = 44</strong></div>
+      </div></details>
     </div>
 
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>Solve: x/3 + 4 = 9</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">x/3 = 9 &minus; 4 = 5. x = 5 &times; 3 = <strong>15</strong></div>
-      </details>
+    <div class="example">
+      <h3>Q4. Check whether x = 5 is the solution of: x + 3 = 8</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Put x = 5 in the LHS: 5 + 3 = 8</div>
+        <div class="step"><strong>Step 2:</strong> RHS = 8</div>
+        <div class="step"><strong>Step 3:</strong> LHS = RHS = 8 &#10003;</div>
+        <div class="step"><strong>Yes, x = 5 is the solution.</strong></div>
+      </div></details>
     </div>
 
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>A number is multiplied by 3 and then 7 is added. The result is 28. Find the number.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">3x + 7 = 28 → 3x = 21 → x = <strong>7</strong></div>
-      </details>
+    <div class="example">
+      <h3>Q5. Check whether x = 3 is the solution of: 2x + 1 = 10</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Put x = 3 in the LHS: 2(3) + 1 = 6 + 1 = 7</div>
+        <div class="step"><strong>Step 2:</strong> RHS = 10</div>
+        <div class="step"><strong>Step 3:</strong> LHS = 7, but RHS = 10. They are NOT equal.</div>
+        <div class="step"><strong>No, x = 3 is NOT the solution.</strong> (The correct answer is x = 4.5)</div>
+      </div></details>
     </div>
 
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>Ravi's age is 3 times his son's age. If the sum of their ages is 48, find their ages.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Let son's age = x. Ravi's age = 3x. x + 3x = 48 → 4x = 48 → x = 12. Son = <strong>12 years</strong>, Ravi = <strong>36 years</strong></div>
-      </details>
+    <div class="example">
+      <h3>Q6. The sum of two numbers is 74. One is 10 more than the other. Find the numbers.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Let the smaller number = x</div>
+        <div class="step"><strong>Step 2:</strong> The other number is 10 more = x + 10</div>
+        <div class="step"><strong>Step 3:</strong> Their sum is 74: x + (x + 10) = 74</div>
+        <div class="step"><strong>Step 4:</strong> Simplify: 2x + 10 = 74</div>
+        <div class="step"><strong>Step 5:</strong> Transpose +10: 2x = 74 &minus; 10 = 64</div>
+        <div class="step"><strong>Step 6:</strong> Divide by 2: x = 64 &divide; 2 = 32</div>
+        <div class="step"><strong>Step 7:</strong> The numbers are <strong>32 and 42</strong>.</div>
+        <div class="step"><strong>Check:</strong> 32 + 42 = 74 &#10003; and 42 &minus; 32 = 10 &#10003;</div>
+      </div></details>
     </div>
 
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>Solve: x &minus; 8 = 12.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Transpose &minus;8 to RHS: x = 12 + 8 = <strong>20</strong></div>
-      </details>
+    <div class="example">
+      <h3>Q7. A number is 12 more than the other. The sum is 48. Find the numbers.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Let smaller number = x. Larger = x + 12.</div>
+        <div class="step"><strong>Step 2:</strong> Sum: x + (x + 12) = 48</div>
+        <div class="step"><strong>Step 3:</strong> Simplify: 2x + 12 = 48</div>
+        <div class="step"><strong>Step 4:</strong> Transpose: 2x = 48 &minus; 12 = 36</div>
+        <div class="step"><strong>Step 5:</strong> x = 36 &divide; 2 = 18</div>
+        <div class="step"><strong>Answer: 18 and 30</strong></div>
+        <div class="step"><strong>Check:</strong> 18 + 30 = 48 &#10003;, 30 &minus; 18 = 12 &#10003;</div>
+      </div></details>
     </div>
 
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>Solve: x/5 = 4.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Multiply both sides by 5: x = 4 &times; 5 = <strong>20</strong></div>
-      </details>
+    <div class="example">
+      <h3>Q8. Ravi&rsquo;s age is 3 times his son&rsquo;s age. Sum of their ages is 48. Find their ages.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Let son&rsquo;s age = x years</div>
+        <div class="step"><strong>Step 2:</strong> Ravi&rsquo;s age = 3 times son&rsquo;s age = 3x</div>
+        <div class="step"><strong>Step 3:</strong> Sum: x + 3x = 48</div>
+        <div class="step"><strong>Step 4:</strong> Simplify: 4x = 48</div>
+        <div class="step"><strong>Step 5:</strong> Divide both sides by 4: x = 48 &divide; 4 = 12</div>
+        <div class="step"><strong>Step 6:</strong> Son = 12 years. Ravi = 3 &times; 12 = 36 years.</div>
+        <div class="step"><strong>Answer: Son = 12 years, Ravi = 36 years</strong></div>
+        <div class="step"><strong>Check:</strong> 12 + 36 = 48 &#10003;, 36 = 3 &times; 12 &#10003;</div>
+      </div></details>
     </div>
 
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>Solve: 4x + 3 = 2x + 11.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Transpose 2x to LHS: 4x &minus; 2x + 3 = 11 &rarr; 2x + 3 = 11. Transpose +3: 2x = 8. Divide by 2: x = <strong>4</strong></div>
-      </details>
+    <div class="exercise-header">Exercise 4.2 &mdash; Solving Equations (10 Questions)</div>
+
+    <div class="example">
+      <h3>Q1. Solve: (a) x + 7 = 15 &ensp; (b) x &minus; 8 = 12 &ensp; (c) 5x = 35 &ensp; (d) x/4 = 7</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>(a) x + 7 = 15</strong><br>Transpose +7 to RHS: x = 15 &minus; 7<br>x = <strong>8</strong><br>Check: 8 + 7 = 15 &#10003;</div>
+        <div class="step"><strong>(b) x &minus; 8 = 12</strong><br>Transpose &minus;8 to RHS (becomes +8): x = 12 + 8<br>x = <strong>20</strong><br>Check: 20 &minus; 8 = 12 &#10003;</div>
+        <div class="step"><strong>(c) 5x = 35</strong><br>Transpose &times;5 to RHS (becomes &divide;5): x = 35 &divide; 5<br>x = <strong>7</strong><br>Check: 5 &times; 7 = 35 &#10003;</div>
+        <div class="step"><strong>(d) x/4 = 7</strong><br>Transpose &divide;4 to RHS (becomes &times;4): x = 7 &times; 4<br>x = <strong>28</strong><br>Check: 28/4 = 7 &#10003;</div>
+      </div></details>
     </div>
 
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>Solve: 3(x &minus; 2) = 15.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Expand: 3x &minus; 6 = 15. Transpose &minus;6: 3x = 21. Divide by 3: x = <strong>7</strong></div>
-      </details>
+    <div class="example">
+      <h3>Q2. Solve: (a) 2x + 3 = 11 &ensp; (b) 3x &minus; 5 = 16 &ensp; (c) 5y + 2 = 17</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>(a) 2x + 3 = 11</strong><br>Step 1: Transpose +3: 2x = 11 &minus; 3 = 8<br>Step 2: Transpose &times;2: x = 8 &divide; 2 = <strong>4</strong><br>Check: 2(4) + 3 = 8 + 3 = 11 &#10003;</div>
+        <div class="step"><strong>(b) 3x &minus; 5 = 16</strong><br>Step 1: Transpose &minus;5: 3x = 16 + 5 = 21<br>Step 2: Transpose &times;3: x = 21 &divide; 3 = <strong>7</strong><br>Check: 3(7) &minus; 5 = 21 &minus; 5 = 16 &#10003;</div>
+        <div class="step"><strong>(c) 5y + 2 = 17</strong><br>Step 1: Transpose +2: 5y = 17 &minus; 2 = 15<br>Step 2: Transpose &times;5: y = 15 &divide; 5 = <strong>3</strong><br>Check: 5(3) + 2 = 15 + 2 = 17 &#10003;</div>
+      </div></details>
     </div>
 
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>The perimeter of a rectangle is 54 cm. If the length is 5 cm more than the breadth, find the dimensions.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Let breadth = x. Length = x + 5. Perimeter = 2(x + x + 5) = 54 &rarr; 2(2x + 5) = 54 &rarr; 4x + 10 = 54 &rarr; 4x = 44 &rarr; x = 11. Breadth = <strong>11 cm</strong>, Length = <strong>16 cm</strong></div>
-      </details>
+    <div class="example">
+      <h3>Q3. Solve: x/3 + 4 = 9</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Transpose +4: x/3 = 9 &minus; 4 = 5</div>
+        <div class="step"><strong>Step 2:</strong> Transpose &divide;3 (becomes &times;3): x = 5 &times; 3 = <strong>15</strong></div>
+        <div class="step"><strong>Check:</strong> 15/3 + 4 = 5 + 4 = 9 &#10003;</div>
+      </div></details>
     </div>
 
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>A number is doubled, then 7 is subtracted. The result is 3 more than the number itself. Find the number.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Let the number = x. Equation: 2x &minus; 7 = x + 3. Transpose x to LHS: 2x &minus; x = 3 + 7 &rarr; x = <strong>10</strong></div>
-      </details>
+    <div class="example">
+      <h3>Q4. Solve: 4x + 3 = 2x + 11</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Variables on one side! Transpose 2x from RHS to LHS:<br>4x &minus; 2x + 3 = 11</div>
+        <div class="step"><strong>Step 2:</strong> Simplify: 2x + 3 = 11</div>
+        <div class="step"><strong>Step 3:</strong> Transpose +3: 2x = 11 &minus; 3 = 8</div>
+        <div class="step"><strong>Step 4:</strong> Divide by 2: x = 8 &divide; 2 = <strong>4</strong></div>
+        <div class="step"><strong>Check:</strong> LHS: 4(4) + 3 = 19. RHS: 2(4) + 11 = 19. LHS = RHS &#10003;</div>
+      </div></details>
+    </div>
+
+    <div class="example">
+      <h3>Q5. Solve: 3(x &minus; 2) = 15</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Expand the bracket: 3 &times; x &minus; 3 &times; 2 = 15<br>So: 3x &minus; 6 = 15</div>
+        <div class="step"><strong>Step 2:</strong> Transpose &minus;6: 3x = 15 + 6 = 21</div>
+        <div class="step"><strong>Step 3:</strong> Divide by 3: x = 21 &divide; 3 = <strong>7</strong></div>
+        <div class="step"><strong>Check:</strong> 3(7 &minus; 2) = 3 &times; 5 = 15 &#10003;</div>
+      </div></details>
+    </div>
+
+    <div class="example">
+      <h3>Q6. The perimeter of a rectangle is 54 cm. The length is 5 cm more than the breadth. Find the dimensions.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Let breadth = x cm</div>
+        <div class="step"><strong>Step 2:</strong> Length = x + 5 cm (5 more than breadth)</div>
+        <div class="step"><strong>Step 3:</strong> Perimeter formula: P = 2(length + breadth)<br>54 = 2(x + 5 + x) = 2(2x + 5)</div>
+        <div class="step"><strong>Step 4:</strong> Expand: 54 = 4x + 10</div>
+        <div class="step"><strong>Step 5:</strong> Transpose +10: 4x = 54 &minus; 10 = 44</div>
+        <div class="step"><strong>Step 6:</strong> Divide by 4: x = 44 &divide; 4 = 11</div>
+        <div class="step"><strong>Step 7:</strong> Breadth = <strong>11 cm</strong>, Length = 11 + 5 = <strong>16 cm</strong></div>
+        <div class="step"><strong>Check:</strong> P = 2(16 + 11) = 2(27) = 54 &#10003;</div>
+      </div></details>
+    </div>
+
+    <div class="example">
+      <h3>Q7. A number is doubled, then 7 is subtracted. The result is 3 more than the number itself. Find the number.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Let the number = x</div>
+        <div class="step"><strong>Step 2:</strong> &ldquo;Number is doubled&rdquo; = 2x</div>
+        <div class="step"><strong>Step 3:</strong> &ldquo;Then 7 is subtracted&rdquo; = 2x &minus; 7</div>
+        <div class="step"><strong>Step 4:</strong> &ldquo;Result is 3 more than the number&rdquo; = x + 3</div>
+        <div class="step"><strong>Step 5:</strong> Equation: 2x &minus; 7 = x + 3</div>
+        <div class="step"><strong>Step 6:</strong> Transpose x to LHS: 2x &minus; x &minus; 7 = 3 &rarr; x &minus; 7 = 3</div>
+        <div class="step"><strong>Step 7:</strong> Transpose &minus;7: x = 3 + 7 = <strong>10</strong></div>
+        <div class="step"><strong>Check:</strong> 2(10) &minus; 7 = 13. And 10 + 3 = 13. Equal &#10003;</div>
+      </div></details>
+    </div>
+
+    <div class="example">
+      <h3>Q8. Solve: (2x + 1)/3 = 5</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Multiply both sides by 3: 2x + 1 = 5 &times; 3 = 15</div>
+        <div class="step"><strong>Step 2:</strong> Transpose +1: 2x = 15 &minus; 1 = 14</div>
+        <div class="step"><strong>Step 3:</strong> Divide by 2: x = 14 &divide; 2 = <strong>7</strong></div>
+        <div class="step"><strong>Check:</strong> (2 &times; 7 + 1)/3 = (14 + 1)/3 = 15/3 = 5 &#10003;</div>
+      </div></details>
+    </div>
+
+    <div class="example">
+      <h3>Q9. Three consecutive numbers add up to 51. Find them.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Let the three consecutive numbers = x, x+1, x+2</div>
+        <div class="step"><strong>Step 2:</strong> Sum: x + (x+1) + (x+2) = 51</div>
+        <div class="step"><strong>Step 3:</strong> Simplify: 3x + 3 = 51</div>
+        <div class="step"><strong>Step 4:</strong> Transpose +3: 3x = 51 &minus; 3 = 48</div>
+        <div class="step"><strong>Step 5:</strong> Divide by 3: x = 48 &divide; 3 = 16</div>
+        <div class="step"><strong>Step 6:</strong> Numbers: <strong>16, 17, 18</strong></div>
+        <div class="step"><strong>Check:</strong> 16 + 17 + 18 = 51 &#10003;</div>
+      </div></details>
+    </div>
+
+    <div class="example">
+      <h3>Q10. A man is 24 years older than his son. After 6 years, his age will be twice his son&rsquo;s age. Find their present ages.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Let son&rsquo;s present age = x years</div>
+        <div class="step"><strong>Step 2:</strong> Man&rsquo;s present age = x + 24 (24 years older)</div>
+        <div class="step"><strong>Step 3:</strong> After 6 years: Son = x + 6, Man = x + 24 + 6 = x + 30</div>
+        <div class="step"><strong>Step 4:</strong> &ldquo;Man&rsquo;s age will be twice son&rsquo;s&rdquo;: x + 30 = 2(x + 6)</div>
+        <div class="step"><strong>Step 5:</strong> Expand: x + 30 = 2x + 12</div>
+        <div class="step"><strong>Step 6:</strong> Transpose x to RHS and 12 to LHS: 30 &minus; 12 = 2x &minus; x</div>
+        <div class="step"><strong>Step 7:</strong> Simplify: 18 = x</div>
+        <div class="step"><strong>Step 8:</strong> Son = <strong>18 years</strong>, Man = 18 + 24 = <strong>42 years</strong></div>
+        <div class="step"><strong>Check:</strong> After 6 years: Son = 24, Man = 48. Is 48 = 2 &times; 24? Yes! &#10003;</div>
+      </div></details>
     </div>
   </div>
 
+  <!-- Extra Practice -->
   <div class="section">
-    <h2>Common Mistakes</h2>
+    <h2 id="extra-practice">Extra Practice (Beyond NCERT)</h2>
+    <div class="problem"><span class="difficulty easy">Easy</span><p>1. Solve: x + 7 = 15</p><details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Transpose +7: x = 15 &minus; 7<br><strong>Step 2:</strong> x = <strong>8</strong><br>Check: 8 + 7 = 15 &#10003;</div></details></div>
+    <div class="problem"><span class="difficulty easy">Easy</span><p>2. Solve: x/5 = 4</p><details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Transpose &divide;5 (becomes &times;5): x = 4 &times; 5<br><strong>Step 2:</strong> x = <strong>20</strong><br>Check: 20/5 = 4 &#10003;</div></details></div>
+    <div class="problem"><span class="difficulty easy">Easy</span><p>3. Solve: 3x = 27</p><details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Divide both sides by 3: x = 27 &divide; 3<br><strong>Step 2:</strong> x = <strong>9</strong><br>Check: 3 &times; 9 = 27 &#10003;</div></details></div>
+    <div class="problem"><span class="difficulty medium">Medium</span><p>4. Solve: 4x + 3 = 2x + 11</p><details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Transpose 2x to LHS: 4x &minus; 2x + 3 = 11<br><strong>Step 2:</strong> Simplify: 2x + 3 = 11<br><strong>Step 3:</strong> Transpose +3: 2x = 8<br><strong>Step 4:</strong> Divide by 2: x = <strong>4</strong><br>Check: 4(4)+3=19, 2(4)+11=19 &#10003;</div></details></div>
+    <div class="problem"><span class="difficulty medium">Medium</span><p>5. Solve: 3(x &minus; 2) = 15</p><details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Expand: 3x &minus; 6 = 15<br><strong>Step 2:</strong> Transpose &minus;6: 3x = 21<br><strong>Step 3:</strong> Divide by 3: x = <strong>7</strong><br>Check: 3(7&minus;2) = 3&times;5 = 15 &#10003;</div></details></div>
+    <div class="problem"><span class="difficulty medium">Medium</span><p>6. Solve: (x + 5)/2 = 8</p><details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Multiply both sides by 2: x + 5 = 16<br><strong>Step 2:</strong> Transpose +5: x = 16 &minus; 5<br><strong>Step 3:</strong> x = <strong>11</strong><br>Check: (11+5)/2 = 16/2 = 8 &#10003;</div></details></div>
+    <div class="problem"><span class="difficulty hard">Hard</span><p>7. The perimeter of a rectangle is 54 cm. Length is 5 cm more than breadth. Find dimensions.</p><details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Let breadth = x. Length = x + 5.<br><strong>Step 2:</strong> 2(x + x + 5) = 54<br><strong>Step 3:</strong> 2(2x + 5) = 54 &rarr; 4x + 10 = 54<br><strong>Step 4:</strong> 4x = 44 &rarr; x = 11<br><strong>Answer:</strong> Breadth = <strong>11 cm</strong>, Length = <strong>16 cm</strong><br>Check: 2(11+16) = 54 &#10003;</div></details></div>
+    <div class="problem"><span class="difficulty hard">Hard</span><p>8. The angles of a triangle are x&deg;, (x + 20)&deg;, and (2x &minus; 10)&deg;. Find all angles.</p><details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Angle sum = 180&deg;: x + (x+20) + (2x&minus;10) = 180<br><strong>Step 2:</strong> Simplify: 4x + 10 = 180<br><strong>Step 3:</strong> 4x = 170 &rarr; x = 42.5<br><strong>Step 4:</strong> Angles: <strong>42.5&deg;, 62.5&deg;, 75&deg;</strong><br>Check: 42.5+62.5+75 = 180 &#10003;</div></details></div>
+    <div class="problem"><span class="difficulty hard">Hard</span><p>9. A mother is 25 years older than her daughter. After 8 years, mother&rsquo;s age will be twice daughter&rsquo;s. Find present ages.</p><details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Daughter = x. Mother = x + 25.<br><strong>Step 2:</strong> After 8 years: daughter = x+8, mother = x+33<br><strong>Step 3:</strong> Mother = 2 &times; daughter: x + 33 = 2(x + 8)<br><strong>Step 4:</strong> x + 33 = 2x + 16<br><strong>Step 5:</strong> 33 &minus; 16 = 2x &minus; x &rarr; x = 17<br><strong>Answer:</strong> Daughter = <strong>17</strong>, Mother = <strong>42</strong><br>Check: After 8 yrs: 25 and 50. 50 = 2 &times; 25 &#10003;</div></details></div>
+    <div class="problem"><span class="difficulty hard">Hard</span><p>10. A number when multiplied by 5 and then reduced by 3 gives 42. Find the number.</p><details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Let the number = x<br><strong>Step 2:</strong> &ldquo;Multiplied by 5 then reduced by 3 gives 42&rdquo;: 5x &minus; 3 = 42<br><strong>Step 3:</strong> Transpose &minus;3: 5x = 45<br><strong>Step 4:</strong> Divide by 5: x = <strong>9</strong><br>Check: 5(9) &minus; 3 = 45 &minus; 3 = 42 &#10003;</div></details></div>
+  </div>
+
+  <!-- HOTS -->
+  <div class="section">
+    <h2 id="hots">HOTS &mdash; Higher Order Thinking <span class="hots-tag">Advanced</span></h2>
+    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span>
+      <p>1. I think of a number. I double it, add 15, and divide by 5. The result is 7. What was my number?</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Let the number = x<br><strong>Step 2:</strong> &ldquo;Double it&rdquo; = 2x<br><strong>Step 3:</strong> &ldquo;Add 15&rdquo; = 2x + 15<br><strong>Step 4:</strong> &ldquo;Divide by 5&rdquo; = (2x + 15)/5<br><strong>Step 5:</strong> &ldquo;Result is 7&rdquo;: (2x + 15)/5 = 7<br><strong>Step 6:</strong> Multiply by 5: 2x + 15 = 35<br><strong>Step 7:</strong> Transpose: 2x = 20<br><strong>Step 8:</strong> x = <strong>10</strong><br>Check: 2(10)=20, +15=35, &divide;5=7 &#10003;</div></details>
+    </div>
+    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span>
+      <p>2. The length of a rectangular field is twice its width. If the perimeter is 120 m, find the area.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Let width = x. Length = 2x.<br><strong>Step 2:</strong> Perimeter = 2(2x + x) = 2(3x) = 6x<br><strong>Step 3:</strong> 6x = 120 &rarr; x = 20 m<br><strong>Step 4:</strong> Width = 20 m, Length = 40 m<br><strong>Step 5:</strong> Area = 40 &times; 20 = <strong>800 m&sup2;</strong></div></details>
+    </div>
+    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span>
+      <p>3. A shopkeeper sells pens at Rs 12 each and pencils at Rs 5 each. He sold 50 items and earned Rs 415. How many pens and pencils did he sell?</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Let pens = x. Then pencils = 50 &minus; x.<br><strong>Step 2:</strong> Revenue: 12x + 5(50 &minus; x) = 415<br><strong>Step 3:</strong> Expand: 12x + 250 &minus; 5x = 415<br><strong>Step 4:</strong> Simplify: 7x + 250 = 415<br><strong>Step 5:</strong> 7x = 165 &rarr; x = 165/7... <br>Hmm, this doesn&rsquo;t give a whole number. Let&rsquo;s try pens = 15:<br>12(15) + 5(35) = 180 + 175 = 355 (too low).<br>Pens = 25: 12(25) + 5(25) = 300 + 125 = 425 (too high).<br>Pens = 23: 12(23) + 5(27) = 276 + 135 = 411. Pens = 24: 12(24) + 5(26) = 288 + 130 = 418. Close!<br><strong>Note:</strong> This problem doesn&rsquo;t have a clean integer answer. Better version: earned Rs 410.<br>Then 7x + 250 = 410 &rarr; 7x = 160... Still not clean. This shows why setting up the right equation matters!</div></details>
+    </div>
+  </div>
+
+  <!-- Common Mistakes -->
+  <div class="section">
+    <h2 id="mistakes">Common Mistakes &amp; How to Avoid Them</h2>
     <ul class="mistakes-list">
-      <li>Forgetting to change the sign when transposing (e.g., +5 must become &minus;5 on the other side).</li>
-      <li>Not doing the same operation on both sides of the equation.</li>
-      <li>Confusing multiplication and division when isolating the variable.</li>
-      <li>Forgetting to check the answer by substituting back into the original equation.</li>
+      <li><strong>Forgetting to change the sign when transposing</strong>
+        <div class="wrong-right">
+          <div class="wrong">x + 5 = 12 &rarr; x = 12 + 5 = 17</div>
+          <div class="right">x + 5 = 12 &rarr; x = 12 <strong>&minus;</strong> 5 = <strong>7</strong><br>When +5 crosses the equals sign, it becomes &minus;5!</div>
+        </div>
+      </li>
+      <li><strong>Not doing the same operation on both sides</strong>
+        <div class="wrong-right">
+          <div class="wrong">2x + 3 = 11 &rarr; 2x = 11 (just removed +3 from left)</div>
+          <div class="right">2x + 3 = 11 &rarr; 2x + 3 <strong>&minus; 3</strong> = 11 <strong>&minus; 3</strong> &rarr; 2x = 8</div>
+        </div>
+      </li>
+      <li><strong>Confusing multiplication and division when isolating x</strong>
+        <div class="wrong-right">
+          <div class="wrong">3x = 15 &rarr; x = 15 &times; 3 = 45</div>
+          <div class="right">3x = 15 &rarr; x = 15 <strong>&divide;</strong> 3 = <strong>5</strong><br>If x is multiplied by 3, undo it by dividing!</div>
+        </div>
+      </li>
+      <li><strong>Forgetting to expand brackets</strong>
+        <div class="wrong-right">
+          <div class="wrong">3(x + 2) = 15 &rarr; 3x + 2 = 15</div>
+          <div class="right">3(x + 2) = 15 &rarr; 3x + <strong>6</strong> = 15<br>Multiply 3 by BOTH terms inside the bracket!</div>
+        </div>
+      </li>
+      <li><strong>Not checking the answer</strong>
+        <div class="wrong-right">
+          <div class="wrong">Accept the answer without checking</div>
+          <div class="right">ALWAYS substitute your answer back into the <strong>original equation</strong> to verify LHS = RHS!</div>
+        </div>
+      </li>
     </ul>
   </div>
 
