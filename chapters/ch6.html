@@ -4,8 +4,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="chapter-num" content="6">
-<title>Chapter 6: The Triangle and Its Properties - CBSE Class 7 Maths</title>
+<title>NCERT Solutions Class 7 Maths Chapter 6 The Triangle and Its Properties</title>
+<meta name="description" content="NCERT Solutions for Class 7 Maths Chapter 6 Triangle Properties. Angle sum, exterior angle, Pythagoras theorem, triangle inequality — all exercises solved with diagrams.">
 <link rel="stylesheet" href="../css/style.css">
+<style>
+.real-world{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0;font-size:.95rem}
+.real-world strong{color:#16a34a}
+.why-box{background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0;font-size:.95rem}
+.why-box strong{color:#3b82f6}
+.exam-tip{background:#fdf4ff;border:1px solid #e9d5ff;border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0;font-size:.95rem}
+.exam-tip strong{color:#9333ea}
+.wrong-right{display:flex;gap:1rem;flex-wrap:wrap;margin:.5rem 0}
+.wrong-right .wrong,.wrong-right .right{flex:1;min-width:200px;padding:.75rem;border-radius:8px;font-size:.9rem}
+.wrong-right .wrong{background:#fee2e2;border:1px solid #fca5a5}
+.wrong-right .right{background:#d1fae5;border:1px solid #6ee7b7}
+.revision-card{background:linear-gradient(135deg,#10b981,#059669);color:#fff;border-radius:16px;padding:1.5rem;margin-bottom:2rem}
+.revision-card h2{color:#fff;border:none;padding:0;margin-bottom:1rem;font-size:1.2rem}
+.revision-card .formula-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.75rem}
+.revision-card .f-item{background:rgba(255,255,255,.15);border-radius:8px;padding:.6rem .8rem;font-size:.9rem;backdrop-filter:blur(4px)}
+.revision-card .f-item code{color:#fde68a;font-weight:700}
+.exercise-header{background:var(--geo-light);border:2px solid var(--geo);border-radius:12px;padding:1rem 1.25rem;margin:1.5rem 0 1rem;font-size:1.1rem;font-weight:700;color:#065f46}
+.step-reveal summary{cursor:pointer;color:var(--primary);font-weight:600;font-size:.9rem}
+.step-reveal .steps-content{padding:.75rem;margin-top:.5rem;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0}
+.hots-tag{display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;padding:2px 6px;border-radius:4px;background:#fdf4ff;color:#9333ea;border:1px solid #e9d5ff;margin-left:.5rem}
+</style>
 </head>
 <body>
 <header class="navbar">
@@ -19,465 +41,369 @@
 <div class="container">
   <div class="chapter-header">
     <div class="ch-label" style="color:var(--geo)">Chapter 6 &middot; Geometry</div>
-    <h1>The Triangle and Its Properties</h1>
+    <h1>The Triangle and Its Properties &mdash; Complete NCERT Solutions</h1>
   </div>
 
+  <nav class="topic-nav">
+    <a href="#revision">Revision Card</a>
+    <a href="#types">Types of Triangles</a>
+    <a href="#angle-sum">Angle Sum</a>
+    <a href="#exterior-angle">Exterior Angle</a>
+    <a href="#inequality">Triangle Inequality</a>
+    <a href="#pythagoras">Pythagoras Theorem</a>
+    <a href="#ncert-solutions" class="nav-exercise">NCERT Solutions</a>
+    <a href="#extra-practice" class="nav-exercise">Extra Practice</a>
+    <a href="#hots" class="nav-exercise">HOTS</a>
+    <a href="#mistakes">Common Mistakes</a>
+  </nav>
+
+  <div class="revision-card" id="revision">
+    <h2>Quick Revision Card</h2>
+    <div class="formula-grid">
+      <div class="f-item"><code>&ang;A + &ang;B + &ang;C = 180&deg;</code><br>Angle sum property</div>
+      <div class="f-item"><code>Exterior = Sum of remote interior</code><br>Exterior angle theorem</div>
+      <div class="f-item"><code>a&sup2; + b&sup2; = c&sup2;</code><br>Pythagoras (right triangles only)</div>
+      <div class="f-item"><code>a + b &gt; c</code><br>Triangle inequality (check all 3 pairs)</div>
+      <div class="f-item"><code>Equilateral: all sides equal</code><br>All angles = 60&deg;</div>
+      <div class="f-item"><code>Isosceles: 2 sides equal</code><br>Base angles are equal</div>
+    </div>
+  </div>
+
+  <!-- Types -->
   <div class="section">
-    <h2>Summary</h2>
+    <h2 id="types">Types of Triangles</h2>
+    <div class="real-world">
+      <strong>Real-world:</strong> Traffic signs are equilateral triangles. The roof of a house is usually an isosceles triangle. A slice of pizza is roughly a scalene triangle!
+    </div>
+
+    <h3 style="color:var(--primary);margin:1rem 0 .5rem">By Sides</h3>
+    <figure class="diagram">
+      <svg viewBox="0 0 520 160" width="520" height="160" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="80,20 30,130 130,130" fill="none" stroke="#16a34a" stroke-width="2.5"/>
+        <text x="45" y="82" font-size="11" fill="#16a34a" font-weight="600">5</text>
+        <text x="110" y="82" font-size="11" fill="#16a34a" font-weight="600">5</text>
+        <text x="80" y="145" font-size="11" fill="#16a34a" font-weight="600">5</text>
+        <text x="80" y="158" text-anchor="middle" font-size="12" fill="#16a34a" font-weight="700">Equilateral</text>
+        <polygon points="260,20 210,130 310,130" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+        <text x="228" y="82" font-size="11" fill="#3b82f6" font-weight="600">5</text>
+        <text x="290" y="82" font-size="11" fill="#3b82f6" font-weight="600">5</text>
+        <text x="260" y="145" font-size="11" fill="#3b82f6" font-weight="600">3</text>
+        <text x="260" y="158" text-anchor="middle" font-size="12" fill="#3b82f6" font-weight="700">Isosceles</text>
+        <polygon points="430,25 380,130 500,130" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+        <text x="398" y="85" font-size="11" fill="#dc2626" font-weight="600">4</text>
+        <text x="472" y="85" font-size="11" fill="#dc2626" font-weight="600">6</text>
+        <text x="440" y="145" font-size="11" fill="#dc2626" font-weight="600">5</text>
+        <text x="440" y="158" text-anchor="middle" font-size="12" fill="#dc2626" font-weight="700">Scalene</text>
+      </svg>
+      <figcaption>Equilateral: all equal | Isosceles: two equal | Scalene: all different</figcaption>
+    </figure>
+
+    <h3 style="color:var(--primary);margin:1rem 0 .5rem">By Angles</h3>
     <ul class="summary-list">
-      <li>A triangle has 3 sides, 3 angles, and 3 vertices.</li>
-      <li>Angle sum property: the three angles of any triangle always add up to 180&deg; (e.g., if two angles are 50&deg; and 60&deg;, the third is 180&deg; &minus; 50&deg; &minus; 60&deg; = 70&deg;).</li>
-      <li>By sides: Equilateral (all sides equal), Isosceles (two sides equal), Scalene (no sides equal) &mdash; e.g., 5, 5, 5 is equilateral; 5, 5, 3 is isosceles; 3, 4, 6 is scalene.</li>
-      <li>By angles: Acute (all angles &lt; 90&deg;), Right (one angle = 90&deg;), Obtuse (one angle &gt; 90&deg;) &mdash; e.g., all angles 60&deg; = acute; one angle 90&deg; = right; one angle 110&deg; = obtuse.</li>
-      <li>Exterior angle of a triangle = sum of the two interior opposite angles (e.g., if the two opposite interior angles are 40&deg; and 60&deg;, the exterior angle = 100&deg;).</li>
-      <li>Triangle inequality: the sum of any two sides must be greater than the third side (e.g., sides 3, 4, 8 won't work because 3 + 4 = 7 &lt; 8).</li>
-      <li>In a right triangle, the longest side (opposite the right angle) is the hypotenuse (e.g., in a right triangle with legs 3 and 4, hypotenuse = 5).</li>
-      <li>Pythagoras theorem: hypotenuse&sup2; = base&sup2; + height&sup2; (e.g., 3&sup2; + 4&sup2; = 9 + 16 = 25 = 5&sup2;).</li>
-      <li>A median connects a vertex to the midpoint of the opposite side (e.g., from vertex A to the midpoint of side BC).</li>
-      <li>An altitude is the perpendicular distance from a vertex to the opposite side (e.g., the height of a triangle drawn from a vertex perpendicular to the base).</li>
+      <li><strong>Acute:</strong> All angles &lt; 90&deg; (e.g., 60&deg;, 70&deg;, 50&deg;)</li>
+      <li><strong>Right:</strong> One angle = 90&deg; (e.g., 90&deg;, 45&deg;, 45&deg;)</li>
+      <li><strong>Obtuse:</strong> One angle &gt; 90&deg; (e.g., 120&deg;, 30&deg;, 30&deg;)</li>
     </ul>
   </div>
 
+  <!-- Angle Sum -->
   <div class="section">
-    <h2>Key Formulas</h2>
+    <h2 id="angle-sum">Angle Sum Property</h2>
     <div class="formula-box">
-      <code>Angle sum: &ang;A + &ang;B + &ang;C = 180&deg;</code>
+      The three angles of ANY triangle always add up to <code>180&deg;</code>.
     </div>
-    <div class="formula-box">
-      <code>Exterior angle = Sum of two remote interior angles</code>
+    <div class="why-box">
+      <strong>WHY 180&deg;?</strong> Try this: draw a triangle, tear off all 3 corners, and arrange them together. They form a <strong>straight line</strong> (180&deg;)! This works for every triangle, no matter the shape.
     </div>
-    <div class="formula-box">
-      <code>Pythagoras theorem: a&sup2; + b&sup2; = c&sup2; (where c is the hypotenuse)</code>
-    </div>
-    <div class="formula-box">
-      <code>Triangle inequality: a + b &gt; c, b + c &gt; a, a + c &gt; b</code>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>Worked Examples</h2>
-
     <div class="example">
-      <h3>Example 1: Finding a Missing Angle</h3>
-      <p>Two angles of a triangle are 60&deg; and 70&deg;. Find the third angle.</p>
-      <div class="step"><strong>Step 1:</strong> Angle sum = 180&deg;</div>
-      <div class="step"><strong>Step 2:</strong> Third angle = 180&deg; &minus; 60&deg; &minus; 70&deg; = <strong>50&deg;</strong></div>
-    </div>
-
-    <div class="example">
-      <h3>Example 2: Pythagoras Theorem</h3>
-      <p>A right triangle has legs 3 cm and 4 cm. Find the hypotenuse.</p>
-      <div class="step"><strong>Step 1:</strong> c&sup2; = a&sup2; + b&sup2; = 3&sup2; + 4&sup2; = 9 + 16 = 25</div>
-      <div class="step"><strong>Step 2:</strong> c = &radic;25 = <strong>5 cm</strong></div>
-    </div>
-
-    <div class="example">
-      <h3>Example 3: Triangle Inequality</h3>
-      <p>Can sides of length 3, 4, and 8 form a triangle?</p>
-      <div class="step"><strong>Step 1:</strong> Check: 3 + 4 = 7. Is 7 &gt; 8? <strong>No!</strong></div>
-      <div class="step"><strong>Step 2:</strong> Since the sum of two sides is NOT greater than the third, these <strong>cannot</strong> form a triangle.</div>
+      <h3>Example: Two angles are 60&deg; and 70&deg;. Find the third.</h3>
+      <div class="step"><strong>Step 1:</strong> Sum = 180&deg;</div>
+      <div class="step"><strong>Step 2:</strong> Third = 180 &minus; 60 &minus; 70 = <strong>50&deg;</strong></div>
     </div>
   </div>
 
+  <!-- Exterior Angle -->
   <div class="section">
-    <h2>Practice Problems</h2>
-
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>The angles of a triangle are 50&deg;, 60&deg;, and x. Find x.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">x = 180&deg; &minus; 50&deg; &minus; 60&deg; = <strong>70&deg;</strong></div>
-      </details>
+    <h2 id="exterior-angle">Exterior Angle Property</h2>
+    <div class="formula-box">
+      <code>Exterior angle = Sum of the two remote (non-adjacent) interior angles</code>
     </div>
-
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>Classify a triangle with sides 5 cm, 5 cm, and 5 cm.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">All sides are equal, so it is an <strong>equilateral triangle</strong>.</div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>An exterior angle of a triangle is 110&deg;. One of the interior opposite angles is 45&deg;. Find the other interior opposite angle.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Exterior angle = sum of remote interior angles. Other angle = 110&deg; &minus; 45&deg; = <strong>65&deg;</strong></div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>Can sides 5, 7, and 11 form a triangle?</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">5 + 7 = 12 &gt; 11 ✓, 5 + 11 = 16 &gt; 7 ✓, 7 + 11 = 18 &gt; 5 ✓. <strong>Yes</strong>, they can form a triangle.</div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>A right triangle has hypotenuse 13 cm and one leg 5 cm. Find the other leg.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">a&sup2; + 5&sup2; = 13&sup2; → a&sup2; + 25 = 169 → a&sup2; = 144 → a = <strong>12 cm</strong></div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>A triangle has angles in the ratio 2 : 3 : 4. Find all three angles.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">2x + 3x + 4x = 180&deg; → 9x = 180&deg; → x = 20&deg;. Angles: <strong>40&deg;, 60&deg;, 80&deg;</strong></div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>Is a triangle with sides 6, 6, 6 equilateral, isosceles, or scalene?</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">All three sides are equal, so it is an <strong>equilateral triangle</strong>.</div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>Can a triangle have two right angles? Why or why not?</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer"><strong>No.</strong> Two right angles would add up to 90&deg; + 90&deg; = 180&deg;, leaving 0&deg; for the third angle. A triangle&rsquo;s angles must all be greater than 0&deg;, so a triangle cannot have two right angles.</div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>The angles of a triangle are (x + 10)&deg;, (2x)&deg;, and (x + 30)&deg;. Find all three angles.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">(x + 10) + 2x + (x + 30) = 180 &rarr; 4x + 40 = 180 &rarr; 4x = 140 &rarr; x = 35. The angles are 35 + 10 = <strong>45&deg;</strong>, 2 &times; 35 = <strong>70&deg;</strong>, and 35 + 30 = <strong>65&deg;</strong>.</div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>A right triangle has legs 5 cm and 12 cm. Find the hypotenuse.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">c&sup2; = 5&sup2; + 12&sup2; = 25 + 144 = 169. c = &radic;169 = <strong>13 cm</strong>.</div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>An exterior angle of a triangle is 120&deg;. The two interior opposite angles are equal. Find all angles of the triangle.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Exterior angle = sum of the two interior opposite angles. So 120&deg; = x + x = 2x, giving x = 60&deg;. The two interior opposite angles are each <strong>60&deg;</strong>. The third angle (adjacent to the exterior angle) = 180&deg; &minus; 120&deg; = <strong>60&deg;</strong>. All three angles are <strong>60&deg;</strong> (equilateral triangle).</div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>The sides of a triangle are in the ratio 3:4:5 and its perimeter is 48 cm. Find the sides and check if it is a right triangle.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Let the sides be 3x, 4x, and 5x. Perimeter = 3x + 4x + 5x = 12x = 48, so x = 4. The sides are <strong>12 cm, 16 cm, and 20 cm</strong>. Check: 12&sup2; + 16&sup2; = 144 + 256 = 400 = 20&sup2;. Since the Pythagoras theorem holds, it <strong>is a right triangle</strong>.</div>
-      </details>
-    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 350 160" width="350" height="160" xmlns="http://www.w3.org/2000/svg">
+        <!-- Triangle -->
+        <polygon points="50,130 170,30 250,130" fill="none" stroke="#334155" stroke-width="2"/>
+        <!-- Extended side -->
+        <line x1="250" y1="130" x2="340" y2="130" stroke="#dc2626" stroke-width="2" stroke-dasharray="6,3"/>
+        <!-- Angle labels -->
+        <text x="70" y="120" font-size="13" fill="#3b82f6" font-weight="700">A</text>
+        <text x="168" y="55" font-size="13" fill="#3b82f6" font-weight="700">B</text>
+        <text x="238" y="120" font-size="13" fill="#334155" font-weight="700">C</text>
+        <!-- Exterior angle arc -->
+        <path d="M 270,130 A 22,22 0 0,0 260,112" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+        <text x="290" y="118" font-size="13" fill="#dc2626" font-weight="700">ext</text>
+        <!-- Formula -->
+        <text x="175" y="155" text-anchor="middle" font-size="12" fill="#334155"><tspan fill="#dc2626" font-weight="700">ext</tspan> = <tspan fill="#3b82f6" font-weight="700">A + B</tspan></text>
+      </svg>
+      <figcaption>The exterior angle at C equals the sum of the two non-adjacent interior angles A and B</figcaption>
+    </figure>
   </div>
 
+  <!-- Triangle Inequality -->
   <div class="section">
-    <h2>Common Mistakes</h2>
-    <ul class="mistakes-list">
-      <li>Thinking the angle sum of a triangle is 360&deg; — it's 180&deg; (360&deg; is for quadrilaterals).</li>
-      <li>Not checking ALL three pairs when testing the triangle inequality.</li>
-      <li>Confusing median (to midpoint) with altitude (perpendicular to side).</li>
-      <li>Applying Pythagoras theorem to non-right triangles — it only works for right triangles!</li>
-    </ul>
+    <h2 id="inequality">Triangle Inequality</h2>
+    <div class="formula-box">
+      <code>Sum of any two sides must be GREATER than the third side</code><br>
+      Check all 3 pairs: a+b &gt; c, b+c &gt; a, a+c &gt; b
+    </div>
+    <div class="real-world">
+      <strong>Real-world test:</strong> Take 3 sticks of length 3 cm, 4 cm, and 8 cm. Can you make a triangle? Try it! The two short sticks (3+4=7) can&rsquo;t reach across the long one (8). <strong>7 &lt; 8, so no triangle!</strong>
+    </div>
   </div>
 
+  <!-- Pythagoras -->
+  <div class="section">
+    <h2 id="pythagoras">Pythagoras Theorem</h2>
+    <div class="formula-box">
+      In a <strong>right triangle</strong>: <code>a&sup2; + b&sup2; = c&sup2;</code> where c is the hypotenuse (longest side, opposite the right angle).
+    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 320 200" width="320" height="200" xmlns="http://www.w3.org/2000/svg">
+        <!-- Right triangle -->
+        <polygon points="50,170 50,50 250,170" fill="none" stroke="#334155" stroke-width="2.5"/>
+        <!-- Right angle marker -->
+        <rect x="50" y="150" width="18" height="18" fill="none" stroke="#16a34a" stroke-width="2"/>
+        <!-- Side labels -->
+        <text x="35" y="115" font-size="16" fill="#3b82f6" font-weight="700">a</text>
+        <text x="150" y="190" font-size="16" fill="#dc2626" font-weight="700">b</text>
+        <text x="160" y="100" font-size="16" fill="#8b5cf6" font-weight="700">c</text>
+        <!-- Formula -->
+        <text x="200" y="50" font-size="14" fill="#334155"><tspan fill="#3b82f6" font-weight="700">a&sup2;</tspan> + <tspan fill="#dc2626" font-weight="700">b&sup2;</tspan> = <tspan fill="#8b5cf6" font-weight="700">c&sup2;</tspan></text>
+        <!-- Example -->
+        <text x="200" y="70" font-size="12" fill="#64748b">3&sup2; + 4&sup2; = 9 + 16 = 25 = 5&sup2;</text>
+      </svg>
+      <figcaption>Pythagoras: the square on the hypotenuse equals the sum of squares on the other two sides</figcaption>
+    </figure>
+    <div class="real-world">
+      <strong>Ladder problem:</strong> A 10 m ladder leans against a wall. Its foot is 6 m from the wall. How high does it reach?<br>
+      h&sup2; + 6&sup2; = 10&sup2; &rarr; h&sup2; = 64 &rarr; h = <strong>8 m</strong>
+    </div>
+    <div class="exam-tip">
+      <strong>Common Pythagorean triples to memorize:</strong> (3,4,5), (5,12,13), (8,15,17), (7,24,25). Any multiple also works: (6,8,10), (9,12,15), etc.
+    </div>
+  </div>
 
   <!-- NCERT Solutions -->
   <div class="section">
     <h2 id="ncert-solutions">NCERT Exercise Solutions &mdash; All Questions Solved</h2>
 
-    <div class="exercise-header">Exercise 6.1 &mdash; Angle Sum Property (8 Questions)</div>
+    <div class="exercise-header">Exercise 6.1 &mdash; Angle Sum &amp; Exterior Angle (8 Questions)</div>
 
-    <div class="example">
-      <h3>Q1. Two angles of a triangle are 50&deg; and 60&deg;. Find the third angle.</h3>
+    <div class="example"><h3>Q1. Two angles are 50&deg; and 60&deg;. Find the third.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Angle sum property: all angles add to 180&deg;.</div>
-        <div class="step"><strong>Step 2:</strong> Third angle = 180&deg; &minus; 50&deg; &minus; 60&deg;</div>
-        <div class="step"><strong>Step 3:</strong> = 180&deg; &minus; 110&deg; = <strong>70&deg;</strong></div>
-      </div></details>
-    </div>
+        <div class="step"><strong>Step 1:</strong> Angle sum = 180&deg;</div>
+        <div class="step"><strong>Step 2:</strong> Third = 180 &minus; 50 &minus; 60 = <strong>70&deg;</strong></div>
+      </div></details></div>
 
-    <div class="example">
-      <h3>Q2. The angles of a triangle are in the ratio 2:3:4. Find all three angles.</h3>
+    <div class="example"><h3>Q2. Angles in ratio 2:3:4. Find all three.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Let the angles be 2x, 3x, and 4x.</div>
-        <div class="step"><strong>Step 2:</strong> Sum = 180&deg;: 2x + 3x + 4x = 180</div>
-        <div class="step"><strong>Step 3:</strong> 9x = 180 &rarr; x = 20</div>
-        <div class="step"><strong>Step 4:</strong> Angles: 2(20) = <strong>40&deg;</strong>, 3(20) = <strong>60&deg;</strong>, 4(20) = <strong>80&deg;</strong></div>
-        <div class="step"><strong>Check:</strong> 40 + 60 + 80 = 180 &#10003;</div>
-      </div></details>
-    </div>
+        <div class="step"><strong>Step 1:</strong> Let angles = 2x, 3x, 4x</div>
+        <div class="step"><strong>Step 2:</strong> 2x + 3x + 4x = 180 &rarr; 9x = 180 &rarr; x = 20</div>
+        <div class="step"><strong>Step 3:</strong> Angles: <strong>40&deg;, 60&deg;, 80&deg;</strong></div>
+        <div class="step"><strong>Check:</strong> 40+60+80 = 180 &#10003;</div>
+      </div></details></div>
 
-    <div class="example">
-      <h3>Q3. The angles of a triangle are (x+10)&deg;, (2x)&deg;, and (x+30)&deg;. Find all angles.</h3>
+    <div class="example"><h3>Q3. Angles are (x+10)&deg;, (2x)&deg;, (x+30)&deg;. Find all.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Sum = 180&deg;: (x+10) + 2x + (x+30) = 180</div>
-        <div class="step"><strong>Step 2:</strong> Simplify: 4x + 40 = 180</div>
-        <div class="step"><strong>Step 3:</strong> 4x = 140 &rarr; x = 35</div>
-        <div class="step"><strong>Step 4:</strong> Angles: 35+10 = <strong>45&deg;</strong>, 2(35) = <strong>70&deg;</strong>, 35+30 = <strong>65&deg;</strong></div>
-        <div class="step"><strong>Check:</strong> 45 + 70 + 65 = 180 &#10003;</div>
-      </div></details>
-    </div>
+        <div class="step"><strong>Step 1:</strong> (x+10) + 2x + (x+30) = 180</div>
+        <div class="step"><strong>Step 2:</strong> 4x + 40 = 180 &rarr; 4x = 140 &rarr; x = 35</div>
+        <div class="step"><strong>Step 3:</strong> Angles: <strong>45&deg;, 70&deg;, 65&deg;</strong></div>
+        <div class="step"><strong>Check:</strong> 45+70+65 = 180 &#10003;</div>
+      </div></details></div>
 
-    <div class="example">
-      <h3>Q4. An exterior angle of a triangle is 110&deg;. One interior opposite angle is 45&deg;. Find the other.</h3>
+    <div class="example"><h3>Q4. Exterior angle = 110&deg;. One remote interior = 45&deg;. Find the other.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Exterior angle = sum of two remote interior angles.</div>
-        <div class="step"><strong>Step 2:</strong> 110&deg; = 45&deg; + other angle</div>
-        <div class="step"><strong>Step 3:</strong> Other angle = 110&deg; &minus; 45&deg; = <strong>65&deg;</strong></div>
-      </div></details>
-    </div>
+        <div class="step"><strong>Step 1:</strong> Exterior = sum of remote interior angles</div>
+        <div class="step"><strong>Step 2:</strong> 110 = 45 + other &rarr; other = 110 &minus; 45 = <strong>65&deg;</strong></div>
+      </div></details></div>
 
-    <div class="example">
-      <h3>Q5. An exterior angle of a triangle is 120&deg;. The two interior opposite angles are equal. Find all angles.</h3>
+    <div class="example"><h3>Q5. Exterior angle = 120&deg;. Both remote interior are equal. Find all 3 angles.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Let each interior opposite angle = x</div>
-        <div class="step"><strong>Step 2:</strong> Exterior angle = sum: 120 = x + x = 2x</div>
-        <div class="step"><strong>Step 3:</strong> x = 60&deg;</div>
-        <div class="step"><strong>Step 4:</strong> Third angle (adjacent to exterior) = 180 &minus; 120 = 60&deg;</div>
-        <div class="step"><strong>Answer:</strong> All three angles are <strong>60&deg;</strong> (equilateral triangle!)</div>
-      </div></details>
-    </div>
+        <div class="step"><strong>Step 1:</strong> 120 = x + x = 2x &rarr; x = 60&deg;</div>
+        <div class="step"><strong>Step 2:</strong> Third angle = 180 &minus; 120 = 60&deg;</div>
+        <div class="step"><strong>Answer:</strong> All three = <strong>60&deg;</strong> (equilateral!)</div>
+      </div></details></div>
 
-    <div class="example">
-      <h3>Q6. Can a triangle have: (a) two right angles? (b) two obtuse angles? (c) all angles less than 60&deg;?</h3>
+    <div class="example"><h3>Q6. Can a triangle have (a) two right angles? (b) two obtuse? (c) all &lt; 60&deg;?</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>(a) Two right angles?</strong> 90 + 90 = 180. Third = 0&deg;. <strong>No!</strong> (angle can&rsquo;t be 0)</div>
-        <div class="step"><strong>(b) Two obtuse?</strong> Min: 91 + 91 = 182 &gt; 180. <strong>No!</strong></div>
-        <div class="step"><strong>(c) All &lt; 60&deg;?</strong> Max: 59 + 59 + 59 = 177 &lt; 180. <strong>No!</strong> Sum must = 180.</div>
-      </div></details>
-    </div>
+        <div class="step"><strong>(a)</strong> 90+90 = 180. Third = 0&deg;. <strong>No!</strong></div>
+        <div class="step"><strong>(b)</strong> Min: 91+91 = 182 &gt; 180. <strong>No!</strong></div>
+        <div class="step"><strong>(c)</strong> Max: 59+59+59 = 177 &lt; 180. <strong>No!</strong></div>
+      </div></details></div>
 
-    <div class="example">
-      <h3>Q7. Find the unknown angle in a right triangle where one angle is 35&deg;.</h3>
+    <div class="example"><h3>Q7. Right triangle, one angle 35&deg;. Find the unknown.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Right triangle has one 90&deg; angle.</div>
-        <div class="step"><strong>Step 2:</strong> Third angle = 180 &minus; 90 &minus; 35 = <strong>55&deg;</strong></div>
-      </div></details>
-    </div>
+        <div class="step"><strong>Step 1:</strong> One angle = 90&deg; (right triangle)</div>
+        <div class="step"><strong>Step 2:</strong> Third = 180 &minus; 90 &minus; 35 = <strong>55&deg;</strong></div>
+      </div></details></div>
 
-    <div class="example">
-      <h3>Q8. In an isosceles triangle, the vertex angle is 80&deg;. Find the base angles.</h3>
+    <div class="example"><h3>Q8. Isosceles triangle, vertex angle 80&deg;. Find base angles.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Isosceles = two equal base angles. Let each = x.</div>
+        <div class="step"><strong>Step 1:</strong> Two base angles are equal. Let each = x.</div>
         <div class="step"><strong>Step 2:</strong> 80 + x + x = 180 &rarr; 2x = 100 &rarr; x = <strong>50&deg;</strong></div>
-        <div class="step"><strong>Base angles: 50&deg; each</strong></div>
-      </div></details>
-    </div>
+      </div></details></div>
 
     <div class="exercise-header">Exercise 6.2 &mdash; Triangle Inequality (5 Questions)</div>
 
-    <div class="example">
-      <h3>Q1. Can sides 3, 4, 8 form a triangle?</h3>
+    <div class="example"><h3>Q1. Can sides 3, 4, 8 form a triangle?</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Check all three pairs (sum of any two &gt; third):</div>
-        <div class="step"><strong>Step 2:</strong> 3 + 4 = 7. Is 7 &gt; 8? <strong>No!</strong></div>
-        <div class="step"><strong>Answer: Cannot form a triangle.</strong> (Failed at first check itself.)</div>
-      </div></details>
-    </div>
+        <div class="step"><strong>Step 1:</strong> Check: 3 + 4 = 7. Is 7 &gt; 8? <strong>No!</strong></div>
+        <div class="step"><strong>Cannot form a triangle.</strong></div>
+      </div></details></div>
 
-    <div class="example">
-      <h3>Q2. Can sides 5, 7, 11 form a triangle?</h3>
+    <div class="example"><h3>Q2. Can sides 5, 7, 11 form a triangle?</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Check 1:</strong> 5 + 7 = 12 &gt; 11 &#10003;</div>
-        <div class="step"><strong>Check 2:</strong> 5 + 11 = 16 &gt; 7 &#10003;</div>
-        <div class="step"><strong>Check 3:</strong> 7 + 11 = 18 &gt; 5 &#10003;</div>
-        <div class="step"><strong>All three pass. Yes, it can form a triangle!</strong></div>
-      </div></details>
-    </div>
+        <div class="step">5+7=12 &gt; 11 &#10003; &ensp; 5+11=16 &gt; 7 &#10003; &ensp; 7+11=18 &gt; 5 &#10003;</div>
+        <div class="step"><strong>Yes!</strong> All three checks pass.</div>
+      </div></details></div>
 
-    <div class="example">
-      <h3>Q3. Two sides of a triangle are 5 cm and 9 cm. What are possible lengths for the third side?</h3>
+    <div class="example"><h3>Q3. Two sides are 5 cm and 9 cm. What are possible third side lengths?</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Third side must be less than 5 + 9 = 14</div>
-        <div class="step"><strong>Step 2:</strong> Third side must be more than 9 &minus; 5 = 4</div>
-        <div class="step"><strong>Answer:</strong> Third side must be <strong>between 4 cm and 14 cm</strong> (not including 4 and 14).</div>
-      </div></details>
-    </div>
+        <div class="step"><strong>Step 1:</strong> Third &lt; 5 + 9 = 14</div>
+        <div class="step"><strong>Step 2:</strong> Third &gt; 9 &minus; 5 = 4</div>
+        <div class="step"><strong>Answer:</strong> Between <strong>4 cm and 14 cm</strong> (exclusive)</div>
+      </div></details></div>
 
-    <div class="example">
-      <h3>Q4. Can sides 2, 3, 4 form a triangle? What about 1, 1, 3?</h3>
+    <div class="example"><h3>Q4. Can sides 2,3,4 form a triangle? What about 1,1,3?</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>2, 3, 4:</strong> 2+3=5&gt;4 &#10003;, 2+4=6&gt;3 &#10003;, 3+4=7&gt;2 &#10003;. <strong>Yes!</strong></div>
-        <div class="step"><strong>1, 1, 3:</strong> 1+1=2. Is 2 &gt; 3? <strong>No!</strong> Cannot form a triangle.</div>
-      </div></details>
-    </div>
+        <div class="step"><strong>2,3,4:</strong> 2+3=5&gt;4 &#10003;, 2+4=6&gt;3 &#10003;, 3+4=7&gt;2 &#10003;. <strong>Yes!</strong></div>
+        <div class="step"><strong>1,1,3:</strong> 1+1=2. Is 2&gt;3? <strong>No!</strong> Cannot form a triangle.</div>
+      </div></details></div>
 
-    <div class="example">
-      <h3>Q5. The sides of a triangle are in ratio 3:4:5 and perimeter is 48 cm. Find the sides and check if it&rsquo;s a right triangle.</h3>
+    <div class="example"><h3>Q5. Sides in ratio 3:4:5, perimeter 48 cm. Find sides. Is it right triangle?</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Let sides = 3x, 4x, 5x</div>
-        <div class="step"><strong>Step 2:</strong> Perimeter: 3x + 4x + 5x = 48 &rarr; 12x = 48 &rarr; x = 4</div>
-        <div class="step"><strong>Step 3:</strong> Sides: 12 cm, 16 cm, 20 cm</div>
-        <div class="step"><strong>Step 4:</strong> Check Pythagoras: 12&sup2; + 16&sup2; = 144 + 256 = 400 = 20&sup2; &#10003;</div>
-        <div class="step"><strong>Yes, it is a right triangle!</strong></div>
-      </div></details>
-    </div>
+        <div class="step"><strong>Step 1:</strong> 3x+4x+5x = 48 &rarr; 12x = 48 &rarr; x = 4</div>
+        <div class="step"><strong>Step 2:</strong> Sides: <strong>12, 16, 20 cm</strong></div>
+        <div class="step"><strong>Step 3:</strong> Check: 12&sup2;+16&sup2; = 144+256 = 400 = 20&sup2; &#10003;</div>
+        <div class="step"><strong>Yes, it&rsquo;s a right triangle!</strong></div>
+      </div></details></div>
 
     <div class="exercise-header">Exercise 6.3 &mdash; Pythagoras Theorem (5 Questions)</div>
 
-    <div class="example">
-      <h3>Q1. A right triangle has legs 3 cm and 4 cm. Find the hypotenuse.</h3>
+    <div class="example"><h3>Q1. Legs 3 cm, 4 cm. Find hypotenuse.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Pythagoras: c&sup2; = a&sup2; + b&sup2;</div>
-        <div class="step"><strong>Step 2:</strong> c&sup2; = 3&sup2; + 4&sup2; = 9 + 16 = 25</div>
-        <div class="step"><strong>Step 3:</strong> c = &radic;25 = <strong>5 cm</strong></div>
-      </div></details>
-    </div>
+        <div class="step"><strong>Step 1:</strong> c&sup2; = 3&sup2; + 4&sup2; = 9 + 16 = 25</div>
+        <div class="step"><strong>Step 2:</strong> c = &radic;25 = <strong>5 cm</strong></div>
+      </div></details></div>
 
-    <div class="example">
-      <h3>Q2. Hypotenuse = 13 cm, one leg = 5 cm. Find the other leg.</h3>
+    <div class="example"><h3>Q2. Hypotenuse 13, one leg 5. Find the other.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> a&sup2; + b&sup2; = c&sup2; &rarr; a&sup2; + 5&sup2; = 13&sup2;</div>
-        <div class="step"><strong>Step 2:</strong> a&sup2; + 25 = 169</div>
-        <div class="step"><strong>Step 3:</strong> a&sup2; = 169 &minus; 25 = 144</div>
-        <div class="step"><strong>Step 4:</strong> a = &radic;144 = <strong>12 cm</strong></div>
-      </div></details>
-    </div>
+        <div class="step"><strong>Step 1:</strong> a&sup2; + 25 = 169 &rarr; a&sup2; = 144</div>
+        <div class="step"><strong>Step 2:</strong> a = &radic;144 = <strong>12 cm</strong></div>
+      </div></details></div>
 
-    <div class="example">
-      <h3>Q3. A ladder 10 m long leans against a wall. Its foot is 6 m from the wall. How high does it reach?</h3>
+    <div class="example"><h3>Q3. Ladder 10 m, foot 6 m from wall. Height reached?</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> The ladder, wall, and ground form a right triangle.</div>
-        <div class="step"><strong>Step 2:</strong> Ladder = hypotenuse = 10 m. Ground = 6 m. Wall height = ?</div>
-        <div class="step"><strong>Step 3:</strong> h&sup2; + 6&sup2; = 10&sup2; &rarr; h&sup2; + 36 = 100</div>
-        <div class="step"><strong>Step 4:</strong> h&sup2; = 64 &rarr; h = &radic;64 = <strong>8 m</strong></div>
-      </div></details>
-    </div>
+        <div class="step"><strong>Step 1:</strong> Ladder = hypotenuse. h&sup2; + 36 = 100</div>
+        <div class="step"><strong>Step 2:</strong> h&sup2; = 64 &rarr; h = <strong>8 m</strong></div>
+      </div></details></div>
 
-    <div class="example">
-      <h3>Q4. Check if 5, 12, 13 is a Pythagorean triple.</h3>
+    <div class="example"><h3>Q4. Is 5, 12, 13 a Pythagorean triple?</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Check: does 5&sup2; + 12&sup2; = 13&sup2;?</div>
-        <div class="step"><strong>Step 2:</strong> 25 + 144 = 169. And 13&sup2; = 169.</div>
-        <div class="step"><strong>Step 3:</strong> 169 = 169 &#10003; <strong>Yes, it&rsquo;s a Pythagorean triple!</strong></div>
-      </div></details>
-    </div>
+        <div class="step">25 + 144 = 169 = 13&sup2; &#10003; <strong>Yes!</strong></div>
+      </div></details></div>
 
-    <div class="example">
-      <h3>Q5. A field is 40 m long and 30 m wide. What is the length of the diagonal?</h3>
+    <div class="example"><h3>Q5. Field 40 m &times; 30 m. Diagonal length?</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> The diagonal divides the rectangle into two right triangles.</div>
-        <div class="step"><strong>Step 2:</strong> d&sup2; = 40&sup2; + 30&sup2; = 1600 + 900 = 2500</div>
-        <div class="step"><strong>Step 3:</strong> d = &radic;2500 = <strong>50 m</strong></div>
-      </div></details>
-    </div>
+        <div class="step"><strong>Step 1:</strong> d&sup2; = 40&sup2; + 30&sup2; = 1600 + 900 = 2500</div>
+        <div class="step"><strong>Step 2:</strong> d = &radic;2500 = <strong>50 m</strong></div>
+      </div></details></div>
 
-    <div class="exercise-header">Exercise 6.4 &mdash; Mixed Problems (6 Questions)</div>
+    <div class="exercise-header">Exercise 6.4 &mdash; Mixed (6 Questions)</div>
 
-    <div class="example">
-      <h3>Q1. Classify: (a) sides 6,6,6 (b) sides 5,5,3 (c) sides 3,4,6</h3>
+    <div class="example"><h3>Q1. Classify: (a) 6,6,6 (b) 5,5,3 (c) 3,4,6</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>(a)</strong> All sides equal &rarr; <strong>Equilateral</strong></div>
-        <div class="step"><strong>(b)</strong> Two sides equal (5,5) &rarr; <strong>Isosceles</strong></div>
-        <div class="step"><strong>(c)</strong> All sides different &rarr; <strong>Scalene</strong></div>
-      </div></details>
-    </div>
+        <div class="step"><strong>(a)</strong> All equal &rarr; <strong>Equilateral</strong></div>
+        <div class="step"><strong>(b)</strong> Two equal &rarr; <strong>Isosceles</strong></div>
+        <div class="step"><strong>(c)</strong> All different &rarr; <strong>Scalene</strong></div>
+      </div></details></div>
 
-    <div class="example">
-      <h3>Q2. A right triangle has hypotenuse 15 cm and one leg 9 cm. Find the other leg.</h3>
+    <div class="example"><h3>Q2. Hypotenuse 15, one leg 9. Find other leg.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> a&sup2; + 9&sup2; = 15&sup2;</div>
-        <div class="step"><strong>Step 2:</strong> a&sup2; + 81 = 225</div>
-        <div class="step"><strong>Step 3:</strong> a&sup2; = 144</div>
-        <div class="step"><strong>Step 4:</strong> a = <strong>12 cm</strong></div>
-      </div></details>
-    </div>
+        <div class="step">a&sup2; + 81 = 225 &rarr; a&sup2; = 144 &rarr; a = <strong>12 cm</strong></div>
+      </div></details></div>
 
-    <div class="example">
-      <h3>Q3. The equal sides of an isosceles triangle are 8 cm each and the base is 6 cm. Find the altitude from the vertex to the base.</h3>
+    <div class="example"><h3>Q3. Isosceles: equal sides 8 cm, base 6 cm. Find altitude to base.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> The altitude bisects the base. So each half = 6/2 = 3 cm.</div>
-        <div class="step"><strong>Step 2:</strong> Now we have a right triangle: hypotenuse = 8, base = 3.</div>
-        <div class="step"><strong>Step 3:</strong> h&sup2; + 3&sup2; = 8&sup2; &rarr; h&sup2; + 9 = 64 &rarr; h&sup2; = 55</div>
-        <div class="step"><strong>Step 4:</strong> h = &radic;55 &asymp; <strong>7.42 cm</strong></div>
-      </div></details>
-    </div>
+        <div class="step"><strong>Step 1:</strong> Altitude bisects base: half = 3 cm</div>
+        <div class="step"><strong>Step 2:</strong> h&sup2; + 9 = 64 &rarr; h&sup2; = 55 &rarr; h = &radic;55 &asymp; <strong>7.42 cm</strong></div>
+      </div></details></div>
 
-    <div class="example">
-      <h3>Q4. Find the perimeter of a right triangle with legs 6 cm and 8 cm.</h3>
+    <div class="example"><h3>Q4. Right triangle legs 6, 8. Find perimeter.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Find hypotenuse: c&sup2; = 6&sup2; + 8&sup2; = 36 + 64 = 100 &rarr; c = 10 cm</div>
-        <div class="step"><strong>Step 2:</strong> Perimeter = 6 + 8 + 10 = <strong>24 cm</strong></div>
-      </div></details>
-    </div>
+        <div class="step"><strong>Step 1:</strong> Hypotenuse = &radic;(36+64) = &radic;100 = 10</div>
+        <div class="step"><strong>Step 2:</strong> Perimeter = 6+8+10 = <strong>24 cm</strong></div>
+      </div></details></div>
 
-    <div class="example">
-      <h3>Q5. The three angles of a triangle are (3x&minus;5)&deg;, (x+15)&deg;, and (2x&minus;10)&deg;. Find x and all angles. Is it acute, right, or obtuse?</h3>
+    <div class="example"><h3>Q5. Angles (3x&minus;5)&deg;, (x+15)&deg;, (2x&minus;10)&deg;. Find all. Acute/right/obtuse?</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Sum = 180: (3x&minus;5) + (x+15) + (2x&minus;10) = 180</div>
-        <div class="step"><strong>Step 2:</strong> 6x + 0 = 180 &rarr; x = 30</div>
-        <div class="step"><strong>Step 3:</strong> Angles: 3(30)&minus;5 = <strong>85&deg;</strong>, 30+15 = <strong>45&deg;</strong>, 2(30)&minus;10 = <strong>50&deg;</strong></div>
-        <div class="step"><strong>Step 4:</strong> All angles &lt; 90&deg; &rarr; <strong>Acute triangle</strong></div>
-        <div class="step"><strong>Check:</strong> 85 + 45 + 50 = 180 &#10003;</div>
-      </div></details>
-    </div>
+        <div class="step"><strong>Step 1:</strong> 6x + 0 = 180 &rarr; x = 30</div>
+        <div class="step"><strong>Step 2:</strong> Angles: <strong>85&deg;, 45&deg;, 50&deg;</strong></div>
+        <div class="step"><strong>Step 3:</strong> All &lt; 90&deg; &rarr; <strong>Acute triangle</strong></div>
+      </div></details></div>
 
-    <div class="example">
-      <h3>Q6. The exterior angle of a triangle is 130&deg;. The interior opposite angles are in ratio 2:3. Find all three interior angles.</h3>
+    <div class="example"><h3>Q6. Exterior 130&deg;. Remote interior in ratio 2:3. Find all 3 interior angles.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Exterior angle = sum of remote interior: 130 = 2x + 3x = 5x</div>
-        <div class="step"><strong>Step 2:</strong> x = 26</div>
-        <div class="step"><strong>Step 3:</strong> Two interior angles: 2(26) = <strong>52&deg;</strong>, 3(26) = <strong>78&deg;</strong></div>
-        <div class="step"><strong>Step 4:</strong> Third = 180 &minus; 130 = <strong>50&deg;</strong></div>
-        <div class="step"><strong>Check:</strong> 52 + 78 + 50 = 180 &#10003;. And 52 + 78 = 130 (exterior) &#10003;</div>
-      </div></details>
-    </div>
+        <div class="step"><strong>Step 1:</strong> 130 = 2x + 3x = 5x &rarr; x = 26</div>
+        <div class="step"><strong>Step 2:</strong> Remote interior: <strong>52&deg; and 78&deg;</strong></div>
+        <div class="step"><strong>Step 3:</strong> Third = 180 &minus; 130 = <strong>50&deg;</strong></div>
+        <div class="step"><strong>Check:</strong> 52+78+50 = 180 &#10003; and 52+78 = 130 &#10003;</div>
+      </div></details></div>
   </div>
 
   <!-- Extra Practice -->
   <div class="section">
     <h2 id="extra-practice">Extra Practice</h2>
-    <div class="problem"><span class="difficulty easy">Easy</span><p>1. Two angles are 50&deg; and 60&deg;. Find the third angle.</p><details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> 180 &minus; 50 &minus; 60 = <strong>70&deg;</strong></div></details></div>
-    <div class="problem"><span class="difficulty easy">Easy</span><p>2. Is 6,6,6 equilateral, isosceles, or scalene?</p><details><summary>Show Answer</summary><div class="answer">All sides equal &rarr; <strong>Equilateral</strong></div></details></div>
-    <div class="problem"><span class="difficulty medium">Medium</span><p>3. Right triangle: legs 5 and 12. Find hypotenuse.</p><details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> c&sup2; = 25 + 144 = 169<br><strong>Step 2:</strong> c = <strong>13 cm</strong></div></details></div>
-    <div class="problem"><span class="difficulty medium">Medium</span><p>4. Can 5, 7, 11 form a triangle?</p><details><summary>Show Answer</summary><div class="answer">5+7=12 &gt; 11 &#10003;, 5+11=16 &gt; 7 &#10003;, 7+11=18 &gt; 5 &#10003;. <strong>Yes!</strong></div></details></div>
-    <div class="problem"><span class="difficulty hard">Hard</span><p>5. Exterior angle is 120&deg;. Both interior opposite angles are equal. Find all 3 angles.</p><details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> 120 = x + x &rarr; x = 60&deg;<br><strong>Step 2:</strong> Third = 180 &minus; 120 = 60&deg;<br><strong>All angles: 60&deg; each (equilateral!)</strong></div></details></div>
-    <div class="problem"><span class="difficulty hard">Hard</span><p>6. A 13 m ladder reaches 12 m high on a wall. How far is the foot from the wall?</p><details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> d&sup2; + 12&sup2; = 13&sup2;<br><strong>Step 2:</strong> d&sup2; = 169 &minus; 144 = 25<br><strong>Step 3:</strong> d = <strong>5 m</strong></div></details></div>
+    <div class="problem"><span class="difficulty easy">Easy</span><p>1. Angles 50&deg; and 60&deg;. Third?</p><details><summary>Show Answer</summary><div class="answer">180&minus;50&minus;60 = <strong>70&deg;</strong></div></details></div>
+    <div class="problem"><span class="difficulty easy">Easy</span><p>2. Is 6,6,6 equilateral?</p><details><summary>Show Answer</summary><div class="answer">All equal: <strong>Yes!</strong></div></details></div>
+    <div class="problem"><span class="difficulty medium">Medium</span><p>3. Legs 5 and 12. Hypotenuse?</p><details><summary>Show Answer</summary><div class="answer">25+144=169. c = <strong>13</strong></div></details></div>
+    <div class="problem"><span class="difficulty medium">Medium</span><p>4. Can 5,7,11 form triangle?</p><details><summary>Show Answer</summary><div class="answer">5+7=12&gt;11 &#10003;, all pass. <strong>Yes!</strong></div></details></div>
+    <div class="problem"><span class="difficulty hard">Hard</span><p>5. Exterior=120&deg;, both remote equal. All 3 angles?</p><details><summary>Show Answer</summary><div class="answer">Each remote=60&deg;. Third=60&deg;. <strong>All 60&deg; (equilateral)</strong></div></details></div>
+    <div class="problem"><span class="difficulty hard">Hard</span><p>6. Ladder 13 m reaches 12 m. Distance from wall?</p><details><summary>Show Answer</summary><div class="answer">d&sup2;=169&minus;144=25. d=<strong>5 m</strong></div></details></div>
   </div>
 
   <!-- HOTS -->
   <div class="section">
     <h2 id="hots">HOTS <span class="hots-tag">Advanced</span></h2>
-    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span><p>1. Can a triangle have two obtuse angles? Prove it.</p><details><summary>Show Answer</summary><div class="answer">Obtuse &gt; 90&deg;. Two obtuse &gt; 180&deg;. But angle sum = 180&deg;. Third angle would be negative. <strong>Impossible!</strong></div></details></div>
-    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span><p>2. Is 7, 24, 25 a Pythagorean triple? Find another triple where one number is 7.</p><details><summary>Show Answer</summary><div class="answer"><strong>Check:</strong> 7&sup2; + 24&sup2; = 49 + 576 = 625 = 25&sup2; &#10003; <strong>Yes!</strong><br>Another: multiply 3,4,5 by 7: <strong>21, 28, 35</strong>.</div></details></div>
-    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span><p>3. The altitude of an equilateral triangle with side 10 cm is?</p><details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Altitude bisects base: half = 5 cm<br><strong>Step 2:</strong> h&sup2; + 5&sup2; = 10&sup2; &rarr; h&sup2; = 75<br><strong>Step 3:</strong> h = &radic;75 = 5&radic;3 &asymp; <strong>8.66 cm</strong></div></details></div>
+    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span><p>1. Can a triangle have two obtuse angles? Prove.</p><details><summary>Show Answer</summary><div class="answer">Two obtuse &gt; 180&deg;. Third would be negative. <strong>Impossible!</strong></div></details></div>
+    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span><p>2. Is 7,24,25 a Pythagorean triple?</p><details><summary>Show Answer</summary><div class="answer">49+576=625=25&sup2;. <strong>Yes!</strong></div></details></div>
+    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span><p>3. Altitude of equilateral triangle with side 10 cm?</p><details><summary>Show Answer</summary><div class="answer">h&sup2;+25=100. h=&radic;75=5&radic;3 &asymp; <strong>8.66 cm</strong></div></details></div>
   </div>
 
   <!-- Common Mistakes -->
   <div class="section">
     <h2 id="mistakes">Common Mistakes</h2>
     <ul class="mistakes-list">
-      <li><strong>Thinking angle sum is 360&deg;</strong>
-        <div class="wrong-right"><div class="wrong">Angles of triangle add to 360&deg;</div><div class="right">Triangle = <strong>180&deg;</strong>. Quadrilateral = 360&deg;.</div></div>
+      <li><strong>Angle sum = 360&deg;?</strong>
+        <div class="wrong-right"><div class="wrong">Triangle angles add to 360&deg;</div><div class="right">Triangle = <strong>180&deg;</strong>. Quadrilateral = 360&deg;.</div></div>
       </li>
-      <li><strong>Not checking ALL three pairs for triangle inequality</strong>
-        <div class="wrong-right"><div class="wrong">3+4=7 &gt; 5 &#10003;, so 3,4,8 works</div><div class="right">Must check: 3+4=7 vs 8. 7 is NOT &gt; 8. <strong>Fails!</strong></div></div>
+      <li><strong>Not checking all 3 pairs for inequality</strong>
+        <div class="wrong-right"><div class="wrong">3+4=7&gt;5, so 3,4,8 works</div><div class="right">3+4=7 vs 8. 7 is NOT &gt; 8. <strong>Fails!</strong></div></div>
       </li>
-      <li><strong>Applying Pythagoras to non-right triangles</strong>
-        <div class="wrong-right"><div class="wrong">Any triangle: a&sup2; + b&sup2; = c&sup2;</div><div class="right">Pythagoras ONLY works for <strong>right triangles</strong>!</div></div>
+      <li><strong>Pythagoras on non-right triangles</strong>
+        <div class="wrong-right"><div class="wrong">Any triangle: a&sup2;+b&sup2;=c&sup2;</div><div class="right">ONLY for <strong>right triangles</strong>!</div></div>
       </li>
       <li><strong>Confusing median and altitude</strong>
-        <div class="wrong-right"><div class="wrong">They&rsquo;re the same thing</div><div class="right">Median = to midpoint. Altitude = perpendicular to base. Same only in equilateral!</div></div>
+        <div class="wrong-right"><div class="wrong">They&rsquo;re the same</div><div class="right">Median = to midpoint. Altitude = perpendicular. Same only in equilateral!</div></div>
       </li>
     </ul>
   </div>
-  <button id="mark-read-btn" class="btn" style="margin-top:1rem;padding:.5rem 1.25rem;background:var(--primary);color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer" onclick="markChapterRead(6)">Mark as Complete</button>
 
+  <button id="mark-read-btn" class="btn" style="margin-top:1rem;padding:.5rem 1.25rem;background:var(--primary);color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer" onclick="markChapterRead(6)">Mark as Complete</button>
   <div class="chapter-nav">
     <a href="ch5.html">&larr; Ch 5: Lines and Angles</a>
     <a href="ch7.html">Ch 7: Congruence of Triangles &rarr;</a>
   </div>
 </div>
-
 <footer class="footer">CBSE Class 7 Maths &mdash; Based on NCERT Syllabus</footer>
 <script src="../js/main.js"></script>
 </body>
