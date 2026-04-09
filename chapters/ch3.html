@@ -4,8 +4,33 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="chapter-num" content="3">
-<title>Chapter 3: Data Handling - CBSE Class 7 Maths</title>
+<title>NCERT Solutions Class 7 Maths Chapter 3 Data Handling</title>
+<meta name="description" content="NCERT Solutions for Class 7 Maths Chapter 3 Data Handling. Mean, median, mode, bar graphs, probability — all exercises solved step-by-step.">
 <link rel="stylesheet" href="../css/style.css">
+<style>
+.real-world{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0;font-size:.95rem}
+.real-world strong{color:#16a34a}
+.why-box{background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0;font-size:.95rem}
+.why-box strong{color:#3b82f6}
+.exam-tip{background:#fdf4ff;border:1px solid #e9d5ff;border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0;font-size:.95rem}
+.exam-tip strong{color:#9333ea}
+.wrong-right{display:flex;gap:1rem;flex-wrap:wrap;margin:.5rem 0}
+.wrong-right .wrong,.wrong-right .right{flex:1;min-width:200px;padding:.75rem;border-radius:8px;font-size:.9rem}
+.wrong-right .wrong{background:#fee2e2;border:1px solid #fca5a5}
+.wrong-right .right{background:#d1fae5;border:1px solid #6ee7b7}
+.revision-card{background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff;border-radius:16px;padding:1.5rem;margin-bottom:2rem}
+.revision-card h2{color:#fff;border:none;padding:0;margin-bottom:1rem;font-size:1.2rem}
+.revision-card .formula-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.75rem}
+.revision-card .f-item{background:rgba(255,255,255,.15);border-radius:8px;padding:.6rem .8rem;font-size:.9rem;backdrop-filter:blur(4px)}
+.revision-card .f-item code{color:#fef3c7;font-weight:700}
+.exercise-header{background:var(--data-light);border:2px solid var(--data);border-radius:12px;padding:1rem 1.25rem;margin:1.5rem 0 1rem;font-size:1.1rem;font-weight:700;color:#92400e}
+.step-reveal summary{cursor:pointer;color:var(--primary);font-weight:600;font-size:.9rem}
+.step-reveal .steps-content{padding:.75rem;margin-top:.5rem;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0}
+.hots-tag{display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;padding:2px 6px;border-radius:4px;background:#fdf4ff;color:#9333ea;border:1px solid #e9d5ff;margin-left:.5rem}
+.data-table{width:100%;max-width:500px;margin:1rem auto;border-collapse:collapse;font-size:.95rem}
+.data-table th,.data-table td{border:1px solid #e2e8f0;padding:.4rem .6rem;text-align:center}
+.data-table th{background:var(--data-light);color:#92400e;font-weight:700}
+</style>
 </head>
 <body>
 <header class="navbar">
@@ -19,176 +44,470 @@
 <div class="container">
   <div class="chapter-header">
     <div class="ch-label" style="color:var(--data)">Chapter 3 &middot; Data Handling</div>
-    <h1>Data Handling</h1>
+    <h1>Data Handling &mdash; Complete NCERT Solutions</h1>
   </div>
 
-  <!-- Summary -->
+  <nav class="topic-nav">
+    <a href="#revision">Revision Card</a>
+    <a href="#collecting-data">Collecting Data</a>
+    <a href="#mean">Mean</a>
+    <a href="#median">Median</a>
+    <a href="#mode">Mode</a>
+    <a href="#bar-graphs">Bar Graphs</a>
+    <a href="#probability">Probability</a>
+    <a href="#ncert-solutions" class="nav-exercise">NCERT Solutions</a>
+    <a href="#extra-practice" class="nav-exercise">Extra Practice</a>
+    <a href="#hots" class="nav-exercise">HOTS</a>
+    <a href="#mistakes">Common Mistakes</a>
+  </nav>
+
+  <!-- Quick Revision Card -->
+  <div class="revision-card" id="revision">
+    <h2>Quick Revision Card</h2>
+    <div class="formula-grid">
+      <div class="f-item"><code>Mean = Sum &divide; Count</code><br>Add all values, divide by how many</div>
+      <div class="f-item"><code>Median = Middle value</code><br>Arrange in order first!</div>
+      <div class="f-item"><code>Mode = Most frequent</code><br>The value that appears most often</div>
+      <div class="f-item"><code>Range = Max &minus; Min</code><br>Spread of the data</div>
+      <div class="f-item"><code>P = Favourable &divide; Total</code><br>Probability is between 0 and 1</div>
+      <div class="f-item"><code>P(certain) = 1, P(impossible) = 0</code><br>Extremes of probability</div>
+    </div>
+  </div>
+
+  <!-- Collecting Data -->
   <div class="section">
-    <h2>Summary</h2>
+    <h2 id="collecting-data">What is Data?</h2>
+    <div class="real-world">
+      <strong>Real-world connection:</strong> Your teacher asks everyone&rsquo;s favourite sport. She writes: Cricket, Cricket, Football, Badminton, Cricket, Football... That list is <strong>data</strong>! Data is raw information collected for a purpose.
+    </div>
     <ul class="summary-list">
-      <li>Data is information collected for a purpose (e.g., heights of students, marks in a test).</li>
-      <li>Mean (average) = add up all values and divide by how many there are (e.g., mean of 4, 6, 8 = (4+6+8)/3 = 6).</li>
-      <li>Median = the middle value when you line up all values from smallest to largest (e.g., for 2, 5, 9 the median is 5).</li>
-      <li>Mode = the value that appears the most number of times (e.g., in 3, 5, 3, 7, 3 the mode is 3).</li>
-      <li>Range = largest value minus smallest value (e.g., range of 4, 9, 15 = 15 &minus; 4 = 11).</li>
-      <li>Bar graphs use rectangular bars to show data (taller bar = more students or a bigger value).</li>
-      <li>Probability tells you how likely something is to happen, always between 0 and 1 (e.g., probability of heads on a coin toss = 1/2).</li>
-      <li>If an event is impossible, probability = 0. If it's certain, probability = 1 (0 = impossible, 1 = certain).</li>
+      <li><strong>Data</strong> = facts or numbers collected for information (e.g., marks of students, temperatures of a city).</li>
+      <li><strong>Organising data</strong> means arranging it in a table or chart so patterns are easy to see.</li>
+      <li>A <strong>frequency</strong> tells you how many times a particular value appears in the data.</li>
+      <li>A <strong>frequency table</strong> lists each value and its frequency side by side.</li>
     </ul>
+    <div class="example">
+      <h3>Example: Making a frequency table</h3>
+      <p>Favourite colours of 15 students: Red, Blue, Red, Green, Blue, Red, Blue, Green, Red, Blue, Blue, Red, Green, Red, Blue</p>
+      <div class="step"><strong>Step 1:</strong> List each unique colour.</div>
+      <div class="step"><strong>Step 2:</strong> Count how many times each appears using tally marks.</div>
+      <div class="step"><strong>Step 3:</strong> Write the frequency table:</div>
+      <figure class="diagram">
+        <table class="data-table">
+          <tr><th>Colour</th><th>Tally</th><th>Frequency</th></tr>
+          <tr><td>Red</td><td>|||| |</td><td>6</td></tr>
+          <tr><td>Blue</td><td>|||| |</td><td>6</td></tr>
+          <tr><td>Green</td><td>|||</td><td>3</td></tr>
+          <tr><th colspan="2">Total</th><th>15</th></tr>
+        </table>
+      </figure>
+      <div class="step"><strong>Step 4:</strong> Check: 6 + 6 + 3 = 15 &#10003; (matches total students)</div>
+    </div>
   </div>
 
-  <!-- Key Formulas -->
+  <!-- Mean -->
   <div class="section">
-    <h2>Key Formulas</h2>
+    <h2 id="mean">Mean (Average)</h2>
     <div class="formula-box">
       <code>Mean = Sum of all observations &divide; Number of observations</code>
     </div>
-    <div class="formula-box">
-      <code>Range = Maximum value &minus; Minimum value</code>
+    <div class="why-box">
+      <strong>What does the mean actually tell us?</strong><br>
+      Imagine you have 5 friends with different amounts of money: Rs 10, Rs 20, Rs 30, Rs 40, Rs 50. The mean is Rs 30.<br><br>
+      This means: <strong>if everyone shared equally, each person would have Rs 30</strong>. The mean is the &ldquo;fair share&rdquo; value.
     </div>
+    <div class="example">
+      <h3>Example: Find the mean of 4, 8, 6, 10, 12</h3>
+      <div class="step"><strong>Step 1:</strong> Count the observations. There are 5 numbers.</div>
+      <div class="step"><strong>Step 2:</strong> Find the sum: 4 + 8 + 6 + 10 + 12 = 40</div>
+      <div class="step"><strong>Step 3:</strong> Divide: Mean = 40 &divide; 5 = <strong>8</strong></div>
+      <div class="step"><strong>Meaning:</strong> If these 5 values were &ldquo;levelled out&rdquo;, each would be 8.</div>
+    </div>
+    <div class="exam-tip">
+      <strong>Exam trick &mdash; finding a missing value:</strong> If the mean of 5 numbers is 12, the total must be 5 &times; 12 = 60. If you know 4 numbers, subtract their sum from 60 to find the 5th!
+    </div>
+  </div>
+
+  <!-- Median -->
+  <div class="section">
+    <h2 id="median">Median (Middle Value)</h2>
+    <div class="formula-box">
+      <strong>Median</strong> = the middle value when data is <strong>arranged in order</strong>.<br>
+      Odd count: middle value. Even count: average of two middle values.
+    </div>
+    <div class="example">
+      <h3>Example 1 (Odd count): Find the median of 3, 7, 2, 9, 5</h3>
+      <div class="step"><strong>Step 1:</strong> Arrange in ascending order: 2, 3, <strong>5</strong>, 7, 9</div>
+      <div class="step"><strong>Step 2:</strong> Count: 5 values (odd). Middle position = (5+1)/2 = 3rd value.</div>
+      <div class="step"><strong>Step 3:</strong> The 3rd value is <strong>5</strong>. That&rsquo;s the median.</div>
+    </div>
+    <div class="example">
+      <h3>Example 2 (Even count): Find the median of 12, 7, 3, 15, 9, 21</h3>
+      <div class="step"><strong>Step 1:</strong> Arrange in order: 3, 7, <strong>9, 12</strong>, 15, 21</div>
+      <div class="step"><strong>Step 2:</strong> Count: 6 values (even). Middle positions = 3rd and 4th values.</div>
+      <div class="step"><strong>Step 3:</strong> 3rd value = 9, 4th value = 12.</div>
+      <div class="step"><strong>Step 4:</strong> Median = (9 + 12) &divide; 2 = 21 &divide; 2 = <strong>10.5</strong></div>
+    </div>
+    <div class="why-box">
+      <strong>When is the median more useful than the mean?</strong><br>
+      If one value is extremely high or low (an &ldquo;outlier&rdquo;), the mean gets pulled towards it. The median doesn&rsquo;t!<br>
+      Example: Salaries of 5 people: Rs 10K, 12K, 11K, 13K, <strong>100K</strong>.<br>
+      Mean = 29.2K (misleading!), but Median = 12K (much more realistic).
+    </div>
+  </div>
+
+  <!-- Mode -->
+  <div class="section">
+    <h2 id="mode">Mode (Most Frequent)</h2>
+    <div class="formula-box">
+      <strong>Mode</strong> = the value that appears the <strong>most number of times</strong> in the data.
+    </div>
+    <ul class="summary-list">
+      <li>A dataset can have <strong>no mode</strong> (all values appear equally).</li>
+      <li>A dataset can have <strong>more than one mode</strong> (two or more values tie for most frequent).</li>
+    </ul>
+    <div class="example">
+      <h3>Example: Find the mode of 5, 3, 7, 3, 8, 3, 9</h3>
+      <div class="step"><strong>Step 1:</strong> Count how many times each value appears:</div>
+      <div class="step">5 &rarr; 1 time, 3 &rarr; 3 times, 7 &rarr; 1 time, 8 &rarr; 1 time, 9 &rarr; 1 time</div>
+      <div class="step"><strong>Step 2:</strong> 3 appears the most (3 times).</div>
+      <div class="step"><strong>Answer:</strong> Mode = <strong>3</strong></div>
+    </div>
+    <div class="real-world">
+      <strong>Real-world use:</strong> A shoe shop wants to know which size to stock the most. They check sales data: size 7 sells the most. The <strong>mode</strong> (size 7) tells them what to stock more of. Mean shoe size would be useless here!
+    </div>
+  </div>
+
+  <!-- Bar Graphs -->
+  <div class="section">
+    <h2 id="bar-graphs">Bar Graphs</h2>
+    <ul class="summary-list">
+      <li>Bar graphs use <strong>rectangular bars</strong> to represent data visually.</li>
+      <li>The <strong>height (or length)</strong> of each bar shows the value or frequency.</li>
+      <li>All bars have <strong>equal width</strong> and <strong>equal gaps</strong> between them.</li>
+      <li>Always label the <strong>x-axis</strong> (categories) and <strong>y-axis</strong> (values/frequency).</li>
+      <li>Choose a suitable <strong>scale</strong> (e.g., 1 unit = 10 students).</li>
+    </ul>
+    <div class="exam-tip">
+      <strong>How to read a bar graph:</strong> Look at the <strong>top of each bar</strong> and read across to the y-axis. The taller the bar, the bigger the value. To compare, just compare bar heights!
+    </div>
+  </div>
+
+  <!-- Probability -->
+  <div class="section">
+    <h2 id="probability">Probability</h2>
     <div class="formula-box">
       <code>Probability = Number of favourable outcomes &divide; Total number of outcomes</code>
     </div>
-  </div>
-
-  <!-- Worked Examples -->
-  <div class="section">
-    <h2>Worked Examples</h2>
-
+    <ul class="summary-list">
+      <li>Probability tells you <strong>how likely</strong> something is to happen.</li>
+      <li>It is always a number between <strong>0 and 1</strong> (or 0% to 100%).</li>
+      <li><strong>P = 0</strong> means impossible (e.g., rolling a 7 on a normal die).</li>
+      <li><strong>P = 1</strong> means certain (e.g., the sun will rise tomorrow).</li>
+      <li><strong>P = 1/2</strong> means equally likely (e.g., getting heads on a fair coin).</li>
+    </ul>
     <div class="example">
-      <h3>Example 1: Finding the Mean</h3>
-      <p>Find the mean of: 4, 8, 6, 10, 12</p>
-      <div class="step"><strong>Step 1:</strong> Add all values: 4 + 8 + 6 + 10 + 12 = 40</div>
-      <div class="step"><strong>Step 2:</strong> Count the values: there are 5 numbers</div>
-      <div class="step"><strong>Step 3:</strong> Mean = 40 &divide; 5 = <strong>8</strong></div>
+      <h3>Example: A bag has 3 red, 2 blue, and 5 green balls. Find P(blue).</h3>
+      <div class="step"><strong>Step 1:</strong> Count favourable outcomes (blue balls) = 2</div>
+      <div class="step"><strong>Step 2:</strong> Count total outcomes (all balls) = 3 + 2 + 5 = 10</div>
+      <div class="step"><strong>Step 3:</strong> P(blue) = 2/10</div>
+      <div class="step"><strong>Step 4:</strong> Simplify: 2/10 = <strong>1/5</strong></div>
+      <div class="step"><strong>Meaning:</strong> If you pick a ball without looking, there&rsquo;s a 1 in 5 chance it&rsquo;s blue.</div>
     </div>
-
-    <div class="example">
-      <h3>Example 2: Finding the Median</h3>
-      <p>Find the median of: 3, 7, 2, 9, 5</p>
-      <div class="step"><strong>Step 1:</strong> Arrange in order: 2, 3, 5, 7, 9</div>
-      <div class="step"><strong>Step 2:</strong> There are 5 values (odd), so the middle one is the 3rd value</div>
-      <div class="step"><strong>Step 3:</strong> Median = <strong>5</strong></div>
-    </div>
-
-    <div class="example">
-      <h3>Example 3: Finding Probability</h3>
-      <p>A bag has 3 red balls, 2 blue balls, and 5 green balls. What is the probability of picking a blue ball?</p>
-      <div class="step"><strong>Step 1:</strong> Favourable outcomes (blue balls) = 2</div>
-      <div class="step"><strong>Step 2:</strong> Total outcomes = 3 + 2 + 5 = 10</div>
-      <div class="step"><strong>Step 3:</strong> Probability = 2/10 = <strong>1/5</strong></div>
+    <div class="why-box">
+      <strong>Can probability be more than 1?</strong><br>
+      <strong>Never!</strong> The favourable outcomes are always a part of the total outcomes. A part can never be bigger than the whole. So probability is always between 0 and 1.
     </div>
   </div>
 
-  <!-- Practice Problems -->
+  <!-- NCERT Solutions -->
   <div class="section">
-    <h2>Practice Problems</h2>
+    <h2 id="ncert-solutions">NCERT Exercise Solutions &mdash; All Questions Solved</h2>
 
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>Find the mean of: 10, 20, 30, 40, 50</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Sum = 10+20+30+40+50 = 150. Mean = 150 &divide; 5 = <strong>30</strong></div>
-      </details>
+    <div class="exercise-header">Exercise 3.1 &mdash; Mean, Median, Mode (10 Questions)</div>
+
+    <div class="example">
+      <h3>Q1. Find the mean of the first five natural numbers.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> First five natural numbers: 1, 2, 3, 4, 5</div>
+        <div class="step"><strong>Step 2:</strong> Find the sum: 1 + 2 + 3 + 4 + 5 = 15</div>
+        <div class="step"><strong>Step 3:</strong> Count: there are 5 numbers</div>
+        <div class="step"><strong>Step 4:</strong> Mean = Sum &divide; Count = 15 &divide; 5 = <strong>3</strong></div>
+      </div></details>
     </div>
 
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>Find the mode of: 5, 3, 7, 3, 8, 3, 9</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">3 appears 3 times (most frequent). Mode = <strong>3</strong></div>
-      </details>
+    <div class="example">
+      <h3>Q2. Find the mean of the first five whole numbers.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> First five whole numbers: 0, 1, 2, 3, 4</div>
+        <div class="step"><strong>Step 2:</strong> Sum = 0 + 1 + 2 + 3 + 4 = 10</div>
+        <div class="step"><strong>Step 3:</strong> Count = 5</div>
+        <div class="step"><strong>Step 4:</strong> Mean = 10 &divide; 5 = <strong>2</strong></div>
+        <div class="step"><strong>Note:</strong> Whole numbers start from 0, natural numbers from 1!</div>
+      </div></details>
     </div>
 
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>The marks of 6 students are: 45, 60, 55, 70, 50, 80. Find the mean and range.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Sum = 45+60+55+70+50+80 = 360. Mean = 360 &divide; 6 = <strong>60</strong>. Range = 80 &minus; 45 = <strong>35</strong></div>
-      </details>
+    <div class="example">
+      <h3>Q3. The marks obtained by 10 students are: 45, 60, 55, 70, 50, 80, 65, 75, 40, 60. Find the mean.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Count = 10 students</div>
+        <div class="step"><strong>Step 2:</strong> Add the marks:<br>45 + 60 = 105<br>105 + 55 = 160<br>160 + 70 = 230<br>230 + 50 = 280<br>280 + 80 = 360<br>360 + 65 = 425<br>425 + 75 = 500<br>500 + 40 = 540<br>540 + 60 = 600</div>
+        <div class="step"><strong>Step 3:</strong> Sum = 600</div>
+        <div class="step"><strong>Step 4:</strong> Mean = 600 &divide; 10 = <strong>60</strong></div>
+        <div class="step"><strong>Meaning:</strong> On average, students scored 60 marks.</div>
+      </div></details>
     </div>
 
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>Find the median of: 12, 7, 3, 15, 9, 21</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Arrange: 3, 7, 9, 12, 15, 21. Even count (6), so median = average of 3rd and 4th values = (9+12)/2 = <strong>10.5</strong></div>
-      </details>
+    <div class="example">
+      <h3>Q4. The mean of 5 numbers is 15. Four of them are 10, 20, 12, and 18. Find the fifth number.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> If mean = 15 and there are 5 numbers, then:<br>Total sum = Mean &times; Count = 15 &times; 5 = 75</div>
+        <div class="step"><strong>Step 2:</strong> Add the four known numbers:<br>10 + 20 + 12 + 18 = 60</div>
+        <div class="step"><strong>Step 3:</strong> Fifth number = Total sum &minus; Sum of known numbers<br>= 75 &minus; 60 = <strong>15</strong></div>
+        <div class="step"><strong>Verify:</strong> (10 + 20 + 12 + 18 + 15) &divide; 5 = 75 &divide; 5 = 15 &#10003;</div>
+      </div></details>
     </div>
 
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>A die is rolled once. What is the probability of getting: (a) an even number, (b) a number greater than 4?</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">(a) Even numbers: 2, 4, 6 → 3 out of 6 = <strong>1/2</strong><br>(b) Numbers &gt; 4: 5, 6 → 2 out of 6 = <strong>1/3</strong></div>
-      </details>
+    <div class="example">
+      <h3>Q5. Find the median of: 13, 16, 12, 14, 19, 12, 14, 13, 14</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Arrange in ascending order:<br>12, 12, 13, 13, <strong>14</strong>, 14, 14, 16, 19</div>
+        <div class="step"><strong>Step 2:</strong> Count = 9 (odd number)</div>
+        <div class="step"><strong>Step 3:</strong> Middle position = (9 + 1) &divide; 2 = 5th value</div>
+        <div class="step"><strong>Step 4:</strong> The 5th value in the ordered list is <strong>14</strong></div>
+        <div class="step"><strong>Median = 14</strong></div>
+      </div></details>
     </div>
 
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>The mean of 5 numbers is 12. Four of the numbers are 10, 14, 8, and 15. Find the fifth number.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Sum of 5 numbers = 12 &times; 5 = 60. Sum of 4 known = 10+14+8+15 = 47. Fifth number = 60 &minus; 47 = <strong>13</strong></div>
-      </details>
+    <div class="example">
+      <h3>Q6. Find the mode of: 2, 6, 5, 3, 0, 3, 4, 3, 2, 4, 5, 2, 4</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Count the frequency of each value:</div>
+        <div class="step">0 &rarr; 1 time<br>2 &rarr; 3 times<br>3 &rarr; 3 times<br>4 &rarr; 3 times<br>5 &rarr; 2 times<br>6 &rarr; 1 time</div>
+        <div class="step"><strong>Step 2:</strong> Values 2, 3, and 4 all appear 3 times (highest frequency).</div>
+        <div class="step"><strong>Step 3:</strong> This data has <strong>three modes: 2, 3, and 4</strong> (it&rsquo;s &ldquo;trimodal&rdquo;).</div>
+      </div></details>
     </div>
 
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>Find the mode of: 2, 5, 2, 8, 2, 9.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">2 appears 3 times (most frequent). Mode = <strong>2</strong></div>
-      </details>
+    <div class="example">
+      <h3>Q7. The ages of 10 students are: 14, 13, 15, 14, 13, 14, 15, 13, 14, 14. Find mean, median, and mode.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Mean:</strong><br>Sum = 14+13+15+14+13+14+15+13+14+14 = 139<br>Mean = 139 &divide; 10 = <strong>13.9</strong></div>
+        <div class="step"><strong>Median:</strong><br>Arrange: 13, 13, 13, 14, <strong>14, 14</strong>, 14, 14, 15, 15<br>Count = 10 (even). Middle values = 5th and 6th = both 14.<br>Median = (14 + 14) &divide; 2 = <strong>14</strong></div>
+        <div class="step"><strong>Mode:</strong><br>13 appears 3 times, 14 appears 5 times, 15 appears 2 times.<br>Mode = <strong>14</strong> (appears most often)</div>
+      </div></details>
     </div>
 
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>What is the range of: 15, 22, 8, 31, 19?</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Range = Maximum &minus; Minimum = 31 &minus; 8 = <strong>23</strong></div>
-      </details>
+    <div class="example">
+      <h3>Q8. A cricket player scored these runs in 8 innings: 38, 70, 48, 34, 42, 55, 63, 46. Find the mean score.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Count = 8 innings</div>
+        <div class="step"><strong>Step 2:</strong> Sum = 38 + 70 + 48 + 34 + 42 + 55 + 63 + 46<br>= (38+70) + (48+34) + (42+55) + (63+46)<br>= 108 + 82 + 97 + 109 = 396</div>
+        <div class="step"><strong>Step 3:</strong> Mean = 396 &divide; 8 = <strong>49.5 runs</strong></div>
+      </div></details>
     </div>
 
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>The mean of 4 numbers is 20. Three of them are 15, 25, and 18. Find the fourth number.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Sum of 4 numbers = 20 &times; 4 = 80. Sum of 3 known = 15+25+18 = 58. Fourth number = 80 &minus; 58 = <strong>22</strong></div>
-      </details>
+    <div class="example">
+      <h3>Q9. The heights (in cm) of 11 students: 128, 144, 139, 150, 142, 132, 148, 136, 140, 146, 134. Find the median height.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Arrange in order:<br>128, 132, 134, 136, 139, <strong>140</strong>, 142, 144, 146, 148, 150</div>
+        <div class="step"><strong>Step 2:</strong> Count = 11 (odd). Middle position = (11+1)/2 = 6th value.</div>
+        <div class="step"><strong>Step 3:</strong> The 6th value = <strong>140 cm</strong></div>
+        <div class="step"><strong>Median height = 140 cm</strong></div>
+      </div></details>
     </div>
 
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>A spinner has 4 equal sections: red, blue, green, yellow. What is the probability of landing on red or blue?</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Favourable outcomes = 2 (red or blue). Total outcomes = 4. Probability = 2/4 = <strong>1/2</strong></div>
-      </details>
+    <div class="example">
+      <h3>Q10. The scores of a batsman in 10 matches: 38, 70, 48, 34, 42, 55, 70, 48, 34, 70. Find the mode.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Count each value:<br>34 &rarr; 2 times<br>38 &rarr; 1 time<br>42 &rarr; 1 time<br>48 &rarr; 2 times<br>55 &rarr; 1 time<br>70 &rarr; 3 times</div>
+        <div class="step"><strong>Step 2:</strong> 70 appears the most (3 times).</div>
+        <div class="step"><strong>Mode = 70 runs</strong></div>
+        <div class="step"><strong>Meaning:</strong> The batsman most frequently scored 70 runs.</div>
+      </div></details>
     </div>
 
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>The marks of 7 students are: 45, 67, 52, 78, 52, 89, 52. Find the mean, median, and mode.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Sum = 45+67+52+78+52+89+52 = 435. Mean = 435 &divide; 7 = <strong>62.14</strong> (approx).<br>Arrange in order: 45, 52, 52, 52, 67, 78, 89. Median (4th value) = <strong>52</strong>.<br>Mode (most frequent) = <strong>52</strong> (appears 3 times).</div>
-      </details>
+    <div class="exercise-header">Exercise 3.2 &mdash; Probability (8 Questions)</div>
+
+    <div class="example">
+      <h3>Q1. A coin is tossed. Find the probability of getting: (a) heads (b) tails</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Total outcomes when tossing a coin = 2 (Heads or Tails)</div>
+        <div class="step"><strong>(a) P(Heads):</strong><br>Favourable outcomes = 1 (just Heads)<br>P(H) = 1/2 = <strong>1/2</strong></div>
+        <div class="step"><strong>(b) P(Tails):</strong><br>Favourable outcomes = 1 (just Tails)<br>P(T) = 1/2 = <strong>1/2</strong></div>
+        <div class="step"><strong>Note:</strong> P(H) + P(T) = 1/2 + 1/2 = 1. The total probability of all outcomes always = 1.</div>
+      </div></details>
     </div>
 
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>Two coins are tossed together. What is the probability of getting at least one head?</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Total outcomes = {HH, HT, TH, TT} = 4. Outcomes with at least one head = {HH, HT, TH} = 3. Probability = <strong>3/4</strong></div>
-      </details>
+    <div class="example">
+      <h3>Q2. A die is rolled. Find the probability of: (a) getting 5 (b) getting an even number (c) getting a number &gt; 4</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> A die has 6 faces: {1, 2, 3, 4, 5, 6}. Total outcomes = 6</div>
+        <div class="step"><strong>(a) P(getting 5):</strong><br>Favourable = {5} = 1 outcome<br>P = 1/6 = <strong>1/6</strong></div>
+        <div class="step"><strong>(b) P(even number):</strong><br>Even numbers = {2, 4, 6} = 3 outcomes<br>P = 3/6 = <strong>1/2</strong></div>
+        <div class="step"><strong>(c) P(number &gt; 4):</strong><br>Numbers greater than 4 = {5, 6} = 2 outcomes<br>P = 2/6 = <strong>1/3</strong></div>
+      </div></details>
+    </div>
+
+    <div class="example">
+      <h3>Q3. A bag has 4 red balls, 3 blue balls, and 5 green balls. One ball is drawn at random. Find: (a) P(red) (b) P(blue) (c) P(not green)</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Total balls = 4 + 3 + 5 = 12</div>
+        <div class="step"><strong>(a) P(red):</strong><br>Red balls = 4<br>P = 4/12 = <strong>1/3</strong></div>
+        <div class="step"><strong>(b) P(blue):</strong><br>Blue balls = 3<br>P = 3/12 = <strong>1/4</strong></div>
+        <div class="step"><strong>(c) P(not green):</strong><br>Not green = Red + Blue = 4 + 3 = 7<br>P = 7/12 = <strong>7/12</strong><br>(Or: P(not green) = 1 &minus; P(green) = 1 &minus; 5/12 = 7/12)</div>
+      </div></details>
+    </div>
+
+    <div class="example">
+      <h3>Q4. Two coins are tossed together. List all outcomes. Find P(at least one head).</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> List all possible outcomes:<br>{HH, HT, TH, TT} = 4 outcomes</div>
+        <div class="step"><strong>Step 2:</strong> &ldquo;At least one head&rdquo; means 1 head or 2 heads.<br>Favourable = {HH, HT, TH} = 3 outcomes</div>
+        <div class="step"><strong>Step 3:</strong> P(at least one head) = 3/4 = <strong>3/4</strong></div>
+        <div class="step"><strong>Alternative:</strong> P(at least 1 head) = 1 &minus; P(no heads) = 1 &minus; P(TT) = 1 &minus; 1/4 = 3/4</div>
+      </div></details>
+    </div>
+
+    <div class="example">
+      <h3>Q5. A spinner has 4 equal sections: Red, Blue, Green, Yellow. Find: (a) P(Red) (b) P(Red or Blue) (c) P(not Yellow)</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Total outcomes = 4 (equal sections)</div>
+        <div class="step"><strong>(a) P(Red):</strong> 1 section out of 4 = <strong>1/4</strong></div>
+        <div class="step"><strong>(b) P(Red or Blue):</strong><br>Favourable = 2 (Red + Blue)<br>P = 2/4 = <strong>1/2</strong></div>
+        <div class="step"><strong>(c) P(not Yellow):</strong><br>Not Yellow = Red + Blue + Green = 3<br>P = 3/4 = <strong>3/4</strong></div>
+      </div></details>
+    </div>
+
+    <div class="example">
+      <h3>Q6. Is it possible to have a probability of 5/4? Why or why not?</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>No!</strong> Probability must be between 0 and 1 (inclusive).</div>
+        <div class="step">5/4 = 1.25 which is greater than 1.</div>
+        <div class="step"><strong>Why?</strong> Favourable outcomes can never exceed total outcomes. You can&rsquo;t have more successes than attempts!</div>
+      </div></details>
+    </div>
+
+    <div class="example">
+      <h3>Q7. A box has cards numbered 1 to 20. A card is drawn at random. Find P(even number) and P(prime number).</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Total cards = 20</div>
+        <div class="step"><strong>P(even):</strong><br>Even numbers from 1-20: {2, 4, 6, 8, 10, 12, 14, 16, 18, 20} = 10<br>P = 10/20 = <strong>1/2</strong></div>
+        <div class="step"><strong>P(prime):</strong><br>Prime numbers from 1-20: {2, 3, 5, 7, 11, 13, 17, 19} = 8<br>P = 8/20 = <strong>2/5</strong></div>
+      </div></details>
+    </div>
+
+    <div class="example">
+      <h3>Q8. The probability of rain tomorrow is 0.3. What is the probability that it will NOT rain?</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> P(rain) + P(no rain) = 1 (something either happens or doesn&rsquo;t)</div>
+        <div class="step"><strong>Step 2:</strong> P(no rain) = 1 &minus; P(rain) = 1 &minus; 0.3 = <strong>0.7</strong></div>
+        <div class="step"><strong>Meaning:</strong> There&rsquo;s a 70% chance it won&rsquo;t rain.</div>
+      </div></details>
+    </div>
+  </div>
+
+  <!-- Extra Practice -->
+  <div class="section">
+    <h2 id="extra-practice">Extra Practice (Beyond NCERT)</h2>
+
+    <div class="problem"><span class="difficulty easy">Easy</span>
+      <p>1. Find the mean of: 10, 20, 30, 40, 50.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Sum = 10 + 20 + 30 + 40 + 50 = 150<br><strong>Step 2:</strong> Count = 5<br><strong>Step 3:</strong> Mean = 150 &divide; 5 = <strong>30</strong></div></details>
+    </div>
+    <div class="problem"><span class="difficulty easy">Easy</span>
+      <p>2. Find the mode of: 5, 3, 7, 3, 8, 3, 9.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Count each value: 3 appears 3 times (most frequent).<br><strong>Step 2:</strong> Mode = <strong>3</strong></div></details>
+    </div>
+    <div class="problem"><span class="difficulty easy">Easy</span>
+      <p>3. What is the range of: 15, 22, 8, 31, 19?</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Maximum = 31, Minimum = 8<br><strong>Step 2:</strong> Range = 31 &minus; 8 = <strong>23</strong></div></details>
+    </div>
+    <div class="problem"><span class="difficulty medium">Medium</span>
+      <p>4. The mean of 4 numbers is 20. Three of them are 15, 25, and 18. Find the fourth.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Total = Mean &times; Count = 20 &times; 4 = 80<br><strong>Step 2:</strong> Sum of known = 15 + 25 + 18 = 58<br><strong>Step 3:</strong> Fourth = 80 &minus; 58 = <strong>22</strong><br><strong>Verify:</strong> (15+25+18+22)/4 = 80/4 = 20 &#10003;</div></details>
+    </div>
+    <div class="problem"><span class="difficulty medium">Medium</span>
+      <p>5. Find the median of: 12, 7, 3, 15, 9, 21.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Arrange: 3, 7, <strong>9, 12</strong>, 15, 21<br><strong>Step 2:</strong> Count = 6 (even). Middle = 3rd and 4th values.<br><strong>Step 3:</strong> Median = (9 + 12) &divide; 2 = 21 &divide; 2 = <strong>10.5</strong></div></details>
+    </div>
+    <div class="problem"><span class="difficulty medium">Medium</span>
+      <p>6. A die is rolled. What is the probability of getting a number less than 3?</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Total outcomes = 6 {1,2,3,4,5,6}<br><strong>Step 2:</strong> Numbers less than 3 = {1, 2} = 2 outcomes<br><strong>Step 3:</strong> P = 2/6 = <strong>1/3</strong></div></details>
+    </div>
+    <div class="problem"><span class="difficulty hard">Hard</span>
+      <p>7. The marks of 7 students: 45, 67, 52, 78, 52, 89, 52. Find mean, median, and mode.</p>
+      <details><summary>Show Answer</summary><div class="answer">
+        <strong>Mean:</strong><br>Sum = 45+67+52+78+52+89+52 = 435<br>Mean = 435 &divide; 7 = <strong>62.14</strong> (approx)<br><br>
+        <strong>Median:</strong><br>Arrange: 45, 52, 52, <strong>52</strong>, 67, 78, 89<br>Count = 7 (odd). Middle = 4th value = <strong>52</strong><br><br>
+        <strong>Mode:</strong><br>52 appears 3 times (most) = <strong>52</strong>
+      </div></details>
+    </div>
+    <div class="problem"><span class="difficulty hard">Hard</span>
+      <p>8. Two coins are tossed. What is P(exactly one head)?</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> All outcomes = {HH, HT, TH, TT} = 4<br><strong>Step 2:</strong> Exactly one head = {HT, TH} = 2<br><strong>Step 3:</strong> P = 2/4 = <strong>1/2</strong></div></details>
+    </div>
+    <div class="problem"><span class="difficulty hard">Hard</span>
+      <p>9. The mean weight of 6 students is 45 kg. A new student joins with weight 52 kg. Find the new mean.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Total weight of 6 students = Mean &times; Count = 45 &times; 6 = 270 kg<br><strong>Step 2:</strong> New total = 270 + 52 = 322 kg<br><strong>Step 3:</strong> New count = 7<br><strong>Step 4:</strong> New mean = 322 &divide; 7 = <strong>46 kg</strong></div></details>
+    </div>
+    <div class="problem"><span class="difficulty hard">Hard</span>
+      <p>10. A card is drawn from numbers 1-50. Find P(multiple of 7).</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Total cards = 50<br><strong>Step 2:</strong> Multiples of 7 from 1-50: 7, 14, 21, 28, 35, 42, 49 = 7 numbers<br><strong>Step 3:</strong> P = 7/50 = <strong>7/50</strong></div></details>
+    </div>
+  </div>
+
+  <!-- HOTS -->
+  <div class="section">
+    <h2 id="hots">HOTS &mdash; Higher Order Thinking <span class="hots-tag">Advanced</span></h2>
+    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span>
+      <p>1. The mean of 5 observations is 20. If each observation is increased by 4, what is the new mean?</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Original sum = 20 &times; 5 = 100<br><strong>Step 2:</strong> Each value increases by 4, so total increase = 4 &times; 5 = 20<br><strong>Step 3:</strong> New sum = 100 + 20 = 120<br><strong>Step 4:</strong> New mean = 120 &divide; 5 = <strong>24</strong><br><strong>Shortcut:</strong> When you add a constant to every value, the mean increases by the same constant! 20 + 4 = 24.</div></details>
+    </div>
+    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span>
+      <p>2. Can the mean, median, and mode all be different for the same dataset? Give an example.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Yes!</strong> Example: 1, 2, 2, 3, 7<br>Mode = 2 (appears most)<br>Median = 2 (middle value)<br>Mean = (1+2+2+3+7)/5 = 15/5 = 3<br>Here mode = median = 2, but mean = 3. They can all be different!<br><br>Another example: 1, 1, 2, 4, 7<br>Mode = 1, Median = 2, Mean = 3. All three are different!</div></details>
+    </div>
+    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span>
+      <p>3. A die is rolled twice. What is the probability that the sum is 7?</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Total outcomes = 6 &times; 6 = 36 (each die has 6 faces)<br><strong>Step 2:</strong> Pairs that give sum 7:<br>(1,6), (2,5), (3,4), (4,3), (5,2), (6,1) = 6 pairs<br><strong>Step 3:</strong> P = 6/36 = <strong>1/6</strong></div></details>
     </div>
   </div>
 
   <!-- Common Mistakes -->
   <div class="section">
-    <h2>Common Mistakes</h2>
+    <h2 id="mistakes">Common Mistakes &amp; How to Avoid Them</h2>
     <ul class="mistakes-list">
-      <li>Forgetting to arrange data in order before finding the median.</li>
-      <li>Confusing mean (average) with median (middle value) — they're different!</li>
-      <li>Writing a probability greater than 1 — probability is always between 0 and 1.</li>
-      <li>Forgetting to count ALL outcomes when calculating probability.</li>
+      <li><strong>Forgetting to arrange data before finding the median</strong>
+        <div class="wrong-right">
+          <div class="wrong">Data: 7, 3, 9, 2, 5<br>Median = 9 (3rd value)</div>
+          <div class="right">Arrange first: 2, 3, <strong>5</strong>, 7, 9<br>Median = <strong>5</strong> (3rd value after sorting)</div>
+        </div>
+      </li>
+      <li><strong>Confusing mean and median</strong>
+        <div class="wrong-right">
+          <div class="wrong">They&rsquo;re the same thing</div>
+          <div class="right">Mean = average (add &amp; divide). Median = middle value (after sorting). They can be very different!</div>
+        </div>
+      </li>
+      <li><strong>Writing probability &gt; 1</strong>
+        <div class="wrong-right">
+          <div class="wrong">P(even on a die) = 3 out of 6 = 3</div>
+          <div class="right">P = 3/6 = <strong>1/2</strong>. Probability is always a fraction between 0 and 1!</div>
+        </div>
+      </li>
+      <li><strong>Not counting ALL outcomes in probability</strong>
+        <div class="wrong-right">
+          <div class="wrong">Two coins: outcomes = {H, T} = 2</div>
+          <div class="right">Two coins: outcomes = {HH, HT, TH, TT} = <strong>4</strong>. Each coin is independent!</div>
+        </div>
+      </li>
+      <li><strong>Forgetting that a dataset can have no mode or multiple modes</strong>
+        <div class="wrong-right">
+          <div class="wrong">&ldquo;Every dataset has exactly one mode&rdquo;</div>
+          <div class="right">Data 1,2,3,4,5 has <strong>no mode</strong>. Data 1,1,2,2,3 has <strong>two modes</strong> (1 and 2).</div>
+        </div>
+      </li>
     </ul>
   </div>
 
