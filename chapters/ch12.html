@@ -4,8 +4,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="chapter-num" content="12">
-<title>Chapter 12: Algebraic Expressions - CBSE Class 7 Maths</title>
+<title>NCERT Solutions Class 7 Maths Chapter 12 Algebraic Expressions</title>
+<meta name="description" content="NCERT Solutions for Class 7 Maths Chapter 12 Algebraic Expressions. Terms, coefficients, like terms, adding & subtracting expressions — all exercises solved step-by-step.">
 <link rel="stylesheet" href="../css/style.css">
+<style>
+.real-world{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0;font-size:.95rem}
+.real-world strong{color:#16a34a}
+.why-box{background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0;font-size:.95rem}
+.why-box strong{color:#3b82f6}
+.exam-tip{background:#fdf4ff;border:1px solid #e9d5ff;border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0;font-size:.95rem}
+.exam-tip strong{color:#9333ea}
+.wrong-right{display:flex;gap:1rem;flex-wrap:wrap;margin:.5rem 0}
+.wrong-right .wrong,.wrong-right .right{flex:1;min-width:200px;padding:.75rem;border-radius:8px;font-size:.9rem}
+.wrong-right .wrong{background:#fee2e2;border:1px solid #fca5a5}
+.wrong-right .right{background:#d1fae5;border:1px solid #6ee7b7}
+.revision-card{background:linear-gradient(135deg,#8b5cf6,#6d28d9);color:#fff;border-radius:16px;padding:1.5rem;margin-bottom:2rem}
+.revision-card h2{color:#fff;border:none;padding:0;margin-bottom:1rem;font-size:1.2rem}
+.revision-card .formula-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.75rem}
+.revision-card .f-item{background:rgba(255,255,255,.15);border-radius:8px;padding:.6rem .8rem;font-size:.9rem;backdrop-filter:blur(4px)}
+.revision-card .f-item code{color:#fde68a;font-weight:700}
+.exercise-header{background:var(--alg-light);border:2px solid var(--alg);border-radius:12px;padding:1rem 1.25rem;margin:1.5rem 0 1rem;font-size:1.1rem;font-weight:700;color:var(--alg)}
+.step-reveal summary{cursor:pointer;color:var(--primary);font-weight:600;font-size:.9rem}
+.step-reveal .steps-content{padding:.75rem;margin-top:.5rem;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0}
+.hots-tag{display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;padding:2px 6px;border-radius:4px;background:#fdf4ff;color:#9333ea;border:1px solid #e9d5ff;margin-left:.5rem}
+</style>
 </head>
 <body>
 <header class="navbar">
@@ -19,181 +41,365 @@
 <div class="container">
   <div class="chapter-header">
     <div class="ch-label" style="color:var(--alg)">Chapter 12 &middot; Algebra</div>
-    <h1>Algebraic Expressions</h1>
+    <h1>Algebraic Expressions &mdash; Complete NCERT Solutions</h1>
   </div>
 
+  <nav class="topic-nav">
+    <a href="#revision">Revision Card</a>
+    <a href="#what-are-expressions">What are Expressions?</a>
+    <a href="#terms-coefficients">Terms &amp; Coefficients</a>
+    <a href="#like-unlike">Like &amp; Unlike Terms</a>
+    <a href="#add-subtract">Adding &amp; Subtracting</a>
+    <a href="#finding-value">Finding Value</a>
+    <a href="#ncert-solutions" class="nav-exercise">NCERT Solutions</a>
+    <a href="#extra-practice" class="nav-exercise">Extra Practice</a>
+    <a href="#hots" class="nav-exercise">HOTS</a>
+    <a href="#mistakes">Common Mistakes</a>
+  </nav>
+
+  <div class="revision-card" id="revision">
+    <h2>Quick Revision Card</h2>
+    <div class="formula-grid">
+      <div class="f-item"><code>Expression = terms connected by + or &minus;</code><br>e.g., 3x + 5y &minus; 7</div>
+      <div class="f-item"><code>Term = number &times; variable(s)</code><br>e.g., 3x, &minus;5y&sup2;, 7</div>
+      <div class="f-item"><code>Coefficient = number part of a term</code><br>In 3x, coefficient = 3</div>
+      <div class="f-item"><code>Like terms = same variable, same power</code><br>3x and &minus;7x are like terms</div>
+      <div class="f-item"><code>Add/subtract: combine like terms only</code><br>3x + 2x = 5x, but 3x + 2y stays</div>
+      <div class="f-item"><code>Monomial/Binomial/Trinomial</code><br>1 term / 2 terms / 3 terms</div>
+    </div>
+  </div>
+
+  <!-- What are Expressions -->
   <div class="section">
-    <h2>Summary</h2>
+    <h2 id="what-are-expressions">What are Algebraic Expressions?</h2>
+    <div class="real-world">
+      <strong>Real-world connection:</strong> &ldquo;The cost of x notebooks at Rs 30 each&rdquo; = 30x. &ldquo;5 more than twice a number&rdquo; = 2n + 5. Algebraic expressions let us write maths in a short, powerful way!
+    </div>
     <ul class="summary-list">
-      <li>An algebraic expression is made up of variables, constants, and operations (+, &minus;, &times;) &mdash; e.g., 3x + 5 has variable x, constant 5, and operations + and &times;.</li>
-      <li>A term is a single part of an expression &mdash; e.g., in 4x&sup2; + 3y &minus; 7, there are 3 terms: 4x&sup2;, 3y, and &minus;7.</li>
-      <li>The coefficient is the number part of a term &mdash; e.g., in 5xy, the coefficient is 5.</li>
-      <li>Like terms have the same variable raised to the same power &mdash; e.g., 3x and &minus;7x are like terms; 3x and 3y are NOT.</li>
-      <li>Unlike terms have different variables or powers &mdash; e.g., 2a and 5b are unlike terms.</li>
-      <li>Monomial = 1 term, Binomial = 2 terms, Trinomial = 3 terms (e.g., 5x is monomial, x + y is binomial, x + y + z is trinomial).</li>
-      <li>To add/subtract expressions: combine like terms (e.g., 3x + 2x = 5x, but 3x + 2y stays as 3x + 2y).</li>
-      <li>To find the value of an expression: substitute the given values for the variables (e.g., if x = 3, then 2x + 1 = 2(3) + 1 = 7).</li>
+      <li>An <strong>algebraic expression</strong> is made up of <strong>variables</strong> (letters like x, y), <strong>constants</strong> (numbers like 5, &minus;3), and <strong>operations</strong> (+, &minus;, &times;).</li>
+      <li>Examples: 3x + 5, &ensp; 2a&sup2; &minus; 4b + 7, &ensp; &minus;y</li>
+      <li><strong>Monomial</strong> = 1 term (e.g., 5x, &minus;3y&sup2;, 7)</li>
+      <li><strong>Binomial</strong> = 2 terms (e.g., x + 5, 3a &minus; 2b)</li>
+      <li><strong>Trinomial</strong> = 3 terms (e.g., x&sup2; + 2x &minus; 3)</li>
     </ul>
   </div>
 
+  <!-- Terms & Coefficients -->
   <div class="section">
-    <h2>Key Formulas</h2>
-    <div class="formula-box">
-      <code>Adding like terms: ax + bx = (a + b)x</code>
+    <h2 id="terms-coefficients">Terms and Coefficients</h2>
+    <div class="why-box">
+      <strong>Breaking down an expression:</strong> In the expression <strong>4x&sup2; + 3y &minus; 7</strong>:<br><br>
+      &bull; It has <strong>3 terms</strong>: 4x&sup2;, &ensp; 3y, &ensp; &minus;7<br>
+      &bull; The terms are separated by + and &minus; signs<br>
+      &bull; <strong>4x&sup2;</strong>: coefficient = 4, variable = x&sup2;<br>
+      &bull; <strong>3y</strong>: coefficient = 3, variable = y<br>
+      &bull; <strong>&minus;7</strong>: this is a <strong>constant term</strong> (no variable, just a number)
     </div>
-    <div class="formula-box">
-      <code>Subtracting: ax &minus; bx = (a &minus; b)x</code>
-    </div>
-    <div class="formula-box">
-      <code>To find value: substitute the number for each variable and simplify</code>
+
+    <!-- SVG showing expression anatomy -->
+    <figure class="diagram">
+      <svg viewBox="0 0 480 130" width="480" height="130" xmlns="http://www.w3.org/2000/svg">
+        <!-- Expression -->
+        <text x="240" y="30" text-anchor="middle" font-size="24" fill="#334155" font-weight="700">4x&sup2; + 3y &minus; 7</text>
+        <!-- Arrows down to labels -->
+        <!-- Term 1: 4x² -->
+        <line x1="100" y1="38" x2="100" y2="55" stroke="#3b82f6" stroke-width="2"/>
+        <rect x="40" y="58" width="120" height="55" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+        <text x="100" y="78" text-anchor="middle" font-size="12" fill="#3b82f6" font-weight="700">Term 1: 4x&sup2;</text>
+        <text x="100" y="95" text-anchor="middle" font-size="10" fill="#334155">Coefficient = 4</text>
+        <text x="100" y="108" text-anchor="middle" font-size="10" fill="#334155">Variable = x&sup2;</text>
+        <!-- Term 2: 3y -->
+        <line x1="240" y1="38" x2="240" y2="55" stroke="#16a34a" stroke-width="2"/>
+        <rect x="180" y="58" width="120" height="55" rx="8" fill="#d1fae5" stroke="#16a34a" stroke-width="2"/>
+        <text x="240" y="78" text-anchor="middle" font-size="12" fill="#16a34a" font-weight="700">Term 2: 3y</text>
+        <text x="240" y="95" text-anchor="middle" font-size="10" fill="#334155">Coefficient = 3</text>
+        <text x="240" y="108" text-anchor="middle" font-size="10" fill="#334155">Variable = y</text>
+        <!-- Term 3: -7 -->
+        <line x1="370" y1="38" x2="370" y2="55" stroke="#dc2626" stroke-width="2"/>
+        <rect x="310" y="58" width="120" height="55" rx="8" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+        <text x="370" y="78" text-anchor="middle" font-size="12" fill="#dc2626" font-weight="700">Term 3: &minus;7</text>
+        <text x="370" y="95" text-anchor="middle" font-size="10" fill="#334155">Constant term</text>
+        <text x="370" y="108" text-anchor="middle" font-size="10" fill="#334155">(no variable)</text>
+      </svg>
+      <figcaption>Breaking down 4x&sup2; + 3y &minus; 7 into its terms, coefficients, and variables</figcaption>
+    </figure>
+
+    <div class="exam-tip">
+      <strong>Exam tip:</strong> The sign (+/&minus;) before a term belongs TO that term. In 5x &minus; 3y, the terms are +5x and &minus;3y. The coefficient of y is <strong>&minus;3</strong> (not 3!).
     </div>
   </div>
 
+  <!-- Like & Unlike Terms -->
   <div class="section">
-    <h2>Worked Examples</h2>
-
-    <div class="example">
-      <h3>Example 1: Identifying Terms and Coefficients</h3>
-      <p>In the expression 4x&sup2; + 3xy &minus; 7, identify the terms and coefficients.</p>
-      <div class="step"><strong>Terms:</strong> 4x&sup2;, 3xy, &minus;7</div>
-      <div class="step"><strong>Coefficients:</strong> 4 (for x&sup2;), 3 (for xy), &minus;7 is a constant term</div>
+    <h2 id="like-unlike">Like Terms and Unlike Terms</h2>
+    <div class="formula-box">
+      <strong>Like terms</strong> = same variable(s) raised to the same power. Only like terms can be combined!
     </div>
 
-    <div class="example">
-      <h3>Example 2: Adding Expressions</h3>
-      <p>Add: (3x + 5y &minus; 2) + (2x &minus; 3y + 7)</p>
-      <div class="step"><strong>Step 1:</strong> Group like terms: (3x + 2x) + (5y &minus; 3y) + (&minus;2 + 7)</div>
-      <div class="step"><strong>Step 2:</strong> Combine: 5x + 2y + 5</div>
-      <div class="step"><strong>Answer:</strong> <strong>5x + 2y + 5</strong></div>
-    </div>
+    <figure class="diagram">
+      <svg viewBox="0 0 460 110" width="460" height="110" xmlns="http://www.w3.org/2000/svg">
+        <!-- Like terms -->
+        <rect x="10" y="5" width="200" height="100" rx="10" fill="#d1fae5" stroke="#16a34a" stroke-width="2"/>
+        <text x="110" y="25" text-anchor="middle" font-size="13" fill="#16a34a" font-weight="700">LIKE TERMS &#10003;</text>
+        <text x="110" y="48" text-anchor="middle" font-size="14" fill="#334155">3x and &minus;7x</text>
+        <text x="110" y="65" text-anchor="middle" font-size="10" fill="#64748b">(both have x, same power)</text>
+        <text x="110" y="85" text-anchor="middle" font-size="14" fill="#334155">5y&sup2; and 2y&sup2;</text>
+        <text x="110" y="100" text-anchor="middle" font-size="10" fill="#64748b">(both have y&sup2;)</text>
+        <!-- Unlike terms -->
+        <rect x="240" y="5" width="210" height="100" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+        <text x="345" y="25" text-anchor="middle" font-size="13" fill="#dc2626" font-weight="700">UNLIKE TERMS &#10007;</text>
+        <text x="345" y="48" text-anchor="middle" font-size="14" fill="#334155">3x and 3y</text>
+        <text x="345" y="65" text-anchor="middle" font-size="10" fill="#64748b">(different variables: x vs y)</text>
+        <text x="345" y="85" text-anchor="middle" font-size="14" fill="#334155">2x and 2x&sup2;</text>
+        <text x="345" y="100" text-anchor="middle" font-size="10" fill="#64748b">(same variable but different powers!)</text>
+      </svg>
+      <figcaption>Like terms: same variable AND same power. Unlike terms: different variable OR different power.</figcaption>
+    </figure>
 
-    <div class="example">
-      <h3>Example 3: Finding the Value</h3>
-      <p>Find the value of 2x&sup2; + 3x &minus; 1 when x = 3.</p>
-      <div class="step"><strong>Step 1:</strong> Substitute x = 3: 2(3)&sup2; + 3(3) &minus; 1</div>
-      <div class="step"><strong>Step 2:</strong> = 2(9) + 9 &minus; 1 = 18 + 9 &minus; 1</div>
-      <div class="step"><strong>Answer:</strong> = <strong>26</strong></div>
+    <div class="why-box">
+      <strong>Why can&rsquo;t we add unlike terms?</strong><br>
+      Think of it like fruits: 3 apples + 2 apples = 5 apples. But 3 apples + 2 oranges = still 3 apples and 2 oranges (can&rsquo;t combine!). Same with algebra: 3x + 2x = 5x, but 3x + 2y stays as 3x + 2y.
     </div>
   </div>
 
+  <!-- Adding & Subtracting -->
   <div class="section">
-    <h2>Practice Problems</h2>
-
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>How many terms are in the expression 5x + 3y &minus; 2? Is it a monomial, binomial, or trinomial?</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer"><strong>3 terms</strong> (5x, 3y, &minus;2). It is a <strong>trinomial</strong>.</div>
-      </details>
+    <h2 id="add-subtract">Adding and Subtracting Expressions</h2>
+    <div class="formula-box">
+      <strong>Rule:</strong> <code>Combine like terms only!</code><br>
+      Adding like terms: ax + bx = (a + b)x. &ensp; Subtracting: ax &minus; bx = (a &minus; b)x.
     </div>
 
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>What is the coefficient of x in the expression 7x &minus; 4y + 9?</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">The coefficient of x is <strong>7</strong>.</div>
-      </details>
+    <div class="example">
+      <h3>Example: Add (3x + 5y &minus; 2) + (2x &minus; 3y + 7)</h3>
+      <figure class="diagram">
+        <svg viewBox="0 0 500 100" width="500" height="100" xmlns="http://www.w3.org/2000/svg">
+          <!-- Group x terms -->
+          <rect x="10" y="5" width="140" height="35" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+          <text x="80" y="28" text-anchor="middle" font-size="12" fill="#3b82f6" font-weight="700">x terms: 3x + 2x</text>
+          <text x="80" y="52" text-anchor="middle" font-size="14" fill="#3b82f6" font-weight="700">= 5x</text>
+          <!-- Group y terms -->
+          <rect x="170" y="5" width="160" height="35" rx="6" fill="#d1fae5" stroke="#16a34a" stroke-width="2"/>
+          <text x="250" y="28" text-anchor="middle" font-size="12" fill="#16a34a" font-weight="700">y terms: 5y + (&minus;3y)</text>
+          <text x="250" y="52" text-anchor="middle" font-size="14" fill="#16a34a" font-weight="700">= 2y</text>
+          <!-- Group constants -->
+          <rect x="350" y="5" width="140" height="35" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+          <text x="420" y="28" text-anchor="middle" font-size="12" fill="#92400e" font-weight="700">constants: &minus;2 + 7</text>
+          <text x="420" y="52" text-anchor="middle" font-size="14" fill="#92400e" font-weight="700">= 5</text>
+          <!-- Result -->
+          <rect x="100" y="65" width="300" height="30" rx="8" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2"/>
+          <text x="250" y="85" text-anchor="middle" font-size="16" fill="#8b5cf6" font-weight="700">Answer: 5x + 2y + 5</text>
+        </svg>
+        <figcaption>Group like terms together: x&rsquo;s with x&rsquo;s, y&rsquo;s with y&rsquo;s, constants with constants</figcaption>
+      </figure>
+      <div class="step"><strong>Step 1:</strong> Group like terms together.<br>
+        x terms: 3x + 2x. &ensp; y terms: 5y + (&minus;3y). &ensp; Constants: &minus;2 + 7.</div>
+      <div class="step"><strong>Step 2:</strong> Add each group.<br>
+        3x + 2x = (3+2)x = 5x.<br>
+        5y + (&minus;3y) = (5&minus;3)y = 2y.<br>
+        &minus;2 + 7 = 5.</div>
+      <div class="step"><strong>Answer: 5x + 2y + 5</strong></div>
     </div>
 
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>Add: (4a + 3b) + (2a &minus; 5b)</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">(4a + 2a) + (3b &minus; 5b) = <strong>6a &minus; 2b</strong></div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>Subtract: (7x + 3) &minus; (4x &minus; 2)</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">7x + 3 &minus; 4x + 2 = <strong>3x + 5</strong></div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>Find the value of 3a&sup2; &minus; 2ab + b when a = 2 and b = &minus;1.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">3(4) &minus; 2(2)(&minus;1) + (&minus;1) = 12 + 4 &minus; 1 = <strong>15</strong></div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>Simplify: (5x&sup2; + 3x &minus; 7) + (2x&sup2; &minus; 4x + 3) &minus; (x&sup2; + 2x &minus; 1)</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">(5 + 2 &minus; 1)x&sup2; + (3 &minus; 4 &minus; 2)x + (&minus;7 + 3 + 1) = <strong>6x&sup2; &minus; 3x &minus; 3</strong></div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>Identify the like terms in: 5x, 3y, &minus;2x, 7, 4y</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Like terms: <strong>5x and &minus;2x</strong> (both have variable x), <strong>3y and 4y</strong> (both have variable y). The constant <strong>7</strong> has no like term.</div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>Write the coefficient of y in: 8x + 3y &minus; 12</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">The coefficient of y is <strong>3</strong>.</div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>Subtract (3a + 4b &minus; 2) from (7a &minus; 2b + 5)</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">(7a &minus; 2b + 5) &minus; (3a + 4b &minus; 2) = 7a &minus; 2b + 5 &minus; 3a &minus; 4b + 2 = <strong>4a &minus; 6b + 7</strong></div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>Find the value of 5x &minus; 3y when x = 2 and y = &minus;1</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">5(2) &minus; 3(&minus;1) = 10 + 3 = <strong>13</strong></div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>Add: (2x&sup2; + 3xy &minus; y&sup2;) + (x&sup2; &minus; 5xy + 3y&sup2;) + (&minus;x&sup2; + xy &minus; y&sup2;)</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">(2 + 1 &minus; 1)x&sup2; + (3 &minus; 5 + 1)xy + (&minus;1 + 3 &minus; 1)y&sup2; = <strong>2x&sup2; &minus; xy + y&sup2;</strong></div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>If P = 3a&sup2; &minus; 5a + 7 and Q = a&sup2; + 2a &minus; 3, find 2P &minus; Q.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">2P = 6a&sup2; &minus; 10a + 14. Then 2P &minus; Q = (6a&sup2; &minus; 10a + 14) &minus; (a&sup2; + 2a &minus; 3) = 6a&sup2; &minus; 10a + 14 &minus; a&sup2; &minus; 2a + 3 = <strong>5a&sup2; &minus; 12a + 17</strong></div>
-      </details>
+    <div class="why-box">
+      <strong>Subtracting expressions &mdash; the SIGN TRAP!</strong><br>
+      When subtracting, change the sign of EVERY term in the expression being subtracted:<br>
+      (7a &minus; 2b) <strong>&minus;</strong> (3a + 4b) = 7a &minus; 2b <strong>&minus; 3a &minus; 4b</strong> (both signs changed!)<br>
+      = (7&minus;3)a + (&minus;2&minus;4)b = <strong>4a &minus; 6b</strong>
     </div>
   </div>
 
+  <!-- Finding Value -->
   <div class="section">
-    <h2>Common Mistakes</h2>
+    <h2 id="finding-value">Finding the Value of an Expression</h2>
+    <div class="formula-box">
+      <strong>Substitute</strong> = replace each variable with its given number value, then calculate.
+    </div>
+    <div class="example">
+      <h3>Example: Find the value of 3a&sup2; &minus; 2a + 5 when a = 2.</h3>
+      <div class="step"><strong>Step 1:</strong> Write the expression: 3a&sup2; &minus; 2a + 5</div>
+      <div class="step"><strong>Step 2:</strong> Replace every &lsquo;a&rsquo; with 2:<br>
+        = 3(2)&sup2; &minus; 2(2) + 5</div>
+      <div class="step"><strong>Step 3:</strong> Calculate powers first (BODMAS):<br>
+        (2)&sup2; = 2 &times; 2 = 4. So: = 3 &times; 4 &minus; 2 &times; 2 + 5</div>
+      <div class="step"><strong>Step 4:</strong> Do multiplications:<br>
+        3 &times; 4 = 12. &ensp; 2 &times; 2 = 4. So: = 12 &minus; 4 + 5</div>
+      <div class="step"><strong>Step 5:</strong> Add/subtract left to right:<br>
+        12 &minus; 4 = 8. Then 8 + 5 = <strong>13</strong></div>
+    </div>
+  </div>
+
+  <!-- NCERT Solutions -->
+  <div class="section">
+    <h2 id="ncert-solutions">NCERT Exercise Solutions &mdash; All Questions Solved</h2>
+
+    <div class="exercise-header">Exercise 12.1 &mdash; Terms, Coefficients, Types (8 Questions)</div>
+
+    <div class="example"><h3>Q1. Identify the terms in: (a) 5x + 3y &minus; 8 &ensp; (b) 2a&sup2;b &minus; 3ab + 4</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>(a) 5x + 3y &minus; 8</strong><br>
+          <strong>Step 1:</strong> Terms are separated by + and &minus; signs.<br>
+          <strong>Step 2:</strong> Term 1 = <strong>5x</strong> (positive, before the +)<br>
+          Term 2 = <strong>3y</strong> (positive, after the +)<br>
+          Term 3 = <strong>&minus;8</strong> (negative sign belongs to this term)<br>
+          <strong>Answer: 3 terms &mdash; 5x, 3y, &minus;8</strong></div>
+        <div class="step"><strong>(b) 2a&sup2;b &minus; 3ab + 4</strong><br>
+          <strong>Step 1:</strong> Term 1 = <strong>2a&sup2;b</strong><br>
+          Term 2 = <strong>&minus;3ab</strong> (the minus sign is part of this term!)<br>
+          Term 3 = <strong>4</strong> (constant)<br>
+          <strong>Answer: 3 terms &mdash; 2a&sup2;b, &minus;3ab, 4</strong></div>
+      </div></details></div>
+
+    <div class="example"><h3>Q2. Write the coefficient of x in: (a) 7x (b) &minus;3xy (c) x (d) &minus;x/2</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>The coefficient is the number multiplied with the variable.</strong></div>
+        <div class="step"><strong>(a) 7x:</strong> The number multiplying x is <strong>7</strong>.</div>
+        <div class="step"><strong>(b) &minus;3xy:</strong> The coefficient of x is <strong>&minus;3y</strong> (everything multiplied with x). But if they ask just &ldquo;coefficient of x&rdquo; ignoring other variables, it&rsquo;s <strong>&minus;3</strong>.</div>
+        <div class="step"><strong>(c) x:</strong> x means 1 &times; x. So coefficient = <strong>1</strong>.</div>
+        <div class="step"><strong>(d) &minus;x/2:</strong> This means (&minus;1/2) &times; x. So coefficient = <strong>&minus;1/2</strong>.</div>
+      </div></details></div>
+
+    <div class="example"><h3>Q3. Classify as monomial, binomial, or trinomial: (a) 5x (b) x + y (c) x&sup2; + 2x &minus; 3 (d) 4ab (e) a + b &minus; c</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Count the terms in each expression:</strong></div>
+        <div class="step"><strong>(a) 5x</strong> &mdash; 1 term &rarr; <strong>Monomial</strong></div>
+        <div class="step"><strong>(b) x + y</strong> &mdash; 2 terms &rarr; <strong>Binomial</strong></div>
+        <div class="step"><strong>(c) x&sup2; + 2x &minus; 3</strong> &mdash; 3 terms &rarr; <strong>Trinomial</strong></div>
+        <div class="step"><strong>(d) 4ab</strong> &mdash; 1 term (4 &times; a &times; b is one product) &rarr; <strong>Monomial</strong></div>
+        <div class="step"><strong>(e) a + b &minus; c</strong> &mdash; 3 terms &rarr; <strong>Trinomial</strong></div>
+      </div></details></div>
+
+    <div class="example"><h3>Q4. Identify like terms: 5x, 3y, &minus;2x, 7, 4y, &minus;x</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Group by variable and power:<br>
+          &bull; x terms: 5x, &minus;2x, &minus;x (all have variable x to power 1)<br>
+          &bull; y terms: 3y, 4y (both have variable y to power 1)<br>
+          &bull; Constants: 7 (no variable)</div>
+        <div class="step"><strong>Answer:</strong><br>
+          <strong>Like terms:</strong> {5x, &minus;2x, &minus;x} and {3y, 4y}<br>
+          <strong>7</strong> has no like term (it&rsquo;s the only constant).</div>
+      </div></details></div>
+
+    <div class="example"><h3>Q5. Add: (4a + 3b) + (2a &minus; 5b)</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <figure class="diagram">
+          <svg viewBox="0 0 460 85" width="460" height="85" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5" y="5" width="140" height="30" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+            <text x="75" y="25" text-anchor="middle" font-size="11" fill="#3b82f6" font-weight="700">a terms: 4a + 2a</text>
+            <text x="75" y="48" text-anchor="middle" font-size="13" fill="#3b82f6" font-weight="700">= 6a</text>
+            <rect x="165" y="5" width="180" height="30" rx="6" fill="#d1fae5" stroke="#16a34a" stroke-width="2"/>
+            <text x="255" y="25" text-anchor="middle" font-size="11" fill="#16a34a" font-weight="700">b terms: 3b + (&minus;5b)</text>
+            <text x="255" y="48" text-anchor="middle" font-size="13" fill="#16a34a" font-weight="700">= &minus;2b</text>
+            <rect x="120" y="58" width="200" height="25" rx="6" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2"/>
+            <text x="220" y="76" text-anchor="middle" font-size="14" fill="#8b5cf6" font-weight="700">Answer: 6a &minus; 2b</text>
+          </svg>
+        </figure>
+        <div class="step"><strong>Step 1:</strong> Group like terms.<br>
+          a terms: 4a + 2a. b terms: 3b + (&minus;5b).</div>
+        <div class="step"><strong>Step 2:</strong> Add a terms: 4 + 2 = 6, so <strong>6a</strong>.<br>
+          Add b terms: 3 + (&minus;5) = 3 &minus; 5 = &minus;2, so <strong>&minus;2b</strong>.</div>
+        <div class="step"><strong>Answer: 6a &minus; 2b</strong></div>
+      </div></details></div>
+
+    <div class="example"><h3>Q6. Subtract (3a + 4b &minus; 2) from (7a &minus; 2b + 5).</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1: Write it out.</strong> &ldquo;Subtract X from Y&rdquo; means Y &minus; X.<br>
+          = (7a &minus; 2b + 5) &minus; (3a + 4b &minus; 2)</div>
+        <div class="step"><strong>Step 2: Open the bracket.</strong> When we subtract, EVERY sign inside the bracket flips:<br>
+          +3a becomes &minus;3a<br>
+          +4b becomes &minus;4b<br>
+          &minus;2 becomes +2<br>
+          So: = 7a &minus; 2b + 5 &minus; 3a &minus; 4b + 2</div>
+        <div class="step"><strong>Step 3: Group like terms.</strong><br>
+          a terms: 7a &minus; 3a = (7&minus;3)a = 4a<br>
+          b terms: &minus;2b &minus; 4b = (&minus;2&minus;4)b = &minus;6b<br>
+          Constants: 5 + 2 = 7</div>
+        <div class="step"><strong>Answer: 4a &minus; 6b + 7</strong></div>
+      </div></details></div>
+
+    <div class="example"><h3>Q7. Find the value of 5x &minus; 3y when x = 2 and y = &minus;1.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Write the expression: 5x &minus; 3y</div>
+        <div class="step"><strong>Step 2:</strong> Replace x with 2 and y with &minus;1:<br>
+          = 5(2) &minus; 3(&minus;1)</div>
+        <div class="step"><strong>Step 3:</strong> Calculate each multiplication:<br>
+          5 &times; 2 = 10<br>
+          3 &times; (&minus;1) = &minus;3 (positive &times; negative = negative)</div>
+        <div class="step"><strong>Step 4:</strong> Now: 10 &minus; (&minus;3). Subtracting a negative = adding!<br>
+          = 10 + 3 = <strong>13</strong></div>
+      </div></details></div>
+
+    <div class="example"><h3>Q8. Simplify: (5x&sup2; + 3x &minus; 7) + (2x&sup2; &minus; 4x + 3) &minus; (x&sup2; + 2x &minus; 1)</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Open the last bracket (subtraction flips all signs):<br>
+          = 5x&sup2; + 3x &minus; 7 + 2x&sup2; &minus; 4x + 3 <strong>&minus; x&sup2; &minus; 2x + 1</strong></div>
+        <div class="step"><strong>Step 2: Group like terms.</strong><br>
+          x&sup2; terms: 5x&sup2; + 2x&sup2; &minus; x&sup2;. Add coefficients: 5 + 2 &minus; 1 = <strong>6</strong>. So: 6x&sup2;.<br>
+          x terms: 3x &minus; 4x &minus; 2x. Add coefficients: 3 &minus; 4 &minus; 2 = <strong>&minus;3</strong>. So: &minus;3x.<br>
+          Constants: &minus;7 + 3 + 1. Calculate: &minus;7 + 3 = &minus;4. Then &minus;4 + 1 = <strong>&minus;3</strong>.</div>
+        <div class="step"><strong>Answer: 6x&sup2; &minus; 3x &minus; 3</strong></div>
+      </div></details></div>
+  </div>
+
+  <!-- Extra Practice -->
+  <div class="section">
+    <h2 id="extra-practice">Extra Practice</h2>
+    <div class="problem"><span class="difficulty easy">Easy</span><p>1. How many terms in 5x + 3y &minus; 2? Monomial, binomial, or trinomial?</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Count terms: 5x, 3y, &minus;2 = <strong>3 terms</strong>.<br><strong>Step 2:</strong> 3 terms = <strong>Trinomial</strong>.</div></details></div>
+    <div class="problem"><span class="difficulty easy">Easy</span><p>2. What is the coefficient of y in 8x + 3y &minus; 12?</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Look at the term with y: it&rsquo;s 3y.<br><strong>Step 2:</strong> The number multiplied with y is <strong>3</strong>.<br><strong>Answer: Coefficient of y = 3</strong></div></details></div>
+    <div class="problem"><span class="difficulty medium">Medium</span><p>3. Add: (4a + 3b) + (2a &minus; 5b)</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> a terms: 4a + 2a = (4+2)a = 6a.<br><strong>Step 2:</strong> b terms: 3b + (&minus;5b) = (3&minus;5)b = &minus;2b.<br><strong>Answer: 6a &minus; 2b</strong></div></details></div>
+    <div class="problem"><span class="difficulty medium">Medium</span><p>4. Find value of 5x &minus; 3y when x=2, y=&minus;1.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Substitute: 5(2) &minus; 3(&minus;1)<br><strong>Step 2:</strong> = 10 &minus; (&minus;3) = 10 + 3 = <strong>13</strong></div></details></div>
+    <div class="problem"><span class="difficulty hard">Hard</span><p>5. Simplify: (2x&sup2;+3xy&minus;y&sup2;) + (x&sup2;&minus;5xy+3y&sup2;) + (&minus;x&sup2;+xy&minus;y&sup2;)</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Group x&sup2; terms: 2+1&minus;1 = 2 &rarr; 2x&sup2;<br><strong>Step 2:</strong> Group xy terms: 3&minus;5+1 = &minus;1 &rarr; &minus;xy<br><strong>Step 3:</strong> Group y&sup2; terms: &minus;1+3&minus;1 = 1 &rarr; y&sup2;<br><strong>Answer: 2x&sup2; &minus; xy + y&sup2;</strong></div></details></div>
+    <div class="problem"><span class="difficulty hard">Hard</span><p>6. If P = 3a&sup2;&minus;5a+7 and Q = a&sup2;+2a&minus;3, find 2P&minus;Q.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Find 2P: multiply each term of P by 2.<br>2 &times; 3a&sup2; = 6a&sup2;, 2 &times; (&minus;5a) = &minus;10a, 2 &times; 7 = 14.<br>So 2P = 6a&sup2; &minus; 10a + 14.<br><br><strong>Step 2:</strong> Subtract Q (flip all signs of Q):<br>2P &minus; Q = (6a&sup2;&minus;10a+14) &minus; (a&sup2;+2a&minus;3)<br>= 6a&sup2;&minus;10a+14 &minus; a&sup2; &minus; 2a + 3<br><br><strong>Step 3:</strong> Group like terms:<br>a&sup2;: 6&minus;1 = 5 &rarr; 5a&sup2;<br>a: &minus;10&minus;2 = &minus;12 &rarr; &minus;12a<br>Constants: 14+3 = 17<br><br><strong>Answer: 5a&sup2; &minus; 12a + 17</strong></div></details></div>
+  </div>
+
+  <!-- HOTS -->
+  <div class="section">
+    <h2 id="hots">HOTS <span class="hots-tag">Advanced</span></h2>
+    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span>
+      <p>1. If the perimeter of a triangle is (7x+3y+5) and two sides are (2x+y+1) and (3x+y+2), find the third side.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Third side = Perimeter &minus; Side1 &minus; Side2<br>= (7x+3y+5) &minus; (2x+y+1) &minus; (3x+y+2)<br><br><strong>Step 2:</strong> Open brackets (flip signs when subtracting):<br>= 7x+3y+5 &minus;2x&minus;y&minus;1 &minus;3x&minus;y&minus;2<br><br><strong>Step 3:</strong> Group like terms:<br>x: 7&minus;2&minus;3 = 2 &rarr; 2x<br>y: 3&minus;1&minus;1 = 1 &rarr; y<br>Constants: 5&minus;1&minus;2 = 2<br><br><strong>Answer: Third side = 2x + y + 2</strong></div></details></div>
+    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span>
+      <p>2. Find the value of 2x&sup2;+3xy&minus;y&sup2; when x=1 and y=&minus;2.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Substitute x=1, y=&minus;2:<br>= 2(1)&sup2; + 3(1)(&minus;2) &minus; (&minus;2)&sup2;<br><br><strong>Step 2:</strong> Calculate powers:<br>(1)&sup2; = 1. (&minus;2)&sup2; = (&minus;2)&times;(&minus;2) = 4 (negative &times; negative = positive!)<br><br><strong>Step 3:</strong> Multiply:<br>2 &times; 1 = 2. &ensp; 3 &times; 1 &times; (&minus;2) = &minus;6.<br><br><strong>Step 4:</strong> = 2 + (&minus;6) &minus; 4 = 2 &minus; 6 &minus; 4 = <strong>&minus;8</strong></div></details></div>
+    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span>
+      <p>3. What should be added to 3x&sup2; + 2x &minus; 5 to get 5x&sup2; &minus; x + 3?</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Let the expression to add = E.<br>(3x&sup2;+2x&minus;5) + E = (5x&sup2;&minus;x+3)<br><br><strong>Step 2:</strong> E = (5x&sup2;&minus;x+3) &minus; (3x&sup2;+2x&minus;5)<br>= 5x&sup2;&minus;x+3 &minus;3x&sup2;&minus;2x+5<br><br><strong>Step 3:</strong> Group like terms:<br>x&sup2;: 5&minus;3 = 2 &rarr; 2x&sup2;<br>x: &minus;1&minus;2 = &minus;3 &rarr; &minus;3x<br>Constants: 3+5 = 8<br><br><strong>Answer: 2x&sup2; &minus; 3x + 8</strong></div></details></div>
+  </div>
+
+  <!-- Common Mistakes -->
+  <div class="section">
+    <h2 id="mistakes">Common Mistakes</h2>
     <ul class="mistakes-list">
-      <li>Adding unlike terms (e.g., writing 3x + 2y = 5xy — you can't combine them!).</li>
-      <li>Forgetting to change the sign of every term when subtracting an expression.</li>
-      <li>Mixing up coefficient and constant — the constant has no variable attached.</li>
-      <li>Forgetting the order of operations (BODMAS) when substituting values.</li>
+      <li><strong>Adding unlike terms</strong>
+        <div class="wrong-right"><div class="wrong">3x + 2y = 5xy</div><div class="right">3x + 2y = <strong>3x + 2y</strong> (stays as is! Different variables can&rsquo;t be combined)</div></div>
+      </li>
+      <li><strong>Forgetting to flip ALL signs when subtracting</strong>
+        <div class="wrong-right"><div class="wrong">(5a+3b) &minus; (2a+b) = 5a+3b &minus; 2a+b = 3a+4b</div><div class="right">(5a+3b) &minus; (2a+b) = 5a+3b <strong>&minus;2a&minus;b</strong> = <strong>3a+2b</strong><br>The +b inside bracket becomes &minus;b!</div></div>
+      </li>
+      <li><strong>Thinking x and x&sup2; are like terms</strong>
+        <div class="wrong-right"><div class="wrong">3x + 2x&sup2; = 5x&sup2;</div><div class="right">3x and 2x&sup2; are <strong>unlike terms</strong> (different powers!). They stay as <strong>2x&sup2; + 3x</strong>.</div></div>
+      </li>
+      <li><strong>Forgetting that x means 1x</strong>
+        <div class="wrong-right"><div class="wrong">Coefficient of x in the term &ldquo;x&rdquo; is 0</div><div class="right">x = <strong>1 &times; x</strong>. Coefficient = <strong>1</strong>, not 0!</div></div>
+      </li>
+      <li><strong>Not following BODMAS when substituting</strong>
+        <div class="wrong-right"><div class="wrong">3a&sup2; when a=2: 3&times;2&sup2; = 6&sup2; = 36</div><div class="right">Power first: 2&sup2; = 4. THEN multiply: 3&times;4 = <strong>12</strong>.<br>(The &sup2; applies to a only, not to 3a!)</div></div>
+      </li>
     </ul>
   </div>
 
   <button id="mark-read-btn" class="btn" style="margin-top:1rem;padding:.5rem 1.25rem;background:var(--primary);color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer" onclick="markChapterRead(12)">Mark as Complete</button>
-
   <div class="chapter-nav">
     <a href="ch11.html">&larr; Ch 11: Perimeter and Area</a>
     <a href="ch13.html">Ch 13: Exponents and Powers &rarr;</a>
   </div>
 </div>
-
 <footer class="footer">CBSE Class 7 Maths &mdash; Based on NCERT Syllabus</footer>
 <script src="../js/main.js"></script>
 </body>
