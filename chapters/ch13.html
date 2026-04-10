@@ -4,8 +4,36 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="chapter-num" content="13">
-<title>Chapter 13: Exponents and Powers - CBSE Class 7 Maths</title>
+<title>NCERT Solutions Class 7 Maths Chapter 13 Exponents and Powers</title>
+<meta name="description" content="NCERT Solutions for Class 7 Maths Chapter 13 Exponents and Powers. Laws of exponents, standard form — all exercises solved step-by-step with pattern tables.">
 <link rel="stylesheet" href="../css/style.css">
+<style>
+.real-world{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0;font-size:.95rem}
+.real-world strong{color:#16a34a}
+.why-box{background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0;font-size:.95rem}
+.why-box strong{color:#3b82f6}
+.exam-tip{background:#fdf4ff;border:1px solid #e9d5ff;border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0;font-size:.95rem}
+.exam-tip strong{color:#9333ea}
+.wrong-right{display:flex;gap:1rem;flex-wrap:wrap;margin:.5rem 0}
+.wrong-right .wrong,.wrong-right .right{flex:1;min-width:200px;padding:.75rem;border-radius:8px;font-size:.9rem}
+.wrong-right .wrong{background:#fee2e2;border:1px solid #fca5a5}
+.wrong-right .right{background:#d1fae5;border:1px solid #6ee7b7}
+.revision-card{background:linear-gradient(135deg,#8b5cf6,#6d28d9);color:#fff;border-radius:16px;padding:1.5rem;margin-bottom:2rem}
+.revision-card h2{color:#fff;border:none;padding:0;margin-bottom:1rem;font-size:1.2rem}
+.revision-card .formula-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.75rem}
+.revision-card .f-item{background:rgba(255,255,255,.15);border-radius:8px;padding:.6rem .8rem;font-size:.9rem;backdrop-filter:blur(4px)}
+.revision-card .f-item code{color:#fde68a;font-weight:700}
+.exercise-header{background:var(--alg-light);border:2px solid var(--alg);border-radius:12px;padding:1rem 1.25rem;margin:1.5rem 0 1rem;font-size:1.1rem;font-weight:700;color:var(--alg)}
+.step-reveal summary{cursor:pointer;color:var(--primary);font-weight:600;font-size:.9rem}
+.step-reveal .steps-content{padding:.75rem;margin-top:.5rem;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0}
+.hots-tag{display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;padding:2px 6px;border-radius:4px;background:#fdf4ff;color:#9333ea;border:1px solid #e9d5ff;margin-left:.5rem}
+.law-card{background:#fff;border:2px solid var(--alg);border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0}
+.law-card h4{color:var(--alg);margin-bottom:.5rem}
+.power-table{width:100%;max-width:400px;margin:1rem auto;border-collapse:collapse}
+.power-table th,.power-table td{border:1px solid #e2e8f0;padding:.4rem .6rem;text-align:center;font-size:.95rem}
+.power-table th{background:var(--alg-light);color:var(--alg);font-weight:700}
+.power-table .highlight{background:#fef3c7;font-weight:700}
+</style>
 </head>
 <body>
 <header class="navbar">
@@ -19,186 +47,347 @@
 <div class="container">
   <div class="chapter-header">
     <div class="ch-label" style="color:var(--alg)">Chapter 13 &middot; Algebra</div>
-    <h1>Exponents and Powers</h1>
+    <h1>Exponents and Powers &mdash; Complete NCERT Solutions</h1>
   </div>
 
+  <nav class="topic-nav">
+    <a href="#revision">Revision Card</a>
+    <a href="#what-are-exponents">What are Exponents?</a>
+    <a href="#laws">Laws of Exponents</a>
+    <a href="#standard-form">Standard Form</a>
+    <a href="#ncert-solutions" class="nav-exercise">NCERT Solutions</a>
+    <a href="#extra-practice" class="nav-exercise">Extra Practice</a>
+    <a href="#hots" class="nav-exercise">HOTS</a>
+    <a href="#mistakes">Common Mistakes</a>
+  </nav>
+
+  <div class="revision-card" id="revision">
+    <h2>Quick Revision Card</h2>
+    <div class="formula-grid">
+      <div class="f-item"><code>a<sup>n</sup> = a &times; a &times; ... (n times)</code><br>a = base, n = exponent</div>
+      <div class="f-item"><code>a<sup>m</sup> &times; a<sup>n</sup> = a<sup>m+n</sup></code><br>Same base? ADD exponents</div>
+      <div class="f-item"><code>a<sup>m</sup> &divide; a<sup>n</sup> = a<sup>m&minus;n</sup></code><br>Same base? SUBTRACT exponents</div>
+      <div class="f-item"><code>(a<sup>m</sup>)<sup>n</sup> = a<sup>m&times;n</sup></code><br>Power of a power? MULTIPLY</div>
+      <div class="f-item"><code>a<sup>0</sup> = 1</code><br>Anything to power 0 = 1 (a&ne;0)</div>
+      <div class="f-item"><code>a<sup>1</sup> = a</code><br>Anything to power 1 = itself</div>
+    </div>
+  </div>
+
+  <!-- What are Exponents -->
   <div class="section">
-    <h2>Summary</h2>
+    <h2 id="what-are-exponents">What are Exponents?</h2>
+    <div class="real-world">
+      <strong>Real-world:</strong> A bacteria doubles every hour. After 10 hours: 2<sup>10</sup> = 1024 bacteria! Exponents are nature&rsquo;s way of showing rapid growth. Also used for: computer memory (2<sup>10</sup> = 1 KB), distances in space (10<sup>8</sup> km to Sun), and tiny atoms (10<sup>&minus;10</sup> m).
+    </div>
+
     <ul class="summary-list">
-      <li>An exponent tells you how many times to multiply a number by itself. In a<sup>n</sup>, a is the base, n is the exponent.</li>
-      <li>Example: 2<sup>3</sup> = 2 &times; 2 &times; 2 = 8.</li>
-      <li>Any number raised to the power 1 equals itself: a<sup>1</sup> = a (e.g., 5&sup1; = 5, 100&sup1; = 100).</li>
-      <li>Any number raised to the power 0 equals 1: a<sup>0</sup> = 1 (where a &ne; 0) &mdash; e.g., 5&sup0; = 1, 100&sup0; = 1.</li>
-      <li>Multiplying same base: a<sup>m</sup> &times; a<sup>n</sup> = a<sup>m+n</sup> (add the exponents) &mdash; e.g., 2&sup3; &times; 2&sup4; = 2&sup7; = 128.</li>
-      <li>Dividing same base: a<sup>m</sup> &divide; a<sup>n</sup> = a<sup>m&minus;n</sup> (subtract the exponents) &mdash; e.g., 5&sup6; &divide; 5&sup2; = 5&sup4; = 625.</li>
-      <li>Power of a power: (a<sup>m</sup>)<sup>n</sup> = a<sup>m&times;n</sup> (multiply the exponents) &mdash; e.g., (2&sup3;)&sup2; = 2&sup6; = 64.</li>
-      <li>Standard form: expressing very large numbers using powers of 10 (e.g., 3,00,000 = 3 &times; 10<sup>5</sup>) &mdash; e.g., the distance to the Sun is about 1.5 &times; 10&sup8; km.</li>
+      <li>Instead of writing 2 &times; 2 &times; 2 &times; 2 &times; 2, we write <strong>2<sup>5</sup></strong>. Much shorter!</li>
+      <li>In <strong>a<sup>n</sup></strong>: &lsquo;a&rsquo; is the <strong>base</strong> (the number being multiplied) and &lsquo;n&rsquo; is the <strong>exponent</strong> (how many times).</li>
+      <li>We read 2<sup>5</sup> as &ldquo;2 raised to the power 5&rdquo; or &ldquo;2 to the 5th.&rdquo;</li>
     </ul>
+
+    <!-- SVG showing exponent anatomy -->
+    <figure class="diagram">
+      <svg viewBox="0 0 400 120" width="400" height="120" xmlns="http://www.w3.org/2000/svg">
+        <text x="120" y="55" font-size="50" fill="#8b5cf6" font-weight="800">2</text>
+        <text x="165" y="35" font-size="28" fill="#dc2626" font-weight="800">5</text>
+        <!-- Arrow to base -->
+        <line x1="135" y1="65" x2="135" y2="85" stroke="#8b5cf6" stroke-width="2"/>
+        <text x="135" y="100" text-anchor="middle" font-size="13" fill="#8b5cf6" font-weight="700">Base</text>
+        <text x="135" y="115" text-anchor="middle" font-size="10" fill="#64748b">(the number)</text>
+        <!-- Arrow to exponent -->
+        <line x1="178" y1="20" x2="220" y2="20" stroke="#dc2626" stroke-width="2"/>
+        <text x="275" y="18" text-anchor="middle" font-size="13" fill="#dc2626" font-weight="700">Exponent (Power)</text>
+        <text x="275" y="33" text-anchor="middle" font-size="10" fill="#64748b">(how many times to multiply)</text>
+        <!-- Expansion -->
+        <text x="200" y="80" font-size="14" fill="#334155" font-weight="600">= 2 &times; 2 &times; 2 &times; 2 &times; 2 = 32</text>
+      </svg>
+      <figcaption>2<sup>5</sup> means multiply 2 by itself 5 times</figcaption>
+    </figure>
+
+    <!-- Powers of 2 table -->
+    <div class="why-box">
+      <strong>Powers of 2 (memorize these!):</strong><br>
+      2<sup>1</sup> = 2 &ensp; | &ensp; 2<sup>2</sup> = 4 &ensp; | &ensp; 2<sup>3</sup> = 8 &ensp; | &ensp; 2<sup>4</sup> = 16 &ensp; | &ensp; 2<sup>5</sup> = 32 &ensp; | &ensp; 2<sup>6</sup> = 64 &ensp; | &ensp; 2<sup>7</sup> = 128 &ensp; | &ensp; 2<sup>10</sup> = 1024
+    </div>
   </div>
 
+  <!-- Laws of Exponents -->
   <div class="section">
-    <h2>Key Formulas (Laws of Exponents)</h2>
-    <div class="formula-box">
-      <code>a<sup>m</sup> &times; a<sup>n</sup> = a<sup>m+n</sup></code>
+    <h2 id="laws">Laws of Exponents</h2>
+
+    <div class="law-card">
+      <h4>Law 1: Multiplying same base &mdash; ADD exponents</h4>
+      <div class="formula-box"><code>a<sup>m</sup> &times; a<sup>n</sup> = a<sup>m+n</sup></code></div>
+      <div class="step"><strong>Why?</strong> 2<sup>3</sup> &times; 2<sup>4</sup> = (2&times;2&times;2) &times; (2&times;2&times;2&times;2) = 2 multiplied 3+4 = 7 times = 2<sup>7</sup></div>
+      <div class="step"><strong>Example:</strong> 5<sup>3</sup> &times; 5<sup>2</sup> = 5<sup>3+2</sup> = 5<sup>5</sup> = 3125</div>
     </div>
-    <div class="formula-box">
-      <code>a<sup>m</sup> &divide; a<sup>n</sup> = a<sup>m&minus;n</sup></code>
+
+    <div class="law-card">
+      <h4>Law 2: Dividing same base &mdash; SUBTRACT exponents</h4>
+      <div class="formula-box"><code>a<sup>m</sup> &divide; a<sup>n</sup> = a<sup>m&minus;n</sup></code></div>
+      <div class="step"><strong>Why?</strong> 2<sup>5</sup> &divide; 2<sup>3</sup> = (2&times;2&times;2&times;2&times;2) / (2&times;2&times;2). Three 2&rsquo;s cancel out, leaving 2&times;2 = 2<sup>2</sup> = 2<sup>5&minus;3</sup></div>
+      <div class="step"><strong>Example:</strong> 7<sup>6</sup> &divide; 7<sup>4</sup> = 7<sup>6&minus;4</sup> = 7<sup>2</sup> = 49</div>
     </div>
-    <div class="formula-box">
-      <code>(a<sup>m</sup>)<sup>n</sup> = a<sup>m&times;n</sup></code>
+
+    <div class="law-card">
+      <h4>Law 3: Power of a power &mdash; MULTIPLY exponents</h4>
+      <div class="formula-box"><code>(a<sup>m</sup>)<sup>n</sup> = a<sup>m&times;n</sup></code></div>
+      <div class="step"><strong>Why?</strong> (2<sup>3</sup>)<sup>2</sup> = 2<sup>3</sup> &times; 2<sup>3</sup> = 2<sup>3+3</sup> = 2<sup>6</sup> = 2<sup>3&times;2</sup></div>
+      <div class="step"><strong>Example:</strong> (3<sup>2</sup>)<sup>4</sup> = 3<sup>2&times;4</sup> = 3<sup>8</sup> = 6561</div>
     </div>
-    <div class="formula-box">
-      <code>a<sup>m</sup> &times; b<sup>m</sup> = (a &times; b)<sup>m</sup></code>
+
+    <div class="law-card">
+      <h4>Law 4: Power zero &mdash; always equals 1</h4>
+      <div class="formula-box"><code>a<sup>0</sup> = 1</code> (where a &ne; 0)</div>
+      <div class="step"><strong>Why?</strong> Using the division law: a<sup>n</sup> &divide; a<sup>n</sup> = a<sup>n&minus;n</sup> = a<sup>0</sup>. But anything divided by itself = 1. So a<sup>0</sup> = 1!</div>
+      <div class="step"><strong>Examples:</strong> 5<sup>0</sup> = 1, &ensp; 100<sup>0</sup> = 1, &ensp; (&minus;7)<sup>0</sup> = 1</div>
     </div>
-    <div class="formula-box">
-      <code>a<sup>0</sup> = 1 (where a &ne; 0)</code>
+
+    <div class="exam-tip">
+      <strong>CRITICAL: Laws only work for the SAME base!</strong><br>
+      2<sup>3</sup> &times; 2<sup>4</sup> = 2<sup>7</sup> &#10003; (same base 2)<br>
+      2<sup>3</sup> &times; 3<sup>4</sup> = ??? (different bases &mdash; <strong>CANNOT use the law!</strong>)
     </div>
   </div>
 
+  <!-- Standard Form -->
   <div class="section">
-    <h2>Worked Examples</h2>
-
+    <h2 id="standard-form">Standard Form (Scientific Notation)</h2>
+    <div class="formula-box">
+      <strong>Standard form</strong> = a number between 1 and 10, multiplied by a power of 10.<br>
+      <code>N = a &times; 10<sup>n</sup></code> where 1 &le; a &lt; 10.
+    </div>
+    <div class="real-world">
+      <strong>Why use standard form?</strong> Writing 3,84,00,000 is hard to read. Writing <strong>3.84 &times; 10<sup>7</sup></strong> is much clearer! Scientists use this for very large numbers (distance to stars) and very small numbers (size of atoms).
+    </div>
     <div class="example">
-      <h3>Example 1: Simplifying using Laws</h3>
-      <p>Simplify: 2<sup>3</sup> &times; 2<sup>4</sup></p>
-      <div class="step"><strong>Step 1:</strong> Same base (2), so add exponents: 2<sup>3+4</sup> = 2<sup>7</sup></div>
-      <div class="step"><strong>Step 2:</strong> 2<sup>7</sup> = 128. Answer: <strong>128</strong></div>
+      <h3>Example: Express 47,00,000 in standard form.</h3>
+      <div class="step"><strong>Step 1:</strong> Move the decimal point left until you get a number between 1 and 10.<br>
+        47,00,000 &rarr; 4.700000. We moved the decimal 6 places to the left.</div>
+      <div class="step"><strong>Step 2:</strong> Count how many places you moved = 6. This becomes the power of 10.</div>
+      <div class="step"><strong>Step 3:</strong> Write it: <strong>4.7 &times; 10<sup>6</sup></strong></div>
+      <div class="step"><strong>Check:</strong> 4.7 &times; 1000000 = 47,00,000 &#10003;</div>
     </div>
-
     <div class="example">
-      <h3>Example 2: Division Law</h3>
-      <p>Simplify: 5<sup>6</sup> &divide; 5<sup>2</sup></p>
-      <div class="step"><strong>Step 1:</strong> Same base (5), subtract exponents: 5<sup>6&minus;2</sup> = 5<sup>4</sup></div>
-      <div class="step"><strong>Step 2:</strong> 5<sup>4</sup> = 625. Answer: <strong>625</strong></div>
-    </div>
-
-    <div class="example">
-      <h3>Example 3: Standard Form</h3>
-      <p>Express 47,00,000 in standard form.</p>
-      <div class="step"><strong>Step 1:</strong> Write as a number between 1 and 10 multiplied by a power of 10</div>
-      <div class="step"><strong>Step 2:</strong> 47,00,000 = 4.7 &times; 10<sup>6</sup></div>
-      <div class="step"><strong>Answer:</strong> <strong>4.7 &times; 10<sup>6</sup></strong></div>
+      <h3>Example: Express 0.00052 in standard form.</h3>
+      <div class="step"><strong>Step 1:</strong> Move decimal point RIGHT until you get a number between 1 and 10.<br>
+        0.00052 &rarr; 5.2. We moved 4 places to the right.</div>
+      <div class="step"><strong>Step 2:</strong> Since we moved RIGHT, the power is negative: &minus;4.</div>
+      <div class="step"><strong>Step 3:</strong> <strong>5.2 &times; 10<sup>&minus;4</sup></strong></div>
     </div>
   </div>
 
+  <!-- NCERT Solutions -->
   <div class="section">
-    <h2>Practice Problems</h2>
+    <h2 id="ncert-solutions">NCERT Exercise Solutions &mdash; All Questions Solved</h2>
 
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>Find the value of 3<sup>4</sup>.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">3 &times; 3 &times; 3 &times; 3 = <strong>81</strong></div>
-      </details>
-    </div>
+    <div class="exercise-header">Exercise 13.1 &mdash; Exponents Basics (6 Questions)</div>
 
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>What is 7<sup>0</sup>?</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Any non-zero number to the power 0 = <strong>1</strong></div>
-      </details>
-    </div>
+    <div class="example"><h3>Q1. Find the value of: (a) 3<sup>4</sup> &ensp; (b) (&minus;2)<sup>5</sup> &ensp; (c) (&minus;1)<sup>100</sup></h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>(a) 3<sup>4</sup></strong><br>
+          <strong>Step 1:</strong> 3<sup>4</sup> means multiply 3 by itself 4 times.<br>
+          <strong>Step 2:</strong> 3 &times; 3 = 9<br>
+          <strong>Step 3:</strong> 9 &times; 3 = 27<br>
+          <strong>Step 4:</strong> 27 &times; 3 = <strong>81</strong></div>
+        <div class="step"><strong>(b) (&minus;2)<sup>5</sup></strong><br>
+          <strong>Step 1:</strong> Multiply (&minus;2) by itself 5 times.<br>
+          <strong>Step 2:</strong> (&minus;2) &times; (&minus;2) = +4 (negative &times; negative = positive)<br>
+          <strong>Step 3:</strong> 4 &times; (&minus;2) = &minus;8<br>
+          <strong>Step 4:</strong> (&minus;8) &times; (&minus;2) = +16<br>
+          <strong>Step 5:</strong> 16 &times; (&minus;2) = <strong>&minus;32</strong><br>
+          <strong>Note:</strong> 5 is odd, so the answer is negative. (Even power &rarr; positive, odd power &rarr; negative)</div>
+        <div class="step"><strong>(c) (&minus;1)<sup>100</sup></strong><br>
+          <strong>Step 1:</strong> 100 is even.<br>
+          <strong>Step 2:</strong> Even power of &minus;1 = +1. (Pairs of negatives cancel!)<br>
+          <strong>Answer: 1</strong></div>
+      </div></details></div>
 
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>Simplify: 4<sup>3</sup> &times; 4<sup>2</sup></p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">4<sup>3+2</sup> = 4<sup>5</sup> = <strong>1024</strong></div>
-      </details>
-    </div>
+    <div class="example"><h3>Q2. Express in exponent form: (a) 729 (b) 1024 (c) 3125</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>(a) 729:</strong><br>
+          Try dividing by small primes.<br>
+          729 &divide; 3 = 243. &ensp; 243 &divide; 3 = 81. &ensp; 81 &divide; 3 = 27. &ensp; 27 &divide; 3 = 9. &ensp; 9 &divide; 3 = 3. &ensp; 3 &divide; 3 = 1.<br>
+          We divided by 3 six times. So 729 = <strong>3<sup>6</sup></strong></div>
+        <div class="step"><strong>(b) 1024:</strong><br>
+          1024 &divide; 2 = 512. &ensp; 512 &divide; 2 = 256. &ensp; 256 &divide; 2 = 128. &ensp; 128 &divide; 2 = 64.<br>
+          64 &divide; 2 = 32. &ensp; 32 &divide; 2 = 16. &ensp; 16 &divide; 2 = 8. &ensp; 8 &divide; 2 = 4. &ensp; 4 &divide; 2 = 2. &ensp; 2 &divide; 2 = 1.<br>
+          Divided by 2 ten times. So 1024 = <strong>2<sup>10</sup></strong></div>
+        <div class="step"><strong>(c) 3125:</strong><br>
+          3125 &divide; 5 = 625. &ensp; 625 &divide; 5 = 125. &ensp; 125 &divide; 5 = 25. &ensp; 25 &divide; 5 = 5. &ensp; 5 &divide; 5 = 1.<br>
+          Divided by 5 five times. So 3125 = <strong>5<sup>5</sup></strong></div>
+      </div></details></div>
 
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>Simplify: (2<sup>3</sup>)<sup>2</sup></p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">2<sup>3&times;2</sup> = 2<sup>6</sup> = <strong>64</strong></div>
-      </details>
-    </div>
+    <div class="example"><h3>Q3. Simplify: (a) 2<sup>3</sup> &times; 2<sup>4</sup> &ensp; (b) 5<sup>6</sup> &divide; 5<sup>2</sup> &ensp; (c) (3<sup>2</sup>)<sup>3</sup></h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>(a) 2<sup>3</sup> &times; 2<sup>4</sup></strong><br>
+          <strong>Step 1:</strong> Same base (both are 2). Use Law 1: add exponents.<br>
+          <strong>Step 2:</strong> 2<sup>3+4</sup> = 2<sup>7</sup><br>
+          <strong>Step 3:</strong> Calculate: 2<sup>7</sup> = 2&times;2&times;2&times;2&times;2&times;2&times;2 = <strong>128</strong></div>
+        <div class="step"><strong>(b) 5<sup>6</sup> &divide; 5<sup>2</sup></strong><br>
+          <strong>Step 1:</strong> Same base (5). Use Law 2: subtract exponents.<br>
+          <strong>Step 2:</strong> 5<sup>6&minus;2</sup> = 5<sup>4</sup><br>
+          <strong>Step 3:</strong> Calculate: 5<sup>4</sup> = 5&times;5&times;5&times;5 = 25&times;25 = <strong>625</strong></div>
+        <div class="step"><strong>(c) (3<sup>2</sup>)<sup>3</sup></strong><br>
+          <strong>Step 1:</strong> Power of a power. Use Law 3: multiply exponents.<br>
+          <strong>Step 2:</strong> 3<sup>2&times;3</sup> = 3<sup>6</sup><br>
+          <strong>Step 3:</strong> Calculate: 3<sup>6</sup> = 3&times;3&times;3&times;3&times;3&times;3 = 9&times;9&times;9 = 81&times;9 = <strong>729</strong></div>
+      </div></details></div>
 
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>Simplify: (3<sup>5</sup> &times; 3<sup>2</sup>) &divide; 3<sup>4</sup></p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">3<sup>5+2</sup> &divide; 3<sup>4</sup> = 3<sup>7</sup> &divide; 3<sup>4</sup> = 3<sup>7&minus;4</sup> = 3<sup>3</sup> = <strong>27</strong></div>
-      </details>
-    </div>
+    <div class="example"><h3>Q4. Simplify and evaluate: (2<sup>3</sup> &times; 2<sup>4</sup>) &divide; 2<sup>5</sup></h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> First do the multiplication in the bracket.<br>
+          2<sup>3</sup> &times; 2<sup>4</sup> = 2<sup>3+4</sup> = 2<sup>7</sup> (Law 1: add exponents)</div>
+        <div class="step"><strong>Step 2:</strong> Now divide: 2<sup>7</sup> &divide; 2<sup>5</sup><br>
+          = 2<sup>7&minus;5</sup> = 2<sup>2</sup> (Law 2: subtract exponents)</div>
+        <div class="step"><strong>Step 3:</strong> Calculate: 2<sup>2</sup> = 2 &times; 2 = <strong>4</strong></div>
+      </div></details></div>
 
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>Express in standard form: (a) 3,84,00,000 and (b) 0.00052</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">(a) 3.84 &times; 10<sup>7</sup><br>(b) 5.2 &times; 10<sup>&minus;4</sup></div>
-      </details>
-    </div>
+    <div class="example"><h3>Q5. Express in standard form: (a) 3,84,00,000 &ensp; (b) 0.00052</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>(a) 3,84,00,000</strong><br>
+          <strong>Step 1:</strong> Place the decimal after the first non-zero digit: 3.8400000<br>
+          <strong>Step 2:</strong> Count how many places we moved the decimal from the end: 3,84,00,000. has 7 digits after the 3.<br>
+          We moved 7 places to the left.<br>
+          <strong>Step 3:</strong> Moving left = positive power.<br>
+          <strong>Answer: 3.84 &times; 10<sup>7</sup></strong></div>
+        <div class="step"><strong>(b) 0.00052</strong><br>
+          <strong>Step 1:</strong> Move decimal right until we get a number between 1 and 10: 5.2<br>
+          <strong>Step 2:</strong> Count places moved right: 0.00052 &rarr; we jumped 4 places right.<br>
+          <strong>Step 3:</strong> Moving right = negative power.<br>
+          <strong>Answer: 5.2 &times; 10<sup>&minus;4</sup></strong></div>
+      </div></details></div>
 
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>Find the value of 2<sup>5</sup>.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">2 &times; 2 &times; 2 &times; 2 &times; 2 = <strong>32</strong></div>
-      </details>
-    </div>
+    <div class="example"><h3>Q6. Find x: (a) 2<sup>x</sup> = 64 &ensp; (b) 3<sup>x</sup> = 243 &ensp; (c) 5<sup>x</sup> = 625</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>(a) 2<sup>x</sup> = 64</strong><br>
+          <strong>Step 1:</strong> Express 64 as a power of 2.<br>
+          64 = 2 &times; 32 = 2 &times; 2 &times; 16 = 2 &times; 2 &times; 2 &times; 8 = 2 &times; 2 &times; 2 &times; 2 &times; 4 = 2 &times; 2 &times; 2 &times; 2 &times; 2 &times; 2 = 2<sup>6</sup><br>
+          <strong>Step 2:</strong> So 2<sup>x</sup> = 2<sup>6</sup>. Since bases are equal, exponents must be equal.<br>
+          <strong>Answer: x = 6</strong></div>
+        <div class="step"><strong>(b) 3<sup>x</sup> = 243</strong><br>
+          243 = 3 &times; 81 = 3 &times; 3 &times; 27 = 3 &times; 3 &times; 3 &times; 9 = 3 &times; 3 &times; 3 &times; 3 &times; 3 = 3<sup>5</sup><br>
+          <strong>Answer: x = 5</strong></div>
+        <div class="step"><strong>(c) 5<sup>x</sup> = 625</strong><br>
+          625 = 5 &times; 125 = 5 &times; 5 &times; 25 = 5 &times; 5 &times; 5 &times; 5 = 5<sup>4</sup><br>
+          <strong>Answer: x = 4</strong></div>
+      </div></details></div>
 
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>Simplify: 10<sup>3</sup> &times; 10<sup>2</sup></p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">10<sup>3+2</sup> = 10<sup>5</sup> = <strong>1,00,000</strong></div>
-      </details>
-    </div>
+    <div class="exercise-header">Exercise 13.2 &mdash; Laws &amp; Standard Form (6 Questions)</div>
 
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>Find x if 3<sup>x</sup> = 81.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">81 = 3 &times; 3 &times; 3 &times; 3 = 3<sup>4</sup>, so <strong>x = 4</strong></div>
-      </details>
-    </div>
+    <div class="example"><h3>Q1. Simplify: (&minus;3)<sup>2</sup> &times; (&minus;3)<sup>3</sup></h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Same base (&minus;3). Law 1: add exponents.</div>
+        <div class="step"><strong>Step 2:</strong> (&minus;3)<sup>2+3</sup> = (&minus;3)<sup>5</sup></div>
+        <div class="step"><strong>Step 3:</strong> Calculate: 5 is odd, so result is negative. 3<sup>5</sup> = 243.<br>
+          Answer: <strong>&minus;243</strong></div>
+      </div></details></div>
 
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>Simplify: (2<sup>3</sup> &times; 2<sup>4</sup>) &divide; 2<sup>5</sup></p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">2<sup>3+4</sup> &divide; 2<sup>5</sup> = 2<sup>7</sup> &divide; 2<sup>5</sup> = 2<sup>7&minus;5</sup> = 2<sup>2</sup> = <strong>4</strong></div>
-      </details>
-    </div>
+    <div class="example"><h3>Q2. Evaluate: (&minus;2)<sup>3</sup> &times; (&minus;2)<sup>4</sup> &times; (&minus;2)<sup>0</sup></h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> (&minus;2)<sup>0</sup> = 1 (anything to power 0 = 1).</div>
+        <div class="step"><strong>Step 2:</strong> So: (&minus;2)<sup>3</sup> &times; (&minus;2)<sup>4</sup> &times; 1 = (&minus;2)<sup>3+4</sup> = (&minus;2)<sup>7</sup></div>
+        <div class="step"><strong>Step 3:</strong> 7 is odd &rarr; negative. 2<sup>7</sup> = 128.<br>
+          Answer: <strong>&minus;128</strong></div>
+      </div></details></div>
 
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>Express 0.00000347 in standard form.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">0.00000347 = <strong>3.47 &times; 10<sup>&minus;6</sup></strong></div>
-      </details>
-    </div>
+    <div class="example"><h3>Q3. Using suitable properties, find: (&minus;5)<sup>4</sup> &times; (&minus;5)<sup>2</sup> &divide; (&minus;5)<sup>3</sup></h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> All same base (&minus;5). First multiply: (&minus;5)<sup>4+2</sup> = (&minus;5)<sup>6</sup></div>
+        <div class="step"><strong>Step 2:</strong> Now divide: (&minus;5)<sup>6</sup> &divide; (&minus;5)<sup>3</sup> = (&minus;5)<sup>6&minus;3</sup> = (&minus;5)<sup>3</sup></div>
+        <div class="step"><strong>Step 3:</strong> 3 is odd &rarr; negative. 5<sup>3</sup> = 125.<br>
+          Answer: <strong>&minus;125</strong></div>
+      </div></details></div>
 
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>Simplify and evaluate: (5<sup>2</sup> &times; 5<sup>3</sup>) &divide; (5<sup>4</sup>) &times; 5<sup>0</sup></p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">5<sup>2+3</sup> &divide; 5<sup>4</sup> &times; 5<sup>0</sup> = 5<sup>5</sup> &divide; 5<sup>4</sup> &times; 1 = 5<sup>5&minus;4</sup> = 5<sup>1</sup> = <strong>5</strong></div>
-      </details>
-    </div>
+    <div class="example"><h3>Q4. Verify: (2<sup>3</sup>)<sup>2</sup> = 2<sup>6</sup></h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>LHS:</strong> (2<sup>3</sup>)<sup>2</sup>. Using Law 3: 2<sup>3&times;2</sup> = 2<sup>6</sup> = 64.</div>
+        <div class="step"><strong>RHS:</strong> 2<sup>6</sup> = 64.</div>
+        <div class="step"><strong>LHS = RHS = 64</strong> &#10003; Verified!</div>
+      </div></details></div>
+
+    <div class="example"><h3>Q5. Express as a single power: (3<sup>5</sup> &times; 3<sup>2</sup>) &divide; 3<sup>4</sup></h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Numerator: 3<sup>5</sup> &times; 3<sup>2</sup> = 3<sup>5+2</sup> = 3<sup>7</sup> (Law 1)</div>
+        <div class="step"><strong>Step 2:</strong> Divide: 3<sup>7</sup> &divide; 3<sup>4</sup> = 3<sup>7&minus;4</sup> = 3<sup>3</sup> (Law 2)</div>
+        <div class="step"><strong>Step 3:</strong> Calculate: 3<sup>3</sup> = 3 &times; 3 &times; 3 = <strong>27</strong></div>
+      </div></details></div>
+
+    <div class="example"><h3>Q6. Express 0.00000347 in standard form.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> We need a number between 1 and 10: 3.47</div>
+        <div class="step"><strong>Step 2:</strong> Count decimal places moved RIGHT: 0.00000347<br>
+          Move 1: 0.0000347<br>
+          Move 2: 0.000347<br>
+          Move 3: 0.00347<br>
+          Move 4: 0.0347<br>
+          Move 5: 0.347<br>
+          Move 6: 3.47 &#10003; (now it&rsquo;s between 1 and 10)</div>
+        <div class="step"><strong>Step 3:</strong> Moved 6 places RIGHT = negative power: 10<sup>&minus;6</sup></div>
+        <div class="step"><strong>Answer: 3.47 &times; 10<sup>&minus;6</sup></strong></div>
+      </div></details></div>
   </div>
 
+  <!-- Extra Practice -->
   <div class="section">
-    <h2>Common Mistakes</h2>
+    <h2 id="extra-practice">Extra Practice</h2>
+    <div class="problem"><span class="difficulty easy">Easy</span><p>1. Find 2<sup>5</sup>.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> 2<sup>5</sup> = 2 &times; 2 &times; 2 &times; 2 &times; 2<br><strong>Step 2:</strong> 2&times;2=4, 4&times;2=8, 8&times;2=16, 16&times;2=<strong>32</strong></div></details></div>
+    <div class="problem"><span class="difficulty easy">Easy</span><p>2. Simplify: 10<sup>3</sup> &times; 10<sup>2</sup>.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Same base (10). Add exponents: 10<sup>3+2</sup> = 10<sup>5</sup><br><strong>Step 2:</strong> 10<sup>5</sup> = 10 &times; 10 &times; 10 &times; 10 &times; 10 = <strong>1,00,000</strong></div></details></div>
+    <div class="problem"><span class="difficulty medium">Medium</span><p>3. Find x if 3<sup>x</sup> = 81.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Express 81 as power of 3: 81 = 3&times;27 = 3&times;3&times;9 = 3&times;3&times;3&times;3 = 3<sup>4</sup><br><strong>Step 2:</strong> 3<sup>x</sup> = 3<sup>4</sup>, so <strong>x = 4</strong></div></details></div>
+    <div class="problem"><span class="difficulty medium">Medium</span><p>4. Simplify: (2<sup>3</sup> &times; 2<sup>4</sup>) &divide; 2<sup>5</sup></p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Bracket first: 2<sup>3+4</sup> = 2<sup>7</sup><br><strong>Step 2:</strong> Divide: 2<sup>7&minus;5</sup> = 2<sup>2</sup><br><strong>Step 3:</strong> 2<sup>2</sup> = 2 &times; 2 = <strong>4</strong></div></details></div>
+    <div class="problem"><span class="difficulty hard">Hard</span><p>5. Express 0.00000347 in standard form.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Move decimal right 6 places: 3.47<br><strong>Step 2:</strong> Right movement = negative power<br><strong>Answer: 3.47 &times; 10<sup>&minus;6</sup></strong></div></details></div>
+    <div class="problem"><span class="difficulty hard">Hard</span><p>6. Simplify: (5<sup>2</sup> &times; 5<sup>3</sup>) &divide; (5<sup>4</sup>) &times; 5<sup>0</sup></p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> 5<sup>0</sup> = 1 (power zero rule)<br><strong>Step 2:</strong> 5<sup>2</sup> &times; 5<sup>3</sup> = 5<sup>5</sup> (add exponents)<br><strong>Step 3:</strong> 5<sup>5</sup> &divide; 5<sup>4</sup> = 5<sup>1</sup> (subtract exponents)<br><strong>Step 4:</strong> 5<sup>1</sup> &times; 1 = <strong>5</strong></div></details></div>
+  </div>
+
+  <!-- HOTS -->
+  <div class="section">
+    <h2 id="hots">HOTS <span class="hots-tag">Advanced</span></h2>
+    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span>
+      <p>1. Which is bigger: 2<sup>10</sup> or 10<sup>2</sup>?</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> 2<sup>10</sup> = 1024<br><strong>Step 2:</strong> 10<sup>2</sup> = 100<br><strong>Step 3:</strong> 1024 &gt; 100. So <strong>2<sup>10</sup> is bigger!</strong><br><em>Exponents grow much faster than you think!</em></div></details></div>
+    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span>
+      <p>2. Simplify: (2<sup>3</sup> &times; 3<sup>2</sup>) &times; (2<sup>2</sup> &times; 3<sup>3</sup>). Express as a product of prime powers.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Group same bases together.<br>Powers of 2: 2<sup>3</sup> &times; 2<sup>2</sup> = 2<sup>3+2</sup> = 2<sup>5</sup><br>Powers of 3: 3<sup>2</sup> &times; 3<sup>3</sup> = 3<sup>2+3</sup> = 3<sup>5</sup><br><strong>Answer: 2<sup>5</sup> &times; 3<sup>5</sup></strong> = 32 &times; 243 = 7776</div></details></div>
+    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span>
+      <p>3. If 8<sup>x</sup> = 2<sup>12</sup>, find x.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Express 8 as a power of 2: 8 = 2<sup>3</sup>.<br><strong>Step 2:</strong> So 8<sup>x</sup> = (2<sup>3</sup>)<sup>x</sup> = 2<sup>3x</sup> (Law 3: multiply exponents).<br><strong>Step 3:</strong> 2<sup>3x</sup> = 2<sup>12</sup>. Bases equal, so exponents equal: 3x = 12.<br><strong>Step 4:</strong> x = 12 &divide; 3 = <strong>4</strong>.</div></details></div>
+  </div>
+
+  <!-- Common Mistakes -->
+  <div class="section">
+    <h2 id="mistakes">Common Mistakes</h2>
     <ul class="mistakes-list">
-      <li>Multiplying the bases instead of adding the exponents (2<sup>3</sup> &times; 2<sup>4</sup> &ne; 4<sup>7</sup>, it's 2<sup>7</sup>!).</li>
-      <li>Thinking a<sup>0</sup> = 0 — it's actually 1 (for any non-zero a).</li>
-      <li>Adding exponents when bases are different — the law only works for the SAME base.</li>
-      <li>Confusing (a<sup>m</sup>)<sup>n</sup> (multiply exponents) with a<sup>m</sup> &times; a<sup>n</sup> (add exponents).</li>
+      <li><strong>Multiplying the bases instead of adding exponents</strong>
+        <div class="wrong-right"><div class="wrong">2<sup>3</sup> &times; 2<sup>4</sup> = 4<sup>7</sup></div><div class="right">2<sup>3</sup> &times; 2<sup>4</sup> = <strong>2<sup>7</sup></strong> = 128. The base STAYS 2. Only the exponents add!</div></div>
+      </li>
+      <li><strong>Thinking a<sup>0</sup> = 0</strong>
+        <div class="wrong-right"><div class="wrong">5<sup>0</sup> = 0</div><div class="right">5<sup>0</sup> = <strong>1</strong>. Any non-zero number to power 0 is always 1!</div></div>
+      </li>
+      <li><strong>Adding exponents when bases are different</strong>
+        <div class="wrong-right"><div class="wrong">2<sup>3</sup> &times; 3<sup>4</sup> = 6<sup>7</sup></div><div class="right">Different bases (2 and 3) &mdash; <strong>cannot use the law!</strong> Must calculate separately: 8 &times; 81 = 648.</div></div>
+      </li>
+      <li><strong>Confusing (a<sup>m</sup>)<sup>n</sup> with a<sup>m</sup> &times; a<sup>n</sup></strong>
+        <div class="wrong-right"><div class="wrong">(2<sup>3</sup>)<sup>2</sup> = 2<sup>5</sup></div><div class="right">(2<sup>3</sup>)<sup>2</sup> = 2<sup>3&times;2</sup> = <strong>2<sup>6</sup></strong> = 64. Power of power = MULTIPLY exponents, not add!</div></div>
+      </li>
+      <li><strong>Wrong direction for standard form</strong>
+        <div class="wrong-right"><div class="wrong">0.005 = 5 &times; 10<sup>3</sup></div><div class="right">Moved decimal RIGHT (small number) = <strong>negative</strong> power.<br>0.005 = <strong>5 &times; 10<sup>&minus;3</sup></strong></div></div>
+      </li>
     </ul>
   </div>
 
   <button id="mark-read-btn" class="btn" style="margin-top:1rem;padding:.5rem 1.25rem;background:var(--primary);color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer" onclick="markChapterRead(13)">Mark as Complete</button>
-
   <div class="chapter-nav">
     <a href="ch12.html">&larr; Ch 12: Algebraic Expressions</a>
     <a href="../index.html">Back to Home &rarr;</a>
   </div>
 </div>
-
 <footer class="footer">CBSE Class 7 Maths &mdash; Based on NCERT Syllabus</footer>
 <script src="../js/main.js"></script>
 </body>
