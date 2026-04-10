@@ -156,9 +156,12 @@
 
     <div class="example"><h3>Q1. List five rational numbers between &minus;1 and 0.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> &minus;1 = &minus;6/6 and 0 = 0/6. Use denominator 6.</div>
-        <div class="step"><strong>Step 2:</strong> Numbers between: &minus;5/6, &minus;4/6, &minus;3/6, &minus;2/6, &minus;1/6</div>
-        <div class="step"><strong>Step 3:</strong> Simplify: <strong>&minus;5/6, &minus;2/3, &minus;1/2, &minus;1/3, &minus;1/6</strong></div>
+        <div class="step"><strong>Step 1: The trick.</strong> To find numbers <em>between</em> two values, rewrite them as fractions with a <strong>bigger denominator</strong>. The bigger the denominator, the more numbers you can see between them.</div>
+        <div class="step"><strong>Step 2:</strong> Let&rsquo;s use denominator 6 (we need at least 5 numbers between, so any denominator &ge; 6 works).<br>&minus;1 = &minus;6/6 and 0 = 0/6</div>
+        <div class="step"><strong>Step 3:</strong> Now simply list the fractions between &minus;6/6 and 0/6:<br>&minus;5/6, &minus;4/6, &minus;3/6, &minus;2/6, &minus;1/6</div>
+        <div class="step"><strong>Step 4:</strong> Simplify where possible:<br>&minus;4/6 = &minus;2/3 (divide top &amp; bottom by 2)<br>&minus;3/6 = &minus;1/2 (divide by 3)<br>&minus;2/6 = &minus;1/3 (divide by 2)</div>
+        <div class="step"><strong>Answer:</strong> <strong>&minus;5/6, &minus;2/3, &minus;1/2, &minus;1/3, &minus;1/6</strong></div>
+        <div class="step"><strong>Tip:</strong> If you needed more numbers, use denominator 12 or 100. There are <em>infinitely many</em> rationals between any two numbers!</div>
       </div></details></div>
 
     <div class="example"><h3>Q2. Write 7 as a rational number with denominator (a) 1 (b) &minus;1 (c) 5</h3>
@@ -189,40 +192,64 @@
 
     <div class="example"><h3>Q6. Arrange in ascending order: &minus;2/3, 1/2, &minus;1/6, 3/4</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Find LCM of denominators 3, 2, 6, 4 = 12</div>
-        <div class="step"><strong>Step 2:</strong> Convert all to /12:<br>&minus;2/3 = &minus;8/12<br>1/2 = 6/12<br>&minus;1/6 = &minus;2/12<br>3/4 = 9/12</div>
-        <div class="step"><strong>Step 3:</strong> Arrange numerators: &minus;8 &lt; &minus;2 &lt; 6 &lt; 9</div>
-        <div class="step"><strong>Answer:</strong> <strong>&minus;2/3, &minus;1/6, 1/2, 3/4</strong></div>
+        <div class="step"><strong>Step 1: Why do we need a common denominator?</strong><br>We can&rsquo;t compare fractions with different denominators directly (is 2/3 bigger than 3/4?). So we convert them all to the <strong>same denominator</strong>, then just compare the numerators.</div>
+        <div class="step"><strong>Step 2: Find the LCM of 3, 2, 6, and 4.</strong><br>
+          &bull; Multiples of 3: 3, 6, 9, <strong>12</strong>, 15...<br>
+          &bull; Multiples of 2: 2, 4, 6, 8, 10, <strong>12</strong>...<br>
+          &bull; Multiples of 6: 6, <strong>12</strong>, 18...<br>
+          &bull; Multiples of 4: 4, 8, <strong>12</strong>, 16...<br>
+          The smallest number that appears in ALL lists is <strong>12</strong>. So LCM = 12.</div>
+        <div class="step"><strong>Step 3: Convert each fraction to denominator 12.</strong><br>
+          &bull; &minus;2/3: multiply top &amp; bottom by 4 &rarr; (&minus;2&times;4)/(3&times;4) = <strong>&minus;8/12</strong><br>
+          &bull; 1/2: multiply by 6 &rarr; (1&times;6)/(2&times;6) = <strong>6/12</strong><br>
+          &bull; &minus;1/6: multiply by 2 &rarr; (&minus;1&times;2)/(6&times;2) = <strong>&minus;2/12</strong><br>
+          &bull; 3/4: multiply by 3 &rarr; (3&times;3)/(4&times;3) = <strong>9/12</strong></div>
+        <div class="step"><strong>Step 4: Compare the numerators.</strong><br>
+          All have denominator 12, so just look at the tops:<br>
+          &minus;8 &lt; &minus;2 &lt; 6 &lt; 9 (remember: for negatives, bigger digit = smaller number!)</div>
+        <div class="step"><strong>Answer (ascending = smallest to biggest):</strong><br>
+          <strong>&minus;2/3, &minus;1/6, 1/2, 3/4</strong><br>
+          (i.e., &minus;8/12 &lt; &minus;2/12 &lt; 6/12 &lt; 9/12)</div>
       </div></details></div>
 
     <div class="example"><h3>Q7. Add: &minus;3/7 + 5/14</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> LCM of 7 and 14 = 14</div>
-        <div class="step"><strong>Step 2:</strong> Convert: &minus;3/7 = &minus;6/14</div>
-        <div class="step"><strong>Step 3:</strong> Add: &minus;6/14 + 5/14 = (&minus;6+5)/14 = <strong>&minus;1/14</strong></div>
+        <div class="step"><strong>Step 1: Can we add directly?</strong><br>No! The denominators are different (7 and 14). We need a <strong>common denominator</strong> first.</div>
+        <div class="step"><strong>Step 2: Find LCM of 7 and 14.</strong><br>Multiples of 7: 7, <strong>14</strong>, 21...<br>Multiples of 14: <strong>14</strong>, 28...<br>LCM = <strong>14</strong></div>
+        <div class="step"><strong>Step 3: Convert &minus;3/7 to denominator 14.</strong><br>Multiply top &amp; bottom by 2: (&minus;3 &times; 2)/(7 &times; 2) = <strong>&minus;6/14</strong><br>(The other fraction, 5/14, already has denominator 14 — no change needed!)</div>
+        <div class="step"><strong>Step 4: Now both have the same denominator. Add the numerators.</strong><br>&minus;6/14 + 5/14 = (&minus;6 + 5)/14 = &minus;1/14</div>
+        <div class="step"><strong>Answer: &minus;1/14</strong></div>
       </div></details></div>
 
     <div class="example"><h3>Q8. Subtract: 3/5 &minus; 1/3</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> LCM of 5 and 3 = 15</div>
-        <div class="step"><strong>Step 2:</strong> Convert: 3/5 = 9/15 and 1/3 = 5/15</div>
-        <div class="step"><strong>Step 3:</strong> Subtract: 9/15 &minus; 5/15 = <strong>4/15</strong></div>
+        <div class="step"><strong>Step 1: Different denominators (5 and 3).</strong> We need a common denominator.</div>
+        <div class="step"><strong>Step 2: Find LCM of 5 and 3.</strong><br>5 and 3 are both prime, so LCM = 5 &times; 3 = <strong>15</strong></div>
+        <div class="step"><strong>Step 3: Convert both fractions.</strong><br>3/5: multiply top &amp; bottom by 3 &rarr; (3&times;3)/(5&times;3) = <strong>9/15</strong><br>1/3: multiply top &amp; bottom by 5 &rarr; (1&times;5)/(3&times;5) = <strong>5/15</strong></div>
+        <div class="step"><strong>Step 4: Subtract numerators.</strong><br>9/15 &minus; 5/15 = (9&minus;5)/15 = <strong>4/15</strong></div>
+        <div class="step"><strong>Step 5: Can we simplify?</strong> 4 and 15 have no common factor. So <strong>4/15</strong> is the final answer.</div>
       </div></details></div>
 
     <div class="example"><h3>Q9. Find: &minus;2/3 &times; 9/4</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Multiply tops: &minus;2 &times; 9 = &minus;18</div>
-        <div class="step"><strong>Step 2:</strong> Multiply bottoms: 3 &times; 4 = 12</div>
-        <div class="step"><strong>Step 3:</strong> = &minus;18/12</div>
-        <div class="step"><strong>Step 4:</strong> Simplify (both &divide; 6): <strong>&minus;3/2</strong></div>
+        <div class="step"><strong>Step 1: For multiplication, we DON&rsquo;T need a common denominator!</strong> Just multiply straight across: tops &times; tops, bottoms &times; bottoms.</div>
+        <div class="step"><strong>Step 2: Multiply numerators.</strong><br>&minus;2 &times; 9 = &minus;18 (different signs = negative)</div>
+        <div class="step"><strong>Step 3: Multiply denominators.</strong><br>3 &times; 4 = 12</div>
+        <div class="step"><strong>Step 4: Result = &minus;18/12.</strong> Now simplify.</div>
+        <div class="step"><strong>Step 5: Find HCF of 18 and 12.</strong><br>Factors of 18: 1, 2, 3, <strong>6</strong>, 9, 18<br>Factors of 12: 1, 2, 3, 4, <strong>6</strong>, 12<br>HCF = 6</div>
+        <div class="step"><strong>Step 6: Divide both by 6.</strong><br>&minus;18 &divide; 6 = &minus;3, and 12 &divide; 6 = 2</div>
+        <div class="step"><strong>Answer: &minus;3/2</strong> (or &minus;1&frac12; as a mixed number)</div>
       </div></details></div>
 
     <div class="example"><h3>Q10. Divide: 5/6 &divide; (&minus;2/3)</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Flip the second fraction: reciprocal of &minus;2/3 = &minus;3/2</div>
-        <div class="step"><strong>Step 2:</strong> Multiply: 5/6 &times; (&minus;3/2)</div>
-        <div class="step"><strong>Step 3:</strong> = (5 &times; &minus;3)/(6 &times; 2) = &minus;15/12</div>
-        <div class="step"><strong>Step 4:</strong> Simplify (both &divide; 3): <strong>&minus;5/4</strong></div>
+        <div class="step"><strong>Step 1: To divide fractions, FLIP the second fraction and MULTIPLY.</strong><br>This is called &ldquo;multiplying by the reciprocal.&rdquo;</div>
+        <div class="step"><strong>Step 2: Find the reciprocal of &minus;2/3.</strong><br>Flip it: the reciprocal of &minus;2/3 is <strong>&minus;3/2</strong> (swap numerator and denominator).</div>
+        <div class="step"><strong>Step 3: Change division to multiplication.</strong><br>5/6 &divide; (&minus;2/3) becomes 5/6 <strong>&times;</strong> (&minus;3/2)</div>
+        <div class="step"><strong>Step 4: Multiply tops.</strong> 5 &times; (&minus;3) = &minus;15 (positive &times; negative = negative)</div>
+        <div class="step"><strong>Step 5: Multiply bottoms.</strong> 6 &times; 2 = 12</div>
+        <div class="step"><strong>Step 6: Result = &minus;15/12.</strong> Simplify by dividing both by HCF = 3.<br>&minus;15 &divide; 3 = &minus;5, and 12 &divide; 3 = 4</div>
+        <div class="step"><strong>Answer: &minus;5/4</strong> (or &minus;1&frac14;)</div>
       </div></details></div>
 
     <div class="exercise-header">Exercise 9.2 &mdash; Properties &amp; Word Problems (8 Questions)</div>
@@ -253,19 +280,36 @@
 
     <div class="example"><h3>Q4. Simplify: (2/3 &times; &minus;9/4) + (1/2)</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Do multiplication first: 2/3 &times; &minus;9/4</div>
-        <div class="step"><strong>Step 2:</strong> = (2 &times; &minus;9)/(3 &times; 4) = &minus;18/12</div>
-        <div class="step"><strong>Step 3:</strong> Simplify: &minus;18/12 = &minus;3/2 (divide both by 6)</div>
-        <div class="step"><strong>Step 4:</strong> Now add: &minus;3/2 + 1/2</div>
-        <div class="step"><strong>Step 5:</strong> Same denominator: (&minus;3 + 1)/2 = &minus;2/2 = <strong>&minus;1</strong></div>
+        <div class="step"><strong>Step 1: Order of operations.</strong> This expression has both multiplication (&times;) and addition (+). <strong>Do multiplication first</strong> (BODMAS rule).</div>
+        <div class="step"><strong>Step 2: Solve 2/3 &times; (&minus;9/4).</strong><br>
+          Multiply numerators: 2 &times; (&minus;9) = &minus;18<br>
+          Multiply denominators: 3 &times; 4 = 12<br>
+          Result = &minus;18/12</div>
+        <div class="step"><strong>Step 3: Simplify &minus;18/12.</strong><br>
+          Find HCF of 18 and 12: both divisible by 6.<br>
+          &minus;18 &divide; 6 = &minus;3, and 12 &divide; 6 = 2.<br>
+          So &minus;18/12 = <strong>&minus;3/2</strong></div>
+        <div class="step"><strong>Step 4: Now do the addition: &minus;3/2 + 1/2.</strong><br>
+          Good news &mdash; both already have the <strong>same denominator</strong> (2)!<br>
+          So we just add the numerators: (&minus;3 + 1)/2 = &minus;2/2</div>
+        <div class="step"><strong>Step 5: Simplify &minus;2/2.</strong><br>
+          &minus;2 &divide; 2 = &minus;1. So &minus;2/2 = <strong>&minus;1</strong></div>
+        <div class="step"><strong>Answer: &minus;1</strong></div>
       </div></details></div>
 
     <div class="example"><h3>Q5. Find 3 rational numbers between 1/4 and 1/2.</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Convert to equivalent fractions with larger denominator.</div>
-        <div class="step"><strong>Step 2:</strong> 1/4 = 4/16 and 1/2 = 8/16</div>
-        <div class="step"><strong>Step 3:</strong> Numbers between 4/16 and 8/16: <strong>5/16, 6/16 (= 3/8), 7/16</strong></div>
-        <div class="step"><strong>Tip:</strong> If you need more, use /32: 1/4=8/32, 1/2=16/32. Now 9 numbers between!</div>
+        <div class="step"><strong>Step 1: The strategy.</strong> We need numbers between 1/4 and 1/2, but with denominators 4 and 2, there&rsquo;s no obvious fraction in between. So we <strong>rewrite both with a bigger denominator</strong> to &ldquo;zoom in&rdquo; and see more numbers.</div>
+        <div class="step"><strong>Step 2: How big should the denominator be?</strong> We need at least 3 numbers between them. Let&rsquo;s try 16 (multiply both by 4).</div>
+        <div class="step"><strong>Step 3: Convert.</strong><br>
+          1/4: multiply top &amp; bottom by 4 &rarr; (1&times;4)/(4&times;4) = <strong>4/16</strong><br>
+          1/2: multiply top &amp; bottom by 8 &rarr; (1&times;8)/(2&times;8) = <strong>8/16</strong></div>
+        <div class="step"><strong>Step 4: List fractions between 4/16 and 8/16.</strong><br>
+          5/16, 6/16, 7/16 &mdash; that&rsquo;s exactly 3! &#10003;</div>
+        <div class="step"><strong>Step 5: Simplify if possible.</strong><br>
+          6/16 = 3/8 (divide by 2). Others can&rsquo;t be simplified.</div>
+        <div class="step"><strong>Answer: 5/16, 3/8, 7/16</strong></div>
+        <div class="step"><strong>Fun fact:</strong> Need more? Use /32: 1/4 = 8/32, 1/2 = 16/32. Now you have 7 numbers between! You can <strong>always</strong> find more rationals between any two rationals.</div>
       </div></details></div>
 
     <div class="example"><h3>Q6. Is &minus;5/0 a rational number?</h3>
@@ -284,10 +328,23 @@
 
     <div class="example"><h3>Q8. A tank is 2/5 full. After adding 14 litres, it becomes 4/5 full. What is the tank&rsquo;s capacity?</h3>
       <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
-        <div class="step"><strong>Step 1:</strong> Water added fills 4/5 &minus; 2/5 = 2/5 of the tank</div>
-        <div class="step"><strong>Step 2:</strong> So 2/5 of capacity = 14 litres</div>
-        <div class="step"><strong>Step 3:</strong> Capacity = 14 &divide; 2/5 = 14 &times; 5/2 = 70/2 = <strong>35 litres</strong></div>
-        <div class="step"><strong>Check:</strong> 2/5 of 35 = 14. After adding 14: 14+14 = 28 = 4/5 of 35. &#10003;</div>
+        <div class="step"><strong>Step 1: Understand the problem.</strong><br>
+          Before: tank is 2/5 full.<br>
+          We add 14 litres of water.<br>
+          After: tank is 4/5 full.<br>
+          So the 14 litres filled the gap from 2/5 to 4/5.</div>
+        <div class="step"><strong>Step 2: How much of the tank did 14 litres fill?</strong><br>
+          Fraction filled = 4/5 &minus; 2/5 = (4&minus;2)/5 = <strong>2/5</strong> of the tank</div>
+        <div class="step"><strong>Step 3: So 2/5 of the total capacity = 14 litres.</strong><br>
+          Let total capacity = C. Then: 2/5 &times; C = 14</div>
+        <div class="step"><strong>Step 4: Solve for C.</strong><br>
+          C = 14 &divide; 2/5<br>
+          Flip and multiply: C = 14 &times; 5/2<br>
+          = (14 &times; 5) / 2 = 70 / 2 = <strong>35 litres</strong></div>
+        <div class="step"><strong>Step 5: Check the answer.</strong><br>
+          2/5 of 35 = (2&times;35)/5 = 70/5 = 14 litres (water before adding).<br>
+          After adding 14 litres: 14 + 14 = 28 litres.<br>
+          4/5 of 35 = (4&times;35)/5 = 140/5 = 28 litres. &#10003; It matches!</div>
       </div></details></div>
   </div>
 
