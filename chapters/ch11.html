@@ -4,8 +4,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="chapter-num" content="11">
-<title>Chapter 11: Perimeter and Area - CBSE Class 7 Maths</title>
+<title>NCERT Solutions Class 7 Maths Chapter 11 Perimeter and Area</title>
+<meta name="description" content="NCERT Solutions for Class 7 Maths Chapter 11 Perimeter and Area. Rectangle, triangle, parallelogram, circle — all exercises solved step-by-step with diagrams.">
 <link rel="stylesheet" href="../css/style.css">
+<style>
+.real-world{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0;font-size:.95rem}
+.real-world strong{color:#16a34a}
+.why-box{background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0;font-size:.95rem}
+.why-box strong{color:#3b82f6}
+.exam-tip{background:#fdf4ff;border:1px solid #e9d5ff;border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0;font-size:.95rem}
+.exam-tip strong{color:#9333ea}
+.wrong-right{display:flex;gap:1rem;flex-wrap:wrap;margin:.5rem 0}
+.wrong-right .wrong,.wrong-right .right{flex:1;min-width:200px;padding:.75rem;border-radius:8px;font-size:.9rem}
+.wrong-right .wrong{background:#fee2e2;border:1px solid #fca5a5}
+.wrong-right .right{background:#d1fae5;border:1px solid #6ee7b7}
+.revision-card{background:linear-gradient(135deg,#ef4444,#dc2626);color:#fff;border-radius:16px;padding:1.5rem;margin-bottom:2rem}
+.revision-card h2{color:#fff;border:none;padding:0;margin-bottom:1rem;font-size:1.2rem}
+.revision-card .formula-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.75rem}
+.revision-card .f-item{background:rgba(255,255,255,.15);border-radius:8px;padding:.6rem .8rem;font-size:.9rem;backdrop-filter:blur(4px)}
+.revision-card .f-item code{color:#fde68a;font-weight:700}
+.exercise-header{background:var(--meas-light);border:2px solid var(--meas);border-radius:12px;padding:1rem 1.25rem;margin:1.5rem 0 1rem;font-size:1.1rem;font-weight:700;color:#991b1b}
+.step-reveal summary{cursor:pointer;color:var(--primary);font-weight:600;font-size:.9rem}
+.step-reveal .steps-content{padding:.75rem;margin-top:.5rem;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0}
+.hots-tag{display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;padding:2px 6px;border-radius:4px;background:#fdf4ff;color:#9333ea;border:1px solid #e9d5ff;margin-left:.5rem}
+</style>
 </head>
 <body>
 <header class="navbar">
@@ -18,185 +40,344 @@
 
 <div class="container">
   <div class="chapter-header">
-    <div class="ch-label" style="color:var(--meas)">Chapter 11 &middot; Measurement &amp; Comparison</div>
-    <h1>Perimeter and Area</h1>
+    <div class="ch-label" style="color:var(--meas)">Chapter 11 &middot; Measurement</div>
+    <h1>Perimeter and Area &mdash; Complete NCERT Solutions</h1>
   </div>
 
-  <div class="section">
-    <h2>Summary</h2>
-    <ul class="summary-list">
-      <li>Perimeter = total distance around a shape (e.g., perimeter of a 5 cm &times; 3 cm rectangle = 2(5+3) = 16 cm). Area = space inside a shape (e.g., area of that rectangle = 5 &times; 3 = 15 cm&sup2;).</li>
-      <li>A parallelogram's area = base &times; height (height is perpendicular to the base) &mdash; e.g., base 8 cm, height 5 cm &rarr; area = 40 cm&sup2;.</li>
-      <li>A triangle's area = &frac12; &times; base &times; height &mdash; e.g., base 10 cm, height 6 cm &rarr; area = 30 cm&sup2;.</li>
-      <li>A circle's area = &pi;r&sup2; (where r is the radius, &pi; &approx; 22/7 or 3.14) &mdash; e.g., radius 7 cm &rarr; area = 22/7 &times; 7 &times; 7 = 154 cm&sup2;.</li>
-      <li>Circumference (perimeter of a circle) = 2&pi;r &mdash; e.g., radius 7 cm &rarr; circumference = 2 &times; 22/7 &times; 7 = 44 cm.</li>
-      <li>Converting units: 1 m&sup2; = 10,000 cm&sup2;, 1 km&sup2; = 1,000,000 m&sup2; (e.g., a 2 m &times; 3 m room = 6 m&sup2; = 60,000 cm&sup2;).</li>
-      <li>To find the area of complex shapes, break them into simpler shapes and add up (e.g., an L-shaped room can be split into two rectangles).</li>
-    </ul>
-  </div>
+  <nav class="topic-nav">
+    <a href="#revision">Revision Card</a>
+    <a href="#rectangle-square">Rectangle &amp; Square</a>
+    <a href="#parallelogram">Parallelogram</a>
+    <a href="#triangle">Triangle</a>
+    <a href="#circle">Circle</a>
+    <a href="#ncert-solutions" class="nav-exercise">NCERT Solutions</a>
+    <a href="#extra-practice" class="nav-exercise">Extra Practice</a>
+    <a href="#hots" class="nav-exercise">HOTS</a>
+    <a href="#mistakes">Common Mistakes</a>
+  </nav>
 
-  <div class="section">
-    <h2>Key Formulas</h2>
-    <div class="formula-box">
-      <code>Rectangle: Area = length &times; breadth, Perimeter = 2(l + b)</code>
-    </div>
-    <div class="formula-box">
-      <code>Square: Area = side&sup2;, Perimeter = 4 &times; side</code>
-    </div>
-    <div class="formula-box">
-      <code>Parallelogram: Area = base &times; height</code>
-    </div>
-    <div class="formula-box">
-      <code>Triangle: Area = &frac12; &times; base &times; height</code>
-    </div>
-    <div class="formula-box">
-      <code>Circle: Area = &pi;r&sup2;, Circumference = 2&pi;r</code>
+  <div class="revision-card" id="revision">
+    <h2>Quick Revision Card</h2>
+    <div class="formula-grid">
+      <div class="f-item"><code>Rectangle: A = l &times; b</code><br>Perimeter = 2(l + b)</div>
+      <div class="f-item"><code>Square: A = side&sup2;</code><br>Perimeter = 4 &times; side</div>
+      <div class="f-item"><code>Parallelogram: A = base &times; height</code><br>Height must be perpendicular!</div>
+      <div class="f-item"><code>Triangle: A = &frac12; &times; b &times; h</code><br>Half of parallelogram</div>
+      <div class="f-item"><code>Circle: A = &pi;r&sup2;</code><br>Use &pi; = 22/7 or 3.14</div>
+      <div class="f-item"><code>Circumference = 2&pi;r</code><br>Perimeter of a circle</div>
     </div>
   </div>
 
+  <!-- Rectangle & Square -->
   <div class="section">
-    <h2>Worked Examples</h2>
+    <h2 id="rectangle-square">Rectangle and Square</h2>
+    <div class="real-world">
+      <strong>Real-world:</strong> Your classroom floor, a book cover, a phone screen &mdash; all rectangles! Knowing area helps you figure out how much carpet to buy, how much paint you need, or how many tiles to order.
+    </div>
+
+    <figure class="diagram">
+      <svg viewBox="0 0 500 180" width="500" height="180" xmlns="http://www.w3.org/2000/svg">
+        <!-- Rectangle -->
+        <rect x="20" y="30" width="180" height="100" fill="#dbeafe" stroke="#3b82f6" stroke-width="2.5" rx="2"/>
+        <text x="110" y="85" text-anchor="middle" font-size="13" fill="#3b82f6" font-weight="700">Area = l &times; b</text>
+        <!-- Length label -->
+        <text x="110" y="150" text-anchor="middle" font-size="12" fill="#334155" font-weight="600">length (l)</text>
+        <line x1="20" y1="140" x2="200" y2="140" stroke="#334155" stroke-width="1" stroke-dasharray="3,2"/>
+        <!-- Breadth label -->
+        <text x="215" y="85" font-size="12" fill="#334155" font-weight="600" transform="rotate(90,215,85)">breadth (b)</text>
+        <!-- Square -->
+        <rect x="300" y="40" width="100" height="100" fill="#d1fae5" stroke="#16a34a" stroke-width="2.5" rx="2"/>
+        <text x="350" y="95" text-anchor="middle" font-size="13" fill="#16a34a" font-weight="700">A = s&sup2;</text>
+        <text x="350" y="160" text-anchor="middle" font-size="12" fill="#334155" font-weight="600">side (s)</text>
+        <!-- Labels -->
+        <text x="110" y="20" text-anchor="middle" font-size="14" fill="#3b82f6" font-weight="700">Rectangle</text>
+        <text x="350" y="30" text-anchor="middle" font-size="14" fill="#16a34a" font-weight="700">Square</text>
+      </svg>
+      <figcaption>Rectangle: Area = length &times; breadth. Square: Area = side &times; side = side&sup2;</figcaption>
+    </figure>
 
     <div class="example">
-      <h3>Example 1: Area of a Parallelogram</h3>
-      <p>A parallelogram has base 12 cm and height 8 cm. Find its area.</p>
-      <div class="step"><strong>Step 1:</strong> Area = base &times; height</div>
-      <div class="step"><strong>Step 2:</strong> Area = 12 &times; 8 = <strong>96 cm&sup2;</strong></div>
-    </div>
-
-    <div class="example">
-      <h3>Example 2: Area of a Triangle</h3>
-      <p>A triangle has base 10 cm and height 6 cm. Find its area.</p>
-      <div class="step"><strong>Step 1:</strong> Area = &frac12; &times; base &times; height</div>
-      <div class="step"><strong>Step 2:</strong> Area = &frac12; &times; 10 &times; 6 = <strong>30 cm&sup2;</strong></div>
-    </div>
-
-    <div class="example">
-      <h3>Example 3: Circumference and Area of a Circle</h3>
-      <p>A circle has radius 7 cm. Find its circumference and area. (Use &pi; = 22/7)</p>
-      <div class="step"><strong>Step 1:</strong> Circumference = 2&pi;r = 2 &times; 22/7 &times; 7 = <strong>44 cm</strong></div>
-      <div class="step"><strong>Step 2:</strong> Area = &pi;r&sup2; = 22/7 &times; 7 &times; 7 = <strong>154 cm&sup2;</strong></div>
+      <h3>Example: Find the area and perimeter of a rectangle 15 cm long and 8 cm wide.</h3>
+      <div class="step"><strong>Step 1:</strong> Write what we know: length (l) = 15 cm, breadth (b) = 8 cm.</div>
+      <div class="step"><strong>Step 2:</strong> Area formula: A = l &times; b<br>
+        A = 15 &times; 8 = <strong>120 cm&sup2;</strong><br>
+        (We write cm&sup2; because area is measured in &ldquo;square centimetres&rdquo;)</div>
+      <div class="step"><strong>Step 3:</strong> Perimeter formula: P = 2 &times; (l + b)<br>
+        First add: l + b = 15 + 8 = 23<br>
+        Then multiply: P = 2 &times; 23 = <strong>46 cm</strong><br>
+        (Perimeter is in cm, not cm&sup2;, because it&rsquo;s a length, not an area)</div>
     </div>
   </div>
 
+  <!-- Parallelogram -->
   <div class="section">
-    <h2>Practice Problems</h2>
-
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>Find the area of a rectangle with length 15 cm and breadth 8 cm.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Area = 15 &times; 8 = <strong>120 cm&sup2;</strong></div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>Find the perimeter of a square with side 9 cm.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Perimeter = 4 &times; 9 = <strong>36 cm</strong></div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>A parallelogram has base 15 cm and height 10 cm. A triangle has the same base and height. Find both areas.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Parallelogram = 15 &times; 10 = <strong>150 cm&sup2;</strong>. Triangle = &frac12; &times; 15 &times; 10 = <strong>75 cm&sup2;</strong>. (Triangle is exactly half!)</div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>Find the circumference of a circle with diameter 14 cm. (Use &pi; = 22/7)</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Radius = 14/2 = 7 cm. Circumference = 2 &times; 22/7 &times; 7 = <strong>44 cm</strong></div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>A circular garden has radius 21 m. Find the cost of fencing it at Rs 10 per metre. (Use &pi; = 22/7)</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Circumference = 2 &times; 22/7 &times; 21 = 132 m. Cost = 132 &times; 10 = <strong>Rs 1320</strong></div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>A rectangular field is 50 m long and 30 m wide. A path 2 m wide runs inside along the boundary. Find the area of the path.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Outer area = 50 &times; 30 = 1500 m&sup2;. Inner dimensions = 46 &times; 26. Inner area = 1196 m&sup2;. Path area = 1500 &minus; 1196 = <strong>304 m&sup2;</strong></div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>Find the area of a triangle with base 14 cm and height 10 cm.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Area = &frac12; &times; 14 &times; 10 = <strong>70 cm&sup2;</strong></div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>Find the area of a square with side 11 cm.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Area = 11 &times; 11 = <strong>121 cm&sup2;</strong></div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>A parallelogram has base 20 cm and area 300 cm&sup2;. Find the height.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Area = base &times; height, so height = Area &divide; base = 300 &divide; 20 = <strong>15 cm</strong></div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>Find the area of a circle with radius 14 cm. (Use &pi; = 22/7)</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Area = &pi;r&sup2; = 22/7 &times; 14 &times; 14 = 22/7 &times; 196 = <strong>616 cm&sup2;</strong></div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>A rectangular park 60 m &times; 40 m has two crossing paths, each 3 m wide (one lengthwise, one widthwise). Find the area of the paths.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Area of lengthwise path = 60 &times; 3 = 180 m&sup2;. Area of widthwise path = 40 &times; 3 = 120 m&sup2;. Overlapping square = 3 &times; 3 = 9 m&sup2;. Total path area = 180 + 120 &minus; 9 = <strong>291 m&sup2;</strong></div>
-      </details>
-    </div>
-
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>The circumference of a circle is 88 cm. Find its radius and area. (Use &pi; = 22/7)</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Circumference = 2&pi;r, so 88 = 2 &times; 22/7 &times; r, giving r = 88 &times; 7 / 44 = <strong>14 cm</strong>. Area = &pi;r&sup2; = 22/7 &times; 14 &times; 14 = <strong>616 cm&sup2;</strong></div>
-      </details>
+    <h2 id="parallelogram">Parallelogram</h2>
+    <figure class="diagram">
+      <svg viewBox="0 0 400 170" width="400" height="170" xmlns="http://www.w3.org/2000/svg">
+        <!-- Parallelogram -->
+        <polygon points="80,130 280,130 320,30 120,30" fill="#fef3c7" stroke="#f59e0b" stroke-width="2.5"/>
+        <!-- Height (dashed perpendicular) -->
+        <line x1="160" y1="30" x2="160" y2="130" stroke="#dc2626" stroke-width="2" stroke-dasharray="5,3"/>
+        <!-- Right angle marker -->
+        <polyline points="160,112 178,112 178,130" fill="none" stroke="#dc2626" stroke-width="1.5"/>
+        <!-- Labels -->
+        <text x="180" y="145" text-anchor="middle" font-size="12" fill="#334155" font-weight="600">base (b)</text>
+        <text x="142" y="85" font-size="12" fill="#dc2626" font-weight="700">height (h)</text>
+        <text x="200" y="85" text-anchor="middle" font-size="14" fill="#f59e0b" font-weight="700">A = b &times; h</text>
+        <!-- Slant side label -->
+        <text x="55" y="85" font-size="10" fill="#64748b">slant side<br>(NOT height!)</text>
+      </svg>
+      <figcaption>Parallelogram: Area = base &times; height. The height must be PERPENDICULAR to the base (not the slant side!)</figcaption>
+    </figure>
+    <div class="why-box">
+      <strong>WHY is area = base &times; height?</strong><br>
+      Imagine cutting a right triangle from one side of the parallelogram and moving it to the other side. It becomes a rectangle! And a rectangle&rsquo;s area = length &times; breadth = base &times; height.
     </div>
   </div>
 
+  <!-- Triangle -->
   <div class="section">
-    <h2>Common Mistakes</h2>
+    <h2 id="triangle">Triangle</h2>
+    <figure class="diagram">
+      <svg viewBox="0 0 400 170" width="400" height="170" xmlns="http://www.w3.org/2000/svg">
+        <!-- Triangle -->
+        <polygon points="50,140 300,140 180,30" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2.5"/>
+        <!-- Height -->
+        <line x1="180" y1="30" x2="180" y2="140" stroke="#dc2626" stroke-width="2" stroke-dasharray="5,3"/>
+        <polyline points="180,122 198,122 198,140" fill="none" stroke="#dc2626" stroke-width="1.5"/>
+        <!-- Labels -->
+        <text x="175" y="155" text-anchor="middle" font-size="12" fill="#334155" font-weight="600">base (b)</text>
+        <text x="158" y="90" font-size="12" fill="#dc2626" font-weight="700">h</text>
+        <text x="200" y="90" font-size="13" fill="#8b5cf6" font-weight="700">A = &frac12; &times; b &times; h</text>
+      </svg>
+      <figcaption>Triangle: Area = &frac12; &times; base &times; height. A triangle is exactly HALF of a parallelogram!</figcaption>
+    </figure>
+  </div>
+
+  <!-- Circle -->
+  <div class="section">
+    <h2 id="circle">Circle</h2>
+    <figure class="diagram">
+      <svg viewBox="0 0 400 200" width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+        <!-- Circle -->
+        <circle cx="150" cy="100" r="80" fill="#fce7f3" stroke="#ec4899" stroke-width="2.5"/>
+        <!-- Radius -->
+        <line x1="150" y1="100" x2="230" y2="100" stroke="#dc2626" stroke-width="2.5"/>
+        <circle cx="150" cy="100" r="3" fill="#334155"/>
+        <!-- Diameter -->
+        <line x1="70" y1="100" x2="230" y2="100" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <!-- Labels -->
+        <text x="190" y="92" font-size="12" fill="#dc2626" font-weight="700">r (radius)</text>
+        <text x="150" y="118" text-anchor="middle" font-size="10" fill="#3b82f6">d = 2r (diameter)</text>
+        <!-- Formulas -->
+        <text x="310" y="70" font-size="13" fill="#ec4899" font-weight="700">Area = &pi;r&sup2;</text>
+        <text x="310" y="95" font-size="13" fill="#ec4899" font-weight="700">C = 2&pi;r</text>
+        <text x="310" y="120" font-size="11" fill="#64748b">&pi; &asymp; 22/7 or 3.14</text>
+        <text x="310" y="145" font-size="10" fill="#64748b">Use 22/7 when r is</text>
+        <text x="310" y="160" font-size="10" fill="#64748b">a multiple of 7</text>
+      </svg>
+      <figcaption>Circle: radius (r) = center to edge. Diameter (d) = 2r. Area = &pi;r&sup2;, Circumference = 2&pi;r</figcaption>
+    </figure>
+    <div class="exam-tip">
+      <strong>When to use 22/7 vs 3.14:</strong><br>
+      &bull; If radius is a <strong>multiple of 7</strong> (7, 14, 21...), use &pi; = 22/7 &mdash; the 7s cancel nicely!<br>
+      &bull; Otherwise, use &pi; = 3.14.
+    </div>
+    <div class="example">
+      <h3>Example: Find the area and circumference of a circle with radius 7 cm.</h3>
+      <div class="step"><strong>Step 1:</strong> r = 7 cm. Since 7 is a multiple of 7, use &pi; = 22/7.</div>
+      <div class="step"><strong>Step 2: Circumference</strong> = 2&pi;r<br>
+        = 2 &times; 22/7 &times; 7<br>
+        = 2 &times; 22 &times; 7/7 (the 7s cancel: 7&divide;7 = 1)<br>
+        = 2 &times; 22 &times; 1<br>
+        = <strong>44 cm</strong></div>
+      <div class="step"><strong>Step 3: Area</strong> = &pi;r&sup2; = &pi; &times; r &times; r<br>
+        = 22/7 &times; 7 &times; 7<br>
+        = 22 &times; 7 &times; 7/7 (one 7 cancels)<br>
+        = 22 &times; 7<br>
+        = <strong>154 cm&sup2;</strong></div>
+    </div>
+  </div>
+
+  <!-- NCERT Solutions -->
+  <div class="section">
+    <h2 id="ncert-solutions">NCERT Exercise Solutions &mdash; All Questions Solved</h2>
+
+    <div class="exercise-header">Exercise 11.1 &mdash; Parallelogram &amp; Triangle Area (8 Questions)</div>
+
+    <div class="example"><h3>Q1. Find the area of a parallelogram with base 12 cm and height 8 cm.</h3>
+      <figure class="diagram">
+        <svg viewBox="0 0 300 120" width="300" height="120" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="40,100 220,100 260,20 80,20" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+          <line x1="130" y1="20" x2="130" y2="100" stroke="#dc2626" stroke-width="2" stroke-dasharray="4,3"/>
+          <polyline points="130,85 145,85 145,100" fill="none" stroke="#dc2626" stroke-width="1.5"/>
+          <text x="130" y="115" text-anchor="middle" font-size="11" fill="#334155" font-weight="600">12 cm</text>
+          <text x="113" y="65" font-size="11" fill="#dc2626" font-weight="600">8 cm</text>
+        </svg>
+      </figure>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Write what we know: base (b) = 12 cm, height (h) = 8 cm.</div>
+        <div class="step"><strong>Step 2:</strong> Formula: Area = base &times; height</div>
+        <div class="step"><strong>Step 3:</strong> Substitute: Area = 12 &times; 8</div>
+        <div class="step"><strong>Step 4:</strong> Calculate: 12 &times; 8 = <strong>96 cm&sup2;</strong></div>
+      </div></details></div>
+
+    <div class="example"><h3>Q2. Find the area of a triangle with base 10 cm and height 6 cm.</h3>
+      <figure class="diagram">
+        <svg viewBox="0 0 250 110" width="250" height="110" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="20,90 200,90 120,15" fill="#ede9fe" stroke="#8b5cf6" stroke-width="2"/>
+          <line x1="120" y1="15" x2="120" y2="90" stroke="#dc2626" stroke-width="2" stroke-dasharray="4,3"/>
+          <polyline points="120,75 135,75 135,90" fill="none" stroke="#dc2626" stroke-width="1.5"/>
+          <text x="110" y="105" text-anchor="middle" font-size="11" fill="#334155" font-weight="600">10 cm</text>
+          <text x="103" y="58" font-size="11" fill="#dc2626" font-weight="600">6 cm</text>
+        </svg>
+      </figure>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Write what we know: base (b) = 10 cm, height (h) = 6 cm.</div>
+        <div class="step"><strong>Step 2:</strong> Formula: Area = &frac12; &times; base &times; height</div>
+        <div class="step"><strong>Step 3:</strong> Substitute: Area = &frac12; &times; 10 &times; 6</div>
+        <div class="step"><strong>Step 4:</strong> Calculate step by step:<br>
+          First: 10 &times; 6 = 60<br>
+          Then: &frac12; &times; 60 = 60 &divide; 2 = <strong>30 cm&sup2;</strong></div>
+      </div></details></div>
+
+    <div class="example"><h3>Q3. A parallelogram has area 300 cm&sup2; and base 20 cm. Find the height.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> We know: Area = 300 cm&sup2;, base = 20 cm. Find: height = ?</div>
+        <div class="step"><strong>Step 2:</strong> Formula: Area = base &times; height. We need to rearrange to find height.</div>
+        <div class="step"><strong>Step 3:</strong> height = Area &divide; base (divide both sides by base)</div>
+        <div class="step"><strong>Step 4:</strong> height = 300 &divide; 20<br>
+          Long division: 300 &divide; 20 = 15<br>
+          (Think: 20 &times; 15 = 300 &#10003;)</div>
+        <div class="step"><strong>Answer: height = 15 cm</strong></div>
+      </div></details></div>
+
+    <div class="example"><h3>Q4. Find the area of a triangle with base 14 cm and height 10 cm.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> base = 14 cm, height = 10 cm</div>
+        <div class="step"><strong>Step 2:</strong> Area = &frac12; &times; base &times; height</div>
+        <div class="step"><strong>Step 3:</strong> = &frac12; &times; 14 &times; 10</div>
+        <div class="step"><strong>Step 4:</strong> First: 14 &times; 10 = 140<br>Then: 140 &divide; 2 = <strong>70 cm&sup2;</strong></div>
+      </div></details></div>
+
+    <div class="example"><h3>Q5. A rectangular garden is 50 m long and 30 m wide. A path 2 m wide runs inside along the boundary. Find the area of the path.</h3>
+      <figure class="diagram">
+        <svg viewBox="0 0 360 230" width="360" height="230" xmlns="http://www.w3.org/2000/svg">
+          <!-- Outer rectangle -->
+          <rect x="20" y="20" width="300" height="170" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+          <!-- Inner rectangle (garden minus path) -->
+          <rect x="40" y="40" width="260" height="130" fill="#d1fae5" stroke="#16a34a" stroke-width="2"/>
+          <!-- Path area shaded -->
+          <text x="170" y="110" text-anchor="middle" font-size="12" fill="#16a34a" font-weight="600">Inner: 46 &times; 26</text>
+          <!-- Outer labels -->
+          <text x="170" y="210" text-anchor="middle" font-size="11" fill="#334155" font-weight="600">50 m</text>
+          <text x="340" y="110" font-size="11" fill="#334155" font-weight="600">30 m</text>
+          <!-- Path width labels -->
+          <text x="30" y="35" font-size="9" fill="#dc2626">2m path</text>
+          <!-- Inner dimensions -->
+          <text x="170" y="185" text-anchor="middle" font-size="9" fill="#64748b">Inner: 50&minus;2&minus;2 = 46 m</text>
+        </svg>
+        <figcaption>The path runs along ALL 4 sides inside the garden. Inner dimensions = outer minus 2 &times; path width.</figcaption>
+      </figure>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Outer dimensions: length = 50 m, width = 30 m.</div>
+        <div class="step"><strong>Step 2:</strong> Outer area = 50 &times; 30 = <strong>1500 m&sup2;</strong></div>
+        <div class="step"><strong>Step 3:</strong> The path is 2 m wide on ALL sides. So the inner rectangle is smaller by 2 m on each side:<br>
+          Inner length = 50 &minus; 2 &minus; 2 = 50 &minus; 4 = <strong>46 m</strong><br>
+          Inner width = 30 &minus; 2 &minus; 2 = 30 &minus; 4 = <strong>26 m</strong></div>
+        <div class="step"><strong>Step 4:</strong> Inner area = 46 &times; 26<br>
+          Calculate: 46 &times; 26 = 46 &times; 20 + 46 &times; 6 = 920 + 276 = <strong>1196 m&sup2;</strong></div>
+        <div class="step"><strong>Step 5:</strong> Path area = Outer area &minus; Inner area<br>
+          = 1500 &minus; 1196 = <strong>304 m&sup2;</strong></div>
+      </div></details></div>
+
+    <div class="example"><h3>Q6. Find the circumference of a circle with diameter 14 cm.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Diameter = 14 cm. Radius = diameter &divide; 2 = 14 &divide; 2 = <strong>7 cm</strong>.</div>
+        <div class="step"><strong>Step 2:</strong> Since radius = 7 (multiple of 7), use &pi; = 22/7.</div>
+        <div class="step"><strong>Step 3:</strong> Circumference = 2&pi;r = 2 &times; 22/7 &times; 7</div>
+        <div class="step"><strong>Step 4:</strong> The 7 in the numerator and 7 in the denominator cancel: 7 &divide; 7 = 1.<br>
+          = 2 &times; 22 &times; 1 = <strong>44 cm</strong></div>
+      </div></details></div>
+
+    <div class="example"><h3>Q7. Find the area of a circle with radius 14 cm. (Use &pi; = 22/7)</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> r = 14 cm, &pi; = 22/7</div>
+        <div class="step"><strong>Step 2:</strong> Area = &pi;r&sup2; = &pi; &times; r &times; r</div>
+        <div class="step"><strong>Step 3:</strong> = 22/7 &times; 14 &times; 14</div>
+        <div class="step"><strong>Step 4:</strong> Simplify: 14 &divide; 7 = 2. So 22/7 &times; 14 = 22 &times; 2 = 44.</div>
+        <div class="step"><strong>Step 5:</strong> Now: 44 &times; 14 = 44 &times; 10 + 44 &times; 4 = 440 + 176 = <strong>616 cm&sup2;</strong></div>
+      </div></details></div>
+
+    <div class="example"><h3>Q8. The circumference of a circle is 88 cm. Find its radius and area.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> C = 88 cm. Formula: C = 2&pi;r. We need to find r.</div>
+        <div class="step"><strong>Step 2:</strong> 88 = 2 &times; 22/7 &times; r</div>
+        <div class="step"><strong>Step 3:</strong> Simplify left side: 2 &times; 22/7 = 44/7. So: 88 = 44/7 &times; r</div>
+        <div class="step"><strong>Step 4:</strong> Solve for r: r = 88 &divide; (44/7) = 88 &times; 7/44<br>
+          = (88 &times; 7) / 44<br>
+          = 88/44 &times; 7 (divide 88 by 44 first: 88 &divide; 44 = 2)<br>
+          = 2 &times; 7 = <strong>14 cm</strong></div>
+        <div class="step"><strong>Step 5:</strong> Now find area: A = &pi;r&sup2; = 22/7 &times; 14 &times; 14 = <strong>616 cm&sup2;</strong> (same as Q7)</div>
+      </div></details></div>
+  </div>
+
+  <!-- Extra Practice -->
+  <div class="section">
+    <h2 id="extra-practice">Extra Practice</h2>
+    <div class="problem"><span class="difficulty easy">Easy</span><p>1. Area of rectangle 15cm &times; 8cm.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Area = l &times; b = 15 &times; 8<br><strong>Step 2:</strong> 15 &times; 8 = <strong>120 cm&sup2;</strong></div></details></div>
+    <div class="problem"><span class="difficulty easy">Easy</span><p>2. Perimeter of square with side 9cm.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Perimeter = 4 &times; side = 4 &times; 9<br><strong>Step 2:</strong> 4 &times; 9 = <strong>36 cm</strong></div></details></div>
+    <div class="problem"><span class="difficulty medium">Medium</span><p>3. Area of parallelogram: base 15cm, height 10cm. Area of triangle with same base and height.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Parallelogram:</strong> A = 15 &times; 10 = <strong>150 cm&sup2;</strong><br><strong>Triangle:</strong> A = &frac12; &times; 15 &times; 10 = 150 &divide; 2 = <strong>75 cm&sup2;</strong><br><strong>Notice:</strong> Triangle is exactly <strong>half</strong> the parallelogram!</div></details></div>
+    <div class="problem"><span class="difficulty medium">Medium</span><p>4. Circumference of circle with diameter 14cm.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> d = 14, so r = 14 &divide; 2 = 7 cm<br><strong>Step 2:</strong> C = 2&pi;r = 2 &times; 22/7 &times; 7<br><strong>Step 3:</strong> 7 &divide; 7 = 1. So: 2 &times; 22 = <strong>44 cm</strong></div></details></div>
+    <div class="problem"><span class="difficulty hard">Hard</span><p>5. Circular garden radius 21m. Cost of fencing at Rs 10/m.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Fencing = circumference = 2&pi;r<br><strong>Step 2:</strong> = 2 &times; 22/7 &times; 21<br><strong>Step 3:</strong> 21 &divide; 7 = 3. So: 2 &times; 22 &times; 3 = 132 m<br><strong>Step 4:</strong> Cost = 132 &times; 10 = <strong>Rs 1320</strong></div></details></div>
+    <div class="problem"><span class="difficulty hard">Hard</span><p>6. Rectangular field 50m &times; 30m. Two crossing paths 3m wide. Find area of paths.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Lengthwise path: 50 &times; 3 = 150 m&sup2;<br><strong>Step 2:</strong> Widthwise path: 30 &times; 3 = 90 m&sup2;<br><strong>Step 3:</strong> But they overlap at center! Overlap = 3 &times; 3 = 9 m&sup2;<br><strong>Step 4:</strong> Total = 150 + 90 &minus; 9 = <strong>231 m&sup2;</strong></div></details></div>
+  </div>
+
+  <!-- HOTS -->
+  <div class="section">
+    <h2 id="hots">HOTS <span class="hots-tag">Advanced</span></h2>
+    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span>
+      <p>1. A wire 88 cm long is bent into a circle. Find the radius and area of the circle.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> The wire becomes the circumference. C = 88 cm.<br><strong>Step 2:</strong> C = 2&pi;r &rarr; 88 = 2 &times; 22/7 &times; r<br><strong>Step 3:</strong> r = 88 &times; 7 / 44 = 2 &times; 7 = <strong>14 cm</strong><br><strong>Step 4:</strong> Area = &pi;r&sup2; = 22/7 &times; 14 &times; 14 = <strong>616 cm&sup2;</strong></div></details></div>
+    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span>
+      <p>2. If the radius of a circle is doubled, what happens to the area?</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Original area = &pi;r&sup2;<br><strong>Step 2:</strong> New radius = 2r. New area = &pi;(2r)&sup2; = &pi; &times; 4r&sup2; = 4&pi;r&sup2;<br><strong>Step 3:</strong> New area = 4 &times; original area.<br><strong>Answer:</strong> Area becomes <strong>4 times</strong>! (Doubling radius quadruples area.)</div></details></div>
+    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span>
+      <p>3. A rectangular field 80m &times; 60m. A horse is tied to a corner with a 14m rope. Find the grazing area.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> The horse can graze in a quarter-circle (90&deg; corner).<br><strong>Step 2:</strong> Quarter-circle area = &frac14; &times; &pi;r&sup2;<br><strong>Step 3:</strong> = &frac14; &times; 22/7 &times; 14 &times; 14<br><strong>Step 4:</strong> = &frac14; &times; 22 &times; 2 &times; 14 = &frac14; &times; 616 = <strong>154 m&sup2;</strong></div></details></div>
+  </div>
+
+  <!-- Common Mistakes -->
+  <div class="section">
+    <h2 id="mistakes">Common Mistakes</h2>
     <ul class="mistakes-list">
-      <li>Using the slant side instead of the perpendicular height for parallelogram/triangle area.</li>
-      <li>Confusing radius and diameter — diameter = 2 &times; radius!</li>
-      <li>Forgetting to write the correct units (cm&sup2; for area, cm for perimeter).</li>
-      <li>Using the wrong value of &pi; — use 22/7 when the radius is a multiple of 7, otherwise use 3.14.</li>
+      <li><strong>Using slant side instead of height for parallelogram</strong>
+        <div class="wrong-right"><div class="wrong">Area = base &times; slant side</div><div class="right">Area = base &times; <strong>perpendicular height</strong> (the dashed line, not the slant!)</div></div>
+      </li>
+      <li><strong>Confusing radius and diameter</strong>
+        <div class="wrong-right"><div class="wrong">Diameter = 14, using r = 14 in formula</div><div class="right">Diameter = 14, so <strong>r = 14 &divide; 2 = 7</strong>. Always check which one is given!</div></div>
+      </li>
+      <li><strong>Wrong units for area vs perimeter</strong>
+        <div class="wrong-right"><div class="wrong">Area = 120 cm, Perimeter = 46 cm&sup2;</div><div class="right">Area = 120 <strong>cm&sup2;</strong> (squared!), Perimeter = 46 <strong>cm</strong> (not squared)</div></div>
+      </li>
+      <li><strong>Forgetting to subtract overlap in crossing paths</strong>
+        <div class="wrong-right"><div class="wrong">Two paths: just add both areas</div><div class="right">Paths overlap at the intersection. <strong>Subtract</strong> the overlapping square once!</div></div>
+      </li>
     </ul>
   </div>
 
   <button id="mark-read-btn" class="btn" style="margin-top:1rem;padding:.5rem 1.25rem;background:var(--primary);color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer" onclick="markChapterRead(11)">Mark as Complete</button>
-
   <div class="chapter-nav">
     <a href="ch10.html">&larr; Ch 10: Practical Geometry</a>
     <a href="ch12.html">Ch 12: Algebraic Expressions &rarr;</a>
   </div>
 </div>
-
 <footer class="footer">CBSE Class 7 Maths &mdash; Based on NCERT Syllabus</footer>
 <script src="../js/main.js"></script>
 </body>
