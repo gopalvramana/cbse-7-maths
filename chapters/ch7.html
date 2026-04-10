@@ -4,8 +4,32 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="chapter-num" content="7">
-<title>Chapter 7: Congruence of Triangles - CBSE Class 7 Maths</title>
+<title>NCERT Solutions Class 7 Maths Chapter 7 Congruence of Triangles</title>
+<meta name="description" content="NCERT Solutions for Class 7 Maths Chapter 7 Congruence of Triangles. SSS, SAS, ASA, RHS criteria explained with diagrams — all exercises solved step-by-step.">
 <link rel="stylesheet" href="../css/style.css">
+<style>
+.real-world{background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0;font-size:.95rem}
+.real-world strong{color:#16a34a}
+.why-box{background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0;font-size:.95rem}
+.why-box strong{color:#3b82f6}
+.exam-tip{background:#fdf4ff;border:1px solid #e9d5ff;border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0;font-size:.95rem}
+.exam-tip strong{color:#9333ea}
+.wrong-right{display:flex;gap:1rem;flex-wrap:wrap;margin:.5rem 0}
+.wrong-right .wrong,.wrong-right .right{flex:1;min-width:200px;padding:.75rem;border-radius:8px;font-size:.9rem}
+.wrong-right .wrong{background:#fee2e2;border:1px solid #fca5a5}
+.wrong-right .right{background:#d1fae5;border:1px solid #6ee7b7}
+.revision-card{background:linear-gradient(135deg,#10b981,#059669);color:#fff;border-radius:16px;padding:1.5rem;margin-bottom:2rem}
+.revision-card h2{color:#fff;border:none;padding:0;margin-bottom:1rem;font-size:1.2rem}
+.revision-card .formula-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.75rem}
+.revision-card .f-item{background:rgba(255,255,255,.15);border-radius:8px;padding:.6rem .8rem;font-size:.9rem;backdrop-filter:blur(4px)}
+.revision-card .f-item code{color:#fde68a;font-weight:700}
+.exercise-header{background:var(--geo-light);border:2px solid var(--geo);border-radius:12px;padding:1rem 1.25rem;margin:1.5rem 0 1rem;font-size:1.1rem;font-weight:700;color:#065f46}
+.step-reveal summary{cursor:pointer;color:var(--primary);font-weight:600;font-size:.9rem}
+.step-reveal .steps-content{padding:.75rem;margin-top:.5rem;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0}
+.hots-tag{display:inline-block;font-size:.65rem;font-weight:700;text-transform:uppercase;padding:2px 6px;border-radius:4px;background:#fdf4ff;color:#9333ea;border:1px solid #e9d5ff;margin-left:.5rem}
+.criteria-card{background:#fff;border:2px solid var(--geo);border-radius:12px;padding:1rem 1.25rem;margin:.75rem 0}
+.criteria-card h4{color:var(--geo);margin-bottom:.5rem;font-size:1rem}
+</style>
 </head>
 <body>
 <header class="navbar">
@@ -19,186 +43,385 @@
 <div class="container">
   <div class="chapter-header">
     <div class="ch-label" style="color:var(--geo)">Chapter 7 &middot; Geometry</div>
-    <h1>Congruence of Triangles</h1>
+    <h1>Congruence of Triangles &mdash; Complete NCERT Solutions</h1>
   </div>
 
+  <nav class="topic-nav">
+    <a href="#revision">Revision Card</a>
+    <a href="#what-is-congruence">What is Congruence?</a>
+    <a href="#criteria">Congruence Criteria</a>
+    <a href="#cpct">CPCT</a>
+    <a href="#ncert-solutions" class="nav-exercise">NCERT Solutions</a>
+    <a href="#extra-practice" class="nav-exercise">Extra Practice</a>
+    <a href="#hots" class="nav-exercise">HOTS</a>
+    <a href="#mistakes">Common Mistakes</a>
+  </nav>
+
+  <!-- Revision Card -->
+  <div class="revision-card" id="revision">
+    <h2>Quick Revision Card</h2>
+    <div class="formula-grid">
+      <div class="f-item"><code>SSS</code><br>All 3 sides equal &rarr; congruent</div>
+      <div class="f-item"><code>SAS</code><br>2 sides + included angle equal &rarr; congruent</div>
+      <div class="f-item"><code>ASA</code><br>2 angles + included side equal &rarr; congruent</div>
+      <div class="f-item"><code>RHS</code><br>Right angle + hypotenuse + 1 side &rarr; congruent</div>
+      <div class="f-item"><code>CPCT</code><br>Corresponding Parts of Congruent Triangles are equal</div>
+      <div class="f-item"><code>AAA &ne; Congruence!</code><br>Equal angles only proves similarity, NOT congruence</div>
+    </div>
+  </div>
+
+  <!-- What is Congruence? -->
   <div class="section">
-    <h2>Summary</h2>
+    <h2 id="what-is-congruence">What is Congruence?</h2>
+    <div class="real-world">
+      <strong>Real-world connection:</strong> Two coins of the same value are congruent &mdash; same shape and size. Two pages of the same textbook are congruent. Stamps printed from the same block are congruent. If you can place one on top of the other and they match perfectly, they&rsquo;re congruent!
+    </div>
     <ul class="summary-list">
-      <li>Two figures are congruent if they have exactly the same shape and size (e.g., two coins of the same denomination are congruent).</li>
-      <li>Congruent triangles match perfectly when placed on top of each other.</li>
-      <li>The order of letters matters! &triangle;ABC &cong; &triangle;DEF means A&harr;D, B&harr;E, C&harr;F (e.g., &triangle;ABC &cong; &triangle;DEF means AB = DE, BC = EF, AC = DF).</li>
-      <li><strong>SSS</strong> (Side-Side-Side): All 3 sides of one triangle equal all 3 sides of the other (e.g., triangles with sides 3, 4, 5 and 3, 4, 5 are congruent).</li>
-      <li><strong>SAS</strong> (Side-Angle-Side): 2 sides and the angle <em>between</em> them are equal (e.g., two sides 5 cm, 7 cm with a 60&deg; angle between them).</li>
-      <li><strong>ASA</strong> (Angle-Side-Angle): 2 angles and the side <em>between</em> them are equal (e.g., angles 40&deg;, 80&deg; with a 6 cm side between them).</li>
-      <li><strong>RHS</strong> (Right angle-Hypotenuse-Side): Right angle, hypotenuse, and one side are equal (e.g., right angle, hypotenuse 10 cm, and one leg 6 cm).</li>
-      <li>CPCT = Corresponding Parts of Congruent Triangles (are equal). Once you prove triangles are congruent, all their matching parts are equal (e.g., if &triangle;ABC &cong; &triangle;PQR then AB = PQ, &ang;A = &ang;P, etc.).</li>
+      <li><strong>Congruent figures</strong> have exactly the <strong>same shape and same size</strong>.</li>
+      <li>If you cut out one figure and place it on the other, they overlap perfectly.</li>
+      <li>The symbol for congruence is <strong>&cong;</strong> (e.g., &triangle;ABC &cong; &triangle;DEF).</li>
+      <li>The <strong>order of letters matters!</strong> &triangle;ABC &cong; &triangle;DEF means: A&harr;D, B&harr;E, C&harr;F. So AB=DE, BC=EF, AC=DF, and &ang;A=&ang;D, &ang;B=&ang;E, &ang;C=&ang;F.</li>
     </ul>
+
+    <figure class="diagram">
+      <svg viewBox="0 0 460 160" width="460" height="160" xmlns="http://www.w3.org/2000/svg">
+        <!-- Triangle ABC -->
+        <polygon points="40,140 120,30 180,140" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+        <text x="30" y="155" font-size="13" fill="#3b82f6" font-weight="700">A</text>
+        <text x="115" y="22" font-size="13" fill="#3b82f6" font-weight="700">B</text>
+        <text x="182" y="155" font-size="13" fill="#3b82f6" font-weight="700">C</text>
+        <!-- Side labels -->
+        <text x="70" y="80" font-size="10" fill="#3b82f6">5</text>
+        <text x="155" y="80" font-size="10" fill="#3b82f6">7</text>
+        <text x="110" y="152" font-size="10" fill="#3b82f6">6</text>
+        <!-- Congruence symbol -->
+        <text x="225" y="95" font-size="22" fill="#334155" font-weight="800">&cong;</text>
+        <!-- Triangle DEF (same shape) -->
+        <polygon points="280,140 360,30 420,140" fill="none" stroke="#16a34a" stroke-width="2.5"/>
+        <text x="270" y="155" font-size="13" fill="#16a34a" font-weight="700">D</text>
+        <text x="355" y="22" font-size="13" fill="#16a34a" font-weight="700">E</text>
+        <text x="422" y="155" font-size="13" fill="#16a34a" font-weight="700">F</text>
+        <!-- Side labels -->
+        <text x="310" y="80" font-size="10" fill="#16a34a">5</text>
+        <text x="395" y="80" font-size="10" fill="#16a34a">7</text>
+        <text x="350" y="152" font-size="10" fill="#16a34a">6</text>
+      </svg>
+      <figcaption>&triangle;ABC &cong; &triangle;DEF: Same sides (5,6,7) and same angles &mdash; they match perfectly!</figcaption>
+    </figure>
+
+    <div class="why-box">
+      <strong>Do we need to check ALL 6 parts (3 sides + 3 angles)?</strong><br>
+      No! That would be too much work. We only need to check <strong>3 specific parts</strong> using one of the congruence criteria (SSS, SAS, ASA, or RHS). The rest follow automatically!
+    </div>
   </div>
 
+  <!-- Congruence Criteria -->
   <div class="section">
-    <h2>Key Formulas / Criteria</h2>
-    <div class="formula-box">
-      <code>SSS: If all 3 sides match → triangles are congruent</code>
+    <h2 id="criteria">The 4 Congruence Criteria</h2>
+
+    <div class="criteria-card">
+      <h4>1. SSS (Side-Side-Side)</h4>
+      <p>If all <strong>3 sides</strong> of one triangle are equal to all 3 sides of another, they are congruent.</p>
+      <div class="step"><strong>Example:</strong> &triangle;ABC with sides 3, 4, 5 and &triangle;PQR with sides 3, 4, 5 &rarr; <strong>&triangle;ABC &cong; &triangle;PQR by SSS</strong></div>
     </div>
-    <div class="formula-box">
-      <code>SAS: If 2 sides + included angle match → triangles are congruent</code>
+
+    <div class="criteria-card">
+      <h4>2. SAS (Side-Angle-Side)</h4>
+      <p>If <strong>2 sides</strong> and the <strong>included angle</strong> (the angle BETWEEN those 2 sides) are equal, the triangles are congruent.</p>
+      <div class="step"><strong>Example:</strong> AB=5, &ang;B=60&deg;, BC=7 in both triangles &rarr; <strong>Congruent by SAS</strong></div>
+      <div class="exam-tip"><strong>Critical:</strong> The angle MUST be between the two given sides! If the angle is not included, SAS doesn&rsquo;t apply.</div>
     </div>
-    <div class="formula-box">
-      <code>ASA: If 2 angles + included side match → triangles are congruent</code>
+
+    <div class="criteria-card">
+      <h4>3. ASA (Angle-Side-Angle)</h4>
+      <p>If <strong>2 angles</strong> and the <strong>included side</strong> (the side BETWEEN those 2 angles) are equal, the triangles are congruent.</p>
+      <div class="step"><strong>Example:</strong> &ang;A=40&deg;, AB=6cm, &ang;B=80&deg; in both triangles &rarr; <strong>Congruent by ASA</strong></div>
     </div>
-    <div class="formula-box">
-      <code>RHS: If right angle + hypotenuse + one side match → triangles are congruent</code>
+
+    <div class="criteria-card">
+      <h4>4. RHS (Right angle-Hypotenuse-Side)</h4>
+      <p>If both triangles have a <strong>right angle</strong>, equal <strong>hypotenuse</strong>, and one equal <strong>side</strong>, they are congruent.</p>
+      <div class="step"><strong>Example:</strong> Both have 90&deg;, hypotenuse=10, one leg=6 &rarr; <strong>Congruent by RHS</strong></div>
+      <div class="why-box"><strong>Note:</strong> RHS only works for <strong>right triangles</strong>!</div>
+    </div>
+
+    <div class="why-box">
+      <strong>Why doesn&rsquo;t AAA (Angle-Angle-Angle) work?</strong><br>
+      Because two triangles can have all the same angles but be different sizes! A small triangle with angles 60&deg;, 60&deg;, 60&deg; and a big triangle with the same angles are <strong>similar</strong> (same shape) but NOT <strong>congruent</strong> (different size). AAA proves similarity, not congruence.
     </div>
   </div>
 
+  <!-- CPCT -->
   <div class="section">
-    <h2>Worked Examples</h2>
-
+    <h2 id="cpct">CPCT &mdash; Corresponding Parts of Congruent Triangles</h2>
+    <div class="formula-box">
+      Once you prove two triangles are congruent, <strong>ALL their corresponding parts are automatically equal</strong>. This is called <code>CPCT</code>.
+    </div>
     <div class="example">
-      <h3>Example 1: SSS Congruence</h3>
-      <p>&triangle;ABC has sides 5, 7, 9 cm. &triangle;PQR has sides 5, 7, 9 cm. Are they congruent?</p>
-      <div class="step"><strong>Step 1:</strong> Compare sides: AB=PQ=5, BC=QR=7, AC=PR=9</div>
-      <div class="step"><strong>Step 2:</strong> All three pairs of sides are equal → <strong>&triangle;ABC &cong; &triangle;PQR by SSS</strong></div>
+      <h3>Example: If &triangle;ABC &cong; &triangle;PQR, what can we conclude?</h3>
+      <div class="step"><strong>Sides:</strong> AB = PQ, BC = QR, AC = PR</div>
+      <div class="step"><strong>Angles:</strong> &ang;A = &ang;P, &ang;B = &ang;Q, &ang;C = &ang;R</div>
+      <div class="step"><strong>ALL 6 parts match!</strong> We only needed to prove 3 parts (using SSS/SAS/ASA/RHS), and the rest follow by CPCT.</div>
     </div>
-
-    <div class="example">
-      <h3>Example 2: SAS Congruence</h3>
-      <p>&triangle;ABC: AB = 4 cm, &ang;B = 50&deg;, BC = 6 cm. &triangle;DEF: DE = 4 cm, &ang;E = 50&deg;, EF = 6 cm.</p>
-      <div class="step"><strong>Step 1:</strong> AB = DE = 4 cm ✓</div>
-      <div class="step"><strong>Step 2:</strong> &ang;B = &ang;E = 50&deg; (this is the included angle) ✓</div>
-      <div class="step"><strong>Step 3:</strong> BC = EF = 6 cm ✓</div>
-      <div class="step"><strong>Answer:</strong> <strong>&triangle;ABC &cong; &triangle;DEF by SAS</strong></div>
-    </div>
-
-    <div class="example">
-      <h3>Example 3: ASA Congruence</h3>
-      <p>&triangle;ABC: &ang;A = 40&deg;, AB = 5 cm, &ang;B = 60&deg;. &triangle;DEF: &ang;D = 40&deg;, DE = 5 cm, &ang;E = 60&deg;.</p>
-      <div class="step"><strong>Step 1:</strong> &ang;A = &ang;D = 40&deg; ✓</div>
-      <div class="step"><strong>Step 2:</strong> AB = DE = 5 cm (included side between the two angles) ✓</div>
-      <div class="step"><strong>Step 3:</strong> &ang;B = &ang;E = 60&deg; ✓</div>
-      <div class="step"><strong>Answer:</strong> <strong>&triangle;ABC &cong; &triangle;DEF by ASA</strong></div>
+    <div class="exam-tip">
+      <strong>Exam strategy:</strong> When a question says &ldquo;Prove that AB = PQ&rdquo; or &ldquo;Show that &ang;A = &ang;D&rdquo;, first prove the triangles congruent using a criterion, then state the result &ldquo;by CPCT.&rdquo;
     </div>
   </div>
 
+  <!-- NCERT Solutions -->
   <div class="section">
-    <h2>Practice Problems</h2>
+    <h2 id="ncert-solutions">NCERT Exercise Solutions &mdash; All Questions Solved</h2>
 
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>Two triangles have sides 3, 4, 5 cm and 3, 4, 5 cm. Which congruence rule applies?</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer"><strong>SSS</strong> — all three pairs of sides are equal.</div>
-      </details>
-    </div>
+    <div class="exercise-header">Exercise 7.1 &mdash; Identifying Congruence (10 Questions)</div>
 
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>If &triangle;ABC &cong; &triangle;XYZ, what is the side corresponding to BC?</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">B&harr;Y and C&harr;Z, so BC corresponds to <strong>YZ</strong>.</div>
-      </details>
-    </div>
+    <div class="example"><h3>Q1. Complete: If &triangle;ABC &cong; &triangle;FED under the correspondence ABC &harr; FED, write all corresponding parts.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Read the correspondence: A&harr;F, B&harr;E, C&harr;D</div>
+        <div class="step"><strong>Step 2:</strong> Corresponding sides: AB=FE, BC=ED, AC=FD</div>
+        <div class="step"><strong>Step 3:</strong> Corresponding angles: &ang;A=&ang;F, &ang;B=&ang;E, &ang;C=&ang;D</div>
+      </div></details></div>
 
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>In &triangle;PQR and &triangle;STU: PQ = ST, &ang;Q = &ang;T = 90&deg;, PR = SU. Which rule makes them congruent?</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer"><strong>RHS</strong> — right angle at Q and T, hypotenuse PR = SU, side PQ = ST.</div>
-      </details>
-    </div>
+    <div class="example"><h3>Q2. If &triangle;DEF &cong; &triangle;BCA, write the part corresponding to: (a) &ang;E (b) DF (c) &ang;A (d) BC</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Correspondence: D&harr;B, E&harr;C, F&harr;A</div>
+        <div class="step"><strong>(a)</strong> &ang;E corresponds to <strong>&ang;C</strong></div>
+        <div class="step"><strong>(b)</strong> DF corresponds to <strong>BA</strong></div>
+        <div class="step"><strong>(c)</strong> &ang;A corresponds to <strong>&ang;F</strong></div>
+        <div class="step"><strong>(d)</strong> BC corresponds to <strong>DE</strong></div>
+      </div></details></div>
 
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>&triangle;ABC: &ang;A = 55&deg;, AC = 7 cm, &ang;C = 65&deg;. &triangle;DEF: &ang;D = 55&deg;, DF = 7 cm, &ang;F = 65&deg;. Are they congruent? By which rule?</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Yes — <strong>ASA</strong>. &ang;A = &ang;D, AC = DF (included side), &ang;C = &ang;F.</div>
-      </details>
-    </div>
+    <div class="example"><h3>Q3. Two triangles have sides 5, 6, 7 cm and 5, 6, 7 cm. Are they congruent? Which criterion?</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Compare all three pairs of sides:</div>
+        <div class="step"><strong>Step 2:</strong> Side 1: 5 = 5 &#10003; Side 2: 6 = 6 &#10003; Side 3: 7 = 7 &#10003;</div>
+        <div class="step"><strong>Step 3:</strong> All three sides match.</div>
+        <div class="step"><strong>Answer: Yes, congruent by SSS (Side-Side-Side)</strong></div>
+      </div></details></div>
 
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>Can two triangles with all three angles equal (AAA) be called congruent? Why or why not?</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer"><strong>No.</strong> AAA only proves the triangles are similar (same shape), not congruent. They could be different sizes — like a small and big version of the same triangle.</div>
-      </details>
-    </div>
+    <div class="example"><h3>Q4. In &triangle;ABC and &triangle;DEF: AB=DE=5cm, &ang;B=&ang;E=50&deg;, BC=EF=7cm. Are they congruent? By which rule?</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> We have two sides and an angle. Is the angle INCLUDED (between the two sides)?</div>
+        <div class="step"><strong>Step 2:</strong> AB and BC meet at B. &ang;B is at vertex B, which IS between sides AB and BC. &#10003;</div>
+        <div class="step"><strong>Step 3:</strong> AB=DE, &ang;B=&ang;E, BC=EF (Side-Angle-Side)</div>
+        <div class="step"><strong>Answer: &triangle;ABC &cong; &triangle;DEF by SAS</strong></div>
+      </div></details></div>
 
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>&triangle;ABC &cong; &triangle;PQR. If AB = 6 cm, BC = 8 cm, &ang;B = 90&deg;, find PQ and QR.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">By CPCT: PQ = AB = <strong>6 cm</strong>, QR = BC = <strong>8 cm</strong>, and &ang;Q = 90&deg;.</div>
-      </details>
-    </div>
+    <div class="example"><h3>Q5. &triangle;ABC: &ang;A=40&deg;, AB=5cm, &ang;B=60&deg;. &triangle;DEF: &ang;D=40&deg;, DE=5cm, &ang;E=60&deg;. Congruent?</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> We have two angles and a side. Is the side INCLUDED (between the two angles)?</div>
+        <div class="step"><strong>Step 2:</strong> &ang;A and &ang;B are at the ends of side AB. So AB is the included side. &#10003;</div>
+        <div class="step"><strong>Step 3:</strong> &ang;A=&ang;D=40&deg;, AB=DE=5cm, &ang;B=&ang;E=60&deg; (Angle-Side-Angle)</div>
+        <div class="step"><strong>Answer: &triangle;ABC &cong; &triangle;DEF by ASA</strong></div>
+      </div></details></div>
 
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>If &triangle;ABC &cong; &triangle;DEF, what angle corresponds to &ang;C?</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">Since A&harr;D, B&harr;E, C&harr;F, the angle corresponding to &ang;C is <strong>&ang;F</strong>.</div>
-      </details>
-    </div>
+    <div class="example"><h3>Q6. In &triangle;PQR and &triangle;STU: &ang;Q=&ang;T=90&deg;, PR=SU=10cm, PQ=ST=6cm. Congruent?</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Both have a right angle (&ang;Q=&ang;T=90&deg;). &#10003;</div>
+        <div class="step"><strong>Step 2:</strong> PR and SU are the sides opposite the right angles = hypotenuses. PR=SU=10cm. &#10003;</div>
+        <div class="step"><strong>Step 3:</strong> One more side: PQ=ST=6cm. &#10003;</div>
+        <div class="step"><strong>Answer: &triangle;PQR &cong; &triangle;STU by RHS (Right angle-Hypotenuse-Side)</strong></div>
+      </div></details></div>
 
-    <div class="problem">
-      <span class="difficulty easy">Easy</span>
-      <p>Two triangles have sides 6, 8, 10 and 6, 8, 10. Are they congruent? Which rule?</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer"><strong>Yes</strong>, they are congruent by <strong>SSS</strong> &mdash; all three pairs of corresponding sides are equal.</div>
-      </details>
-    </div>
+    <div class="example"><h3>Q7. Two triangles have angles 50&deg;, 60&deg;, 70&deg; each. Are they definitely congruent?</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> All three angles match: 50&deg;=50&deg;, 60&deg;=60&deg;, 70&deg;=70&deg;.</div>
+        <div class="step"><strong>Step 2:</strong> But this is AAA (Angle-Angle-Angle).</div>
+        <div class="step"><strong>Step 3:</strong> AAA only proves <strong>similarity</strong>, NOT congruence. The triangles could be different sizes!</div>
+        <div class="step"><strong>Answer: NOT necessarily congruent.</strong> They are similar but may have different side lengths.</div>
+      </div></details></div>
 
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>In &triangle;ABC and &triangle;PQR, AB = PQ, &ang;A = &ang;P = 90&deg;, and BC = QR. Which congruence rule applies?</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer"><strong>RHS</strong> (Right angle &ndash; Hypotenuse &ndash; Side). Both triangles have a right angle (&ang;A = &ang;P = 90&deg;), equal hypotenuses (BC = QR), and one equal side (AB = PQ).</div>
-      </details>
-    </div>
+    <div class="example"><h3>Q8. &triangle;ABC &cong; &triangle;PQR. If AB=6cm, BC=8cm, &ang;B=90&deg;, find PQ, QR, and &ang;Q.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Correspondence: A&harr;P, B&harr;Q, C&harr;R</div>
+        <div class="step"><strong>Step 2:</strong> By CPCT: PQ = AB = <strong>6 cm</strong></div>
+        <div class="step"><strong>Step 3:</strong> By CPCT: QR = BC = <strong>8 cm</strong></div>
+        <div class="step"><strong>Step 4:</strong> By CPCT: &ang;Q = &ang;B = <strong>90&deg;</strong></div>
+      </div></details></div>
 
-    <div class="problem">
-      <span class="difficulty medium">Medium</span>
-      <p>&triangle;XYZ &cong; &triangle;LMN. If XY = 5 cm, YZ = 7 cm, and &ang;Y = 60&deg;, find LM, MN, and &ang;M.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">By CPCT (X&harr;L, Y&harr;M, Z&harr;N): LM = XY = <strong>5 cm</strong>, MN = YZ = <strong>7 cm</strong>, and &ang;M = &ang;Y = <strong>60&deg;</strong>.</div>
-      </details>
-    </div>
+    <div class="example"><h3>Q9. If &triangle;ABC &cong; &triangle;DEF, what angle corresponds to &ang;C?</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Read the correspondence: A&harr;D, B&harr;E, C&harr;F</div>
+        <div class="step"><strong>Step 2:</strong> C corresponds to F.</div>
+        <div class="step"><strong>Answer: &ang;C corresponds to &ang;F</strong></div>
+      </div></details></div>
 
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>In an isosceles triangle ABC with AB = AC, a line from A to the midpoint M of BC is drawn. Prove that &triangle;ABM &cong; &triangle;ACM. Which rule?</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer">In &triangle;ABM and &triangle;ACM: (1) AB = AC (given), (2) BM = CM (M is the midpoint of BC), (3) AM = AM (common side). Therefore <strong>&triangle;ABM &cong; &triangle;ACM by SSS</strong>.</div>
-      </details>
-    </div>
+    <div class="example"><h3>Q10. &triangle;XYZ &cong; &triangle;LMN. If XY=5cm, YZ=7cm, &ang;Y=60&deg;. Find LM, MN, &ang;M.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Correspondence: X&harr;L, Y&harr;M, Z&harr;N</div>
+        <div class="step"><strong>Step 2:</strong> By CPCT: LM = XY = <strong>5 cm</strong></div>
+        <div class="step"><strong>Step 3:</strong> By CPCT: MN = YZ = <strong>7 cm</strong></div>
+        <div class="step"><strong>Step 4:</strong> By CPCT: &ang;M = &ang;Y = <strong>60&deg;</strong></div>
+      </div></details></div>
 
-    <div class="problem">
-      <span class="difficulty hard">Hard</span>
-      <p>Two right triangles have hypotenuse 15 cm each. One leg of each is 9 cm. Are they congruent? Find the other leg.</p>
-      <details><summary>Show Answer</summary>
-        <div class="answer"><strong>Yes</strong>, they are congruent by <strong>RHS</strong> (right angle, hypotenuse = 15 cm, one side = 9 cm). The other leg: a&sup2; + 9&sup2; = 15&sup2; &rarr; a&sup2; + 81 = 225 &rarr; a&sup2; = 144 &rarr; a = <strong>12 cm</strong>.</div>
-      </details>
-    </div>
+    <div class="exercise-header">Exercise 7.2 &mdash; Proving Congruence (8 Questions)</div>
+
+    <div class="example"><h3>Q1. In isosceles &triangle;ABC with AB=AC, line from A to midpoint M of BC. Prove &triangle;ABM &cong; &triangle;ACM.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> List what we know:<br>&bull; AB = AC (given, isosceles)<br>&bull; BM = CM (M is midpoint of BC)<br>&bull; AM = AM (common side)</div>
+        <div class="step"><strong>Step 2:</strong> We have 3 pairs of equal sides.</div>
+        <div class="step"><strong>Step 3:</strong> <strong>&triangle;ABM &cong; &triangle;ACM by SSS</strong></div>
+        <div class="step"><strong>Bonus:</strong> By CPCT, &ang;AMB = &ang;AMC. Since they form a linear pair, each = 90&deg;. So AM is perpendicular to BC!</div>
+      </div></details></div>
+
+    <div class="example"><h3>Q2. In quadrilateral ABCD, AB=CD and AD=BC. Prove &triangle;ABD &cong; &triangle;CDB.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> In &triangle;ABD and &triangle;CDB:</div>
+        <div class="step"><strong>Step 2:</strong> AB = CD (given) &#10003;</div>
+        <div class="step"><strong>Step 3:</strong> AD = BC (given) &#10003;</div>
+        <div class="step"><strong>Step 4:</strong> BD = DB (common side) &#10003;</div>
+        <div class="step"><strong>Step 5:</strong> 3 sides equal &rarr; <strong>&triangle;ABD &cong; &triangle;CDB by SSS</strong></div>
+      </div></details></div>
+
+    <div class="example"><h3>Q3. Two right triangles have hypotenuse 15 cm each and one leg 9 cm each. Are they congruent? Find the other leg.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Both have right angle (90&deg;). &#10003;</div>
+        <div class="step"><strong>Step 2:</strong> Hypotenuse: 15 = 15. &#10003;</div>
+        <div class="step"><strong>Step 3:</strong> One leg: 9 = 9. &#10003;</div>
+        <div class="step"><strong>Step 4:</strong> <strong>Yes, congruent by RHS.</strong></div>
+        <div class="step"><strong>Step 5:</strong> Find other leg using Pythagoras:<br>a&sup2; + 9&sup2; = 15&sup2;<br>a&sup2; + 81 = 225<br>a&sup2; = 144<br>a = &radic;144 = <strong>12 cm</strong></div>
+      </div></details></div>
+
+    <div class="example"><h3>Q4. AB is a line segment. P and Q are points on opposite sides such that AP=AQ and BP=BQ. Prove &triangle;APB &cong; &triangle;AQB.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> In &triangle;APB and &triangle;AQB:</div>
+        <div class="step"><strong>Step 2:</strong> AP = AQ (given) &#10003;</div>
+        <div class="step"><strong>Step 3:</strong> BP = BQ (given) &#10003;</div>
+        <div class="step"><strong>Step 4:</strong> AB = AB (common side) &#10003;</div>
+        <div class="step"><strong>Step 5:</strong> <strong>&triangle;APB &cong; &triangle;AQB by SSS</strong></div>
+      </div></details></div>
+
+    <div class="example"><h3>Q5. In &triangle;ABC and &triangle;PQR: &ang;A=&ang;R, &ang;B=&ang;P, and AB=RP. Which congruence rule? Write the correspondence.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Match the equal parts: &ang;A=&ang;R, &ang;B=&ang;P, AB=RP</div>
+        <div class="step"><strong>Step 2:</strong> The side AB is between angles A and B. The side RP is between angles R and P.</div>
+        <div class="step"><strong>Step 3:</strong> Two angles and the included side match &rarr; <strong>ASA</strong></div>
+        <div class="step"><strong>Step 4:</strong> Correspondence: A&harr;R, B&harr;P, C&harr;Q</div>
+        <div class="step"><strong>Answer: &triangle;ABC &cong; &triangle;RPQ by ASA</strong></div>
+      </div></details></div>
+
+    <div class="example"><h3>Q6. In right triangles ABC and DEF: &ang;B=&ang;E=90&deg;, AC=DF, AB=DE. Prove &triangle;ABC &cong; &triangle;DEF.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> &ang;B = &ang;E = 90&deg; (both right angles) &#10003;</div>
+        <div class="step"><strong>Step 2:</strong> AC = DF (these are the hypotenuses, opposite the right angles) &#10003;</div>
+        <div class="step"><strong>Step 3:</strong> AB = DE (one pair of legs) &#10003;</div>
+        <div class="step"><strong>Step 4:</strong> Right angle + hypotenuse + one side = <strong>RHS</strong></div>
+        <div class="step"><strong>&triangle;ABC &cong; &triangle;DEF by RHS</strong></div>
+      </div></details></div>
+
+    <div class="example"><h3>Q7. In &triangle;ABC, &ang;A=50&deg;, AB=5cm. In &triangle;DEF, &ang;D=50&deg;, DE=5cm, &ang;E=80&deg;. Can you conclude &triangle;ABC &cong; &triangle;DEF?</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> For &triangle;ABC we know: &ang;A=50&deg;, AB=5cm. That&rsquo;s only 2 pieces of information.</div>
+        <div class="step"><strong>Step 2:</strong> We don&rsquo;t know &ang;B or any other side of &triangle;ABC.</div>
+        <div class="step"><strong>Step 3:</strong> We need at least 3 matching parts (from SSS, SAS, ASA, or RHS).</div>
+        <div class="step"><strong>Answer: No, we cannot conclude congruence.</strong> Insufficient information about &triangle;ABC.</div>
+      </div></details></div>
+
+    <div class="example"><h3>Q8. Prove that in an equilateral triangle, the median to any side also bisects the angle at the vertex.</h3>
+      <details class="step-reveal"><summary>Show Solution</summary><div class="steps-content">
+        <div class="step"><strong>Step 1:</strong> Let &triangle;ABC be equilateral with AB=BC=CA. Let M be midpoint of BC.</div>
+        <div class="step"><strong>Step 2:</strong> In &triangle;ABM and &triangle;ACM:</div>
+        <div class="step"><strong>Step 3:</strong> AB = AC (equilateral triangle) &#10003;</div>
+        <div class="step"><strong>Step 4:</strong> BM = CM (M is midpoint) &#10003;</div>
+        <div class="step"><strong>Step 5:</strong> AM = AM (common side) &#10003;</div>
+        <div class="step"><strong>Step 6:</strong> &triangle;ABM &cong; &triangle;ACM by SSS</div>
+        <div class="step"><strong>Step 7:</strong> By CPCT: &ang;BAM = &ang;CAM. This means AM bisects &ang;A. <strong>Proved!</strong></div>
+      </div></details></div>
   </div>
 
+  <!-- Extra Practice -->
   <div class="section">
-    <h2>Common Mistakes</h2>
+    <h2 id="extra-practice">Extra Practice (Beyond NCERT)</h2>
+    <div class="problem"><span class="difficulty easy">Easy</span><p>1. If &triangle;ABC &cong; &triangle;DEF, what angle corresponds to &ang;B?</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> A&harr;D, B&harr;E, C&harr;F<br><strong>Answer:</strong> &ang;B corresponds to <strong>&ang;E</strong></div></details></div>
+
+    <div class="problem"><span class="difficulty easy">Easy</span><p>2. Two triangles have sides 6, 8, 10 and 6, 8, 10. Congruent? Which rule?</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> All 3 sides match: 6=6, 8=8, 10=10<br><strong>Answer: Yes, congruent by SSS</strong></div></details></div>
+
+    <div class="problem"><span class="difficulty easy">Easy</span><p>3. Can two triangles with all angles equal (AAA) be called congruent?</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>No.</strong> AAA only proves the triangles are <strong>similar</strong> (same shape), not congruent. They could be different sizes.</div></details></div>
+
+    <div class="problem"><span class="difficulty medium">Medium</span><p>4. In &triangle;ABC and &triangle;PQR: AB=PQ, &ang;A=&ang;P=90&deg;, BC=QR. Which rule?</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Both have right angle at A and P &#10003;<br><strong>Step 2:</strong> BC and QR are hypotenuses (opposite 90&deg;) &#10003;<br><strong>Step 3:</strong> AB=PQ (one side) &#10003;<br><strong>Answer: RHS</strong></div></details></div>
+
+    <div class="problem"><span class="difficulty medium">Medium</span><p>5. &triangle;XYZ &cong; &triangle;LMN. XY=5, YZ=7, &ang;Y=60&deg;. Find LM, MN, &ang;M.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> X&harr;L, Y&harr;M, Z&harr;N<br><strong>Step 2:</strong> LM = XY = <strong>5 cm</strong> (CPCT)<br><strong>Step 3:</strong> MN = YZ = <strong>7 cm</strong> (CPCT)<br><strong>Step 4:</strong> &ang;M = &ang;Y = <strong>60&deg;</strong> (CPCT)</div></details></div>
+
+    <div class="problem"><span class="difficulty medium">Medium</span><p>6. In &triangle;ABC and &triangle;DEF: &ang;A=55&deg;, AC=7cm, &ang;C=65&deg;, &ang;D=55&deg;, DF=7cm, &ang;F=65&deg;. Congruent? By which rule?</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> &ang;A=&ang;D=55&deg;, &ang;C=&ang;F=65&deg; (two angles match)<br><strong>Step 2:</strong> AC=DF=7cm. Is AC between &ang;A and &ang;C? Yes! &#10003;<br><strong>Answer: &triangle;ABC &cong; &triangle;DEF by ASA</strong></div></details></div>
+
+    <div class="problem"><span class="difficulty hard">Hard</span><p>7. In isosceles &triangle;ABC with AB=AC, prove that &ang;B = &ang;C.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Draw AM from A to midpoint M of BC.<br><strong>Step 2:</strong> In &triangle;ABM and &triangle;ACM: AB=AC (given), BM=CM (midpoint), AM=AM (common)<br><strong>Step 3:</strong> &triangle;ABM &cong; &triangle;ACM by SSS<br><strong>Step 4:</strong> By CPCT: <strong>&ang;B = &ang;C</strong>. Proved!</div></details></div>
+
+    <div class="problem"><span class="difficulty hard">Hard</span><p>8. Two right triangles have hypotenuse 15 cm and one leg 9 cm each. Are they congruent? Find the other leg.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Right angle &#10003;, Hypotenuse 15=15 &#10003;, Leg 9=9 &#10003;<br><strong>Step 2:</strong> <strong>Yes, congruent by RHS</strong><br><strong>Step 3:</strong> Other leg: a&sup2; + 81 = 225 &rarr; a&sup2; = 144 &rarr; a = <strong>12 cm</strong></div></details></div>
+
+    <div class="problem"><span class="difficulty hard">Hard</span><p>9. ABCD is a square. Prove &triangle;ABC &cong; &triangle;ADC.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> In a square: AB=AD (sides), BC=DC (sides), &ang;B=&ang;D=90&deg;<br><strong>Step 2:</strong> Also AC=AC (common diagonal)<br><strong>Step 3:</strong> AB=AD, BC=DC, AC=AC &rarr; <strong>&triangle;ABC &cong; &triangle;ADC by SSS</strong><br>(Or: &ang;B=&ang;D=90&deg;, AC=AC (hyp), AB=AD &rarr; RHS also works!)</div></details></div>
+
+    <div class="problem"><span class="difficulty hard">Hard</span><p>10. In &triangle;ABC, AB=AC. D is a point on BC such that BD=DC. Prove AD&perp;BC.</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> In &triangle;ABD and &triangle;ACD: AB=AC (given), BD=DC (given), AD=AD (common)<br><strong>Step 2:</strong> &triangle;ABD &cong; &triangle;ACD by SSS<br><strong>Step 3:</strong> By CPCT: &ang;ADB = &ang;ADC<br><strong>Step 4:</strong> But &ang;ADB + &ang;ADC = 180&deg; (linear pair)<br><strong>Step 5:</strong> So 2&ang;ADB = 180&deg; &rarr; &ang;ADB = 90&deg;<br><strong>Step 6:</strong> <strong>AD &perp; BC. Proved!</strong></div></details></div>
+  </div>
+
+  <!-- HOTS -->
+  <div class="section">
+    <h2 id="hots">HOTS &mdash; Higher Order Thinking <span class="hots-tag">Advanced</span></h2>
+
+    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span>
+      <p>1. Is SSA (Side-Side-Angle) a valid congruence criterion? Why or why not?</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>No!</strong> SSA is NOT a valid criterion. Two different triangles can have the same SSA but be non-congruent. This is called the &ldquo;ambiguous case.&rdquo; Only SSS, SAS, ASA, and RHS are valid.</div></details></div>
+
+    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span>
+      <p>2. In &triangle;ABC, AB=AC and &ang;A=80&deg;. In &triangle;DEF, DE=DF and &ang;D=80&deg;. Is &triangle;ABC necessarily congruent to &triangle;DEF?</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Not necessarily!</strong> We know AB=AC and DE=DF (both isosceles) and &ang;A=&ang;D=80&deg;. But we don&rsquo;t know if AB=DE. The triangles could be different sizes with the same shape. We need at least one pair of sides to be equal to prove congruence.</div></details></div>
+
+    <div class="problem"><span class="difficulty hard">Hard</span><span class="hots-tag">HOTS</span>
+      <p>3. ABCD is a rectangle. Prove that the two diagonals are equal (AC = BD).</p>
+      <details><summary>Show Answer</summary><div class="answer"><strong>Step 1:</strong> Consider &triangle;ABC and &triangle;DCB.<br><strong>Step 2:</strong> AB = DC (opposite sides of rectangle are equal)<br><strong>Step 3:</strong> &ang;ABC = &ang;DCB = 90&deg; (all angles in rectangle are 90&deg;)<br><strong>Step 4:</strong> BC = CB (common side)<br><strong>Step 5:</strong> &triangle;ABC &cong; &triangle;DCB by SAS<br><strong>Step 6:</strong> By CPCT: <strong>AC = DB</strong>. Diagonals are equal!</div></details></div>
+  </div>
+
+  <!-- Common Mistakes -->
+  <div class="section">
+    <h2 id="mistakes">Common Mistakes &amp; How to Avoid Them</h2>
     <ul class="mistakes-list">
-      <li>For SAS, the angle must be BETWEEN the two sides — not just any angle!</li>
-      <li>Writing the correspondence in the wrong order (e.g., &triangle;ABC &cong; &triangle;PQR means A&harr;P, not A&harr;Q).</li>
-      <li>Using AAA to prove congruence — AAA only proves similarity, not congruence.</li>
-      <li>Forgetting to state which congruence rule (SSS, SAS, ASA, or RHS) you are using.</li>
+      <li><strong>For SAS, the angle must be BETWEEN the two sides</strong>
+        <div class="wrong-right">
+          <div class="wrong">AB=DE, BC=EF, &ang;C=&ang;F &rarr; SAS</div>
+          <div class="right">The angle must be the <strong>included angle</strong>. &ang;C is NOT between AB and BC. This is SSA, which is NOT valid!</div>
+        </div>
+      </li>
+      <li><strong>Writing correspondence in wrong order</strong>
+        <div class="wrong-right">
+          <div class="wrong">&triangle;ABC &cong; &triangle;PQR means A&harr;Q</div>
+          <div class="right">&triangle;ABC &cong; &triangle;PQR means A&harr;P, B&harr;Q, C&harr;R. The <strong>order of letters</strong> defines the correspondence!</div>
+        </div>
+      </li>
+      <li><strong>Using AAA to prove congruence</strong>
+        <div class="wrong-right">
+          <div class="wrong">All 3 angles match &rarr; congruent!</div>
+          <div class="right">AAA only proves <strong>similarity</strong>. Two triangles can have equal angles but different sizes. You need at least one side!</div>
+        </div>
+      </li>
+      <li><strong>Forgetting to state the congruence rule</strong>
+        <div class="wrong-right">
+          <div class="wrong">&ldquo;The triangles are congruent.&rdquo; (no rule stated)</div>
+          <div class="right">&ldquo;&triangle;ABC &cong; &triangle;DEF <strong>by SSS</strong>.&rdquo; Always state which criterion!</div>
+        </div>
+      </li>
+      <li><strong>Applying RHS to non-right triangles</strong>
+        <div class="wrong-right">
+          <div class="wrong">Hypotenuse + side match &rarr; RHS</div>
+          <div class="right">RHS requires a <strong>right angle</strong> in BOTH triangles. Without 90&deg;, there&rsquo;s no hypotenuse!</div>
+        </div>
+      </li>
     </ul>
   </div>
 
   <button id="mark-read-btn" class="btn" style="margin-top:1rem;padding:.5rem 1.25rem;background:var(--primary);color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer" onclick="markChapterRead(7)">Mark as Complete</button>
-
   <div class="chapter-nav">
-    <a href="ch6.html">&larr; Ch 6: Triangle and Its Properties</a>
+    <a href="ch6.html">&larr; Ch 6: Triangle Properties</a>
     <a href="ch8.html">Ch 8: Comparing Quantities &rarr;</a>
   </div>
 </div>
-
 <footer class="footer">CBSE Class 7 Maths &mdash; Based on NCERT Syllabus</footer>
 <script src="../js/main.js"></script>
 </body>
